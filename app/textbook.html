@@ -45,11 +45,16 @@
 <script src="data/textbook/u03.js"></script>
 <script src="data/textbook/u04.js"></script>
 <script src="data/textbook/u05.js"></script>
+<script src="data/textbook/u06.js"></script>
+<script src="data/textbook/u07.js"></script>
+<script src="data/textbook/u08.js"></script>
+<script src="data/textbook/u09.js"></script>
+<script src="data/textbook/u10.js"></script>
 
 <script>
   (async () => {
     await App.profile.mount('#profile-bar');
-    const ids = ['u01', 'u02', 'u03', 'u04', 'u05'];
+    const ids = ['u01', 'u02', 'u03', 'u04', 'u05', 'u06', 'u07', 'u08', 'u09', 'u10'];
     const units = ids.map((id) => window.TEXTBOOK[id]).filter(Boolean);
     await App.textbook.mountHubPage(units);
   })();

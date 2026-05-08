@@ -155,12 +155,17 @@
 <script src="data/textbook/u03.js"></script>
 <script src="data/textbook/u04.js"></script>
 <script src="data/textbook/u05.js"></script>
+<script src="data/textbook/u06.js"></script>
+<script src="data/textbook/u07.js"></script>
+<script src="data/textbook/u08.js"></script>
+<script src="data/textbook/u09.js"></script>
+<script src="data/textbook/u10.js"></script>
 <script>
   (async () => {
     await App.profile.mount('#profile-bar');
 
     // короткая сводка прогресса по учебнику
-    const ids = ['u01', 'u02', 'u03', 'u04', 'u05'];
+    const ids = ['u01', 'u02', 'u03', 'u04', 'u05', 'u06', 'u07', 'u08', 'u09', 'u10'];
     const units = ids.map((id) => window.TEXTBOOK[id]).filter(Boolean);
     const totalQs = units.reduce((s, u) => s + u.exercises.reduce((a, e) => a + e.questions.length, 0), 0);
     const meta = document.getElementById('meta-textbook');
