@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Español · Главная</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/textbook.css">
+<style>
+  .home-tagline {
+    color: var(--ink-soft);
+    font-size: 14px;
+    font-style: italic;
+    margin: 0 0 28px;
+  }
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 720px) {
+    .home-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  }
+  .home-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 22px 22px 18px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.15s, transform 0.1s, box-shadow 0.15s;
+    position: relative;
+    overflow: hidden;
+  }
+  .home-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+  }
+  .home-card-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 60px;
+    line-height: 1;
+    color: var(--accent);
+    opacity: 0.18;
+    position: absolute;
+    top: 6px; right: 14px;
+    pointer-events: none;
+    user-select: none;
+  }
+  .home-card-eyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+  .home-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--accent);
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .home-card-desc {
+    color: var(--ink);
+    font-size: 14.5px;
+    line-height: 1.55;
+    margin: 0 0 14px;
+  }
+  .home-card-meta {
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line-soft);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-card-arrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--accent);
+  }
+  .home-card:hover .home-card-arrow { transform: translateX(2px); }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <div>
+      <h1>Conjugar — <span class="accent">Español</span></h1>
+      <div class="subtitle">три инструмента для самостоятельных занятий</div>
+    </div>
+    <div id="profile-bar"></div>
+  </header>
+
+  <p class="home-tagline">Прогресс хранится локально и привязан к профилю. Резервная копия — кнопка «Экспорт» в шапке.</p>
+
+  <div class="home-grid">
+
+    <a href="trainer.html" class="home-card">
+      <span class="home-card-mark">A</span>
+      <div class="home-card-eyebrow">Practicar</div>
+      <h2 class="home-card-title">Тренажёр</h2>
+      <p class="home-card-desc">Карточки на спряжения: RU ↔ ES, три времени, фильтры по группам и глаголам, умное повторение проблемных форм.</p>
+      <div class="home-card-meta">
+        <span id="meta-trainer">25 глаголов · 3 времени</span>
+        <span class="home-card-arrow">открыть →</span>
+      </div>
+    </a>
+
+    <a href="textbook.html" class="home-card">
+      <span class="home-card-mark">B</span>
+      <div class="home-card-eyebrow">Aprender</div>
+      <h2 class="home-card-title">Учебник</h2>
+      <p class="home-card-desc">Грамматика A1–B2 модулями: испанские правила с переводом и интерактивные упражнения с автопроверкой.</p>
+      <div class="home-card-meta">
+        <span id="meta-textbook">…</span>
+        <span class="home-card-arrow">открыть →</span>
+      </div>
+    </a>
+
+    <a href="notes.html" class="home-card">
+      <span class="home-card-mark">C</span>
+      <div class="home-card-eyebrow">Consultar</div>
+      <h2 class="home-card-title">Конспект</h2>
+      <p class="home-card-desc">Краткий справочник: правила чтения, ударения, ser, частотные фразы и формулы вежливости.</p>
+      <div class="home-card-meta">
+        <span>правила · фразы</span>
+        <span class="home-card-arrow">открыть →</span>
+      </div>
+    </a>
+
+  </div>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/profile.js"></script>
+<script src="data/textbook/u01.js"></script>
+<script src="data/textbook/u02.js"></script>
+<script src="data/textbook/u03.js"></script>
+<script src="data/textbook/u04.js"></script>
+<script src="data/textbook/u05.js"></script>
+<script>
+  (async () => {
+    await App.profile.mount('#profile-bar');
+
+    // короткая сводка прогресса по учебнику
+    const ids = ['u01', 'u02', 'u03', 'u04', 'u05'];
+    const units = ids.map((id) => window.TEXTBOOK[id]).filter(Boolean);
+    const totalQs = units.reduce((s, u) => s + u.exercises.reduce((a, e) => a + e.questions.length, 0), 0);
+    const meta = document.getElementById('meta-textbook');
+    const user = await App.profile.getActive();
+    if (user) {
+      const recs = await App.db.progress.forUser(user.id);
+      const ever = new Set(recs.filter((r) => r.everCorrect).map((r) => `${r.unitId}:${r.exerciseId}:${r.questionId}`)).size;
+      meta.textContent = `${units.length} модулей · ${ever}/${totalQs} вопросов`;
+    } else {
+      meta.textContent = `${units.length} модулей · ${totalQs} вопросов`;
+    }
+  })();
+</script>
+</body>
+</html>

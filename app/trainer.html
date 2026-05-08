@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тренажёр глаголов · Español</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/trainer.css">
+<link rel="stylesheet" href="css/textbook.css">
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <div>
+      <h1>Conjugar — <span class="accent">тренажёр</span></h1>
+      <div class="subtitle">конспект и тренажёр в одном</div>
+    </div>
+    <div id="profile-bar"></div>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html">Главная</a> &nbsp;·&nbsp; <a href="notes.html">Конспект</a> &nbsp;·&nbsp; <a href="textbook.html">Учебник</a>
+  </nav>
+
+  <div class="settings" id="settings">
+    <button class="settings-header" id="settings-toggle" type="button">
+      <span class="settings-header-left">
+        <span class="settings-caret" id="settings-caret">▸</span>
+        <span class="settings-header-title">Настройки</span>
+      </span>
+      <span class="settings-summary" id="settings-summary"></span>
+    </button>
+
+    <div class="settings-body" id="settings-body">
+      <div class="settings-row">
+        <span class="settings-label">Направление:</span>
+        <div class="chip-group" id="direction-chips">
+          <button class="chip accent active" data-dir="ru-es">RU → ES</button>
+          <button class="chip accent" data-dir="es-ru">ES → RU</button>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-label">Время:</span>
+        <div class="chip-group" id="tense-chips">
+          <button class="chip active" data-tense="all">все</button>
+          <button class="chip" data-tense="presente">Presente</button>
+          <button class="chip" data-tense="indefinido">Indefinido</button>
+          <button class="chip" data-tense="futuro">Futuro</button>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-label">Группа:</span>
+        <div class="chip-group" id="group-chips">
+          <button class="chip active" data-group="all">все</button>
+          <button class="chip" data-group="ar">-ar</button>
+          <button class="chip" data-group="er">-er</button>
+          <button class="chip" data-group="ir">-ir</button>
+          <button class="chip" data-group="irreg">неправильные</button>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-label">Режим:</span>
+        <div class="chip-group" id="mode-chips">
+          <button class="chip active" data-mode="smart">умное повторение</button>
+          <button class="chip" data-mode="random">случайно</button>
+          <button class="chip" data-mode="weak">только проблемные</button>
+        </div>
+      </div>
+
+      <div class="settings-row settings-row-verbs">
+        <span class="settings-label">Глаголы:</span>
+        <div class="chip-group" id="verb-filter-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <span class="stat"><span class="stat-num good" id="stat-correct">0</span> верно</span>
+    <span class="stat"><span class="stat-num bad" id="stat-wrong">0</span> ошибок</span>
+    <span class="stat"><span class="stat-num" id="stat-total">0</span> попыток</span>
+    <span class="stat"><span class="stat-num" id="stat-streak">0</span> подряд</span>
+    <span class="stat" style="margin-left:auto;"><button class="reset" id="reset-stats">сбросить статистику</button></span>
+  </div>
+
+  <div id="card-container"></div>
+
+  <footer>
+    Прогресс сохраняется в этом браузере · Enter — проверить / следующая · Tab — спецсимволы
+  </footer>
+</div>
+
+<!-- ===== Глаголы ===== -->
+<!-- Чтобы добавить новый глагол: создай data/verbs/<infinitive>.js по образцу
+     любого существующего и добавь сюда строку <script src="..."></script>.
+     См. PROMPT.md — там готовый промпт для Claude. -->
+<script src="data/verbs.js"></script>
+<script src="data/verbs/hablar.js"></script>
+<script src="data/verbs/trabajar.js"></script>
+<script src="data/verbs/estudiar.js"></script>
+<script src="data/verbs/comprar.js"></script>
+<script src="data/verbs/tomar.js"></script>
+<script src="data/verbs/comer.js"></script>
+<script src="data/verbs/beber.js"></script>
+<script src="data/verbs/comprender.js"></script>
+<script src="data/verbs/leer.js"></script>
+<script src="data/verbs/aprender.js"></script>
+<script src="data/verbs/vivir.js"></script>
+<script src="data/verbs/escribir.js"></script>
+<script src="data/verbs/abrir.js"></script>
+<script src="data/verbs/recibir.js"></script>
+<script src="data/verbs/subir.js"></script>
+<script src="data/verbs/ser.js"></script>
+<script src="data/verbs/estar.js"></script>
+<script src="data/verbs/ir.js"></script>
+<script src="data/verbs/tener.js"></script>
+<script src="data/verbs/hacer.js"></script>
+<script src="data/verbs/entender.js"></script>
+<script src="data/verbs/conocer.js"></script>
+<script src="data/verbs/decir.js"></script>
+<script src="data/verbs/poder.js"></script>
+<script src="data/verbs/presentar.js"></script>
+
+<!-- ===== Профили ===== -->
+<script src="js/db.js"></script>
+<script src="js/profile.js"></script>
+<script>(async () => { await App.profile.mount('#profile-bar'); })();</script>
+
+<!-- ===== Логика ===== -->
+<script src="js/trainer.js"></script>
+</body>
+</html>

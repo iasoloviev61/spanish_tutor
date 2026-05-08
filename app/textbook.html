@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Учебник · Español</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/textbook.css">
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <div>
+      <h1>Conjugar — <span class="accent">учебник</span></h1>
+      <div class="subtitle">грамматика, теория и интерактивная практика</div>
+    </div>
+    <div id="profile-bar"></div>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html">Главная</a> &nbsp;·&nbsp; <a href="trainer.html">Тренажёр</a> &nbsp;·&nbsp; <a href="notes.html">Конспект</a>
+  </nav>
+
+  <p class="hub-intro">
+    Каждый модуль — это разворот: слева правила (на испанском с пояснениями на русском), справа упражнения с автопроверкой.
+    Прогресс хранится локально и привязан к профилю. Резервная копия — кнопка «Экспорт» в шапке.
+  </p>
+
+  <div id="units-grid" class="units-grid"></div>
+
+</div>
+
+<!-- ===== Подключения ===== -->
+<script src="js/db.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/textbook.js"></script>
+
+<!-- ===== Данные модулей ===== -->
+<script src="data/textbook/u01.js"></script>
+<script src="data/textbook/u02.js"></script>
+<script src="data/textbook/u03.js"></script>
+<script src="data/textbook/u04.js"></script>
+<script src="data/textbook/u05.js"></script>
+
+<script>
+  (async () => {
+    await App.profile.mount('#profile-bar');
+    const ids = ['u01', 'u02', 'u03', 'u04', 'u05'];
+    const units = ids.map((id) => window.TEXTBOOK[id]).filter(Boolean);
+    await App.textbook.mountHubPage(units);
+  })();
+</script>
+</body>
+</html>

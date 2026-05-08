@@ -1,0 +1,6532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тренажёр глаголов · Español</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5ede1;
+    --bg-card: #fdf8ee;
+    --ink: #2b2419;
+    --ink-soft: #6b5d4a;
+    --accent: #b34029;       /* терракотовый */
+    --accent-soft: #e8c4ba;
+    --gold: #c8932a;
+    --good: #5a7a3e;
+    --bad: #a8341f;
+    --line: #d8c9b0;
+    --line-soft: #ebe0cc;
+    --shadow: 0 1px 0 rgba(43,36,25,0.04), 0 6px 24px -10px rgba(43,36,25,0.18);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Lora', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-image:
+      radial-gradient(ellipse 800px 400px at 10% 0%, rgba(179,64,41,0.06), transparent),
+      radial-gradient(ellipse 600px 300px at 90% 100%, rgba(200,147,42,0.05), transparent);
+    min-height: 100vh;
+  }
+
+  .app {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  h1 .accent { color: var(--accent); font-style: italic; }
+
+  .subtitle {
+    color: var(--ink-soft);
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  /* ---------- Settings panel ---------- */
+  .settings {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+
+  .settings-header {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-family: 'Lora', serif;
+    color: var(--ink);
+    text-align: left;
+    transition: background 0.15s;
+  }
+  .settings-header:hover { background: rgba(179,64,41,0.04); }
+
+  .settings-header-left {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .settings-caret {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 13px;
+    width: 12px;
+    transition: transform 0.18s ease;
+    transform-origin: center;
+  }
+  .settings.open .settings-caret { transform: rotate(90deg); }
+  .settings-header-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .settings-summary {
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-style: italic;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+  }
+  .settings.open .settings-summary { display: none; }
+
+  .settings-body {
+    display: none;
+    padding: 4px 20px 18px;
+    border-top: 1px solid var(--line-soft);
+  }
+  .settings.open .settings-body { display: block; }
+
+  .settings-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    align-items: baseline;
+    padding: 14px 0;
+  }
+  .settings-row + .settings-row {
+    border-top: 1px dashed var(--line-soft);
+  }
+  .settings-row-verbs { align-items: flex-start; }
+  .settings-row-verbs .settings-label { padding-top: 4px; }
+
+  .settings-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-right: 4px;
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
+  }
+
+  .chip-group { display: flex; gap: 6px; flex-wrap: wrap; }
+
+  .chip {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    user-select: none;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--ink); }
+  .chip.active {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .chip.accent.active {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .chip-control {
+    border-style: dashed;
+    color: var(--accent);
+  }
+  .chip-control:hover { color: var(--accent); border-style: solid; }
+
+  /* ---------- Stats bar ---------- */
+  .stats {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .stat { display: inline-flex; align-items: baseline; gap: 6px; }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .stat-num.good { color: var(--good); }
+  .stat-num.bad { color: var(--bad); }
+  .stat .reset {
+    background: none; border: none;
+    color: var(--accent); cursor: pointer;
+    font-family: 'Lora', serif; font-size: 12px;
+    text-decoration: underline; text-underline-offset: 2px;
+    padding: 0;
+  }
+
+  /* ---------- Card ---------- */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 28px 28px 24px;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-soft);
+    flex-wrap: wrap;
+  }
+  .card-meta .tag {
+    padding: 2px 8px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    background: var(--bg);
+  }
+  .card-meta .tag.irreg {
+    background: var(--gold);
+    color: #fff;
+    border-color: var(--gold);
+  }
+  .card-meta .tag.tense-presente { color: var(--good); border-color: var(--good); }
+  .card-meta .tag.tense-indefinido { color: var(--accent); border-color: var(--accent); }
+  .card-meta .tag.tense-futuro { color: #4a6fa5; border-color: #4a6fa5; }
+
+  .prompt {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    line-height: 1.3;
+    color: var(--ink);
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  .prompt-hint {
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  .answer-area { margin-top: 8px; }
+
+  .answer-input {
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 14px 16px;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .answer-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(179,64,41,0.12);
+  }
+  .answer-input.correct {
+    border-color: var(--good);
+    background: #f0f5e8;
+  }
+  .answer-input.wrong {
+    border-color: var(--bad);
+    background: #fbece8;
+  }
+  .answer-input:disabled {
+    cursor: default;
+  }
+
+  /* Spec chars panel */
+  .spec-chars {
+    display: flex; gap: 4px; flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .spec-char {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    width: 36px; height: 32px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--ink);
+    transition: all 0.1s;
+  }
+  .spec-char:hover { border-color: var(--accent); color: var(--accent); }
+  .spec-char:active { transform: translateY(1px); }
+
+  /* Buttons */
+  .btn-row {
+    display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap;
+  }
+  .btn {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--bg);
+    transition: all 0.15s;
+    letter-spacing: 0.02em;
+  }
+  .btn:hover { background: var(--accent); border-color: var(--accent); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--ink);
+  }
+  .btn-secondary:hover {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .btn-link {
+    background: none;
+    border: none;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+  .btn-link:hover { color: var(--ink); }
+
+  /* Feedback area */
+  .feedback {
+    margin-top: 18px;
+    padding: 16px 18px;
+    border-radius: 3px;
+    font-size: 15px;
+    line-height: 1.55;
+    display: none;
+  }
+  .feedback.show { display: block; }
+  .feedback.correct {
+    background: #ecf3df;
+    border-left: 3px solid var(--good);
+    color: var(--ink);
+  }
+  .feedback.wrong {
+    background: #fbeae5;
+    border-left: 3px solid var(--bad);
+    color: var(--ink);
+  }
+  .feedback-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+  .feedback.correct .feedback-label { color: var(--good); }
+  .feedback.wrong .feedback-label { color: var(--bad); }
+
+  .answer-display {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  /* Подсветка различий с диакритикой */
+  .diff-ok { color: var(--ink); }
+  .diff-bad {
+    background: rgba(168,52,31,0.18);
+    color: var(--bad);
+    padding: 0 2px;
+    border-radius: 2px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--bad);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+  .diff-missing {
+    color: var(--good);
+    background: rgba(90,122,62,0.15);
+    padding: 0 2px;
+    border-radius: 2px;
+    font-weight: 600;
+  }
+
+  .conjugation-table {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line-soft);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 18px;
+    color: var(--ink-soft);
+  }
+  .conjugation-table .person {
+    color: var(--ink-soft);
+    text-align: right;
+    white-space: nowrap;
+  }
+  .conjugation-table .form { color: var(--ink); }
+  .conjugation-table .form.current {
+    color: var(--ink);
+    font-weight: 700;
+    background: rgba(200,147,42,0.18);
+    padding: 0 6px;
+    border-radius: 2px;
+    box-shadow: inset 0 -2px 0 var(--gold);
+    width: fit-content;
+  }
+
+  /* Empty state */
+  .empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+  .empty h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    color: var(--ink);
+    font-style: normal;
+    margin: 0 0 8px;
+  }
+
+  /* ---------- Tabs ---------- */
+  .tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 24px;
+    overflow-x: auto;
+  }
+  .tab {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--ink-soft);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 18px;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    transition: color 0.15s, border-color 0.15s;
+    margin-bottom: -1px;
+  }
+  .tab:hover { color: var(--ink); }
+  .tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .tab-pane { display: block; }
+  .tab-pane[hidden] { display: none; }
+
+  /* ---------- Notes (конспект) ---------- */
+  .notes {
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  .notes-toc {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+  }
+  .notes-toc a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px dashed transparent;
+    padding: 2px 0;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .notes-toc a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  .notes-h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 40px 0 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+    letter-spacing: -0.005em;
+    scroll-margin-top: 16px;
+  }
+  .notes-h2:first-child { margin-top: 0; }
+  .notes-h2 em {
+    color: var(--accent);
+    font-style: italic;
+  }
+  .notes-h2-ru {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: var(--ink-soft);
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 8px;
+  }
+  .notes-h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 24px 0 10px;
+    letter-spacing: 0.01em;
+  }
+  .notes-h3 em {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 500;
+  }
+  .notes-tip {
+    background: rgba(200,147,42,0.10);
+    border-left: 3px solid var(--gold);
+    padding: 10px 14px;
+    margin: 16px 0 0;
+    font-size: 14px;
+    color: var(--ink-soft);
+    border-radius: 0 3px 3px 0;
+  }
+  .notes-tip em {
+    color: var(--ink);
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  /* Таблица спряжения SER */
+  .conj-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 14px 0 0;
+  }
+  .conj-table th {
+    background: rgba(179,64,41,0.06);
+    color: var(--ink-soft);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 8px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  .conj-table td {
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--line-soft);
+    vertical-align: baseline;
+  }
+  .conj-table tr:last-child td { border-bottom: none; }
+  .conj-table .pron {
+    color: var(--ink-soft);
+    font-size: 14px;
+    width: 40%;
+  }
+  .conj-table .form {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  /* Списки правил */
+  .rule-list {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 0;
+  }
+  .rule-list li {
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--line-soft);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .rule-list li:last-child { border-bottom: none; }
+  .rule-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
+  .rule-list .ex {
+    color: var(--ink);
+    font-style: italic;
+    font-size: 15px;
+  }
+  .rule-list .ex strong {
+    background: rgba(200,147,42,0.18);
+    padding: 0 4px;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg);
+    border: 1px solid var(--line-soft);
+    padding: 0 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: var(--ink);
+  }
+
+  /* Таблица чтения букв */
+  .reading-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 14px 0 0;
+    font-size: 14px;
+  }
+  .reading-table th {
+    background: rgba(179,64,41,0.06);
+    color: var(--ink-soft);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  .reading-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--line-soft);
+    vertical-align: baseline;
+  }
+  .reading-table tr:last-child td { border-bottom: none; }
+  .reading-table tr:hover td { background: rgba(179,64,41,0.03); }
+  .reading-table .letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent);
+    width: 90px;
+  }
+  .reading-table .sound {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--ink);
+    width: 160px;
+    font-weight: 500;
+  }
+  .reading-table .ex-cell {
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+  .reading-table .ex-cell u {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 2px;
+  }
+
+  /* Списки фраз (термин: перевод) */
+  .phrase-list {
+    margin: 12px 0 0;
+    display: grid;
+    grid-template-columns: minmax(200px, auto) 1fr;
+    gap: 8px 22px;
+    align-items: baseline;
+  }
+  .phrase-list dt {
+    font-family: 'Lora', serif;
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .phrase-list dd {
+    margin: 0;
+    color: var(--ink);
+    font-size: 15px;
+  }
+
+  .phrase-line {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  .phrase-line .es {
+    color: var(--accent);
+    font-weight: 500;
+    margin-right: 12px;
+  }
+  .phrase-line .ru {
+    color: var(--ink-soft);
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  /* Таблица указательных местоимений */
+  .demo-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 14px 0 0;
+  }
+  .demo-table th {
+    background: rgba(179,64,41,0.06);
+    color: var(--ink-soft);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  .demo-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line-soft);
+    border-right: 1px solid var(--line-soft);
+    vertical-align: baseline;
+  }
+  .demo-table td:last-child { border-right: none; }
+  .demo-table tr:last-child td { border-bottom: none; }
+  .demo-table .row-h {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-align: left;
+    background: rgba(179,64,41,0.03);
+    border-right: 1px solid var(--line);
+    width: 90px;
+  }
+  .demo-table .es {
+    display: block;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .demo-table .ru {
+    display: block;
+    color: var(--ink-soft);
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 2px;
+  }
+
+  footer {
+    margin-top: 32px;
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  @media (max-width: 540px) {
+    .app { padding: 20px 16px 32px; }
+    h1 { font-size: 26px; }
+    .prompt { font-size: 22px; }
+    .card { padding: 22px 20px 20px; }
+    .settings-header { padding: 10px 14px; }
+    .settings-body { padding: 4px 16px 14px; }
+    .settings-row { gap: 8px 14px; padding: 12px 0; }
+    .tab { font-size: 16px; padding: 8px 14px; }
+    .notes-h2 { font-size: 24px; margin: 32px 0 14px; }
+    .notes-h2-ru { display: block; margin-left: 0; margin-top: 4px; font-size: 14px; }
+    .notes-h3 { font-size: 18px; }
+    .reading-table { font-size: 13px; }
+    .reading-table th, .reading-table td { padding: 6px 8px; }
+    .reading-table .letter { font-size: 17px; width: 60px; }
+    .reading-table .sound { width: auto; }
+    .conj-table th, .conj-table td { padding: 6px 10px; }
+    .conj-table .pron { font-size: 13px; }
+    .phrase-list { grid-template-columns: 1fr; gap: 2px 0; }
+    .phrase-list dt { color: var(--accent); margin-top: 8px; }
+    .phrase-list dd { padding-left: 0; color: var(--ink-soft); font-size: 14px; }
+    .phrase-list dt:first-child { margin-top: 0; }
+    .demo-table .row-h { width: 70px; font-size: 11px; padding: 6px 8px; }
+    .demo-table td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <h1>Conjugar — <span class="accent">тренажёр</span></h1>
+    <div class="subtitle">25 verbos · 630 frases · конспект и тренажёр в одном</div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="trainer" role="tab" aria-selected="true">Тренажёр</button>
+    <button class="tab" data-tab="notes" role="tab" aria-selected="false">Конспект</button>
+  </nav>
+
+  <section class="tab-pane active" id="tab-trainer" role="tabpanel">
+
+  <div class="settings" id="settings">
+    <button class="settings-header" id="settings-toggle" type="button">
+      <span class="settings-header-left">
+        <span class="settings-caret" id="settings-caret">▸</span>
+        <span class="settings-header-title">Настройки</span>
+      </span>
+      <span class="settings-summary" id="settings-summary"></span>
+    </button>
+
+    <div class="settings-body" id="settings-body">
+      <div class="settings-row">
+        <span class="settings-label">Направление:</span>
+        <div class="chip-group" id="direction-chips">
+          <button class="chip accent active" data-dir="ru-es">RU → ES</button>
+          <button class="chip accent" data-dir="es-ru">ES → RU</button>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-label">Время:</span>
+        <div class="chip-group" id="tense-chips">
+          <button class="chip active" data-tense="all">все</button>
+          <button class="chip" data-tense="presente">Presente</button>
+          <button class="chip" data-tense="indefinido">Indefinido</button>
+          <button class="chip" data-tense="futuro">Futuro</button>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-label">Группа:</span>
+        <div class="chip-group" id="group-chips">
+          <button class="chip active" data-group="all">все</button>
+          <button class="chip" data-group="ar">-ar</button>
+          <button class="chip" data-group="er">-er</button>
+          <button class="chip" data-group="ir">-ir</button>
+          <button class="chip" data-group="irreg">неправильные</button>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <span class="settings-label">Режим:</span>
+        <div class="chip-group" id="mode-chips">
+          <button class="chip active" data-mode="smart">умное повторение</button>
+          <button class="chip" data-mode="random">случайно</button>
+          <button class="chip" data-mode="weak">только проблемные</button>
+        </div>
+      </div>
+
+      <div class="settings-row settings-row-verbs">
+        <span class="settings-label">Глаголы:</span>
+        <div class="chip-group" id="verb-filter-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <span class="stat"><span class="stat-num good" id="stat-correct">0</span> верно</span>
+    <span class="stat"><span class="stat-num bad" id="stat-wrong">0</span> ошибок</span>
+    <span class="stat"><span class="stat-num" id="stat-total">0</span> попыток</span>
+    <span class="stat"><span class="stat-num" id="stat-streak">0</span> подряд</span>
+    <span class="stat" style="margin-left:auto;"><button class="reset" id="reset-stats">сбросить статистику</button></span>
+  </div>
+
+  <div id="card-container"></div>
+
+  </section><!-- /#tab-trainer -->
+
+  <section class="tab-pane" id="tab-notes" role="tabpanel" hidden>
+
+    <div class="notes">
+
+      <div class="notes-toc">
+        <a href="#n-ser">1. Глагол SER</a>
+        <a href="#n-syntax">2. Построение предложения</a>
+        <a href="#n-stress">3. Ударения</a>
+        <a href="#n-reading">4. Правила чтения</a>
+        <a href="#n-greeting">5. Знакомство</a>
+        <a href="#n-presenting">6. Представление человека</a>
+      </div>
+
+      <h2 id="n-ser" class="notes-h2">1. Глагол <em>ser</em> <span class="notes-h2-ru">(быть, являться)</span></h2>
+      <table class="conj-table">
+        <thead>
+          <tr><th colspan="2">Единственное число</th><th colspan="2">Множественное число</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="pron">Yo</td><td class="form">soy</td><td class="pron">Nosotros / Nosotras</td><td class="form">somos</td></tr>
+          <tr><td class="pron">Tú</td><td class="form">eres</td><td class="pron">Vosotros / Vosotras</td><td class="form">sois</td></tr>
+          <tr><td class="pron">Él / Ella / Usted</td><td class="form">es</td><td class="pron">Ellos / Ellas / Ustedes</td><td class="form">son</td></tr>
+        </tbody>
+      </table>
+      <p class="notes-tip">В Латинской Америке форма <em>vosotros</em> почти не используется — её заменяет <em>ustedes</em> для множественного «вы» в любых ситуациях. В Испании <em>vosotros</em> — для друзей, <em>ustedes</em> — формальное.</p>
+
+      <h2 id="n-syntax" class="notes-h2">2. Построение предложения</h2>
+      <ul class="rule-list">
+        <li><span class="rule-label">Утвердительное</span> подлежащее + глагол <span class="ex">Elena <strong>es</strong> médica.</span></li>
+        <li><span class="rule-label">Отрицательное</span> подлежащее + <em>no</em> + глагол <span class="ex">Elena <strong>no es</strong> médica.</span></li>
+        <li><span class="rule-label">Вопросительное</span> ¿глагол + подлежащее + дополнение? <span class="ex">¿<strong>Es</strong> Elena médica?</span></li>
+      </ul>
+
+      <h2 id="n-stress" class="notes-h2">3. Правила ударения</h2>
+      <ul class="rule-list">
+        <li><span class="rule-label">Слово на <code>n</code>, <code>s</code> или гласную</span> ударение на <strong>предпоследний</strong> слог, графически не пишется <span class="ex">pa-LA-bra, CAR-men, tra-BA-jan</span></li>
+        <li><span class="rule-label">Слово на согласную (кроме n, s)</span> ударение на <strong>последний</strong> слог, графически не пишется <span class="ex">doc-TOR, a-ZUL, tra-duc-TOR</span></li>
+        <li><span class="rule-label">Не по правилам</span> ставится графическое ударение — <em>tilde</em> (´) <span class="ex">MÉ-di-co, a-VIÓN</span></li>
+        <li><span class="rule-label">Вопросительные слова</span> ударение во всех вопросительных и восклицательных словах <span class="ex">¿<strong>Dónde</strong> vives? · ¿<strong>Cómo</strong> te llamas? · ¡<strong>Qué</strong> bien!</span></li>
+        <li><span class="rule-label">Смысловое различие</span> чтобы различать одинаково звучащие слова <span class="ex"><strong>tú</strong> — ты &nbsp;·&nbsp; <strong>tu</strong> — твой</span></li>
+      </ul>
+
+      <h2 id="n-reading" class="notes-h2">4. Правила чтения <span class="notes-h2-ru">(las reglas de lectura)</span></h2>
+      <table class="reading-table">
+        <thead>
+          <tr><th>Буква</th><th>Условие</th><th>Звук</th><th>Примеры</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="letter">L</td><td>в конце слова или перед согласной</td><td class="sound">ль</td><td class="ex-cell">¿qué tal?, pulpo, alma</td></tr>
+          <tr><td class="letter">LL</td><td></td><td class="sound">й</td><td class="ex-cell">me llamo, billar</td></tr>
+          <tr><td class="letter">S</td><td></td><td class="sound">с</td><td class="ex-cell">salsa, siesta</td></tr>
+          <tr><td class="letter">C</td><td>перед e, i</td><td class="sound">θ (англ. <em>th</em>)</td><td class="ex-cell">cerca, ciruela</td></tr>
+          <tr><td class="letter">C</td><td>перед a, o, u или согласной</td><td class="sound">к</td><td class="ex-cell">carta, coche, cuchillo</td></tr>
+          <tr><td class="letter">Z</td><td></td><td class="sound">θ (англ. <em>th</em>)</td><td class="ex-cell">zona, azúcar, zanahoria</td></tr>
+          <tr><td class="letter">Qu</td><td></td><td class="sound">к</td><td class="ex-cell">que, querer</td></tr>
+          <tr><td class="letter">K</td><td>в иностранных словах</td><td class="sound">к</td><td class="ex-cell">kilo, kilómetro</td></tr>
+          <tr><td class="letter">H</td><td>всегда</td><td class="sound">не произносится</td><td class="ex-cell">hola, ahora</td></tr>
+          <tr><td class="letter">Ch</td><td></td><td class="sound">ч</td><td class="ex-cell">chico, chao</td></tr>
+          <tr><td class="letter">B, V</td><td></td><td class="sound">б</td><td class="ex-cell">vale, Barcelona, cava, llevar</td></tr>
+          <tr><td class="letter">D</td><td>в конце слова</td><td class="sound">th</td><td class="ex-cell">Madrid → «madri<u>th</u>»</td></tr>
+          <tr><td class="letter">Ñ</td><td></td><td class="sound">нь (как в «няня», без «й»)</td><td class="ex-cell">español, niño, pequeño</td></tr>
+          <tr><td class="letter">Y</td><td>сама по себе / перед гласной</td><td class="sound">и / й</td><td class="ex-cell">yo, ya, yogur</td></tr>
+          <tr><td class="letter">R</td><td>в начале слова или <code>rr</code></td><td class="sound">ррр (раскатистое)</td><td class="ex-cell">rosa, perro</td></tr>
+          <tr><td class="letter">G</td><td>перед a, o, u или согласной</td><td class="sound">г</td><td class="ex-cell">garganta, gustar</td></tr>
+          <tr><td class="letter">G</td><td>перед e, i</td><td class="sound">х</td><td class="ex-cell">gente, Gijón</td></tr>
+          <tr><td class="letter">J</td><td>всегда</td><td class="sound">х</td><td class="ex-cell">jardín</td></tr>
+          <tr><td class="letter">Gue, Gui</td><td>(u не читается)</td><td class="sound">гэ, ги</td><td class="ex-cell">guerra, guitarra</td></tr>
+          <tr><td class="letter">Güe, Güi</td><td>(с двоеточием — u читается)</td><td class="sound">гуэ, гуи</td><td class="ex-cell">pingüino, cigüeña</td></tr>
+          <tr><td class="letter">X</td><td>обычно</td><td class="sound">кс</td><td class="ex-cell">texto, extra</td></tr>
+          <tr><td class="letter">X</td><td>исключение: México и др.</td><td class="sound">х</td><td class="ex-cell">México, mexicano (Мехико, мехикано)</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="n-greeting" class="notes-h2">5. Знакомство и приветствие <span class="notes-h2-ru">(presentación)</span></h2>
+
+      <h3 class="notes-h3">Фразы приветствия</h3>
+      <dl class="phrase-list">
+        <dt>¿Qué tal?</dt>                    <dd>Как дела?</dd>
+        <dt>¿Cómo estás?</dt>                 <dd>Как ты?</dd>
+        <dt>Mucho gusto · encantado</dt>      <dd>Очень приятно</dd>
+        <dt>Chao · hasta luego</dt>           <dd>Пока · до встречи</dd>
+        <dt>Hasta pronto · hasta mañana</dt>  <dd>До скорого · до завтра</dd>
+      </dl>
+
+      <h3 class="notes-h3">Диалог · форма <em>Tú</em> (ты)</h3>
+      <dl class="phrase-list">
+        <dt>¿Cómo te llamas?</dt>      <dd>Me llamo Igor.</dd>
+        <dt>¿Y tú?</dt>                <dd>Yo soy Igor.</dd>
+        <dt>¿De dónde eres?</dt>       <dd>Yo soy ruso, soy de Rusia.</dd>
+        <dt>¿Dónde vives?</dt>         <dd>Yo vivo en Gijón.</dd>
+        <dt>¿Qué haces?</dt>           <dd>Yo soy informático.</dd>
+        <dt>¿A qué te dedicas?</dt>    <dd>Чем занимаешься по жизни?</dd>
+      </dl>
+
+      <h3 class="notes-h3">Диалог · вежливая форма <em>Usted</em> (Вы)</h3>
+      <dl class="phrase-list">
+        <dt>¿Cómo está usted?</dt>           <dd>Как у Вас дела?</dd>
+        <dt>¿Dónde vive usted?</dt>          <dd>Где Вы живёте?</dd>
+        <dt>¿De dónde es usted?</dt>         <dd>Откуда Вы?</dd>
+        <dt>¿Qué hace usted?</dt>            <dd>Что Вы делаете?</dd>
+        <dt>¿A qué se dedica usted?</dt>     <dd>Чем Вы занимаетесь?</dd>
+        <dt>¿Cómo se llama usted?</dt>       <dd>Как Вас зовут?</dd>
+      </dl>
+
+      <h2 id="n-presenting" class="notes-h2">6. Представление человека <span class="notes-h2-ru">(presentar a una persona)</span></h2>
+
+      <h3 class="notes-h3">Форма <em>Tú</em> (тебе)</h3>
+      <p class="phrase-line"><span class="es">Mira, te presento a mi hija.</span> <span class="ru">Посмотри, я представляю тебе мою дочь.</span></p>
+
+      <h3 class="notes-h3">Форма <em>Usted</em> (Вам)</h3>
+      <p class="phrase-line"><span class="es">Mire, le presento a mi mujer.</span> <span class="ru">Посмотрите, я представляю Вам мою жену.</span></p>
+
+      <h3 class="notes-h3">Указательные местоимения</h3>
+      <table class="demo-table">
+        <thead>
+          <tr><th></th><th>муж. род</th><th>жен. род</th></tr>
+        </thead>
+        <tbody>
+          <tr><th class="row-h">ед. ч.</th>
+            <td><span class="es">Este es Jorge.</span> <span class="ru">Это Хорхе.</span></td>
+            <td><span class="es">Esta es Elena.</span> <span class="ru">Это Елена.</span></td>
+          </tr>
+          <tr><th class="row-h">мн. ч.</th>
+            <td><span class="es">Estos son Jorge y Roberto.</span> <span class="ru">Это Хорхе и Роберто.</span></td>
+            <td><span class="es">Estas son Elena y María.</span> <span class="ru">Это Елена и Мария.</span></td>
+          </tr>
+          <tr><th class="row-h">смешанные</th>
+            <td colspan="2"><span class="es">Estos son Rubén y Elena.</span> <span class="ru">Это Рубен и Елена. (мужской род побеждает в смешанной группе)</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </section><!-- /#tab-notes -->
+
+  <footer>
+    Прогресс сохраняется в этом браузере · Enter — проверить / следующая · Tab — спецсимволы
+  </footer>
+</div>
+
+<script>
+// ============================================================
+// БАЗА ДАННЫХ ГЛАГОЛОВ И ПРЕДЛОЖЕНИЙ
+// ============================================================
+const VERBS = [
+  {
+    "infinitive": "hablar",
+    "translation": "говорить",
+    "group": "ar",
+    "irregular": false,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo hablo español.",
+        "ru": "Я говорю по-испански."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo hablo poco.",
+        "ru": "Я говорю мало.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú hablas rápido.",
+        "ru": "Ты говоришь быстро."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú hablas con María.",
+        "ru": "Ты говоришь с Марией.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él habla inglés.",
+        "ru": "Он говорит по-английски."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella habla mucho.",
+        "ru": "Она говорит много.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros hablamos ruso.",
+        "ru": "Мы говорим по-русски."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros hablamos en casa.",
+        "ru": "Мы говорим дома.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros habláis bien.",
+        "ru": "Вы говорите хорошо."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros habláis francés.",
+        "ru": "Вы говорите по-французски.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos hablan despacio.",
+        "ru": "Они говорят медленно."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas hablan por teléfono.",
+        "ru": "Они говорят по телефону.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo hablé con el médico.",
+        "ru": "Я поговорил с врачом."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo hablé ayer.",
+        "ru": "Я говорил вчера.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú hablaste mucho.",
+        "ru": "Ты много говорил."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú hablaste conmigo.",
+        "ru": "Ты говорил со мной.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él habló en la reunión.",
+        "ru": "Он говорил на собрании."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella habló con su madre.",
+        "ru": "Она поговорила со своей матерью.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros hablamos toda la noche.",
+        "ru": "Мы говорили всю ночь."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros hablamos del trabajo.",
+        "ru": "Мы говорили о работе.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros hablasteis poco.",
+        "ru": "Вы мало говорили."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros hablasteis con el profesor.",
+        "ru": "Вы поговорили с учителем.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos hablaron de política.",
+        "ru": "Они говорили о политике."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas hablaron en la fiesta.",
+        "ru": "Они говорили на празднике.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo hablaré con él mañana.",
+        "ru": "Я поговорю с ним завтра."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo hablaré pronto.",
+        "ru": "Я скоро буду говорить.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú hablarás en la conferencia.",
+        "ru": "Ты будешь говорить на конференции."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú hablarás con tu jefe.",
+        "ru": "Ты поговоришь со своим начальником.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él hablará por la radio.",
+        "ru": "Он будет говорить по радио."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella hablará después.",
+        "ru": "Она поговорит потом.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros hablaremos mañana.",
+        "ru": "Мы поговорим завтра."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros hablaremos del proyecto.",
+        "ru": "Мы будем говорить о проекте.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros hablaréis con ellos.",
+        "ru": "Вы поговорите с ними."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros hablaréis en clase.",
+        "ru": "Вы будете говорить в классе.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos hablarán pronto.",
+        "ru": "Они скоро будут говорить."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas hablarán con nosotros.",
+        "ru": "Они поговорят с нами.",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "hablo",
+        "tu": "hablas",
+        "el": "habla",
+        "nosotros": "hablamos",
+        "vosotros": "habláis",
+        "ellos": "hablan"
+      },
+      "indefinido": {
+        "yo": "hablé",
+        "tu": "hablaste",
+        "el": "habló",
+        "nosotros": "hablamos",
+        "vosotros": "hablasteis",
+        "ellos": "hablaron"
+      },
+      "futuro": {
+        "yo": "hablaré",
+        "tu": "hablarás",
+        "el": "hablará",
+        "nosotros": "hablaremos",
+        "vosotros": "hablaréis",
+        "ellos": "hablarán"
+      }
+    }
+  },
+  {
+    "infinitive": "trabajar",
+    "translation": "работать",
+    "group": "ar",
+    "irregular": false,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo trabajo en una oficina.",
+        "ru": "Я работаю в офисе."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo trabajo mucho.",
+        "ru": "Я много работаю.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú trabajas en casa.",
+        "ru": "Ты работаешь дома."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú trabajas los lunes.",
+        "ru": "Ты работаешь по понедельникам.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él trabaja como médico.",
+        "ru": "Он работает врачом."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella trabaja por la noche.",
+        "ru": "Она работает ночью.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros trabajamos juntos.",
+        "ru": "Мы работаем вместе."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros trabajamos en Madrid.",
+        "ru": "Мы работаем в Мадриде.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros trabajáis bien.",
+        "ru": "Вы работаете хорошо."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros trabajáis poco.",
+        "ru": "Вы мало работаете.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos trabajan en el banco.",
+        "ru": "Они работают в банке."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas trabajan los sábados.",
+        "ru": "Они работают по субботам.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo trabajé ayer.",
+        "ru": "Я работал вчера."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo trabajé doce horas.",
+        "ru": "Я работал двенадцать часов.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú trabajaste mucho.",
+        "ru": "Ты много работал."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú trabajaste el verano pasado.",
+        "ru": "Ты работал прошлым летом.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él trabajó en el proyecto.",
+        "ru": "Он работал над проектом."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella trabajó como profesora.",
+        "ru": "Она работала учительницей.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros trabajamos toda la semana.",
+        "ru": "Мы работали всю неделю."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros trabajamos en equipo.",
+        "ru": "Мы работали в команде.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros trabajasteis bien.",
+        "ru": "Вы хорошо работали."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros trabajasteis ayer.",
+        "ru": "Вы работали вчера.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos trabajaron en Barcelona.",
+        "ru": "Они работали в Барселоне."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas trabajaron juntas.",
+        "ru": "Они работали вместе.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo trabajaré mañana.",
+        "ru": "Я буду работать завтра."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo trabajaré en una empresa nueva.",
+        "ru": "Я буду работать в новой компании.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú trabajarás conmigo.",
+        "ru": "Ты будешь работать со мной."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú trabajarás todo el día.",
+        "ru": "Ты будешь работать весь день.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él trabajará en el extranjero.",
+        "ru": "Он будет работать за границей."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella trabajará el lunes.",
+        "ru": "Она будет работать в понедельник.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros trabajaremos en este proyecto.",
+        "ru": "Мы будем работать над этим проектом."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros trabajaremos hasta tarde.",
+        "ru": "Мы будем работать допоздна.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros trabajaréis con nosotros.",
+        "ru": "Вы будете работать с нами."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros trabajaréis el verano que viene.",
+        "ru": "Вы будете работать следующим летом.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos trabajarán mañana.",
+        "ru": "Они будут работать завтра."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas trabajarán en el hospital.",
+        "ru": "Они будут работать в больнице.",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "trabajo",
+        "tu": "trabajas",
+        "el": "trabaja",
+        "nosotros": "trabajamos",
+        "vosotros": "trabajáis",
+        "ellos": "trabajan"
+      },
+      "indefinido": {
+        "yo": "trabajé",
+        "tu": "trabajaste",
+        "el": "trabajó",
+        "nosotros": "trabajamos",
+        "vosotros": "trabajasteis",
+        "ellos": "trabajaron"
+      },
+      "futuro": {
+        "yo": "trabajaré",
+        "tu": "trabajarás",
+        "el": "trabajará",
+        "nosotros": "trabajaremos",
+        "vosotros": "trabajaréis",
+        "ellos": "trabajarán"
+      }
+    }
+  },
+  {
+    "infinitive": "estudiar",
+    "translation": "учиться",
+    "group": "ar",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo estudio español.",
+        "ru": "Я изучаю испанский."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú estudias en la universidad.",
+        "ru": "Ты учишься в университете."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él estudia medicina.",
+        "ru": "Он изучает медицину."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros estudiamos juntos.",
+        "ru": "Мы учимся вместе."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros estudiáis matemáticas.",
+        "ru": "Вы изучаете математику."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos estudian en Madrid.",
+        "ru": "Они учатся в Мадриде."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo estudié mucho ayer.",
+        "ru": "Я много занимался вчера."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú estudiaste para el examen.",
+        "ru": "Ты готовился к экзамену."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él estudió en París.",
+        "ru": "Он учился в Париже."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros estudiamos historia.",
+        "ru": "Мы изучали историю."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros estudiasteis tres años.",
+        "ru": "Вы учились три года."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos estudiaron mucho.",
+        "ru": "Они много учились."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo estudiaré mañana.",
+        "ru": "Я буду заниматься завтра."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú estudiarás conmigo.",
+        "ru": "Ты будешь учиться со мной."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él estudiará derecho.",
+        "ru": "Он будет изучать право."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros estudiaremos juntos.",
+        "ru": "Мы будем учиться вместе."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros estudiaréis en otoño.",
+        "ru": "Вы будете учиться осенью."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos estudiarán inglés.",
+        "ru": "Они будут изучать английский."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "estudio",
+        "tu": "estudias",
+        "el": "estudia",
+        "nosotros": "estudiamos",
+        "vosotros": "estudiáis",
+        "ellos": "estudian"
+      },
+      "indefinido": {
+        "yo": "estudié",
+        "tu": "estudiaste",
+        "el": "estudió",
+        "nosotros": "estudiamos",
+        "vosotros": "estudiasteis",
+        "ellos": "estudiaron"
+      },
+      "futuro": {
+        "yo": "estudiaré",
+        "tu": "estudiarás",
+        "el": "estudiará",
+        "nosotros": "estudiaremos",
+        "vosotros": "estudiaréis",
+        "ellos": "estudiarán"
+      }
+    }
+  },
+  {
+    "infinitive": "comprar",
+    "translation": "покупать",
+    "group": "ar",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo compro pan.",
+        "ru": "Я покупаю хлеб."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú compras leche.",
+        "ru": "Ты покупаешь молоко."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él compra un libro.",
+        "ru": "Он покупает книгу."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros compramos fruta.",
+        "ru": "Мы покупаем фрукты."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros compráis flores.",
+        "ru": "Вы покупаете цветы."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos compran ropa.",
+        "ru": "Они покупают одежду."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo compré un coche.",
+        "ru": "Я купил машину."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú compraste el periódico.",
+        "ru": "Ты купил газету."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él compró una casa.",
+        "ru": "Он купил дом."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros compramos vino.",
+        "ru": "Мы купили вино."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros comprasteis pan ayer.",
+        "ru": "Вы купили хлеб вчера."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos compraron una mesa.",
+        "ru": "Они купили стол."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo compraré un regalo.",
+        "ru": "Я куплю подарок."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú comprarás el billete.",
+        "ru": "Ты купишь билет."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él comprará una bicicleta.",
+        "ru": "Он купит велосипед."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros compraremos comida.",
+        "ru": "Мы купим еду."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros compraréis los libros.",
+        "ru": "Вы купите книги."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos comprarán un piso.",
+        "ru": "Они купят квартиру."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "compro",
+        "tu": "compras",
+        "el": "compra",
+        "nosotros": "compramos",
+        "vosotros": "compráis",
+        "ellos": "compran"
+      },
+      "indefinido": {
+        "yo": "compré",
+        "tu": "compraste",
+        "el": "compró",
+        "nosotros": "compramos",
+        "vosotros": "comprasteis",
+        "ellos": "compraron"
+      },
+      "futuro": {
+        "yo": "compraré",
+        "tu": "comprarás",
+        "el": "comprará",
+        "nosotros": "compraremos",
+        "vosotros": "compraréis",
+        "ellos": "comprarán"
+      }
+    }
+  },
+  {
+    "infinitive": "tomar",
+    "translation": "брать, пить",
+    "group": "ar",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo tomo café.",
+        "ru": "Я пью кофе."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú tomas el autobús.",
+        "ru": "Ты едешь на автобусе."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él toma un taxi.",
+        "ru": "Он берёт такси."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros tomamos té.",
+        "ru": "Мы пьём чай."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros tomáis agua.",
+        "ru": "Вы пьёте воду."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos toman el tren.",
+        "ru": "Они едут на поезде."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo tomé una decisión.",
+        "ru": "Я принял решение."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú tomaste el sol.",
+        "ru": "Ты загорал."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él tomó el avión.",
+        "ru": "Он сел на самолёт."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros tomamos una cerveza.",
+        "ru": "Мы выпили пива."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros tomasteis fotos.",
+        "ru": "Вы делали фотографии."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos tomaron el metro.",
+        "ru": "Они поехали на метро."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo tomaré un café.",
+        "ru": "Я выпью кофе."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú tomarás el tren mañana.",
+        "ru": "Ты поедешь на поезде завтра."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él tomará una clase.",
+        "ru": "Он возьмёт занятие."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros tomaremos algo.",
+        "ru": "Мы что-нибудь выпьем."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros tomaréis vacaciones.",
+        "ru": "Вы возьмёте отпуск."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos tomarán el sol.",
+        "ru": "Они будут загорать."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "tomo",
+        "tu": "tomas",
+        "el": "toma",
+        "nosotros": "tomamos",
+        "vosotros": "tomáis",
+        "ellos": "toman"
+      },
+      "indefinido": {
+        "yo": "tomé",
+        "tu": "tomaste",
+        "el": "tomó",
+        "nosotros": "tomamos",
+        "vosotros": "tomasteis",
+        "ellos": "tomaron"
+      },
+      "futuro": {
+        "yo": "tomaré",
+        "tu": "tomarás",
+        "el": "tomará",
+        "nosotros": "tomaremos",
+        "vosotros": "tomaréis",
+        "ellos": "tomarán"
+      }
+    }
+  },
+  {
+    "infinitive": "comer",
+    "translation": "есть",
+    "group": "er",
+    "irregular": false,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo como pan.",
+        "ru": "Я ем хлеб."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo como en casa.",
+        "ru": "Я ем дома.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú comes mucho.",
+        "ru": "Ты много ешь."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú comes pescado.",
+        "ru": "Ты ешь рыбу.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él come carne.",
+        "ru": "Он ест мясо."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella come fruta.",
+        "ru": "Она ест фрукты.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros comemos juntos.",
+        "ru": "Мы едим вместе."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros comemos a las dos.",
+        "ru": "Мы едим в два часа.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros coméis bien.",
+        "ru": "Вы хорошо едите."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros coméis poco.",
+        "ru": "Вы мало едите.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos comen en el restaurante.",
+        "ru": "Они едят в ресторане."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas comen ensalada.",
+        "ru": "Они едят салат.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo comí mucho ayer.",
+        "ru": "Я много ел вчера."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo comí una manzana.",
+        "ru": "Я съел яблоко.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú comiste pescado.",
+        "ru": "Ты ел рыбу."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú comiste en mi casa.",
+        "ru": "Ты ел у меня дома.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él comió pasta.",
+        "ru": "Он ел пасту."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella comió una sopa.",
+        "ru": "Она ела суп.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros comimos en el jardín.",
+        "ru": "Мы ели в саду."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros comimos paella.",
+        "ru": "Мы ели паэлью.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros comisteis en la playa.",
+        "ru": "Вы ели на пляже."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros comisteis tarde.",
+        "ru": "Вы ели поздно.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos comieron pollo.",
+        "ru": "Они ели курицу."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas comieron en mi casa.",
+        "ru": "Они ели у меня дома.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo comeré pronto.",
+        "ru": "Я скоро поем."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo comeré en el restaurante.",
+        "ru": "Я поем в ресторане.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú comerás conmigo.",
+        "ru": "Ты будешь есть со мной."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú comerás más tarde.",
+        "ru": "Ты поешь позже.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él comerá carne.",
+        "ru": "Он будет есть мясо."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella comerá una ensalada.",
+        "ru": "Она съест салат.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros comeremos en casa.",
+        "ru": "Мы будем есть дома."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros comeremos paella mañana.",
+        "ru": "Мы поедим паэлью завтра.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros comeréis con ellos.",
+        "ru": "Вы будете есть с ними."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros comeréis pescado.",
+        "ru": "Вы будете есть рыбу.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos comerán en el jardín.",
+        "ru": "Они будут есть в саду."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas comerán pronto.",
+        "ru": "Они скоро поедят.",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "como",
+        "tu": "comes",
+        "el": "come",
+        "nosotros": "comemos",
+        "vosotros": "coméis",
+        "ellos": "comen"
+      },
+      "indefinido": {
+        "yo": "comí",
+        "tu": "comiste",
+        "el": "comió",
+        "nosotros": "comimos",
+        "vosotros": "comisteis",
+        "ellos": "comieron"
+      },
+      "futuro": {
+        "yo": "comeré",
+        "tu": "comerás",
+        "el": "comerá",
+        "nosotros": "comeremos",
+        "vosotros": "comeréis",
+        "ellos": "comerán"
+      }
+    }
+  },
+  {
+    "infinitive": "beber",
+    "translation": "пить",
+    "group": "er",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo bebo agua.",
+        "ru": "Я пью воду."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú bebes café.",
+        "ru": "Ты пьёшь кофе."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él bebe vino.",
+        "ru": "Он пьёт вино."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros bebemos cerveza.",
+        "ru": "Мы пьём пиво."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros bebéis té.",
+        "ru": "Вы пьёте чай."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos beben zumo.",
+        "ru": "Они пьют сок."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo bebí agua.",
+        "ru": "Я выпил воды."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú bebiste mucho.",
+        "ru": "Ты много пил."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él bebió un café.",
+        "ru": "Он выпил кофе."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros bebimos vino.",
+        "ru": "Мы пили вино."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros bebisteis cerveza.",
+        "ru": "Вы пили пиво."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos bebieron champán.",
+        "ru": "Они пили шампанское."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo beberé agua.",
+        "ru": "Я буду пить воду."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú beberás un té.",
+        "ru": "Ты выпьешь чай."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él beberá zumo.",
+        "ru": "Он будет пить сок."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros beberemos café.",
+        "ru": "Мы будем пить кофе."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros beberéis vino.",
+        "ru": "Вы будете пить вино."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos beberán cerveza.",
+        "ru": "Они будут пить пиво."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "bebo",
+        "tu": "bebes",
+        "el": "bebe",
+        "nosotros": "bebemos",
+        "vosotros": "bebéis",
+        "ellos": "beben"
+      },
+      "indefinido": {
+        "yo": "bebí",
+        "tu": "bebiste",
+        "el": "bebió",
+        "nosotros": "bebimos",
+        "vosotros": "bebisteis",
+        "ellos": "bebieron"
+      },
+      "futuro": {
+        "yo": "beberé",
+        "tu": "beberás",
+        "el": "beberá",
+        "nosotros": "beberemos",
+        "vosotros": "beberéis",
+        "ellos": "beberán"
+      }
+    }
+  },
+  {
+    "infinitive": "comprender",
+    "translation": "понимать",
+    "group": "er",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo comprendo la pregunta.",
+        "ru": "Я понимаю вопрос."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú comprendes el problema.",
+        "ru": "Ты понимаешь проблему."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él comprende el español.",
+        "ru": "Он понимает испанский."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros comprendemos todo.",
+        "ru": "Мы всё понимаем."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros comprendéis bien.",
+        "ru": "Вы хорошо понимаете."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos comprenden la situación.",
+        "ru": "Они понимают ситуацию."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo comprendí la lección.",
+        "ru": "Я понял урок."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú comprendiste todo.",
+        "ru": "Ты всё понял."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él comprendió la respuesta.",
+        "ru": "Он понял ответ."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros comprendimos al profesor.",
+        "ru": "Мы поняли учителя."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros comprendisteis poco.",
+        "ru": "Вы мало поняли."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos comprendieron la noticia.",
+        "ru": "Они поняли новость."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo comprenderé pronto.",
+        "ru": "Я скоро пойму."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú comprenderás mañana.",
+        "ru": "Ты поймёшь завтра."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él comprenderá el texto.",
+        "ru": "Он поймёт текст."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros comprenderemos todo.",
+        "ru": "Мы всё поймём."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros comprenderéis después.",
+        "ru": "Вы поймёте потом."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos comprenderán la verdad.",
+        "ru": "Они поймут правду."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "comprendo",
+        "tu": "comprendes",
+        "el": "comprende",
+        "nosotros": "comprendemos",
+        "vosotros": "comprendéis",
+        "ellos": "comprenden"
+      },
+      "indefinido": {
+        "yo": "comprendí",
+        "tu": "comprendiste",
+        "el": "comprendió",
+        "nosotros": "comprendimos",
+        "vosotros": "comprendisteis",
+        "ellos": "comprendieron"
+      },
+      "futuro": {
+        "yo": "comprenderé",
+        "tu": "comprenderás",
+        "el": "comprenderá",
+        "nosotros": "comprenderemos",
+        "vosotros": "comprenderéis",
+        "ellos": "comprenderán"
+      }
+    }
+  },
+  {
+    "infinitive": "leer",
+    "translation": "читать",
+    "group": "er",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo leo un libro.",
+        "ru": "Я читаю книгу."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú lees el periódico.",
+        "ru": "Ты читаешь газету."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él lee mucho.",
+        "ru": "Он много читает."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros leemos en clase.",
+        "ru": "Мы читаем в классе."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros leéis poesía.",
+        "ru": "Вы читаете стихи."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos leen novelas.",
+        "ru": "Они читают романы."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo leí ese libro.",
+        "ru": "Я читал эту книгу."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú leíste la carta.",
+        "ru": "Ты прочитал письмо."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él leyó la noticia.",
+        "ru": "Он прочитал новость."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros leímos juntos.",
+        "ru": "Мы читали вместе."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros leísteis el poema.",
+        "ru": "Вы прочитали стихотворение."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos leyeron mucho.",
+        "ru": "Они много читали."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo leeré ese libro.",
+        "ru": "Я прочитаю эту книгу."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú leerás mañana.",
+        "ru": "Ты будешь читать завтра."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él leerá la novela.",
+        "ru": "Он прочитает роман."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros leeremos en casa.",
+        "ru": "Мы будем читать дома."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros leeréis el artículo.",
+        "ru": "Вы прочитаете статью."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos leerán el cuento.",
+        "ru": "Они прочитают рассказ."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "leo",
+        "tu": "lees",
+        "el": "lee",
+        "nosotros": "leemos",
+        "vosotros": "leéis",
+        "ellos": "leen"
+      },
+      "indefinido": {
+        "yo": "leí",
+        "tu": "leíste",
+        "el": "leyó",
+        "nosotros": "leímos",
+        "vosotros": "leísteis",
+        "ellos": "leyeron"
+      },
+      "futuro": {
+        "yo": "leeré",
+        "tu": "leerás",
+        "el": "leerá",
+        "nosotros": "leeremos",
+        "vosotros": "leeréis",
+        "ellos": "leerán"
+      }
+    }
+  },
+  {
+    "infinitive": "aprender",
+    "translation": "учить, изучать",
+    "group": "er",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo aprendo español.",
+        "ru": "Я учу испанский."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú aprendes rápido.",
+        "ru": "Ты быстро учишься."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él aprende inglés.",
+        "ru": "Он учит английский."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros aprendemos mucho.",
+        "ru": "Мы много учим."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros aprendéis francés.",
+        "ru": "Вы учите французский."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos aprenden a leer.",
+        "ru": "Они учатся читать."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo aprendí la lección.",
+        "ru": "Я выучил урок."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú aprendiste a nadar.",
+        "ru": "Ты научился плавать."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él aprendió mucho.",
+        "ru": "Он много выучил."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros aprendimos juntos.",
+        "ru": "Мы учились вместе."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros aprendisteis pronto.",
+        "ru": "Вы быстро выучили."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos aprendieron a bailar.",
+        "ru": "Они научились танцевать."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo aprenderé a cocinar.",
+        "ru": "Я научусь готовить."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú aprenderás conmigo.",
+        "ru": "Ты будешь учиться со мной."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él aprenderá ruso.",
+        "ru": "Он будет учить русский."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros aprenderemos rápido.",
+        "ru": "Мы быстро научимся."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros aprenderéis a conducir.",
+        "ru": "Вы научитесь водить."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos aprenderán español.",
+        "ru": "Они выучат испанский."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "aprendo",
+        "tu": "aprendes",
+        "el": "aprende",
+        "nosotros": "aprendemos",
+        "vosotros": "aprendéis",
+        "ellos": "aprenden"
+      },
+      "indefinido": {
+        "yo": "aprendí",
+        "tu": "aprendiste",
+        "el": "aprendió",
+        "nosotros": "aprendimos",
+        "vosotros": "aprendisteis",
+        "ellos": "aprendieron"
+      },
+      "futuro": {
+        "yo": "aprenderé",
+        "tu": "aprenderás",
+        "el": "aprenderá",
+        "nosotros": "aprenderemos",
+        "vosotros": "aprenderéis",
+        "ellos": "aprenderán"
+      }
+    }
+  },
+  {
+    "infinitive": "vivir",
+    "translation": "жить",
+    "group": "ir",
+    "irregular": false,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo vivo en Madrid.",
+        "ru": "Я живу в Мадриде."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo vivo solo.",
+        "ru": "Я живу один.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú vives en España.",
+        "ru": "Ты живёшь в Испании."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú vives con tus padres.",
+        "ru": "Ты живёшь с родителями.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él vive en una ciudad grande.",
+        "ru": "Он живёт в большом городе."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella vive cerca de aquí.",
+        "ru": "Она живёт рядом отсюда.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros vivimos juntos.",
+        "ru": "Мы живём вместе."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros vivimos en el centro.",
+        "ru": "Мы живём в центре.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros vivís bien.",
+        "ru": "Вы хорошо живёте."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros vivís en Barcelona.",
+        "ru": "Вы живёте в Барселоне.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos viven en el campo.",
+        "ru": "Они живут в деревне."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas viven en París.",
+        "ru": "Они живут в Париже.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo viví en Roma.",
+        "ru": "Я жил в Риме."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo viví allí dos años.",
+        "ru": "Я прожил там два года.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú viviste en Londres.",
+        "ru": "Ты жил в Лондоне."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú viviste con ellos.",
+        "ru": "Ты жил с ними.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él vivió en el extranjero.",
+        "ru": "Он жил за границей."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella vivió en mi casa.",
+        "ru": "Она жила у меня дома.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros vivimos en Sevilla.",
+        "ru": "Мы жили в Севилье."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros vivimos felices.",
+        "ru": "Мы жили счастливо.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros vivisteis en el sur.",
+        "ru": "Вы жили на юге."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros vivisteis muchos años allí.",
+        "ru": "Вы жили там много лет.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos vivieron en México.",
+        "ru": "Они жили в Мексике."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas vivieron juntas.",
+        "ru": "Они жили вместе.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo viviré en Madrid.",
+        "ru": "Я буду жить в Мадриде."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo viviré cerca del mar.",
+        "ru": "Я буду жить у моря.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú vivirás conmigo.",
+        "ru": "Ты будешь жить со мной."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú vivirás bien.",
+        "ru": "Ты будешь жить хорошо.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él vivirá en el campo.",
+        "ru": "Он будет жить в деревне."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella vivirá sola.",
+        "ru": "Она будет жить одна.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros viviremos en una casa nueva.",
+        "ru": "Мы будем жить в новом доме."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros viviremos juntos.",
+        "ru": "Мы будем жить вместе.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros viviréis cerca de nosotros.",
+        "ru": "Вы будете жить рядом с нами."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros viviréis allí.",
+        "ru": "Вы будете жить там.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos vivirán en otro país.",
+        "ru": "Они будут жить в другой стране."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas vivirán en la ciudad.",
+        "ru": "Они будут жить в городе.",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "vivo",
+        "tu": "vives",
+        "el": "vive",
+        "nosotros": "vivimos",
+        "vosotros": "vivís",
+        "ellos": "viven"
+      },
+      "indefinido": {
+        "yo": "viví",
+        "tu": "viviste",
+        "el": "vivió",
+        "nosotros": "vivimos",
+        "vosotros": "vivisteis",
+        "ellos": "vivieron"
+      },
+      "futuro": {
+        "yo": "viviré",
+        "tu": "vivirás",
+        "el": "vivirá",
+        "nosotros": "viviremos",
+        "vosotros": "viviréis",
+        "ellos": "vivirán"
+      }
+    }
+  },
+  {
+    "infinitive": "escribir",
+    "translation": "писать",
+    "group": "ir",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo escribo una carta.",
+        "ru": "Я пишу письмо."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú escribes un libro.",
+        "ru": "Ты пишешь книгу."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él escribe poemas.",
+        "ru": "Он пишет стихи."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros escribimos en español.",
+        "ru": "Мы пишем по-испански."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros escribís bien.",
+        "ru": "Вы хорошо пишете."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos escriben artículos.",
+        "ru": "Они пишут статьи."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo escribí un correo.",
+        "ru": "Я написал письмо."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú escribiste el mensaje.",
+        "ru": "Ты написал сообщение."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él escribió una novela.",
+        "ru": "Он написал роман."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros escribimos juntos.",
+        "ru": "Мы писали вместе."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros escribisteis la carta.",
+        "ru": "Вы написали письмо."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos escribieron un artículo.",
+        "ru": "Они написали статью."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo escribiré un libro.",
+        "ru": "Я напишу книгу."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú escribirás mañana.",
+        "ru": "Ты будешь писать завтра."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él escribirá un poema.",
+        "ru": "Он напишет стихотворение."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros escribiremos un correo.",
+        "ru": "Мы напишем письмо."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros escribiréis a vuestros padres.",
+        "ru": "Вы напишете своим родителям."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos escribirán un mensaje.",
+        "ru": "Они напишут сообщение."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "escribo",
+        "tu": "escribes",
+        "el": "escribe",
+        "nosotros": "escribimos",
+        "vosotros": "escribís",
+        "ellos": "escriben"
+      },
+      "indefinido": {
+        "yo": "escribí",
+        "tu": "escribiste",
+        "el": "escribió",
+        "nosotros": "escribimos",
+        "vosotros": "escribisteis",
+        "ellos": "escribieron"
+      },
+      "futuro": {
+        "yo": "escribiré",
+        "tu": "escribirás",
+        "el": "escribirá",
+        "nosotros": "escribiremos",
+        "vosotros": "escribiréis",
+        "ellos": "escribirán"
+      }
+    }
+  },
+  {
+    "infinitive": "abrir",
+    "translation": "открывать",
+    "group": "ir",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo abro la puerta.",
+        "ru": "Я открываю дверь."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú abres la ventana.",
+        "ru": "Ты открываешь окно."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él abre el libro.",
+        "ru": "Он открывает книгу."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros abrimos la tienda.",
+        "ru": "Мы открываем магазин."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros abrís la caja.",
+        "ru": "Вы открываете коробку."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos abren el restaurante.",
+        "ru": "Они открывают ресторан."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo abrí la puerta.",
+        "ru": "Я открыл дверь."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú abriste la carta.",
+        "ru": "Ты открыл письмо."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él abrió la botella.",
+        "ru": "Он открыл бутылку."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros abrimos la tienda ayer.",
+        "ru": "Мы открыли магазин вчера."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros abristeis el regalo.",
+        "ru": "Вы открыли подарок."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos abrieron las ventanas.",
+        "ru": "Они открыли окна."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo abriré la puerta.",
+        "ru": "Я открою дверь."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú abrirás el regalo mañana.",
+        "ru": "Ты откроешь подарок завтра."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él abrirá una tienda.",
+        "ru": "Он откроет магазин."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros abriremos la ventana.",
+        "ru": "Мы откроем окно."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros abriréis el sobre.",
+        "ru": "Вы откроете конверт."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos abrirán un restaurante.",
+        "ru": "Они откроют ресторан."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "abro",
+        "tu": "abres",
+        "el": "abre",
+        "nosotros": "abrimos",
+        "vosotros": "abrís",
+        "ellos": "abren"
+      },
+      "indefinido": {
+        "yo": "abrí",
+        "tu": "abriste",
+        "el": "abrió",
+        "nosotros": "abrimos",
+        "vosotros": "abristeis",
+        "ellos": "abrieron"
+      },
+      "futuro": {
+        "yo": "abriré",
+        "tu": "abrirás",
+        "el": "abrirá",
+        "nosotros": "abriremos",
+        "vosotros": "abriréis",
+        "ellos": "abrirán"
+      }
+    }
+  },
+  {
+    "infinitive": "recibir",
+    "translation": "получать",
+    "group": "ir",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo recibo un regalo.",
+        "ru": "Я получаю подарок."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú recibes una carta.",
+        "ru": "Ты получаешь письмо."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él recibe el paquete.",
+        "ru": "Он получает посылку."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros recibimos noticias.",
+        "ru": "Мы получаем новости."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros recibís el dinero.",
+        "ru": "Вы получаете деньги."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos reciben muchos correos.",
+        "ru": "Они получают много писем."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo recibí tu mensaje.",
+        "ru": "Я получил твоё сообщение."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú recibiste el regalo.",
+        "ru": "Ты получил подарок."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él recibió la noticia.",
+        "ru": "Он получил новость."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros recibimos el premio.",
+        "ru": "Мы получили награду."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros recibisteis la invitación.",
+        "ru": "Вы получили приглашение."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos recibieron una carta.",
+        "ru": "Они получили письмо."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo recibiré la respuesta.",
+        "ru": "Я получу ответ."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú recibirás un regalo.",
+        "ru": "Ты получишь подарок."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él recibirá el paquete mañana.",
+        "ru": "Он получит посылку завтра."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros recibiremos la información.",
+        "ru": "Мы получим информацию."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros recibiréis las noticias.",
+        "ru": "Вы получите новости."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos recibirán el premio.",
+        "ru": "Они получат награду."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "recibo",
+        "tu": "recibes",
+        "el": "recibe",
+        "nosotros": "recibimos",
+        "vosotros": "recibís",
+        "ellos": "reciben"
+      },
+      "indefinido": {
+        "yo": "recibí",
+        "tu": "recibiste",
+        "el": "recibió",
+        "nosotros": "recibimos",
+        "vosotros": "recibisteis",
+        "ellos": "recibieron"
+      },
+      "futuro": {
+        "yo": "recibiré",
+        "tu": "recibirás",
+        "el": "recibirá",
+        "nosotros": "recibiremos",
+        "vosotros": "recibiréis",
+        "ellos": "recibirán"
+      }
+    }
+  },
+  {
+    "infinitive": "subir",
+    "translation": "подниматься",
+    "group": "ir",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo subo las escaleras.",
+        "ru": "Я поднимаюсь по лестнице."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú subes al tren.",
+        "ru": "Ты садишься в поезд."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él sube a la montaña.",
+        "ru": "Он поднимается на гору."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros subimos al coche.",
+        "ru": "Мы садимся в машину."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros subís rápido.",
+        "ru": "Вы быстро поднимаетесь."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos suben al avión.",
+        "ru": "Они садятся в самолёт."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo subí al primer piso.",
+        "ru": "Я поднялся на первый этаж."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú subiste al autobús.",
+        "ru": "Ты сел в автобус."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él subió a la torre.",
+        "ru": "Он поднялся на башню."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros subimos juntos.",
+        "ru": "Мы поднялись вместе."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros subisteis al barco.",
+        "ru": "Вы сели на корабль."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos subieron al monte.",
+        "ru": "Они поднялись на гору."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo subiré al tren.",
+        "ru": "Я сяду в поезд."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú subirás al taxi.",
+        "ru": "Ты сядешь в такси."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él subirá las escaleras.",
+        "ru": "Он поднимется по лестнице."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros subiremos al avión.",
+        "ru": "Мы сядем в самолёт."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros subiréis pronto.",
+        "ru": "Вы скоро поднимитесь."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos subirán al barco.",
+        "ru": "Они сядут на корабль."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "subo",
+        "tu": "subes",
+        "el": "sube",
+        "nosotros": "subimos",
+        "vosotros": "subís",
+        "ellos": "suben"
+      },
+      "indefinido": {
+        "yo": "subí",
+        "tu": "subiste",
+        "el": "subió",
+        "nosotros": "subimos",
+        "vosotros": "subisteis",
+        "ellos": "subieron"
+      },
+      "futuro": {
+        "yo": "subiré",
+        "tu": "subirás",
+        "el": "subirá",
+        "nosotros": "subiremos",
+        "vosotros": "subiréis",
+        "ellos": "subirán"
+      }
+    }
+  },
+  {
+    "infinitive": "ser",
+    "translation": "быть (постоянное качество)",
+    "group": "er",
+    "irregular": true,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo soy ruso.",
+        "ru": "Я русский."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo soy estudiante.",
+        "ru": "Я студент.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú eres mi amigo.",
+        "ru": "Ты мой друг."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú eres alto.",
+        "ru": "Ты высокий.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él es médico.",
+        "ru": "Он врач."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella es española.",
+        "ru": "Она испанка.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros somos hermanos.",
+        "ru": "Мы братья."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros somos jóvenes.",
+        "ru": "Мы молодые.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros sois amigos.",
+        "ru": "Вы друзья."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros sois inteligentes.",
+        "ru": "Вы умные.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos son profesores.",
+        "ru": "Они учителя."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas son simpáticas.",
+        "ru": "Они симпатичные.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo fui niño feliz.",
+        "ru": "Я был счастливым ребёнком."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo fui actor.",
+        "ru": "Я был актёром.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú fuiste mi profesor.",
+        "ru": "Ты был моим учителем."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú fuiste muy amable.",
+        "ru": "Ты был очень добрым.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él fue presidente.",
+        "ru": "Он был президентом."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella fue cantante.",
+        "ru": "Она была певицей.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros fuimos compañeros.",
+        "ru": "Мы были товарищами."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros fuimos felices.",
+        "ru": "Мы были счастливы.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros fuisteis estudiantes.",
+        "ru": "Вы были студентами."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros fuisteis muy buenos.",
+        "ru": "Вы были очень хорошими.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos fueron mis vecinos.",
+        "ru": "Они были моими соседями."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas fueron amigas.",
+        "ru": "Они были подругами.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo seré médico.",
+        "ru": "Я буду врачом."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo seré feliz.",
+        "ru": "Я буду счастлив.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú serás un buen padre.",
+        "ru": "Ты будешь хорошим отцом."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú serás famoso.",
+        "ru": "Ты будешь знаменитым.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él será arquitecto.",
+        "ru": "Он будет архитектором."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella será profesora.",
+        "ru": "Она будет учительницей.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros seremos amigos para siempre.",
+        "ru": "Мы будем друзьями навсегда."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros seremos ricos.",
+        "ru": "Мы будем богатыми.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros seréis padres pronto.",
+        "ru": "Вы скоро станете родителями."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros seréis los mejores.",
+        "ru": "Вы будете лучшими.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos serán médicos.",
+        "ru": "Они будут врачами."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas serán famosas.",
+        "ru": "Они будут знаменитыми.",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "soy",
+        "tu": "eres",
+        "el": "es",
+        "nosotros": "somos",
+        "vosotros": "sois",
+        "ellos": "son"
+      },
+      "indefinido": {
+        "yo": "fui",
+        "tu": "fuiste",
+        "el": "fue",
+        "nosotros": "fuimos",
+        "vosotros": "fuisteis",
+        "ellos": "fueron"
+      },
+      "futuro": {
+        "yo": "seré",
+        "tu": "serás",
+        "el": "será",
+        "nosotros": "seremos",
+        "vosotros": "seréis",
+        "ellos": "serán"
+      }
+    }
+  },
+  {
+    "infinitive": "estar",
+    "translation": "быть, находиться (состояние)",
+    "group": "ar",
+    "irregular": true,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo estoy en casa.",
+        "ru": "Я дома."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo estoy cansado.",
+        "ru": "Я устал.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú estás en Madrid.",
+        "ru": "Ты в Мадриде."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú estás contento.",
+        "ru": "Ты доволен.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él está enfermo.",
+        "ru": "Он болен."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella está triste.",
+        "ru": "Она грустит.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros estamos en el parque.",
+        "ru": "Мы в парке."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros estamos felices.",
+        "ru": "Мы счастливы.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros estáis en clase.",
+        "ru": "Вы в классе."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros estáis listos.",
+        "ru": "Вы готовы.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos están en la playa.",
+        "ru": "Они на пляже."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas están aquí.",
+        "ru": "Они здесь.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo estuve en Roma.",
+        "ru": "Я был в Риме."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo estuve enfermo.",
+        "ru": "Я был болен.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú estuviste con María.",
+        "ru": "Ты был с Марией."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú estuviste en mi casa.",
+        "ru": "Ты был у меня дома.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él estuvo en el hospital.",
+        "ru": "Он был в больнице."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella estuvo triste.",
+        "ru": "Она была грустной.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros estuvimos juntos.",
+        "ru": "Мы были вместе."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros estuvimos en la playa.",
+        "ru": "Мы были на пляже.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros estuvisteis en París.",
+        "ru": "Вы были в Париже."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros estuvisteis allí ayer.",
+        "ru": "Вы были там вчера.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos estuvieron en la fiesta.",
+        "ru": "Они были на празднике."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas estuvieron en mi casa.",
+        "ru": "Они были у меня дома.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo estaré en casa mañana.",
+        "ru": "Я буду дома завтра."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo estaré allí pronto.",
+        "ru": "Я скоро буду там.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú estarás conmigo.",
+        "ru": "Ты будешь со мной."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú estarás contento.",
+        "ru": "Ты будешь доволен.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él estará en la oficina.",
+        "ru": "Он будет в офисе."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella estará lista.",
+        "ru": "Она будет готова.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros estaremos en el restaurante.",
+        "ru": "Мы будем в ресторане."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros estaremos felices.",
+        "ru": "Мы будем счастливы.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros estaréis aquí.",
+        "ru": "Вы будете здесь."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros estaréis cansados.",
+        "ru": "Вы будете уставшими.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos estarán en Madrid.",
+        "ru": "Они будут в Мадриде."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas estarán contentas.",
+        "ru": "Они будут довольны.",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "estoy",
+        "tu": "estás",
+        "el": "está",
+        "nosotros": "estamos",
+        "vosotros": "estáis",
+        "ellos": "están"
+      },
+      "indefinido": {
+        "yo": "estuve",
+        "tu": "estuviste",
+        "el": "estuvo",
+        "nosotros": "estuvimos",
+        "vosotros": "estuvisteis",
+        "ellos": "estuvieron"
+      },
+      "futuro": {
+        "yo": "estaré",
+        "tu": "estarás",
+        "el": "estará",
+        "nosotros": "estaremos",
+        "vosotros": "estaréis",
+        "ellos": "estarán"
+      }
+    }
+  },
+  {
+    "infinitive": "ir",
+    "translation": "идти, ехать",
+    "group": "ir",
+    "irregular": true,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo voy al trabajo.",
+        "ru": "Я иду на работу."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo voy a casa.",
+        "ru": "Я иду домой.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú vas al cine.",
+        "ru": "Ты идёшь в кино."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú vas conmigo.",
+        "ru": "Ты идёшь со мной.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él va al colegio.",
+        "ru": "Он идёт в школу."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella va al mercado.",
+        "ru": "Она идёт на рынок.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros vamos al parque.",
+        "ru": "Мы идём в парк."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros vamos a la playa.",
+        "ru": "Мы едем на пляж.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros vais a clase.",
+        "ru": "Вы идёте на занятия."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros vais a Madrid.",
+        "ru": "Вы едете в Мадрид.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos van al restaurante.",
+        "ru": "Они идут в ресторан."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas van al museo.",
+        "ru": "Они идут в музей.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo fui al cine ayer.",
+        "ru": "Я ходил в кино вчера."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo fui a España.",
+        "ru": "Я ездил в Испанию.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú fuiste al médico.",
+        "ru": "Ты ходил к врачу."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú fuiste a la fiesta.",
+        "ru": "Ты ходил на праздник.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él fue a Barcelona.",
+        "ru": "Он ездил в Барселону."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella fue al teatro.",
+        "ru": "Она ходила в театр.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros fuimos al museo.",
+        "ru": "Мы ходили в музей."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros fuimos juntos.",
+        "ru": "Мы ходили вместе.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros fuisteis a la playa.",
+        "ru": "Вы ездили на пляж."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros fuisteis a París.",
+        "ru": "Вы ездили в Париж.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos fueron al concierto.",
+        "ru": "Они ходили на концерт."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas fueron al parque.",
+        "ru": "Они ходили в парк.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo iré a Madrid.",
+        "ru": "Я поеду в Мадрид."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo iré contigo.",
+        "ru": "Я пойду с тобой.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú irás al trabajo.",
+        "ru": "Ты пойдёшь на работу."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú irás a la fiesta.",
+        "ru": "Ты пойдёшь на праздник.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él irá al colegio.",
+        "ru": "Он пойдёт в школу."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella irá a Sevilla.",
+        "ru": "Она поедет в Севилью.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros iremos a la playa.",
+        "ru": "Мы поедем на пляж."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros iremos juntos.",
+        "ru": "Мы пойдём вместе.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros iréis al cine.",
+        "ru": "Вы пойдёте в кино."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros iréis a Roma.",
+        "ru": "Вы поедете в Рим.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos irán al hospital.",
+        "ru": "Они пойдут в больницу."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas irán al concierto.",
+        "ru": "Они пойдут на концерт.",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "voy",
+        "tu": "vas",
+        "el": "va",
+        "nosotros": "vamos",
+        "vosotros": "vais",
+        "ellos": "van"
+      },
+      "indefinido": {
+        "yo": "fui",
+        "tu": "fuiste",
+        "el": "fue",
+        "nosotros": "fuimos",
+        "vosotros": "fuisteis",
+        "ellos": "fueron"
+      },
+      "futuro": {
+        "yo": "iré",
+        "tu": "irás",
+        "el": "irá",
+        "nosotros": "iremos",
+        "vosotros": "iréis",
+        "ellos": "irán"
+      }
+    }
+  },
+  {
+    "infinitive": "tener",
+    "translation": "иметь",
+    "group": "er",
+    "irregular": true,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo tengo un coche.",
+        "ru": "У меня есть машина."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo tengo hambre.",
+        "ru": "Я голоден.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú tienes razón.",
+        "ru": "Ты прав."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú tienes dos hermanos.",
+        "ru": "У тебя два брата.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él tiene treinta años.",
+        "ru": "Ему тридцать лет."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella tiene un perro.",
+        "ru": "У неё есть собака.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros tenemos tiempo.",
+        "ru": "У нас есть время."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros tenemos una casa grande.",
+        "ru": "У нас большой дом.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros tenéis frío.",
+        "ru": "Вам холодно."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros tenéis muchos libros.",
+        "ru": "У вас много книг.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos tienen hijos.",
+        "ru": "У них есть дети."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas tienen miedo.",
+        "ru": "Они боятся.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo tuve un sueño.",
+        "ru": "У меня был сон."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo tuve suerte.",
+        "ru": "Мне повезло.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú tuviste razón.",
+        "ru": "Ты был прав."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú tuviste un accidente.",
+        "ru": "У тебя была авария.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él tuvo un problema.",
+        "ru": "У него была проблема."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella tuvo una idea.",
+        "ru": "У неё появилась идея.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros tuvimos suerte.",
+        "ru": "Нам повезло."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros tuvimos una fiesta.",
+        "ru": "У нас был праздник.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros tuvisteis un examen.",
+        "ru": "У вас был экзамен."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros tuvisteis vacaciones.",
+        "ru": "У вас были каникулы.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos tuvieron un hijo.",
+        "ru": "У них родился сын."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas tuvieron éxito.",
+        "ru": "Они добились успеха.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo tendré tiempo mañana.",
+        "ru": "У меня будет время завтра."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo tendré una casa grande.",
+        "ru": "У меня будет большой дом.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú tendrás suerte.",
+        "ru": "Тебе повезёт."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú tendrás un buen trabajo.",
+        "ru": "У тебя будет хорошая работа.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él tendrá un coche nuevo.",
+        "ru": "У него будет новая машина."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella tendrá un bebé.",
+        "ru": "У неё будет ребёнок.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros tendremos vacaciones.",
+        "ru": "У нас будут каникулы."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros tendremos una fiesta.",
+        "ru": "У нас будет праздник.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros tendréis tiempo.",
+        "ru": "У вас будет время."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros tendréis hijos.",
+        "ru": "У вас будут дети.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos tendrán éxito.",
+        "ru": "Они добьются успеха."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas tendrán dinero.",
+        "ru": "У них будут деньги.",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "tengo",
+        "tu": "tienes",
+        "el": "tiene",
+        "nosotros": "tenemos",
+        "vosotros": "tenéis",
+        "ellos": "tienen"
+      },
+      "indefinido": {
+        "yo": "tuve",
+        "tu": "tuviste",
+        "el": "tuvo",
+        "nosotros": "tuvimos",
+        "vosotros": "tuvisteis",
+        "ellos": "tuvieron"
+      },
+      "futuro": {
+        "yo": "tendré",
+        "tu": "tendrás",
+        "el": "tendrá",
+        "nosotros": "tendremos",
+        "vosotros": "tendréis",
+        "ellos": "tendrán"
+      }
+    }
+  },
+  {
+    "infinitive": "hacer",
+    "translation": "делать",
+    "group": "er",
+    "irregular": true,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo hago la cena.",
+        "ru": "Я готовлю ужин."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú haces los deberes.",
+        "ru": "Ты делаешь домашнее задание."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él hace deporte.",
+        "ru": "Он занимается спортом."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros hacemos un viaje.",
+        "ru": "Мы совершаем путешествие."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros hacéis ruido.",
+        "ru": "Вы шумите."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos hacen una fiesta.",
+        "ru": "Они устраивают праздник."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo hice la comida.",
+        "ru": "Я приготовил еду."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú hiciste el trabajo.",
+        "ru": "Ты сделал работу."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él hizo un pastel.",
+        "ru": "Он приготовил пирог."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros hicimos un viaje.",
+        "ru": "Мы совершили путешествие."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros hicisteis los deberes.",
+        "ru": "Вы сделали домашнее задание."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos hicieron una película.",
+        "ru": "Они сняли фильм."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo haré la cena.",
+        "ru": "Я приготовлю ужин."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú harás los deberes.",
+        "ru": "Ты сделаешь домашнее задание."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él hará un viaje.",
+        "ru": "Он совершит путешествие."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros haremos una fiesta.",
+        "ru": "Мы устроим праздник."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros haréis el trabajo.",
+        "ru": "Вы сделаете работу."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos harán un proyecto.",
+        "ru": "Они сделают проект."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "hago",
+        "tu": "haces",
+        "el": "hace",
+        "nosotros": "hacemos",
+        "vosotros": "hacéis",
+        "ellos": "hacen"
+      },
+      "indefinido": {
+        "yo": "hice",
+        "tu": "hiciste",
+        "el": "hizo",
+        "nosotros": "hicimos",
+        "vosotros": "hicisteis",
+        "ellos": "hicieron"
+      },
+      "futuro": {
+        "yo": "haré",
+        "tu": "harás",
+        "el": "hará",
+        "nosotros": "haremos",
+        "vosotros": "haréis",
+        "ellos": "harán"
+      }
+    }
+  },
+  {
+    "infinitive": "entender",
+    "translation": "понимать",
+    "group": "er",
+    "irregular": true,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo entiendo el español.",
+        "ru": "Я понимаю испанский."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú entiendes la pregunta.",
+        "ru": "Ты понимаешь вопрос."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él entiende todo.",
+        "ru": "Он всё понимает."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros entendemos al profesor.",
+        "ru": "Мы понимаем учителя."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros entendéis bien.",
+        "ru": "Вы хорошо понимаете."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos entienden el problema.",
+        "ru": "Они понимают проблему."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo entendí la lección.",
+        "ru": "Я понял урок."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú entendiste la respuesta.",
+        "ru": "Ты понял ответ."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él entendió la pregunta.",
+        "ru": "Он понял вопрос."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros entendimos todo.",
+        "ru": "Мы всё поняли."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros entendisteis poco.",
+        "ru": "Вы мало поняли."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos entendieron la noticia.",
+        "ru": "Они поняли новость."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo entenderé pronto.",
+        "ru": "Я скоро пойму."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú entenderás mañana.",
+        "ru": "Ты поймёшь завтра."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él entenderá el texto.",
+        "ru": "Он поймёт текст."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros entenderemos después.",
+        "ru": "Мы поймём потом."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros entenderéis la lección.",
+        "ru": "Вы поймёте урок."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos entenderán la verdad.",
+        "ru": "Они поймут правду."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "entiendo",
+        "tu": "entiendes",
+        "el": "entiende",
+        "nosotros": "entendemos",
+        "vosotros": "entendéis",
+        "ellos": "entienden"
+      },
+      "indefinido": {
+        "yo": "entendí",
+        "tu": "entendiste",
+        "el": "entendió",
+        "nosotros": "entendimos",
+        "vosotros": "entendisteis",
+        "ellos": "entendieron"
+      },
+      "futuro": {
+        "yo": "entenderé",
+        "tu": "entenderás",
+        "el": "entenderá",
+        "nosotros": "entenderemos",
+        "vosotros": "entenderéis",
+        "ellos": "entenderán"
+      }
+    }
+  },
+  {
+    "infinitive": "conocer",
+    "translation": "знать (быть знакомым), узнавать",
+    "group": "er",
+    "irregular": true,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo conozco a María.",
+        "ru": "Я знаком с Марией."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú conoces la ciudad.",
+        "ru": "Ты знаешь этот город."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él conoce a mi hermano.",
+        "ru": "Он знает моего брата."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros conocemos Madrid.",
+        "ru": "Мы знаем Мадрид."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros conocéis el restaurante.",
+        "ru": "Вы знаете этот ресторан."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos conocen el camino.",
+        "ru": "Они знают дорогу."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo conocí a Juan ayer.",
+        "ru": "Я познакомился с Хуаном вчера."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú conociste a mi madre.",
+        "ru": "Ты познакомился с моей матерью."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él conoció a su esposa en París.",
+        "ru": "Он познакомился со своей женой в Париже."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros conocimos la verdad.",
+        "ru": "Мы узнали правду."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros conocisteis a mis amigos.",
+        "ru": "Вы познакомились с моими друзьями."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos conocieron al profesor.",
+        "ru": "Они познакомились с учителем."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo conoceré a tus padres.",
+        "ru": "Я познакомлюсь с твоими родителями."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú conocerás la ciudad mañana.",
+        "ru": "Ты узнаешь этот город завтра."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él conocerá a mi familia.",
+        "ru": "Он познакомится с моей семьёй."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros conoceremos al director.",
+        "ru": "Мы познакомимся с директором."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros conoceréis muchas cosas.",
+        "ru": "Вы узнаете много вещей."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos conocerán la respuesta.",
+        "ru": "Они узнают ответ."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "conozco",
+        "tu": "conoces",
+        "el": "conoce",
+        "nosotros": "conocemos",
+        "vosotros": "conocéis",
+        "ellos": "conocen"
+      },
+      "indefinido": {
+        "yo": "conocí",
+        "tu": "conociste",
+        "el": "conoció",
+        "nosotros": "conocimos",
+        "vosotros": "conocisteis",
+        "ellos": "conocieron"
+      },
+      "futuro": {
+        "yo": "conoceré",
+        "tu": "conocerás",
+        "el": "conocerá",
+        "nosotros": "conoceremos",
+        "vosotros": "conoceréis",
+        "ellos": "conocerán"
+      }
+    }
+  },
+  {
+    "infinitive": "decir",
+    "translation": "сказать, говорить (передавать слова)",
+    "group": "ir",
+    "irregular": true,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo digo la verdad.",
+        "ru": "Я говорю правду."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo digo que sí.",
+        "ru": "Я говорю «да».",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú dices muchas cosas.",
+        "ru": "Ты говоришь много всего."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú dices la verdad.",
+        "ru": "Ты говоришь правду.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él dice que viene.",
+        "ru": "Он говорит, что придёт."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella dice algo importante.",
+        "ru": "Она говорит что-то важное.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros decimos la verdad.",
+        "ru": "Мы говорим правду."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros decimos que sí.",
+        "ru": "Мы говорим «да».",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros decís cosas raras.",
+        "ru": "Вы говорите странные вещи."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros decís la respuesta.",
+        "ru": "Вы говорите ответ.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos dicen que es tarde.",
+        "ru": "Они говорят, что поздно."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas dicen muchas cosas.",
+        "ru": "Они говорят много всего.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo dije la verdad.",
+        "ru": "Я сказал правду."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo dije que no.",
+        "ru": "Я сказал «нет».",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú dijiste algo bonito.",
+        "ru": "Ты сказал что-то хорошее."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú dijiste la respuesta.",
+        "ru": "Ты сказал ответ.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él dijo que sí.",
+        "ru": "Он сказал «да»."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella dijo la verdad.",
+        "ru": "Она сказала правду.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros dijimos adiós.",
+        "ru": "Мы сказали «до свидания»."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros dijimos la verdad.",
+        "ru": "Мы сказали правду.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros dijisteis muchas cosas.",
+        "ru": "Вы сказали много всего."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros dijisteis la respuesta.",
+        "ru": "Вы сказали ответ.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos dijeron la verdad.",
+        "ru": "Они сказали правду."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas dijeron que no.",
+        "ru": "Они сказали «нет».",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo diré la verdad.",
+        "ru": "Я скажу правду."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo diré que sí.",
+        "ru": "Я скажу «да».",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú dirás la respuesta.",
+        "ru": "Ты скажешь ответ."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú dirás algo importante.",
+        "ru": "Ты скажешь что-то важное.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él dirá que sí.",
+        "ru": "Он скажет «да»."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella dirá la verdad.",
+        "ru": "Она скажет правду.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros diremos adiós.",
+        "ru": "Мы скажем «до свидания»."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros diremos lo que pensamos.",
+        "ru": "Мы скажем то, что думаем.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros diréis la verdad.",
+        "ru": "Вы скажете правду."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros diréis muchas cosas.",
+        "ru": "Вы скажете много всего.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos dirán la respuesta.",
+        "ru": "Они скажут ответ."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas dirán que no.",
+        "ru": "Они скажут «нет».",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "digo",
+        "tu": "dices",
+        "el": "dice",
+        "nosotros": "decimos",
+        "vosotros": "decís",
+        "ellos": "dicen"
+      },
+      "indefinido": {
+        "yo": "dije",
+        "tu": "dijiste",
+        "el": "dijo",
+        "nosotros": "dijimos",
+        "vosotros": "dijisteis",
+        "ellos": "dijeron"
+      },
+      "futuro": {
+        "yo": "diré",
+        "tu": "dirás",
+        "el": "dirá",
+        "nosotros": "diremos",
+        "vosotros": "diréis",
+        "ellos": "dirán"
+      }
+    }
+  },
+  {
+    "infinitive": "poder",
+    "translation": "мочь",
+    "group": "er",
+    "irregular": true,
+    "frequent": true,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo puedo hablar español.",
+        "ru": "Я могу говорить по-испански."
+      },
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo puedo ayudarte.",
+        "ru": "Я могу тебе помочь.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú puedes venir conmigo.",
+        "ru": "Ты можешь пойти со мной."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú puedes hacerlo.",
+        "ru": "Ты можешь это сделать.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él puede trabajar mañana.",
+        "ru": "Он может работать завтра."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Ella puede leer rápido.",
+        "ru": "Она может читать быстро.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros podemos ir juntos.",
+        "ru": "Мы можем пойти вместе."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros podemos ayudar.",
+        "ru": "Мы можем помочь.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros podéis entrar.",
+        "ru": "Вы можете войти."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros podéis esperar aquí.",
+        "ru": "Вы можете подождать здесь.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos pueden venir tarde.",
+        "ru": "Они могут прийти поздно."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellas pueden cantar bien.",
+        "ru": "Они могут хорошо петь.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo pude terminar el trabajo.",
+        "ru": "Я смог закончить работу."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo pude verlo ayer.",
+        "ru": "Я смог его увидеть вчера.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú pudiste hacerlo.",
+        "ru": "Ты смог это сделать."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú pudiste venir.",
+        "ru": "Ты смог прийти.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él pudo abrir la puerta.",
+        "ru": "Он смог открыть дверь."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Ella pudo leer el libro.",
+        "ru": "Она смогла прочитать книгу.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros pudimos llegar a tiempo.",
+        "ru": "Мы смогли прийти вовремя."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros pudimos ayudar.",
+        "ru": "Мы смогли помочь.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros pudisteis ver la película.",
+        "ru": "Вы смогли посмотреть фильм."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros pudisteis hablar con él.",
+        "ru": "Вы смогли поговорить с ним.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos pudieron ganar el partido.",
+        "ru": "Они смогли выиграть матч."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellas pudieron venir a la fiesta.",
+        "ru": "Они смогли прийти на праздник.",
+        "variant": 2
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo podré ir mañana.",
+        "ru": "Я смогу пойти завтра."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo podré ayudarte después.",
+        "ru": "Я смогу тебе помочь потом.",
+        "variant": 2
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú podrás hacerlo solo.",
+        "ru": "Ты сможешь сделать это сам."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú podrás venir el sábado.",
+        "ru": "Ты сможешь прийти в субботу.",
+        "variant": 2
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él podrá hablar contigo.",
+        "ru": "Он сможет с тобой поговорить."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Ella podrá trabajar aquí.",
+        "ru": "Она сможет работать здесь.",
+        "variant": 2
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros podremos viajar en verano.",
+        "ru": "Мы сможем путешествовать летом."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros podremos verte pronto.",
+        "ru": "Мы сможем тебя скоро увидеть.",
+        "variant": 2
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros podréis entrar después.",
+        "ru": "Вы сможете войти потом."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros podréis hacer la pregunta.",
+        "ru": "Вы сможете задать вопрос.",
+        "variant": 2
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos podrán terminar a tiempo.",
+        "ru": "Они смогут закончить вовремя."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellas podrán cantar en el concierto.",
+        "ru": "Они смогут петь на концерте.",
+        "variant": 2
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "puedo",
+        "tu": "puedes",
+        "el": "puede",
+        "nosotros": "podemos",
+        "vosotros": "podéis",
+        "ellos": "pueden"
+      },
+      "indefinido": {
+        "yo": "pude",
+        "tu": "pudiste",
+        "el": "pudo",
+        "nosotros": "pudimos",
+        "vosotros": "pudisteis",
+        "ellos": "pudieron"
+      },
+      "futuro": {
+        "yo": "podré",
+        "tu": "podrás",
+        "el": "podrá",
+        "nosotros": "podremos",
+        "vosotros": "podréis",
+        "ellos": "podrán"
+      }
+    }
+  },
+  {
+    "infinitive": "presentar",
+    "translation": "представлять, знакомить",
+    "group": "ar",
+    "irregular": false,
+    "frequent": false,
+    "sentences": [
+      {
+        "person": "yo",
+        "tense": "presente",
+        "es": "Yo presento a mi amigo.",
+        "ru": "Я представляю своего друга."
+      },
+      {
+        "person": "tu",
+        "tense": "presente",
+        "es": "Tú presentas a tu hermana.",
+        "ru": "Ты представляешь свою сестру."
+      },
+      {
+        "person": "el",
+        "tense": "presente",
+        "es": "Él presenta el proyecto.",
+        "ru": "Он представляет проект."
+      },
+      {
+        "person": "nosotros",
+        "tense": "presente",
+        "es": "Nosotros presentamos la idea.",
+        "ru": "Мы представляем идею."
+      },
+      {
+        "person": "vosotros",
+        "tense": "presente",
+        "es": "Vosotros presentáis a los invitados.",
+        "ru": "Вы представляете гостей."
+      },
+      {
+        "person": "ellos",
+        "tense": "presente",
+        "es": "Ellos presentan el programa.",
+        "ru": "Они представляют программу."
+      },
+      {
+        "person": "yo",
+        "tense": "indefinido",
+        "es": "Yo presenté a mi familia.",
+        "ru": "Я представил свою семью."
+      },
+      {
+        "person": "tu",
+        "tense": "indefinido",
+        "es": "Tú presentaste el informe.",
+        "ru": "Ты представил отчёт."
+      },
+      {
+        "person": "el",
+        "tense": "indefinido",
+        "es": "Él presentó a su novia.",
+        "ru": "Он представил свою девушку."
+      },
+      {
+        "person": "nosotros",
+        "tense": "indefinido",
+        "es": "Nosotros presentamos el proyecto ayer.",
+        "ru": "Мы представили проект вчера."
+      },
+      {
+        "person": "vosotros",
+        "tense": "indefinido",
+        "es": "Vosotros presentasteis la idea.",
+        "ru": "Вы представили идею."
+      },
+      {
+        "person": "ellos",
+        "tense": "indefinido",
+        "es": "Ellos presentaron el plan.",
+        "ru": "Они представили план."
+      },
+      {
+        "person": "yo",
+        "tense": "futuro",
+        "es": "Yo presentaré a mi hermano.",
+        "ru": "Я представлю своего брата."
+      },
+      {
+        "person": "tu",
+        "tense": "futuro",
+        "es": "Tú presentarás el trabajo.",
+        "ru": "Ты представишь работу."
+      },
+      {
+        "person": "el",
+        "tense": "futuro",
+        "es": "Él presentará su libro.",
+        "ru": "Он представит свою книгу."
+      },
+      {
+        "person": "nosotros",
+        "tense": "futuro",
+        "es": "Nosotros presentaremos el proyecto.",
+        "ru": "Мы представим проект."
+      },
+      {
+        "person": "vosotros",
+        "tense": "futuro",
+        "es": "Vosotros presentaréis a los invitados.",
+        "ru": "Вы представите гостей."
+      },
+      {
+        "person": "ellos",
+        "tense": "futuro",
+        "es": "Ellos presentarán la película.",
+        "ru": "Они представят фильм."
+      }
+    ],
+    "forms": {
+      "presente": {
+        "yo": "presento",
+        "tu": "presentas",
+        "el": "presenta",
+        "nosotros": "presentamos",
+        "vosotros": "presentáis",
+        "ellos": "presentan"
+      },
+      "indefinido": {
+        "yo": "presenté",
+        "tu": "presentaste",
+        "el": "presentó",
+        "nosotros": "presentamos",
+        "vosotros": "presentasteis",
+        "ellos": "presentaron"
+      },
+      "futuro": {
+        "yo": "presentaré",
+        "tu": "presentarás",
+        "el": "presentará",
+        "nosotros": "presentaremos",
+        "vosotros": "presentaréis",
+        "ellos": "presentarán"
+      }
+    }
+  }
+];
+
+const PERSON_LABELS = {
+  yo: 'yo',
+  tu: 'tú',
+  el: 'él / ella / usted',
+  nosotros: 'nosotros',
+  vosotros: 'vosotros',
+  ellos: 'ellos / ellas / ustedes'
+};
+
+const TENSE_LABELS = {
+  presente: 'Presente',
+  indefinido: 'Indefinido',
+  futuro: 'Futuro'
+};
+
+// ============================================================
+// СБОР ПЛОСКОГО МАССИВА КАРТОЧЕК
+// ============================================================
+const ALL_CARDS = [];
+VERBS.forEach((verb, vi) => {
+  verb.sentences.forEach((s, si) => {
+    ALL_CARDS.push({
+      id: `${verb.infinitive}_${s.tense}_${s.person}_${s.variant || 1}`,
+      verbIdx: vi,
+      verb: verb.infinitive,
+      verbTranslation: verb.translation,
+      group: verb.group,
+      irregular: verb.irregular,
+      person: s.person,
+      tense: s.tense,
+      es: s.es,
+      ru: s.ru,
+    });
+  });
+});
+
+// ============================================================
+// СОСТОЯНИЕ
+// ============================================================
+const STORAGE_KEY = 'spanish_trainer_v1';
+
+function defaultState() {
+  return {
+    direction: 'ru-es',
+    tense: 'all',
+    group: 'all',
+    mode: 'smart',
+    selectedVerbs: VERBS.map(v => v.infinitive), // все по умолчанию
+    cardStats: {}, // id -> { right: n, wrong: n, lastSeen: idx }
+    sessionCorrect: 0,
+    sessionWrong: 0,
+    sessionStreak: 0,
+    sessionTotal: 0,
+    seenIdx: 0,
+    currentCardId: null,
+  };
+}
+
+let state = loadState();
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return defaultState();
+    const parsed = JSON.parse(raw);
+    return Object.assign(defaultState(), parsed);
+  } catch (e) {
+    return defaultState();
+  }
+}
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch (e) {}
+}
+
+// ============================================================
+// ФИЛЬТРАЦИЯ КАРТОЧЕК
+// ============================================================
+function filteredCards() {
+  return ALL_CARDS.filter(c => {
+    if (state.tense !== 'all' && c.tense !== state.tense) return false;
+    if (state.group === 'irreg') {
+      if (!c.irregular) return false;
+    } else if (state.group !== 'all') {
+      if (c.group !== state.group || c.irregular) return false;
+    }
+    if (!state.selectedVerbs.includes(c.verb)) return false;
+    return true;
+  });
+}
+
+// ============================================================
+// ВЫБОР СЛЕДУЮЩЕЙ КАРТОЧКИ
+// ============================================================
+function pickNextCard() {
+  const cards = filteredCards();
+  if (cards.length === 0) return null;
+
+  if (state.mode === 'random') {
+    return cards[Math.floor(Math.random() * cards.length)];
+  }
+
+  if (state.mode === 'weak') {
+    // только карточки, где есть хоть одна ошибка и где правильных < 3
+    const weak = cards.filter(c => {
+      const s = state.cardStats[c.id];
+      if (!s) return false;
+      return s.wrong > 0 && (s.right - s.wrong) < 3;
+    });
+    if (weak.length === 0) return cards[Math.floor(Math.random() * cards.length)];
+    return weak[Math.floor(Math.random() * weak.length)];
+  }
+
+  // smart: каждой карточке вес = 1 + max(0, wrong - right) * 2 + (давно не виделась) + (никогда не виделась → большой вес)
+  // и не показывать ту же карточку дважды подряд
+  const weighted = cards.map(c => {
+    const s = state.cardStats[c.id] || { right: 0, wrong: 0, lastSeen: -1 };
+    let w = 1;
+    if (s.right + s.wrong === 0) w += 5; // никогда не виделась
+    w += Math.max(0, (s.wrong - s.right)) * 3; // больше ошибок → чаще
+    const ago = state.seenIdx - (s.lastSeen ?? -1);
+    if (ago > 20) w += 2;
+    if (s.right >= 4 && s.wrong === 0) w *= 0.3; // отлично знаем — реже
+    return { card: c, weight: w };
+  });
+
+  // Исключаем текущую карточку
+  let pool = weighted;
+  if (state.currentCardId) {
+    pool = weighted.filter(w => w.card.id !== state.currentCardId);
+    if (pool.length === 0) pool = weighted;
+  }
+
+  const total = pool.reduce((acc, x) => acc + x.weight, 0);
+  let r = Math.random() * total;
+  for (const x of pool) {
+    r -= x.weight;
+    if (r <= 0) return x.card;
+  }
+  return pool[pool.length - 1].card;
+}
+
+// ============================================================
+// СРАВНЕНИЕ ОТВЕТОВ — СТРОГОЕ ПО ДИАКРИТИКЕ
+// ============================================================
+// Нормализуем мелкие различия (двойные пробелы, регистр), но НЕ диакритику
+function normalizeAnswer(s) {
+  return s.trim().replace(/\s+/g, ' ').toLowerCase();
+}
+
+function isCorrect(userInput, expected) {
+  // Строгое сравнение: учитывает á é í ó ú ñ ü ¿ ¡
+  // Мягко относимся только к финальной точке/восклицательному/вопросительному и пробелам
+  const u = normalizeAnswer(userInput).replace(/[.!?¿¡]+$/g, '').replace(/^[¿¡]+/, '');
+  const e = normalizeAnswer(expected).replace(/[.!?¿¡]+$/g, '').replace(/^[¿¡]+/, '');
+  return u === e;
+}
+
+// Подсветка различий между пользовательским и правильным ответом — посимвольно
+function diffHighlight(user, correct) {
+  // Очищаем хвостовую пунктуацию и начальные ¿¡ для отображения
+  const userClean = user.trim();
+  const correctClean = correct.trim();
+
+  // Простой посимвольный diff (LCS-based)
+  const a = userClean;
+  const b = correctClean;
+  const m = a.length, n = b.length;
+  // Для ускорения и экономии памяти при больших строках — но у нас короткие предложения, ок
+  const dp = Array.from({length: m+1}, () => new Array(n+1).fill(0));
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      if (a[i-1].toLowerCase() === b[j-1].toLowerCase()) {
+        dp[i][j] = dp[i-1][j-1] + 1;
+      } else {
+        dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+      }
+    }
+  }
+  // Восстановление с маркировкой
+  const ops = [];
+  let i = m, j = n;
+  while (i > 0 && j > 0) {
+    if (a[i-1].toLowerCase() === b[j-1].toLowerCase()) {
+      // Если регистр или диакритика отличается — это всё равно расхождение
+      if (a[i-1] === b[j-1]) {
+        ops.push({type: 'eq', char: b[j-1]});
+      } else {
+        ops.push({type: 'diff', userChar: a[i-1], correctChar: b[j-1]});
+      }
+      i--; j--;
+    } else if (dp[i-1][j] >= dp[i][j-1]) {
+      ops.push({type: 'extra', char: a[i-1]});
+      i--;
+    } else {
+      ops.push({type: 'missing', char: b[j-1]});
+      j--;
+    }
+  }
+  while (i > 0) { ops.push({type: 'extra', char: a[i-1]}); i--; }
+  while (j > 0) { ops.push({type: 'missing', char: b[j-1]}); j--; }
+  ops.reverse();
+
+  // Рендерим: показываем правильный ответ, помечая места, где у пользователя было иначе
+  let html = '';
+  for (const op of ops) {
+    if (op.type === 'eq') {
+      html += escapeHtml(op.char);
+    } else if (op.type === 'diff') {
+      // в правильном ответе на этом месте — другой символ (включая диакритику)
+      html += `<span class="diff-bad" title="у вас: ${escapeHtml(op.userChar)}">${escapeHtml(op.correctChar)}</span>`;
+    } else if (op.type === 'missing') {
+      html += `<span class="diff-missing">${escapeHtml(op.char)}</span>`;
+    }
+    // extra (лишние символы у пользователя) не показываем в правильном ответе
+  }
+  return html;
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+}
+
+// ============================================================
+// РЕНДЕР КАРТОЧКИ
+// ============================================================
+const cardContainer = document.getElementById('card-container');
+let currentCard = null;
+let answered = false;
+
+function showCard() {
+  const card = pickNextCard();
+  currentCard = card;
+  state.currentCardId = card ? card.id : null;
+  answered = false;
+
+  if (!card) {
+    cardContainer.innerHTML = `
+      <div class="empty">
+        <h3>Нет карточек по этим фильтрам</h3>
+        <div>Попробуй ослабить фильтры — например, переключиться на «все времена» или выбрать другие глаголы.</div>
+      </div>`;
+    return;
+  }
+
+  const isRuToEs = state.direction === 'ru-es';
+  const prompt = isRuToEs ? card.ru : card.es;
+  const promptHint = isRuToEs ? '↓ переведи на испанский' : '↓ переведи на русский';
+
+  const irregBadge = card.irregular
+    ? '<span class="tag irreg">неправильный</span>'
+    : `<span class="tag">-${card.group}</span>`;
+
+  cardContainer.innerHTML = `
+    <div class="card">
+      <div class="card-meta">
+        <span class="tag">${card.verb} · ${card.verbTranslation}</span>
+        ${irregBadge}
+        <span class="tag tense-${card.tense}">${TENSE_LABELS[card.tense]}</span>
+        <span class="tag">${PERSON_LABELS[card.person]}</span>
+      </div>
+      <div class="prompt">${escapeHtml(prompt)}</div>
+      <div class="prompt-hint">${promptHint}</div>
+      <div class="answer-area">
+        <input
+          type="text"
+          class="answer-input"
+          id="answer-input"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="${isRuToEs ? 'Ответ на испанском...' : 'Ответ на русском...'}"
+        />
+        ${isRuToEs ? `
+          <div class="spec-chars">
+            ${'á é í ó ú ñ ü ¿ ¡'.split(' ').map(c =>
+              `<button class="spec-char" data-char="${c}">${c}</button>`
+            ).join('')}
+          </div>
+        ` : ''}
+        <div class="btn-row">
+          <button class="btn" id="check-btn">Проверить</button>
+          <button class="btn btn-secondary" id="show-btn">Показать ответ</button>
+          <button class="btn btn-link" id="skip-btn">пропустить →</button>
+        </div>
+        <div class="feedback" id="feedback"></div>
+      </div>
+    </div>
+  `;
+
+  const input = document.getElementById('answer-input');
+  input.focus();
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (answered) {
+        nextCard();
+      } else {
+        checkAnswer();
+      }
+    }
+  });
+
+  document.getElementById('check-btn').addEventListener('click', () => {
+    if (answered) nextCard(); else checkAnswer();
+  });
+  document.getElementById('show-btn').addEventListener('click', revealAnswer);
+  document.getElementById('skip-btn').addEventListener('click', nextCard);
+
+  // Спецсимволы
+  document.querySelectorAll('.spec-char').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const ch = btn.dataset.char;
+      insertAtCursor(input, ch);
+      input.focus();
+    });
+  });
+}
+
+function insertAtCursor(input, text) {
+  const start = input.selectionStart ?? input.value.length;
+  const end = input.selectionEnd ?? input.value.length;
+  input.value = input.value.slice(0, start) + text + input.value.slice(end);
+  input.selectionStart = input.selectionEnd = start + text.length;
+}
+
+// ============================================================
+// ПРОВЕРКА
+// ============================================================
+function checkAnswer() {
+  if (answered || !currentCard) return;
+  const input = document.getElementById('answer-input');
+  const userAnswer = input.value;
+  if (!userAnswer.trim()) return;
+
+  const isRuToEs = state.direction === 'ru-es';
+  const expected = isRuToEs ? currentCard.es : currentCard.ru;
+
+  const correct = isCorrect(userAnswer, expected);
+  answered = true;
+  state.seenIdx++;
+
+  const stats = state.cardStats[currentCard.id] || { right: 0, wrong: 0, lastSeen: -1 };
+  if (correct) {
+    stats.right++;
+    state.sessionCorrect++;
+    state.sessionStreak++;
+  } else {
+    stats.wrong++;
+    state.sessionWrong++;
+    state.sessionStreak = 0;
+  }
+  stats.lastSeen = state.seenIdx;
+  state.cardStats[currentCard.id] = stats;
+  state.sessionTotal++;
+  saveState();
+  updateStatsDisplay();
+
+  input.classList.add(correct ? 'correct' : 'wrong');
+  input.disabled = true;
+
+  const fb = document.getElementById('feedback');
+  fb.classList.remove('correct', 'wrong');
+  fb.classList.add('show', correct ? 'correct' : 'wrong');
+
+  let html = '';
+  if (correct) {
+    html = `
+      <div class="feedback-label">¡Correcto!</div>
+      <div class="answer-display">${escapeHtml(expected)}</div>
+    `;
+  } else {
+    if (isRuToEs) {
+      html = `
+        <div class="feedback-label">Правильно так:</div>
+        <div class="answer-display">${diffHighlight(userAnswer, expected)}</div>
+      `;
+    } else {
+      html = `
+        <div class="feedback-label">Правильно так:</div>
+        <div class="answer-display">${escapeHtml(expected)}</div>
+        <div style="margin-top:6px; font-size:13px; color:var(--ink-soft); font-style:italic;">
+          Ваш ответ: ${escapeHtml(userAnswer)}
+        </div>
+      `;
+    }
+    // Покажем таблицу спряжения для этого глагола в этом времени
+    html += renderConjugationTable(currentCard);
+  }
+
+  fb.innerHTML = html;
+
+  document.getElementById('check-btn').textContent = 'Дальше →';
+  document.getElementById('show-btn').style.display = 'none';
+}
+
+function revealAnswer() {
+  if (answered || !currentCard) return;
+  const input = document.getElementById('answer-input');
+  const isRuToEs = state.direction === 'ru-es';
+  const expected = isRuToEs ? currentCard.es : currentCard.ru;
+  input.value = expected;
+  input.disabled = true;
+  answered = true;
+  state.seenIdx++;
+  const stats = state.cardStats[currentCard.id] || { right: 0, wrong: 0, lastSeen: -1 };
+  stats.wrong++; // показанный ответ считаем как неправильный (мы его не вспомнили сами)
+  stats.lastSeen = state.seenIdx;
+  state.cardStats[currentCard.id] = stats;
+  state.sessionWrong++;
+  state.sessionStreak = 0;
+  state.sessionTotal++;
+  saveState();
+  updateStatsDisplay();
+
+  const fb = document.getElementById('feedback');
+  fb.classList.add('show', 'wrong');
+  fb.innerHTML = `
+    <div class="feedback-label">Ответ показан</div>
+    <div class="answer-display">${escapeHtml(expected)}</div>
+    ${renderConjugationTable(currentCard)}
+  `;
+  document.getElementById('check-btn').textContent = 'Дальше →';
+  document.getElementById('show-btn').style.display = 'none';
+}
+
+function renderConjugationTable(card) {
+  const verb = VERBS[card.verbIdx];
+  const persons = ['yo', 'tu', 'el', 'nosotros', 'vosotros', 'ellos'];
+  const forms = verb.forms && verb.forms[card.tense];
+  if (!forms) return '';
+  let html = '<div class="conjugation-table">';
+  html += `<div class="person" style="grid-column:1/3; font-weight:600; color:var(--ink); margin-bottom:4px;">
+    Спряжение <em>${escapeHtml(verb.infinitive)}</em> в ${TENSE_LABELS[card.tense]}:
+  </div>`;
+  for (const p of persons) {
+    const form = forms[p];
+    if (!form) continue;
+    const isCurrent = (p === card.person);
+    html += `<div class="person">${escapeHtml(PERSON_LABELS[p])}</div>`;
+    html += `<div class="form ${isCurrent ? 'current' : ''}">${escapeHtml(form)}</div>`;
+  }
+  html += '</div>';
+  return html;
+}
+
+function nextCard() {
+  showCard();
+}
+
+// ============================================================
+// СТАТИСТИКА
+// ============================================================
+function updateStatsDisplay() {
+  document.getElementById('stat-correct').textContent = state.sessionCorrect;
+  document.getElementById('stat-wrong').textContent = state.sessionWrong;
+  document.getElementById('stat-total').textContent = state.sessionTotal;
+  document.getElementById('stat-streak').textContent = state.sessionStreak;
+}
+
+document.getElementById('reset-stats').addEventListener('click', () => {
+  if (!confirm('Сбросить всю статистику и историю карточек?')) return;
+  state = defaultState();
+  saveState();
+  initFiltersUI();
+  updateStatsDisplay();
+  showCard();
+});
+
+// ============================================================
+// ФИЛЬТРЫ — UI
+// ============================================================
+function updateSettingsSummary() {
+  const dirLabel = state.direction === 'ru-es' ? 'RU→ES' : 'ES→RU';
+  const tenseLabel = state.tense === 'all' ? 'все времена' : TENSE_LABELS[state.tense];
+  let groupLabel;
+  if (state.group === 'all') groupLabel = 'все группы';
+  else if (state.group === 'irreg') groupLabel = 'неправильные';
+  else groupLabel = `-${state.group}`;
+  const verbsTotal = VERBS.length;
+  const verbsSel = state.selectedVerbs.length;
+  const verbsLabel = verbsSel === verbsTotal
+    ? `${verbsTotal} глаголов`
+    : `${verbsSel} из ${verbsTotal} глаголов`;
+  const modeLabels = { smart: 'умное повтор.', random: 'случайно', weak: 'проблемные' };
+  const modeLabel = modeLabels[state.mode];
+
+  document.getElementById('settings-summary').textContent =
+    `${dirLabel} · ${tenseLabel} · ${groupLabel} · ${verbsLabel} · ${modeLabel}`;
+}
+
+function initFiltersUI() {
+  // Direction
+  document.querySelectorAll('#direction-chips .chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.dir === state.direction);
+  });
+  // Tense
+  document.querySelectorAll('#tense-chips .chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.tense === state.tense);
+  });
+  // Group
+  document.querySelectorAll('#group-chips .chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.group === state.group);
+  });
+  // Mode
+  document.querySelectorAll('#mode-chips .chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.mode === state.mode);
+  });
+
+  // Verb filter list — всегда виден (свёрнут в шапке всей панели настроек)
+  const list = document.getElementById('verb-filter-list');
+  list.innerHTML = '';
+
+  // Контрольные кнопки «все / снять»
+  const ctlAll = document.createElement('button');
+  ctlAll.className = 'chip chip-control';
+  ctlAll.textContent = '✓ все';
+  ctlAll.addEventListener('click', () => {
+    state.selectedVerbs = VERBS.map(v => v.infinitive);
+    saveState(); initFiltersUI(); showCard();
+  });
+  list.appendChild(ctlAll);
+
+  const ctlNone = document.createElement('button');
+  ctlNone.className = 'chip chip-control';
+  ctlNone.textContent = '✗ снять';
+  ctlNone.addEventListener('click', () => {
+    state.selectedVerbs = [];
+    saveState(); initFiltersUI(); showCard();
+  });
+  list.appendChild(ctlNone);
+
+  VERBS.forEach(v => {
+    const btn = document.createElement('button');
+    btn.className = 'chip';
+    if (state.selectedVerbs.includes(v.infinitive)) btn.classList.add('active');
+    const irregMark = v.irregular ? '★' : '';
+    btn.textContent = `${irregMark}${v.infinitive}`;
+    btn.title = v.translation;
+    btn.addEventListener('click', () => {
+      if (state.selectedVerbs.includes(v.infinitive)) {
+        state.selectedVerbs = state.selectedVerbs.filter(x => x !== v.infinitive);
+      } else {
+        state.selectedVerbs.push(v.infinitive);
+      }
+      saveState();
+      btn.classList.toggle('active');
+      updateSettingsSummary();
+      showCard();
+    });
+    list.appendChild(btn);
+  });
+
+  updateSettingsSummary();
+}
+
+// Direction
+document.querySelectorAll('#direction-chips .chip').forEach(c => {
+  c.addEventListener('click', () => {
+    state.direction = c.dataset.dir;
+    saveState(); initFiltersUI(); showCard();
+  });
+});
+
+// Tense
+document.querySelectorAll('#tense-chips .chip').forEach(c => {
+  c.addEventListener('click', () => {
+    state.tense = c.dataset.tense;
+    saveState(); initFiltersUI(); showCard();
+  });
+});
+
+// Group
+document.querySelectorAll('#group-chips .chip').forEach(c => {
+  c.addEventListener('click', () => {
+    state.group = c.dataset.group;
+    saveState(); initFiltersUI(); showCard();
+  });
+});
+
+// Mode
+document.querySelectorAll('#mode-chips .chip').forEach(c => {
+  c.addEventListener('click', () => {
+    state.mode = c.dataset.mode;
+    saveState(); initFiltersUI(); showCard();
+  });
+});
+
+// Settings panel toggle (свернуть/развернуть весь блок настроек)
+document.getElementById('settings-toggle').addEventListener('click', () => {
+  document.getElementById('settings').classList.toggle('open');
+});
+
+// ============================================================
+// ВКЛАДКИ
+// ============================================================
+const TAB_KEY = 'spanish_trainer_active_tab';
+
+function setActiveTab(name) {
+  document.querySelectorAll('.tab').forEach(t => {
+    const isActive = t.dataset.tab === name;
+    t.classList.toggle('active', isActive);
+    t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+  });
+  document.querySelectorAll('.tab-pane').forEach(p => {
+    const isActive = p.id === `tab-${name}`;
+    p.classList.toggle('active', isActive);
+    if (isActive) p.removeAttribute('hidden'); else p.setAttribute('hidden', '');
+  });
+  try { localStorage.setItem(TAB_KEY, name); } catch (e) {}
+}
+
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => setActiveTab(t.dataset.tab));
+});
+
+// Восстанавливаем активную вкладку
+try {
+  const saved = localStorage.getItem(TAB_KEY);
+  if (saved === 'notes' || saved === 'trainer') setActiveTab(saved);
+} catch (e) {}
+
+// ============================================================
+// СТАРТ
+// ============================================================
+initFiltersUI();
+updateStatsDisplay();
+showCard();
+</script>
+</body>
+</html>

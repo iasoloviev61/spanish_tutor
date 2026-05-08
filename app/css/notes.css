@@ -1,0 +1,322 @@
+/* ---------- Notes (конспект) ---------- */
+.notes {
+  line-height: 1.6;
+  color: var(--ink);
+}
+.notes-toc {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 14px 18px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+}
+.notes-toc a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px dashed transparent;
+  padding: 2px 0;
+  transition: color 0.15s, border-color 0.15s;
+}
+.notes-toc a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.notes-h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 40px 0 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  letter-spacing: -0.005em;
+  scroll-margin-top: 16px;
+}
+.notes-h2:first-child { margin-top: 0; }
+.notes-h2 em {
+  color: var(--accent);
+  font-style: italic;
+}
+.notes-h2-ru {
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  color: var(--ink-soft);
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 8px;
+}
+.notes-h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 24px 0 10px;
+  letter-spacing: 0.01em;
+}
+.notes-h3 em {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 500;
+}
+.notes-tip {
+  background: rgba(200,147,42,0.10);
+  border-left: 3px solid var(--gold);
+  padding: 10px 14px;
+  margin: 16px 0 0;
+  font-size: 14px;
+  color: var(--ink-soft);
+  border-radius: 0 3px 3px 0;
+}
+.notes-tip em {
+  color: var(--ink);
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Таблица спряжения SER */
+.conj-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 14px 0 0;
+}
+.conj-table th {
+  background: rgba(179,64,41,0.06);
+  color: var(--ink-soft);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 8px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+.conj-table td {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--line-soft);
+  vertical-align: baseline;
+}
+.conj-table tr:last-child td { border-bottom: none; }
+.conj-table .pron {
+  color: var(--ink-soft);
+  font-size: 14px;
+  width: 40%;
+}
+.conj-table .form {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Списки правил */
+.rule-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+}
+.rule-list li {
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--line-soft);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+.rule-list li:last-child { border-bottom: none; }
+.rule-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.rule-list .ex {
+  color: var(--ink);
+  font-style: italic;
+  font-size: 15px;
+}
+.rule-list .ex strong {
+  background: rgba(200,147,42,0.18);
+  padding: 0 4px;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 600;
+}
+code {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--bg);
+  border: 1px solid var(--line-soft);
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: var(--ink);
+}
+
+/* Таблица чтения букв */
+.reading-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 14px 0 0;
+  font-size: 14px;
+}
+.reading-table th {
+  background: rgba(179,64,41,0.06);
+  color: var(--ink-soft);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+.reading-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line-soft);
+  vertical-align: baseline;
+}
+.reading-table tr:last-child td { border-bottom: none; }
+.reading-table tr:hover td { background: rgba(179,64,41,0.03); }
+.reading-table .letter {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+  width: 90px;
+}
+.reading-table .sound {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--ink);
+  width: 160px;
+  font-weight: 500;
+}
+.reading-table .ex-cell {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.reading-table .ex-cell u {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 2px;
+}
+
+/* Списки фраз (термин: перевод) */
+.phrase-list {
+  margin: 12px 0 0;
+  display: grid;
+  grid-template-columns: minmax(200px, auto) 1fr;
+  gap: 8px 22px;
+  align-items: baseline;
+}
+.phrase-list dt {
+  font-family: 'Lora', serif;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 16px;
+}
+.phrase-list dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.phrase-line {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.phrase-line .es {
+  color: var(--accent);
+  font-weight: 500;
+  margin-right: 12px;
+}
+.phrase-line .ru {
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Таблица указательных местоимений */
+.demo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 14px 0 0;
+}
+.demo-table th {
+  background: rgba(179,64,41,0.06);
+  color: var(--ink-soft);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+.demo-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line-soft);
+  border-right: 1px solid var(--line-soft);
+  vertical-align: baseline;
+}
+.demo-table td:last-child { border-right: none; }
+.demo-table tr:last-child td { border-bottom: none; }
+.demo-table .row-h {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-align: left;
+  background: rgba(179,64,41,0.03);
+  border-right: 1px solid var(--line);
+  width: 90px;
+}
+.demo-table .es {
+  display: block;
+  color: var(--accent);
+  font-weight: 500;
+}
+.demo-table .ru {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+@media (max-width: 540px) {
+  .notes-h2 { font-size: 24px; margin: 32px 0 14px; }
+  .notes-h2-ru { display: block; margin-left: 0; margin-top: 4px; font-size: 14px; }
+  .notes-h3 { font-size: 18px; }
+  .reading-table { font-size: 13px; }
+  .reading-table th, .reading-table td { padding: 6px 8px; }
+  .reading-table .letter { font-size: 17px; width: 60px; }
+  .reading-table .sound { width: auto; }
+  .conj-table th, .conj-table td { padding: 6px 10px; }
+  .conj-table .pron { font-size: 13px; }
+  .phrase-list { grid-template-columns: 1fr; gap: 2px 0; }
+  .phrase-list dt { color: var(--accent); margin-top: 8px; }
+  .phrase-list dd { padding-left: 0; color: var(--ink-soft); font-size: 14px; }
+  .phrase-list dt:first-child { margin-top: 0; }
+  .demo-table .row-h { width: 70px; font-size: 11px; padding: 6px 8px; }
+  .demo-table td { padding: 8px 10px; }
+}
