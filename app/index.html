@@ -200,12 +200,17 @@
 <script src="data/textbook/u48.js"></script>
 <script src="data/textbook/u49.js"></script>
 <script src="data/textbook/u50.js"></script>
+<script src="data/textbook/u51.js"></script>
+<script src="data/textbook/u52.js"></script>
+<script src="data/textbook/u53.js"></script>
+<script src="data/textbook/u54.js"></script>
+<script src="data/textbook/u55.js"></script>
 <script>
   (async () => {
     await App.profile.mount('#profile-bar');
 
     // короткая сводка прогресса по учебнику
-    const ids = ['u01', 'u02', 'u03', 'u04', 'u05', 'u06', 'u07', 'u08', 'u09', 'u10', 'u11', 'u12', 'u13', 'u14', 'u15', 'u16', 'u17', 'u18', 'u19', 'u20', 'u21', 'u22', 'u23', 'u24', 'u25', 'u26', 'u27', 'u28', 'u29', 'u30', 'u31', 'u32', 'u33', 'u34', 'u35', 'u36', 'u37', 'u38', 'u39', 'u40', 'u41', 'u42', 'u43', 'u44', 'u45', 'u46', 'u47', 'u48', 'u49', 'u50'];
+    const ids = ['u01', 'u02', 'u03', 'u04', 'u05', 'u06', 'u07', 'u08', 'u09', 'u10', 'u11', 'u12', 'u13', 'u14', 'u15', 'u16', 'u17', 'u18', 'u19', 'u20', 'u21', 'u22', 'u23', 'u24', 'u25', 'u26', 'u27', 'u28', 'u29', 'u30', 'u31', 'u32', 'u33', 'u34', 'u35', 'u36', 'u37', 'u38', 'u39', 'u40', 'u41', 'u42', 'u43', 'u44', 'u45', 'u46', 'u47', 'u48', 'u49', 'u50', 'u51', 'u52', 'u53', 'u54', 'u55'];
     const units = ids.map((id) => window.TEXTBOOK[id]).filter(Boolean);
     const totalQs = units.reduce((s, u) => s + u.exercises.reduce((a, e) => a + e.questions.length, 0), 0);
     const meta = document.getElementById('meta-textbook');
