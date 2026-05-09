@@ -1,0 +1,356 @@
+// ============================================================
+// Unidad 49 — Presente de indicativo: verbos irregulares (1)
+// "quiero, mido, sueño..." — чередование гласной в корне.
+// ============================================================
+window.TEXTBOOK = window.TEXTBOOK || {};
+window.TEXTBOOK.u49 = {
+  id: 'u49',
+  number: 49,
+  title: { es: 'quiero, mido, sueño…', topic: 'Presente de indicativo: verbos irregulares (1)' },
+  topicRu: 'Чередование гласной в корне: e → ie, e → i, o/u → ue',
+
+  theory: [
+    {
+      type: 'rule',
+      es: 'Muchos verbos en presente cambian la <strong>vocal de la raíz</strong> en todas las personas <em>excepto</em> en <em>nosotros</em> y <em>vosotros</em>: <strong>e → ie</strong>, <strong>e → i</strong>, <strong>o/u → ue</strong>. Las terminaciones siguen siendo regulares.',
+      ru: 'У многих глаголов в настоящем времени <strong>меняется гласная в корне</strong> — но только в тех формах, где ударение падает на корень. Это лица <em>yo, tú, él, ellos</em>. У <em>nosotros</em> и <em>vosotros</em> ударение уходит на окончание, и корень остаётся как в инфинитиве.',
+      examples: [
+        { es: 'querer → quiero, queremos', ru: 'хотеть' },
+        { es: 'pedir → pido, pedimos',     ru: 'просить' },
+        { es: 'dormir → duermo, dormimos', ru: 'спать' },
+      ],
+    },
+    {
+      type: 'heading',
+      text: 'e → ie',
+    },
+    {
+      type: 'table',
+      caption: 'querer (хотеть)',
+      columns: ['Лицо', 'Форма'],
+      colClasses: ['col-pattern', 'col-form'],
+      rows: [
+        ['<em>yo</em>',                        '<strong>quiero</strong>'],
+        ['<em>tú</em>',                         '<strong>quieres</strong>'],
+        ['<em>usted, él, ella</em>',             '<strong>quiere</strong>'],
+        ['<em>nosotros</em>',                     '<span class="muted">queremos</span> <span class="muted">(без чередования)</span>'],
+        ['<em>vosotros</em>',                      '<span class="muted">queréis</span>'],
+        ['<em>ustedes, ellos</em>',                 '<strong>quieren</strong>'],
+      ],
+    },
+    {
+      type: 'rule',
+      es: 'Como <em>querer</em> (e → ie): <em>empezar, cerrar, pensar, regar, fregar</em> (-ar); <em>entender, perder</em> (-er); <em>mentir, preferir</em> (-ir).',
+      ru: 'По схеме <em>querer</em> спрягаются: <em>empezar</em> (начинать), <em>cerrar</em> (закрывать), <em>pensar</em> (думать), <em>regar</em> (поливать), <em>fregar</em> (мыть посуду); <em>entender</em> (понимать), <em>perder</em> (терять); <em>mentir</em> (лгать), <em>preferir</em> (предпочитать).',
+      examples: [
+        { es: 'La clase empieza a las ocho.', ru: 'Урок начинается в восемь.' },
+        { es: 'No entiendo nada.',             ru: 'Я ничего не понимаю.' },
+      ],
+    },
+    {
+      type: 'atencion',
+      es: '<strong>venir</strong> (приходить) тоже из группы e → ie, но в 1-м лице — особая форма <em>vengo</em>: <em>vengo, vienes, viene, viene, venimos, venís, vienen, vienen</em>.',
+      ru: 'Глагол <em>venir</em> (приходить) — частично из этой группы, но в 1-м лице ед. числа форма <strong>vengo</strong> (с -g-). Дальше как обычный <em>e → ie</em>: <em>vienes, viene, venimos, venís, vienen</em>.',
+    },
+    {
+      type: 'heading',
+      text: 'e → i (только глаголы на -ir)',
+    },
+    {
+      type: 'table',
+      caption: 'pedir (просить)',
+      columns: ['Лицо', 'Форма'],
+      colClasses: ['col-pattern', 'col-form'],
+      rows: [
+        ['<em>yo</em>',                        '<strong>pido</strong>'],
+        ['<em>tú</em>',                         '<strong>pides</strong>'],
+        ['<em>usted, él, ella</em>',             '<strong>pide</strong>'],
+        ['<em>nosotros</em>',                     '<span class="muted">pedimos</span>'],
+        ['<em>vosotros</em>',                      '<span class="muted">pedís</span>'],
+        ['<em>ustedes, ellos</em>',                 '<strong>piden</strong>'],
+      ],
+    },
+    {
+      type: 'rule',
+      es: 'Como <em>pedir</em> (e → i, sólo -ir): <em>elegir, conseguir, freír, medir, reír, repetir, seguir, sonreír</em>.',
+      ru: 'По схеме <em>pedir</em>: <em>elegir</em> (выбирать), <em>conseguir</em> (получать), <em>freír</em> (жарить), <em>medir</em> (измерять), <em>reír</em> (смеяться), <em>repetir</em> (повторять), <em>seguir</em> (следовать), <em>sonreír</em> (улыбаться).',
+    },
+    {
+      type: 'atencion',
+      es: '<strong>decir</strong> (говорить, сказать) тоже e → i, но в 1-м лице — <em>digo</em>: <em>digo, dices, dice, dice, decimos, decís, dicen, dicen</em>.',
+      ru: 'Глагол <em>decir</em> (говорить) близок к этой группе, но в 1-м лице форма <strong>digo</strong>. Остальные формы — обычное <em>e → i</em>: <em>dices, dice, decimos, decís, dicen</em>.',
+    },
+    {
+      type: 'heading',
+      text: 'o / u → ue',
+    },
+    {
+      type: 'table',
+      caption: 'dormir и jugar',
+      columns: ['Лицо', 'dormir', 'jugar'],
+      colClasses: ['col-pattern', 'col-form', 'col-form'],
+      rows: [
+        ['<em>yo</em>',                        '<strong>duermo</strong>',  '<strong>juego</strong>'],
+        ['<em>tú</em>',                         '<strong>duermes</strong>',  '<strong>juegas</strong>'],
+        ['<em>usted, él, ella</em>',             '<strong>duerme</strong>',   '<strong>juega</strong>'],
+        ['<em>nosotros</em>',                     '<span class="muted">dormimos</span>', '<span class="muted">jugamos</span>'],
+        ['<em>vosotros</em>',                      '<span class="muted">dormís</span>',  '<span class="muted">jugáis</span>'],
+        ['<em>ustedes, ellos</em>',                 '<strong>duermen</strong>',  '<strong>juegan</strong>'],
+      ],
+    },
+    {
+      type: 'rule',
+      es: 'Como <em>dormir</em> (o → ue): <em>contar, costar, encontrar, recordar, sonar, volar, comprobar</em> (-ar); <em>morder, mover, volver, poder</em> (-er); <em>morir</em> (-ir). El verbo <em>jugar</em> es el único <em>u → ue</em>.',
+      ru: 'По схеме <em>dormir</em> (<em>o → ue</em>): <em>contar</em> (считать, рассказывать), <em>costar</em> (стоить), <em>encontrar</em> (находить), <em>recordar</em> (помнить), <em>sonar</em> (звучать), <em>volar</em> (летать), <em>comprobar</em> (проверять); <em>morder</em> (кусать), <em>mover</em> (двигать), <em>volver</em> (возвращаться), <em>poder</em> (мочь); <em>morir</em> (умирать). <em>jugar</em> — единственный с чередованием <em>u → ue</em>.',
+    },
+    {
+      type: 'atencion',
+      es: '<strong>oler</strong> (нюхать, пахнуть) — o → ue, но добавляет <em>h-</em> в начале: <em>huelo, hueles, huele, olemos, oléis, huelen</em>.',
+      ru: 'Глагол <em>oler</em> «пахнуть, нюхать» (o → ue) пишется в формах с дифтонгом через <strong>h-</strong>: <em>huelo, hueles, huele, olemos, oléis, huelen</em>.',
+    },
+  ],
+
+  exercises: [
+    {
+      id: '49.1',
+      title: 'Спряжение querer',
+      type: 'fill',
+      instructions: 'Запишите форму <em>querer</em> для каждого лица.',
+      questions: [
+        { id: 'q1', prompt: 'yo →',                  correct: 'quiero' },
+        { id: 'q2', prompt: 'tú →',                   correct: 'quieres' },
+        { id: 'q3', prompt: 'él →',                    correct: 'quiere' },
+        { id: 'q4', prompt: 'nosotros →',              correct: 'queremos', explanation: 'Без чередования.' },
+        { id: 'q5', prompt: 'vosotros →',              correct: 'queréis' },
+        { id: 'q6', prompt: 'ellos →',                  correct: 'quieren' },
+      ],
+    },
+
+    {
+      id: '49.2',
+      title: 'Спряжение dormir',
+      type: 'fill',
+      instructions: 'Запишите форму <em>dormir</em>.',
+      questions: [
+        { id: 'q1', prompt: 'yo →',                  correct: 'duermo' },
+        { id: 'q2', prompt: 'tú →',                   correct: 'duermes' },
+        { id: 'q3', prompt: 'ella →',                  correct: 'duerme' },
+        { id: 'q4', prompt: 'nosotros →',              correct: 'dormimos', explanation: 'Без чередования.' },
+        { id: 'q5', prompt: 'vosotros →',              correct: 'dormís' },
+        { id: 'q6', prompt: 'ellos →',                  correct: 'duermen' },
+      ],
+    },
+
+    {
+      id: '49.3',
+      title: 'Спряжение pedir',
+      type: 'fill',
+      instructions: 'Запишите форму <em>pedir</em>.',
+      questions: [
+        { id: 'q1', prompt: 'yo →',                  correct: 'pido' },
+        { id: 'q2', prompt: 'tú →',                   correct: 'pides' },
+        { id: 'q3', prompt: 'usted →',                 correct: 'pide' },
+        { id: 'q4', prompt: 'nosotros →',              correct: 'pedimos' },
+        { id: 'q5', prompt: 'vosotros →',              correct: 'pedís' },
+        { id: 'q6', prompt: 'ellos →',                  correct: 'piden' },
+      ],
+    },
+
+    {
+      id: '49.4',
+      title: 'venir и decir — особые формы',
+      type: 'fill',
+      instructions: 'Запишите форму глагола.',
+      questions: [
+        { id: 'q1', prompt: '(yo, venir) →',           correct: 'vengo', explanation: 'Особая форма с -g-.' },
+        { id: 'q2', prompt: '(tú, venir) →',            correct: 'vienes' },
+        { id: 'q3', prompt: '(nosotros, venir) →',       correct: 'venimos' },
+        { id: 'q4', prompt: '(ellos, venir) →',          correct: 'vienen' },
+        { id: 'q5', prompt: '(yo, decir) →',              correct: 'digo', explanation: 'Особая форма с -g-.' },
+        { id: 'q6', prompt: '(tú, decir) →',               correct: 'dices' },
+        { id: 'q7', prompt: '(nosotros, decir) →',          correct: 'decimos' },
+        { id: 'q8', prompt: '(ellos, decir) →',             correct: 'dicen' },
+      ],
+    },
+
+    {
+      id: '49.5',
+      title: 'Поставьте глагол в нужную форму',
+      type: 'fill',
+      instructions: 'Образец: <em>(yo, querer) → quiero</em>.',
+      questions: [
+        { id: 'q1', prompt: 'Antonio (querer) ___ ser médico.',                       correct: 'quiere' },
+        { id: 'q2', prompt: 'En verano (yo, regar) ___ las plantas todos los días.',   correct: 'riego' },
+        { id: 'q3', prompt: 'La clase (empezar) ___ a las ocho.',                       correct: 'empieza' },
+        { id: 'q4', prompt: 'Luis y Pili (jugar) ___ muy mal al golf.',                  correct: 'juegan' },
+        { id: 'q5', prompt: 'Los bancos (cerrar) ___ a las dos.',                         correct: 'cierran' },
+        { id: 'q6', prompt: '(yo, pensar) ___ mucho en mis amigos.',                       correct: 'pienso' },
+        { id: 'q7', prompt: 'Algunos alumnos (venir) ___ mucho a la biblioteca.',           correct: 'vienen' },
+        { id: 'q8', prompt: 'Antonia (no mentir) ___ nunca. Siempre (decir) ___ la verdad.', correct: ['no miente, dice', 'no miente; dice', 'no miente. dice'], placeholder: 'no miente … dice' },
+        { id: 'q9', prompt: 'Estoy nerviosa: (no poder) ___ dormir.',                        correct: ['no puedo'] },
+        { id: 'q10', prompt: '¿Cuánto (medir) ___ una jirafa?',                              correct: 'mide' },
+        { id: 'q11', prompt: 'A veces (yo, decir) ___ muchas tonterías.',                     correct: 'digo' },
+        { id: 'q12', prompt: '¿A qué velocidad (volar) ___ un avión?',                         correct: 'vuela' },
+      ],
+    },
+
+    {
+      id: '49.6',
+      title: 'Вопросы и ответы',
+      type: 'fill',
+      instructions: 'Поставьте оба глагола в нужную форму.',
+      questions: [
+        { id: 'q1', prompt: '—¿Cuánto (tú, medir) ___? —1,75 metros.',                                  correct: 'mides' },
+        { id: 'q2', prompt: '—¿Cuántas horas (tú, dormir) ___ al día? —Unas ocho.',                       correct: 'duermes' },
+        { id: 'q3', prompt: '—¿(usted, preferir) ___ carne o pescado? —Prefiero el pescado.',              correct: 'Prefiere', explanation: '«вежливое» обращение — 3-е лицо ед. числа.' },
+        { id: 'q4', prompt: '—¿A qué hora (empezar) ___ ustedes a trabajar? —A las nueve.',                  correct: 'empiezan' },
+        { id: 'q5', prompt: '—¿Quién (fregar) ___ los platos en tu casa? —Yo.',                              correct: 'friega' },
+        { id: 'q6', prompt: '—¿Qué (tú, querer) ___ ser de mayor? —Quiero ser arquitecto.',                   correct: 'quieres' },
+        { id: 'q7', prompt: '—¿A qué hora (tú, volver) ___ por la noche? —Sobre las diez.',                   correct: 'vuelves' },
+        { id: 'q8', prompt: '—¿Cómo (tú, venir) ___ a la academia? —En autobús.',                              correct: 'vienes' },
+      ],
+    },
+
+    {
+      id: '49.7',
+      title: 'К какой группе относится глагол',
+      type: 'choice',
+      instructions: 'Какое чередование происходит в корне?',
+      questions: [
+        { id: 'q1', prompt: '<em>empezar</em>',     options: ['e → ie', 'e → i', 'o → ue', 'без чередования'], correct: 'e → ie' },
+        { id: 'q2', prompt: '<em>pedir</em>',        options: ['e → ie', 'e → i', 'o → ue', 'без чередования'], correct: 'e → i' },
+        { id: 'q3', prompt: '<em>poder</em>',         options: ['e → ie', 'e → i', 'o → ue', 'без чередования'], correct: 'o → ue' },
+        { id: 'q4', prompt: '<em>jugar</em>',          options: ['e → ie', 'e → i', 'u → ue', 'без чередования'], correct: 'u → ue' },
+        { id: 'q5', prompt: '<em>volver</em>',          options: ['e → ie', 'e → i', 'o → ue', 'без чередования'], correct: 'o → ue' },
+        { id: 'q6', prompt: '<em>preferir</em>',         options: ['e → ie', 'e → i', 'o → ue', 'без чередования'], correct: 'e → ie' },
+        { id: 'q7', prompt: '<em>repetir</em>',           options: ['e → ie', 'e → i', 'o → ue', 'без чередования'], correct: 'e → i' },
+        { id: 'q8', prompt: '<em>contar</em>',             options: ['e → ie', 'e → i', 'o → ue', 'без чередования'], correct: 'o → ue' },
+        { id: 'q9', prompt: '<em>trabajar</em>',            options: ['e → ie', 'e → i', 'o → ue', 'без чередования'], correct: 'без чередования' },
+      ],
+    },
+
+    {
+      id: '49.8',
+      title: 'Какие формы правильные',
+      type: 'multi',
+      instructions: 'Отметьте все формы, спряжённые верно. Помните: у <em>nosotros</em> / <em>vosotros</em> чередования нет.',
+      questions: [
+        {
+          id: 'q1',
+          prompt: 'Какие формы корректны?',
+          options: [
+            'yo quiero',
+            'yo quero',
+            'nosotros queremos',
+            'nosotros quieremos',
+            'tú duermes',
+            'tú dormes',
+            'nosotros dormimos',
+            'nosotros duermimos',
+            'vosotros pedís',
+            'vosotros pidís',
+            'yo digo',
+            'yo deco',
+            'yo vengo',
+            'yo veno',
+            'ellos juegan',
+            'ellos jugan',
+          ],
+          correct: [
+            'yo quiero',
+            'nosotros queremos',
+            'tú duermes',
+            'nosotros dormimos',
+            'vosotros pedís',
+            'yo digo',
+            'yo vengo',
+            'ellos juegan',
+          ],
+          explanation: 'У <em>nosotros / vosotros</em> ударение на окончании, поэтому чередования нет: <em>queremos, dormimos, pedís</em>.',
+        },
+      ],
+    },
+
+    {
+      id: '49.9',
+      title: 'Сопоставьте лицо и форму pedir',
+      type: 'match',
+      instructions: 'Подберите форму <em>pedir</em> к каждому лицу.',
+      pool: ['pido', 'pides', 'pide', 'pedimos', 'pedís', 'piden'],
+      questions: [
+        { id: 'q1', prompt: '<em>yo</em>',          correct: 'pido' },
+        { id: 'q2', prompt: '<em>tú</em>',           correct: 'pides' },
+        { id: 'q3', prompt: '<em>ella</em>',         correct: 'pide' },
+        { id: 'q4', prompt: '<em>nosotros</em>',      correct: 'pedimos' },
+        { id: 'q5', prompt: '<em>vosotros</em>',      correct: 'pedís' },
+        { id: 'q6', prompt: '<em>ustedes</em>',        correct: 'piden' },
+      ],
+    },
+
+    {
+      id: '49.10',
+      title: 'Допишите фразу',
+      type: 'fill',
+      instructions: 'Поставьте глагол в нужную форму.',
+      questions: [
+        { id: 'q1', prompt: 'Esta camisa (costar) ___ veinte euros.',           correct: 'cuesta' },
+        { id: 'q2', prompt: 'Yo no (recordar) ___ su nombre.',                    correct: 'recuerdo' },
+        { id: 'q3', prompt: 'Las clases (empezar) ___ en septiembre.',             correct: 'empiezan' },
+        { id: 'q4', prompt: 'Mi padre (cerrar) ___ la tienda a las nueve.',         correct: 'cierra' },
+        { id: 'q5', prompt: 'Nosotros (volver) ___ a casa a las seis.',              correct: 'volvemos' },
+        { id: 'q6', prompt: 'Yo (oler) ___ a perfume nuevo.',                          correct: 'huelo', explanation: '<em>oler</em> добавляет <em>h-</em>: <em>huelo</em>.' },
+        { id: 'q7', prompt: 'Los niños (jugar) ___ en el parque.',                      correct: 'juegan' },
+        { id: 'q8', prompt: 'Yo no (entender) ___ alemán.',                              correct: 'entiendo' },
+        { id: 'q9', prompt: 'Mis amigos (preferir) ___ el cine al teatro.',                correct: 'prefieren' },
+        { id: 'q10', prompt: '¿(tú, poder) ___ ayudarme?',                                correct: 'Puedes' },
+      ],
+    },
+
+    {
+      id: '49.11',
+      title: 'Найдите ошибку',
+      type: 'choice',
+      instructions: 'В каждом ряду одна форма с ошибкой.',
+      questions: [
+        { id: 'q1', prompt: 'Где ошибка?', options: ['yo quiero', 'tú quieres', 'nosotros quieremos', 'ellos quieren'], correct: 'nosotros quieremos', explanation: '<em>queremos</em>, без дифтонга.' },
+        { id: 'q2', prompt: 'Где ошибка?', options: ['yo duermo', 'tú duermes', 'nosotros duermimos', 'ellos duermen'], correct: 'nosotros duermimos', explanation: '<em>dormimos</em>.' },
+        { id: 'q3', prompt: 'Где ошибка?', options: ['yo pido', 'tú pides', 'nosotros pidimos', 'ellos piden'], correct: 'nosotros pidimos', explanation: '<em>pedimos</em>.' },
+        { id: 'q4', prompt: 'Где ошибка?', options: ['yo digo', 'yo dico', 'tú dices', 'nosotros decimos'], correct: 'yo dico', explanation: 'Только <em>digo</em>.' },
+        { id: 'q5', prompt: 'Где ошибка?', options: ['yo huelo', 'tú hueles', 'nosotros huelemos', 'ellos huelen'], correct: 'nosotros huelemos', explanation: '<em>olemos</em>, без <em>h-</em> и без дифтонга.' },
+        { id: 'q6', prompt: 'Где ошибка?', options: ['yo juego', 'tú jugas', 'él juega', 'nosotros jugamos'], correct: 'tú jugas', explanation: '<em>juegas</em>.' },
+      ],
+    },
+
+    {
+      id: '49.12',
+      title: 'Аудио: запишите фразу',
+      type: 'fill',
+      instructions: 'Послушайте и запишите фразу полностью.',
+      questions: [
+        { id: 'q1', prompt: '', audio: 'Quiero un café, por favor.',           correct: ['Quiero un café, por favor.', 'Quiero un café, por favor', 'Quiero un café por favor.'] },
+        { id: 'q2', prompt: '', audio: 'Solo duermo cinco horas al día.',       correct: ['Solo duermo cinco horas al día.', 'Solo duermo cinco horas al día'] },
+        { id: 'q3', prompt: '', audio: 'No entiendo nada.',                      correct: ['No entiendo nada.', 'No entiendo nada'] },
+        { id: 'q4', prompt: '', audio: 'Los niños juegan en el parque.',          correct: ['Los niños juegan en el parque.', 'Los niños juegan en el parque'] },
+        { id: 'q5', prompt: '', audio: 'Yo digo siempre la verdad.',                correct: ['Yo digo siempre la verdad.', 'Yo digo siempre la verdad'] },
+        { id: 'q6', prompt: '', audio: 'Vengo a la academia en autobús.',           correct: ['Vengo a la academia en autobús.', 'Vengo a la academia en autobús'] },
+      ],
+    },
+
+    {
+      id: '49.13',
+      title: 'Поставьте инфинитив или форму',
+      type: 'fill',
+      instructions: 'По образцу — допишите недостающее лицо.',
+      questions: [
+        { id: 'q1', prompt: '<em>cerrar</em> → tú ___',           correct: 'cierras' },
+        { id: 'q2', prompt: '<em>perder</em> → ellos ___',          correct: 'pierden' },
+        { id: 'q3', prompt: '<em>preferir</em> → yo ___',            correct: 'prefiero' },
+        { id: 'q4', prompt: '<em>encontrar</em> → vosotros ___',       correct: 'encontráis' },
+        { id: 'q5', prompt: '<em>volver</em> → nosotros ___',           correct: 'volvemos' },
+        { id: 'q6', prompt: '<em>repetir</em> → ellos ___',              correct: 'repiten' },
+        { id: 'q7', prompt: '<em>contar</em> → tú ___',                  correct: 'cuentas' },
+        { id: 'q8', prompt: '<em>seguir</em> → yo ___',                   correct: 'sigo', explanation: 'Особенность графики: <em>sigo</em>, не <em>«siguo»</em>.' },
+      ],
+    },
+  ],
+};
