@@ -1,0 +1,387 @@
+// ============================================================
+// Unidad 106 — Adverbios de modo
+// Образование (–mente), особые формы (bien, mal, deprisa, despacio),
+// одинаковые с прилагательным (alto, bajo, rápido, claro, fuerte),
+// порядок слов и две -mente в одной фразе.
+// ============================================================
+window.TEXTBOOK = window.TEXTBOOK || {};
+window.TEXTBOOK.u106 = {
+  id: 'u106',
+  number: 106,
+  title: { es: 'bien, fácilmente...', topic: 'Adverbios de modo' },
+  topicRu: 'Наречия образа действия: как именно делается',
+
+  // ---------------------------- ТЕОРИЯ ----------------------------
+  theory: [
+    {
+      type: 'rule',
+      es: 'Los <strong>adverbios de modo</strong> expresan <em>cómo</em> sucede algo o <em>cómo</em> alguien hace algo. Responden a la pregunta <em>¿cómo?</em>',
+      ru: '<strong>Наречия образа действия</strong> отвечают на вопрос <em>«как?»</em> и описывают, каким образом что-то происходит. Чаще всего стоят <strong>после глагола</strong>.',
+      examples: [
+        { es: 'Hans habla español perfectamente.', ru: 'Ханс говорит по-испански прекрасно.' },
+        { es: 'Gema conduce prudentemente.', ru: 'Хема водит осторожно.' },
+        { es: 'Serafín toca el piano muy bien.', ru: 'Серафин играет на пианино очень хорошо.' },
+      ],
+    },
+
+    {
+      type: 'heading',
+      text: 'Образование с суффиксом –mente',
+    },
+    {
+      type: 'rule',
+      es: 'La mayoría de los adverbios de modo se forman así: <strong>adjetivo en femenino singular + –mente</strong>. Si el adjetivo no cambia por género, se le añade –mente directamente.',
+      ru: 'Большинство наречий образа действия образуются по схеме: <strong>прилагательное в форме женского рода ед. ч. + –mente</strong>. Если прилагательное не меняется по роду (на <em>–e</em>, на согласную) — суффикс просто добавляется к нему.',
+      examples: [
+        { es: 'maravilloso → maravillosa → maravillosamente', ru: '«чудесный» → «чудесная» → «чудесно»' },
+        { es: 'fácil → fácil → fácilmente', ru: '«лёгкий» → «легко»' },
+        { es: 'prudente → prudente → prudentemente', ru: '«осторожный» → «осторожно»' },
+      ],
+    },
+    {
+      type: 'atencion',
+      es: 'Si el adjetivo lleva tilde (<em>fácil, rápido</em>), el adverbio en –mente <strong>conserva</strong> la tilde original: <em>fácilmente, rápidamente</em>.',
+      ru: 'Если в исходном прилагательном есть графическое ударение (<em>fácil, rápido, último</em>) — оно <strong>сохраняется</strong> и в наречии: <em>fácilmente, rápidamente, últimamente</em>.',
+    },
+
+    {
+      type: 'heading',
+      text: 'Особые наречия (без –mente)',
+    },
+    {
+      type: 'table',
+      caption: 'Запомнить отдельно',
+      columns: ['Прилагательное', 'Наречие'],
+      colClasses: ['col-pattern', 'col-ex'],
+      rows: [
+        ['<em>bueno</em> (хороший)',  '<strong>bien</strong> — хорошо'],
+        ['<em>malo</em> (плохой)',     '<strong>mal</strong> — плохо'],
+        ['—',                            '<strong>deprisa</strong> — быстро (спеша)'],
+        ['—',                            '<strong>despacio</strong> — медленно'],
+        ['—',                            '<strong>así</strong> — так, этим образом'],
+      ],
+    },
+    {
+      type: 'rule',
+      es: '<em>así</em> = <em>de este modo</em> («таким способом»). Se usa para mostrar cómo algo se hace.',
+      ru: '<em>así</em> переводится как «так, таким способом, вот так». Часто звучит при показе или объяснении.',
+      examples: [
+        { es: 'Hazlo así; es más fácil.', ru: 'Делай так; так проще.' },
+        { es: 'No me hables así.', ru: 'Не разговаривай со мной так.' },
+      ],
+    },
+
+    {
+      type: 'heading',
+      text: 'Прилагательное = наречие',
+    },
+    {
+      type: 'rule',
+      es: 'Algunos adjetivos se usan también como adverbios con determinados verbos: la forma del adverbio es la misma que la del adjetivo masculino singular, sin –mente.',
+      ru: 'У некоторых глаголов наречие совпадает по форме с прилагательным мужского рода ед. ч. — без <em>–mente</em>. Но это <strong>наречие</strong>, и оно не согласуется.',
+      examples: [
+        { es: 'Habla alto, por favor.', ru: 'Говори громко, пожалуйста.' },
+        { es: 'Mis profesores explican claro.', ru: 'Мои преподаватели объясняют ясно.' },
+        { es: 'Julia conduce muy rápido.', ru: 'Хулия ведёт очень быстро.' },
+        { es: '¡Venga, empuja fuerte!', ru: 'Давай, толкай сильно!' },
+      ],
+    },
+    {
+      type: 'table',
+      caption: 'С какими глаголами какое наречие',
+      columns: ['Глаголы', 'Наречие (= форма прилагательного)'],
+      colClasses: ['col-pattern', 'col-ex'],
+      rows: [
+        ['<em>hablar, cantar</em>',                        '<strong>alto / bajo / claro</strong>'],
+        ['<em>explicar</em>',                                '<strong>claro</strong>'],
+        ['<em>andar, ir, correr, conducir, trabajar</em>',  '<strong>rápido / lento</strong>'],
+        ['<em>golpear, empujar, tirar</em>',                  '<strong>fuerte</strong>'],
+      ],
+    },
+    {
+      type: 'atencion',
+      es: 'Algunos adverbios tienen <strong>dos formas</strong> equivalentes: <em>rápido / rápidamente, lento / lentamente, claro / claramente, fuerte / fuertemente</em>. <em>alto, bajo</em> (de volumen) solo tienen forma corta.',
+      ru: 'У многих наречий <strong>две равноправные формы</strong>: короткая (как у прилаг.) и с <em>–mente</em>. Но <em>alto, bajo</em> в значении «громко / тихо» используются только в короткой форме.',
+    },
+
+    {
+      type: 'heading',
+      text: 'Порядок слов',
+    },
+    {
+      type: 'rule',
+      es: 'Los adverbios de modo suelen ir <strong>detrás del verbo</strong>. Si el verbo lleva complemento, el adverbio normalmente va al final del grupo.',
+      ru: 'Наречия образа действия обычно стоят <strong>после глагола</strong>. Если у глагола есть дополнение, наречие чаще всего идёт в конце.',
+      examples: [
+        { es: 'Alba vive alegremente.', ru: 'Альба живёт радостно.' },
+        { es: 'No vayas deprisa.', ru: 'Не иди быстро.' },
+        { es: 'Raúl prepara muy bien la carne.', ru: 'Рауль очень хорошо готовит мясо.' },
+      ],
+    },
+    {
+      type: 'atencion',
+      es: 'En frases con <strong>dos o más adverbios</strong> en –mente, solo el último lleva la terminación. El primero (o los primeros) se queda en su forma femenina sin –mente: <em>Lo hizo rápida y eficazmente.</em>',
+      ru: 'Если в фразе <strong>два или несколько</strong> наречий на <em>–mente</em>, окончание <em>–mente</em> сохраняет только <strong>последнее</strong>. Остальные остаются в форме женского рода без <em>–mente</em>: <em>rápida y eficazmente</em>, <em>lenta pero firmemente</em>.',
+    },
+  ],
+
+  // ---------------------------- УПРАЖНЕНИЯ ----------------------------
+  exercises: [
+    {
+      id: '106.1',
+      title: 'Образуйте наречие на –mente',
+      type: 'fill',
+      instructions: 'От прилагательного образуйте наречие на <em>–mente</em>. Не забудьте перевести в женский род и сохранить ударение.',
+      questions: [
+        { id: 'q1',  prompt: 'rápido →',         correct: 'rápidamente' },
+        { id: 'q2',  prompt: 'fácil →',           correct: 'fácilmente' },
+        { id: 'q3',  prompt: 'tranquilo →',       correct: 'tranquilamente' },
+        { id: 'q4',  prompt: 'amable →',           correct: 'amablemente' },
+        { id: 'q5',  prompt: 'perfecto →',         correct: 'perfectamente' },
+        { id: 'q6',  prompt: 'feliz →',             correct: 'felizmente' },
+        { id: 'q7',  prompt: 'maravilloso →',       correct: 'maravillosamente' },
+        { id: 'q8',  prompt: 'lento →',             correct: 'lentamente' },
+        { id: 'q9',  prompt: 'claro →',             correct: 'claramente' },
+        { id: 'q10', prompt: 'serio →',             correct: 'seriamente' },
+        { id: 'q11', prompt: 'fuerte →',             correct: 'fuertemente' },
+        { id: 'q12', prompt: 'último →',             correct: 'últimamente' },
+      ],
+    },
+
+    {
+      id: '106.2',
+      title: 'bien или bueno?',
+      type: 'choice',
+      instructions: 'Выберите правильную форму.',
+      questions: [
+        { id: 'q1', prompt: 'Pedro es un ___ amigo.',          options: ['bien', 'buen', 'bueno'], correct: 'buen' },
+        { id: 'q2', prompt: 'Pedro canta muy ___.',             options: ['bien', 'bueno'],          correct: 'bien' },
+        { id: 'q3', prompt: 'Esta tarta está ___.',             options: ['bien', 'buena'],          correct: 'buena', explanation: '<em>estar bien</em> — «быть в порядке»; о вкусе — <em>está buena</em>.' },
+        { id: 'q4', prompt: 'Hablo italiano ___.',                options: ['bien', 'bueno'],          correct: 'bien' },
+        { id: 'q5', prompt: 'Mi padre es un ___ cocinero.',       options: ['bien', 'buen'],            correct: 'buen' },
+        { id: 'q6', prompt: 'Hoy me siento ___.',                  options: ['bien', 'bueno'],          correct: 'bien' },
+        { id: 'q7', prompt: 'Es una ___ noticia.',                  options: ['bien', 'buena'],          correct: 'buena' },
+        { id: 'q8', prompt: 'Manuel cocina ___.',                    options: ['bien', 'bueno'],          correct: 'bien' },
+      ],
+    },
+
+    {
+      id: '106.3',
+      title: 'mal или malo?',
+      type: 'choice',
+      instructions: 'Выберите правильную форму.',
+      questions: [
+        { id: 'q1', prompt: 'Carlos es un ___ chico.',          options: ['mal', 'malo'],   correct: 'mal' },
+        { id: 'q2', prompt: 'Carlos baila muy ___.',             options: ['mal', 'malo'],   correct: 'mal' },
+        { id: 'q3', prompt: 'Hace ___ tiempo hoy.',                options: ['mal', 'malo'],   correct: 'mal' },
+        { id: 'q4', prompt: 'Este vino es ___.',                    options: ['mal', 'malo'],   correct: 'malo' },
+        { id: 'q5', prompt: 'Hablo francés bastante ___.',           options: ['mal', 'malo'],   correct: 'mal' },
+        { id: 'q6', prompt: 'Es un ___ momento para llamar.',         options: ['mal', 'malo'],   correct: 'mal' },
+      ],
+    },
+
+    {
+      id: '106.4',
+      title: 'Превратите выделенное в наречие на –mente',
+      type: 'fill',
+      instructions: 'Замените выделенное выражение наречием на <em>–mente</em>. Образец: <em>Hazlo <u>con tranquilidad</u>, Norma</em> → <em>Hazlo tranquilamente, Norma</em>.',
+      questions: [
+        { id: 'q1', prompt: 'Hazlo <u>con tranquilidad</u>, Norma. → Hazlo ___, Norma.',           correct: 'tranquilamente' },
+        { id: 'q2', prompt: 'Álvaro juega <u>con inteligencia</u>. → Álvaro juega ___.',            correct: 'inteligentemente' },
+        { id: 'q3', prompt: 'Agustín actúa <u>de una forma irresponsable</u>. → Agustín actúa ___.', correct: 'irresponsablemente' },
+        { id: 'q4', prompt: 'Ven <u>con rapidez</u>, Adela. → Ven ___, Adela.',                       correct: 'rápidamente' },
+        { id: 'q5', prompt: 'Fran me llama <u>de manera continua</u>. → Fran me llama ___.',           correct: 'continuamente' },
+        { id: 'q6', prompt: 'Susana canta <u>de forma maravillosa</u>. → Susana canta ___.',           correct: 'maravillosamente' },
+        { id: 'q7', prompt: 'Me golpeó <u>con fuerza</u>. → Me golpeó ___.',                            correct: 'fuertemente' },
+        { id: 'q8', prompt: 'Mis hijos aprueban <u>con facilidad</u>. → Mis hijos aprueban ___.',         correct: 'fácilmente' },
+        { id: 'q9', prompt: 'La profesora explica <u>con claridad</u>. → La profesora explica ___.',       correct: 'claramente' },
+        { id: 'q10', prompt: 'Se ganan la vida <u>con honradez</u>. → Se ganan la vida ___.',              correct: 'honradamente' },
+      ],
+    },
+
+    {
+      id: '106.5',
+      title: 'Подберите наречие из рамки',
+      type: 'choice',
+      instructions: 'Выберите подходящее наречие.',
+      questions: [
+        { id: 'q1', prompt: 'Lorena conduce muy ___ (быстро, спеша).',
+          options: ['mal', 'deprisa', 'despacio'],     correct: 'deprisa' },
+        { id: 'q2', prompt: 'Diana escucha ___ (внимательно).',
+          options: ['atentamente', 'fuerte', 'mal'],   correct: 'atentamente' },
+        { id: 'q3', prompt: 'Rubén canta muy ___ (плохо, фальшиво).',
+          options: ['bien', 'mal', 'alto'],              correct: 'mal' },
+        { id: 'q4', prompt: 'Elisa habla muy ___ (громко).',
+          options: ['alto', 'bajo', 'despacio'],          correct: 'alto' },
+        { id: 'q5', prompt: 'Gerardo escribe muy ___ (медленно).',
+          options: ['rápido', 'despacio', 'fuerte'],     correct: 'despacio' },
+        { id: 'q6', prompt: 'No grites, habla ___ (тише, потише).',
+          options: ['alto', 'bajo', 'mal'],                correct: 'bajo' },
+      ],
+    },
+
+    {
+      id: '106.6',
+      title: 'Сопоставьте прилагательное и наречие',
+      type: 'match',
+      instructions: 'Соедините каждое прилагательное с соответствующим наречием.',
+      pool: ['bien', 'mal', 'rápidamente', 'lentamente', 'fácilmente', 'felizmente', 'claramente', 'cuidadosamente'],
+      questions: [
+        { id: 'q1', prompt: 'bueno',     correct: 'bien' },
+        { id: 'q2', prompt: 'malo',       correct: 'mal' },
+        { id: 'q3', prompt: 'rápido',      correct: 'rápidamente' },
+        { id: 'q4', prompt: 'lento',        correct: 'lentamente' },
+        { id: 'q5', prompt: 'fácil',         correct: 'fácilmente' },
+        { id: 'q6', prompt: 'feliz',          correct: 'felizmente' },
+        { id: 'q7', prompt: 'claro',          correct: 'claramente' },
+        { id: 'q8', prompt: 'cuidadoso',       correct: 'cuidadosamente' },
+      ],
+    },
+
+    {
+      id: '106.7',
+      title: 'rápido или rápidamente?',
+      type: 'choice',
+      instructions: 'Обе формы существуют, но в этих случаях традиционно используется одна.',
+      questions: [
+        { id: 'q1', prompt: 'Julia conduce muy ___.',                options: ['rápido', 'rápida'],   correct: 'rápido' },
+        { id: 'q2', prompt: 'Habla más ___, por favor (громче).',     options: ['alto', 'alta'],         correct: 'alto' },
+        { id: 'q3', prompt: '¡Empuja ___!',                              options: ['fuerte', 'fuerta'],   correct: 'fuerte', explanation: 'У <em>fuerte</em> только одна форма; <em>fuerta</em> не существует.' },
+        { id: 'q4', prompt: 'Mis profesores explican ___.',              options: ['claro', 'clara'],     correct: 'claro' },
+        { id: 'q5', prompt: 'Anda más ___ , que llegamos tarde.',         options: ['rápido', 'rápida'],   correct: 'rápido' },
+        { id: 'q6', prompt: 'No corras tan ___.',                          options: ['rápido', 'rápida'],   correct: 'rápido' },
+      ],
+    },
+
+    {
+      id: '106.8',
+      title: 'Две –mente в одной фразе',
+      type: 'fill',
+      instructions: 'Соедините наречия. Помните: окончание <em>–mente</em> сохраняет только последнее, остальные остаются в форме женского рода. Образец: <em>Lo hizo rápidamente y eficazmente</em> → <em>Lo hizo rápida y eficazmente</em>.',
+      questions: [
+        { id: 'q1', prompt: 'Lo hizo rápidamente y eficazmente. →',
+          correct: ['Lo hizo rápida y eficazmente.', 'Lo hizo rápida y eficazmente'] },
+        { id: 'q2', prompt: 'Habla claramente y tranquilamente. →',
+          correct: ['Habla clara y tranquilamente.', 'Habla clara y tranquilamente'] },
+        { id: 'q3', prompt: 'Camina lentamente pero seguramente. →',
+          correct: ['Camina lenta pero seguramente.', 'Camina lenta pero seguramente'] },
+        { id: 'q4', prompt: 'Trabaja silenciosamente y eficientemente. →',
+          correct: ['Trabaja silenciosa y eficientemente.', 'Trabaja silenciosa y eficientemente'] },
+        { id: 'q5', prompt: 'Lo explicó pacientemente y amablemente. →',
+          correct: ['Lo explicó paciente y amablemente.', 'Lo explicó paciente y amablemente'] },
+      ],
+    },
+
+    {
+      id: '106.9',
+      title: 'Найдите все корректные фразы',
+      type: 'multi',
+      instructions: 'Отметьте все грамматически правильные варианты.',
+      questions: [
+        {
+          id: 'q1',
+          prompt: 'Какие фразы корректны?',
+          options: [
+            'Julia conduce rápido.',
+            'Julia conduce rápidamente.',
+            'Julia conduce rápida.',
+            'Habla más alto.',
+            'Habla más altamente.',
+            'Habla bien español.',
+            'Habla bueno español.',
+            'Hazlo así.',
+            'Lo hizo rápida y eficazmente.',
+            'Lo hizo rápidamente y eficazmente.',
+            'Hace mal tiempo.',
+            'Hace mala tiempo.',
+          ],
+          correct: [
+            'Julia conduce rápido.',
+            'Julia conduce rápidamente.',
+            'Habla más alto.',
+            'Habla bien español.',
+            'Hazlo así.',
+            'Lo hizo rápida y eficazmente.',
+            'Hace mal tiempo.',
+          ],
+          explanation: '<em>rápido</em> и <em>rápidamente</em> равноправны. У <em>alto</em> (= громко) форма с <em>–mente</em> не используется. <em>bien</em> — наречие; перед сущ. ставим <em>buen/bueno</em>. Из двух <em>–mente</em> остаётся только последнее.',
+        },
+      ],
+    },
+
+    {
+      id: '106.10',
+      title: 'Подберите слово из рамки',
+      type: 'choice',
+      instructions: 'Выберите форму из рамки <em>amable / amablemente / bien / buen / egoístamente / exquisita / gravemente / perfectamente</em>.',
+      questions: [
+        { id: 'q1', prompt: 'Javier es un ___ estudiante.',
+          options: ['bien', 'buen', 'amable'],                       correct: 'buen' },
+        { id: 'q2', prompt: 'María es una cocinera ___.',
+          options: ['exquisita', 'exquisitamente', 'amable'],         correct: 'exquisita' },
+        { id: 'q3', prompt: 'Manuel resultó herido ___ en el accidente.',
+          options: ['gravemente', 'grave', 'perfectamente'],            correct: 'gravemente' },
+        { id: 'q4', prompt: 'A veces Alejandro se porta ___ con sus amigos.',
+          options: ['egoístamente', 'egoísta', 'amable'],                correct: 'egoístamente' },
+        { id: 'q5', prompt: 'Los hermanos de Adela son muy ___.',
+          options: ['amables', 'amablemente', 'bien'],                  correct: 'amables' },
+        { id: 'q6', prompt: 'Esas flores huelen muy ___.',
+          options: ['bien', 'buen', 'bueno'],                              correct: 'bien' },
+        { id: 'q7', prompt: 'Un señor me cedió el asiento ___.',
+          options: ['amablemente', 'amable', 'bien'],                    correct: 'amablemente' },
+        { id: 'q8', prompt: 'Noelia conoce Cuba ___.',
+          options: ['perfectamente', 'perfecta', 'buen'],                  correct: 'perfectamente' },
+      ],
+    },
+
+    {
+      id: '106.11',
+      title: 'Аудио: запишите фразу',
+      type: 'fill',
+      instructions: 'Послушайте и запишите предложение полностью.',
+      questions: [
+        { id: 'q1', prompt: '', audio: 'Hans habla español perfectamente.',
+          correct: ['Hans habla español perfectamente.', 'Hans habla español perfectamente'] },
+        { id: 'q2', prompt: '', audio: 'Gema conduce prudentemente.',
+          correct: ['Gema conduce prudentemente.', 'Gema conduce prudentemente'] },
+        { id: 'q3', prompt: '', audio: 'Habla más alto, por favor.',
+          correct: ['Habla más alto, por favor.', 'Habla más alto por favor.', 'Habla más alto, por favor', 'Habla más alto por favor'] },
+        { id: 'q4', prompt: '', audio: 'Lo hizo rápida y eficazmente.',
+          correct: ['Lo hizo rápida y eficazmente.', 'Lo hizo rápida y eficazmente'] },
+        { id: 'q5', prompt: '', audio: 'No vayas tan deprisa.',
+          correct: ['No vayas tan deprisa.', 'No vayas tan deprisa'] },
+        { id: 'q6', prompt: '', audio: 'Hazlo así, es más fácil.',
+          correct: ['Hazlo así, es más fácil.', 'Hazlo así es más fácil.', 'Hazlo así, es más fácil', 'Hazlo así es más fácil'] },
+      ],
+    },
+
+    {
+      id: '106.12',
+      title: 'Найдите ошибку',
+      type: 'choice',
+      instructions: 'В каждом ряду одна фраза с ошибкой — выберите её.',
+      questions: [
+        { id: 'q1', prompt: 'Где ошибка?',
+          options: ['Julia conduce rápido.', 'Julia conduce rápidamente.', 'Julia conduce rápida.', 'Julia conduce muy bien.'],
+          correct: 'Julia conduce rápida.',
+          explanation: 'Это наречие — оно не согласуется. Правильно: <em>rápido</em> или <em>rápidamente</em>.' },
+        { id: 'q2', prompt: 'Где ошибка?',
+          options: ['Habla más alto, por favor.', 'Habla más altamente.', 'Habla más bajo, por favor.', 'Habla claro.'],
+          correct: 'Habla más altamente.',
+          explanation: '<em>alto</em> в значении «громко» формы на <em>–mente</em> не имеет.' },
+        { id: 'q3', prompt: 'Где ошибка?',
+          options: ['Pedro canta bien.', 'Pedro canta bueno.', 'Pedro es buen cantante.', 'Pedro es un cantante bueno.'],
+          correct: 'Pedro canta bueno.',
+          explanation: 'После глагола — наречие <em>bien</em>, а не <em>bueno</em>.' },
+        { id: 'q4', prompt: 'Где ошибка?',
+          options: ['Lo hizo rápida y claramente.', 'Lo hizo rápidamente y claramente.', 'Lo hizo lenta pero seguramente.'],
+          correct: 'Lo hizo rápidamente y claramente.',
+          explanation: 'При двух наречиях на <em>–mente</em> окончание сохраняет только последнее.' },
+        { id: 'q5', prompt: 'Где ошибка?',
+          options: ['Fácilmente', 'Rápidamente', 'Felizmente', 'Felicemente'],
+          correct: 'Felicemente',
+          explanation: 'От <em>feliz</em> образуется <em>felizmente</em> (z остаётся, c появляется только перед –ísimo).' },
+      ],
+    },
+  ],
+};
