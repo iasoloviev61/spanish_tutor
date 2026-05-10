@@ -1962,4 +1962,1014 @@ window.TEXTS.push(
       },
     ],
   },
+
+  {
+    id: 'a1-022',
+    level: 'A1',
+    day: 22,
+    title: 'Un fin de semana en Granada',
+    text:
+      'Este fin de semana hemos estado en Granada con mi mujer. ' +
+      'Hemos visitado la Alhambra y los jardines del Generalife. ¡Qué maravilla! ' +
+      'Las vistas desde la torre son increíbles.\n\n' +
+      'El sábado por la noche hemos cenado en un pequeño restaurante del Albaicín. ' +
+      'Hemos pedido berenjenas con miel y un plato de pescado. ' +
+      'La cena ha costado treinta euros para dos personas. No es nada caro.\n\n' +
+      'Hoy es domingo y estamos cansados pero contentos. ' +
+      'Por la tarde vamos a tomar un café en una terraza con vistas a la Alhambra ' +
+      'y luego vamos a volver a casa en tren.',
+    vocabulary: [
+      {
+        word: 'la Alhambra',
+        translation: 'Альгамбра — мавританский дворцово-крепостной комплекс в Гранаде',
+        example: 'Hemos visitado la Alhambra.',
+      },
+      {
+        word: 'el Generalife',
+        translation: 'Хенералифе — летняя резиденция и сады рядом с Альгамброй',
+        example: 'los jardines del Generalife',
+      },
+      {
+        word: 'el Albaicín',
+        translation: 'Альбайсин — старый мавританский квартал Гранады',
+        example: 'un pequeño restaurante del Albaicín',
+      },
+      {
+        word: '¡Qué maravilla!',
+        translation: 'какое чудо! — восклицание восторга',
+        example: '¡Qué maravilla las vistas!',
+      },
+      {
+        word: 'la vista',
+        translation: 'вид (из окна, с высоты); зрение',
+        example: 'Las vistas desde la torre son increíbles.',
+      },
+      {
+        word: 'la torre',
+        translation: 'башня',
+        example: 'desde la torre',
+      },
+      {
+        word: 'pedir',
+        translation: 'просить; заказывать (в ресторане). e→i: pido, pides, pide…',
+        example: 'Hemos pedido berenjenas con miel.',
+      },
+      {
+        word: 'las berenjenas con miel',
+        translation: 'баклажаны с мёдом — типичное андалусийское блюдо',
+        example: 'Hemos pedido berenjenas con miel.',
+      },
+      {
+        word: 'el plato',
+        translation: 'тарелка; блюдо (как порция); основное блюдо',
+        example: 'un plato de pescado',
+      },
+      {
+        word: 'la cena',
+        translation: 'ужин (cenar — ужинать)',
+        example: 'La cena ha costado treinta euros.',
+      },
+      {
+        word: 'volver',
+        translation: 'возвращаться (o→ue: vuelvo, vuelves, vuelve…). Pretérito Perfecto: he vuelto',
+        example: 'Vamos a volver a casa en tren.',
+      },
+      {
+        word: 'el tren',
+        translation: 'поезд (ir en tren — ехать на поезде)',
+        example: 'volver a casa en tren',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Dónde han pasado el fin de semana?',
+        options: ['En Sevilla', 'En Granada', 'En Madrid'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué han pedido para cenar?',
+        options: ['Paella valenciana', 'Berenjenas con miel y pescado', 'Tortilla y ensalada'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo van a volver a casa?',
+        options: ['En coche', 'En tren', 'En avión'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Pretérito Perfecto: законченные «выходные»',
+        note:
+          'Этим временем удобно описывать целый отрезок, ещё «не закрытый» в речи: este fin de semana, esta mañana, hoy, esta tarde. ' +
+          'Формы: hemos estado, hemos visitado, hemos cenado, hemos pedido — haber + причастие.',
+      },
+      {
+        topic: 'Ir a + infinitivo для планов',
+        note:
+          'vamos a tomar, vamos a volver — ближайшие планы на «потом сегодня». ' +
+          'ir в Presente (voy, vas, va, vamos, vais, van) + a + инфинитив.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-023',
+    level: 'A1',
+    day: 23,
+    title: 'En la tienda de ropa',
+    text:
+      'He entrado en una tienda del centro porque quiero comprar una chaqueta nueva. ' +
+      'La dependienta me ha enseñado varias.\n\n' +
+      '—Buenos días, ¿qué talla usa? —pregunta ella.\n' +
+      '—La cuarenta —respondo.\n' +
+      '—Esta chaqueta gris es muy bonita. ¿Quiere probársela?\n' +
+      '—Sí, por favor.\n\n' +
+      'He entrado en el probador. La chaqueta me queda bien, pero no me gusta el color. ' +
+      'He pedido la misma en azul. Me queda perfecta.\n\n' +
+      '—¿Cuánto cuesta? —pregunto.\n' +
+      '—Sesenta y cinco euros —responde la dependienta.\n\n' +
+      'Es un poco cara, pero la calidad es buena. La he pagado con tarjeta. ' +
+      'Ahora voy a llevarla a la boda de mi prima el sábado.',
+    vocabulary: [
+      {
+        word: 'la chaqueta',
+        translation: 'куртка; пиджак',
+        example: 'Quiero comprar una chaqueta nueva.',
+      },
+      {
+        word: 'la talla',
+        translation: 'размер одежды (для обуви — el número)',
+        example: '¿Qué talla usa?',
+      },
+      {
+        word: 'usar (una talla)',
+        translation: 'носить (определённый размер); пользоваться, употреблять',
+        example: 'Uso la talla cuarenta.',
+      },
+      {
+        word: 'el probador',
+        translation: 'примерочная',
+        example: 'He entrado en el probador.',
+      },
+      {
+        word: 'probarse',
+        translation: 'примерять (одежду; возвратная форма от probar)',
+        example: '¿Quiere probársela?',
+      },
+      {
+        word: 'quedar bien / mal',
+        translation: 'идти, быть к лицу; сидеть на фигуре. La chaqueta me queda bien — куртка мне идёт',
+        example: 'La chaqueta me queda bien.',
+      },
+      {
+        word: 'gris',
+        translation: 'серый (одна форма для м.р. и ж.р.)',
+        example: 'una chaqueta gris',
+      },
+      {
+        word: 'el color',
+        translation: 'цвет',
+        example: 'No me gusta el color.',
+      },
+      {
+        word: 'la calidad',
+        translation: 'качество',
+        example: 'La calidad es buena.',
+      },
+      {
+        word: 'pagar',
+        translation: 'платить (pagar con tarjeta / en efectivo — оплачивать картой / наличными)',
+        example: 'La he pagado con tarjeta.',
+      },
+      {
+        word: 'la tarjeta',
+        translation: 'карта (банковская, визитная, поздравительная)',
+        example: 'pagar con tarjeta',
+      },
+      {
+        word: 'la boda',
+        translation: 'свадьба',
+        example: 'la boda de mi prima',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué talla usa el cliente?',
+        options: ['La 38', 'La 40', 'La 42'],
+        correct: 1,
+      },
+      {
+        q: '¿Por qué no compra la chaqueta gris?',
+        options: ['Es demasiado cara', 'No le queda bien', 'No le gusta el color'],
+        correct: 2,
+      },
+      {
+        q: '¿Cómo paga la chaqueta?',
+        options: ['En efectivo', 'Con tarjeta', 'Con cheque'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Pretérito Perfecto + безударные местоимения',
+        note:
+          'Местоимение (lo, la, le, me, te, nos, os, se) ставится ПЕРЕД haber: la he pagado, me ha enseñado, no me ha gustado. ' +
+          'Между местоимением и haber ничего не вставляют.',
+      },
+      {
+        topic: 'Quedar bien / mal: идиома про одежду',
+        note:
+          '«Me queda bien» = «(одежда) мне идёт / сидит хорошо», «me queda grande / pequeño» = «велика / мала». ' +
+          'Глагол quedar спрягается по подлежащему-вещи: «la chaqueta me queda bien», «los zapatos me quedan grandes».',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-024',
+    level: 'A1',
+    day: 24,
+    title: 'En el bar de la esquina',
+    text:
+      'Hoy hemos entrado en el bar de la esquina, cerca de la oficina. ' +
+      'Hace frío en la calle y queremos algo caliente. ' +
+      'El camarero nos saluda y nos da la carta.\n\n' +
+      '—Hola, ¿qué vais a tomar?\n' +
+      '—Yo quiero un café con leche y un bocadillo de jamón —dice Carlos.\n' +
+      '—Para mí, un té y una tostada con mantequilla, por favor —digo yo.\n\n' +
+      'El camarero ha vuelto en cinco minutos con todo. ' +
+      'El bocadillo de Carlos es enorme. ' +
+      'Yo he comido despacio porque la tostada está muy caliente.\n\n' +
+      '—¿Algo más? —pregunta él.\n' +
+      '—La cuenta, por favor.\n\n' +
+      'Hemos pagado catorce euros. Vamos a volver mañana.',
+    vocabulary: [
+      {
+        word: 'la esquina',
+        translation: 'угол улицы (en la esquina — на углу)',
+        example: 'el bar de la esquina',
+      },
+      {
+        word: 'la carta',
+        translation: 'меню в ресторане; письмо. Дежурное блюдо дня — el menú del día',
+        example: 'El camarero nos da la carta.',
+      },
+      {
+        word: 'el bocadillo',
+        translation: 'багет с начинкой (испанский «сэндвич» из батона). Не путать с bocata (разг.)',
+        example: 'un bocadillo de jamón',
+      },
+      {
+        word: 'la mantequilla',
+        translation: 'сливочное масло',
+        example: 'una tostada con mantequilla',
+      },
+      {
+        word: 'el té',
+        translation: 'чай',
+        example: 'Para mí, un té.',
+      },
+      {
+        word: 'para mí',
+        translation: 'мне (при заказе): «para mí, un café» = «мне кофе»',
+        example: 'Para mí, un té.',
+      },
+      {
+        word: '¿qué vais a tomar?',
+        translation: 'что вы будете (что закажете)? — стандартная фраза официанта',
+        example: '¿Qué vais a tomar?',
+      },
+      {
+        word: 'el minuto',
+        translation: 'минута',
+        example: 'en cinco minutos',
+      },
+      {
+        word: 'despacio',
+        translation: 'медленно (антоним — rápido)',
+        example: 'He comido despacio.',
+      },
+      {
+        word: '¿algo más?',
+        translation: 'что-нибудь ещё? — типичная фраза в баре или магазине',
+        example: '—¿Algo más? —La cuenta, por favor.',
+      },
+      {
+        word: 'la cuenta',
+        translation: 'счёт (в кафе); счёт в банке',
+        example: 'La cuenta, por favor.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué tiempo hace en la calle?',
+        options: ['Hace calor', 'Hace frío', 'Llueve'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué pide el narrador?',
+        options: ['Café y bocadillo', 'Té y tostada', 'Zumo y croissant'],
+        correct: 1,
+      },
+      {
+        q: '¿Cuánto han pagado?',
+        options: ['Cuatro euros', 'Catorce euros', 'Cuarenta euros'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Заказ в баре: tomar, querer, para mí',
+        note:
+          'В Испании при заказе «есть/пить» говорят tomar, не beber/comer: ¿qué vas a tomar? — yo tomo / quiero / para mí…  ' +
+          '«Para mí, un café» — компактная разговорная форма заказа, без глагола.',
+      },
+      {
+        topic: 'Pretérito Perfecto с маркером hoy',
+        note:
+          'hoy, esta mañana, esta tarde — «свои» обстоятельства времени для Pretérito Perfecto. ' +
+          'В тексте: hoy hemos entrado, ha vuelto, he comido, hemos pagado. День ещё не закрыт — отсюда perfecto.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-025',
+    level: 'A1',
+    day: 25,
+    title: 'En la recepción del hotel',
+    text:
+      'Hemos llegado a Sevilla esta tarde. ' +
+      'Vamos a quedarnos tres noches en un hotel pequeño cerca de la catedral. ' +
+      'En la recepción nos atiende una señora muy simpática.\n\n' +
+      '—Buenas tardes. Tenemos una reserva a nombre de García.\n' +
+      '—Sí, aquí está. Una habitación doble con vistas al patio. ' +
+      '¿Pueden rellenar este formulario, por favor?\n\n' +
+      'He escrito mi nombre, mi pasaporte y mi dirección. ' +
+      'La señora nos ha dado la llave. ' +
+      'La habitación está en la tercera planta. Hay un ascensor pequeño.\n\n' +
+      'La habitación es bonita: cama grande, baño con bañera y un balcón con flores. ' +
+      'Vamos a descansar un poco antes de salir a cenar.',
+    vocabulary: [
+      {
+        word: 'la recepción',
+        translation: 'ресепшен; приём (de huéspedes)',
+        example: 'En la recepción nos atiende una señora.',
+      },
+      {
+        word: 'atender',
+        translation: 'обслуживать клиента; уделять внимание (e→ie: atiendo, atiendes, atiende…)',
+        example: 'Nos atiende una señora simpática.',
+      },
+      {
+        word: 'la reserva',
+        translation: 'бронь (a nombre de — на имя)',
+        example: 'Tenemos una reserva a nombre de García.',
+      },
+      {
+        word: 'rellenar',
+        translation: 'заполнять (анкету, форму)',
+        example: '¿Pueden rellenar este formulario?',
+      },
+      {
+        word: 'el formulario',
+        translation: 'бланк, анкета',
+        example: 'rellenar este formulario',
+      },
+      {
+        word: 'el pasaporte',
+        translation: 'паспорт',
+        example: 'He escrito mi pasaporte.',
+      },
+      {
+        word: 'la dirección',
+        translation: 'адрес; направление',
+        example: 'mi nombre, mi pasaporte y mi dirección',
+      },
+      {
+        word: 'la llave',
+        translation: 'ключ',
+        example: 'Nos ha dado la llave.',
+      },
+      {
+        word: 'la planta',
+        translation: 'этаж (la planta baja — первый, цокольный); растение',
+        example: 'La habitación está en la tercera planta.',
+      },
+      {
+        word: 'la cama',
+        translation: 'кровать (cama doble — двуспальная)',
+        example: 'cama grande',
+      },
+      {
+        word: 'el balcón',
+        translation: 'балкон',
+        example: 'un balcón con flores',
+      },
+      {
+        word: 'descansar',
+        translation: 'отдыхать (descanso = отдых)',
+        example: 'Vamos a descansar un poco.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuántas noches van a quedarse?',
+        options: ['Una noche', 'Dos noches', 'Tres noches'],
+        correct: 2,
+      },
+      {
+        q: '¿Qué les pide la señora de la recepción?',
+        options: ['Pagar por adelantado', 'Rellenar un formulario', 'Llamar por teléfono'],
+        correct: 1,
+      },
+      {
+        q: '¿En qué planta está la habitación?',
+        options: ['En la primera', 'En la segunda', 'En la tercera'],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Pretérito Perfecto: неправильные причастия',
+        note:
+          'Часть глаголов имеет «свои» причастия: escribir → escrito, dar → dado (правильное), hacer → hecho, ' +
+          'volver → vuelto, decir → dicho, ver → visto, abrir → abierto, poner → puesto, romper → roto. ' +
+          'В тексте: he escrito, nos ha dado.',
+      },
+      {
+        topic: 'Числительные: количественные и порядковые',
+        note:
+          'tres noches — количественное (сколько); tercera planta — порядковое (какой по счёту). ' +
+          '1–10 порядковые: primero/-a, segundo/-a, tercero/-a, cuarto/-a, quinto/-a… ' +
+          'primero и tercero перед сущ. м.р. усекаются: el primer día, el tercer piso.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-026',
+    level: 'A1',
+    day: 26,
+    title: 'Lista de la compra',
+    text:
+      'Esta mañana hemos ido al supermercado del barrio. ' +
+      'Mi marido lleva el carrito y yo la lista. ' +
+      'Hemos comprado muchas cosas: dos litros de leche, una docena de huevos, ' +
+      'un paquete de arroz y medio kilo de patatas.\n\n' +
+      'En la sección de frutas hemos elegido manzanas y plátanos maduros. ' +
+      'Mi marido ha querido también una botella de vino tinto. ¡Cuesta solo cuatro euros!\n\n' +
+      'En la caja hay mucha gente. Hemos pagado treinta y dos euros con la tarjeta. ' +
+      'Las bolsas son pesadas y vamos a volver a casa en coche. ' +
+      'Mañana voy a preparar tortilla para la cena.',
+    vocabulary: [
+      {
+        word: 'el supermercado',
+        translation: 'супермаркет',
+        example: 'Hemos ido al supermercado.',
+      },
+      {
+        word: 'el carrito',
+        translation: 'тележка (в супермаркете); коляска. Корзина — la cesta',
+        example: 'Mi marido lleva el carrito.',
+      },
+      {
+        word: 'la lista (de la compra)',
+        translation: 'список покупок',
+        example: 'Yo llevo la lista.',
+      },
+      {
+        word: 'la docena',
+        translation: 'дюжина, двенадцать штук',
+        example: 'una docena de huevos',
+      },
+      {
+        word: 'el huevo',
+        translation: 'яйцо',
+        example: 'una docena de huevos',
+      },
+      {
+        word: 'el paquete',
+        translation: 'пачка, упаковка',
+        example: 'un paquete de arroz',
+      },
+      {
+        word: 'el arroz',
+        translation: 'рис',
+        example: 'un paquete de arroz',
+      },
+      {
+        word: 'la manzana',
+        translation: 'яблоко',
+        example: 'Hemos elegido manzanas.',
+      },
+      {
+        word: 'el plátano',
+        translation: 'банан (в Испании; в Лат. Америке — la banana)',
+        example: 'plátanos maduros',
+      },
+      {
+        word: 'el vino tinto',
+        translation: 'красное вино (vino blanco — белое; vino rosado — розовое)',
+        example: 'una botella de vino tinto',
+      },
+      {
+        word: 'la caja',
+        translation: 'касса; коробка',
+        example: 'En la caja hay mucha gente.',
+      },
+      {
+        word: 'la bolsa',
+        translation: 'пакет, сумка',
+        example: 'Las bolsas son pesadas.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuántos huevos han comprado?',
+        options: ['Seis', 'Una docena', 'Dos docenas'],
+        correct: 1,
+      },
+      {
+        q: '¿Cuánto cuesta la botella de vino?',
+        options: ['Tres euros', 'Cuatro euros', 'Cinco euros'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo van a volver a casa?',
+        options: ['A pie', 'En autobús', 'En coche'],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Количество + de + существительное',
+        note:
+          'Меры и упаковки строятся с предлогом de: un litro de leche, una docena de huevos, un paquete de arroz, ' +
+          'medio kilo de patatas, una botella de vino, un trozo de queso. ' +
+          'Само существительное идёт без артикля.',
+      },
+      {
+        topic: 'Pretérito Perfecto: список покупок',
+        note:
+          'hemos comprado, hemos elegido, ha querido, hemos pagado — действия одного «закрытого» утра, ' +
+          'но день ещё длится: типичный контекст для Pretérito Perfecto.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-027',
+    level: 'A1',
+    day: 27,
+    title: '¿Por dónde se va al museo?',
+    text:
+      'Estamos en el centro de Madrid y queremos visitar el Museo del Prado. ' +
+      'No sabemos por dónde ir. Mi mujer pregunta a una señora.\n\n' +
+      '—Perdone, ¿el Museo del Prado está cerca?\n' +
+      '—Sí, muy cerca. Para llegar, hay que seguir todo recto hasta la próxima esquina. ' +
+      'Después hay que girar a la derecha y cruzar la plaza. ' +
+      'El museo está al final de la calle, a unos cinco minutos andando.\n' +
+      '—Muchas gracias.\n' +
+      '—De nada, ¡buen paseo!\n\n' +
+      'Hemos seguido las instrucciones. ' +
+      'Cuando hemos cruzado la plaza, hemos visto un edificio grande con columnas. ' +
+      '¡Es el museo! Vamos a comprar las entradas para entrar.',
+    vocabulary: [
+      {
+        word: 'perdone',
+        translation: 'извините (вежливая форма usted; к ровеснику — perdona)',
+        example: 'Perdone, ¿el museo está cerca?',
+      },
+      {
+        word: 'todo recto',
+        translation: 'прямо (направление). Также: derecho',
+        example: 'seguir todo recto',
+      },
+      {
+        word: 'hay que + инфинитив',
+        translation: 'нужно, надо (безличная необходимость, без подлежащего)',
+        example: 'Hay que girar a la derecha.',
+      },
+      {
+        word: 'girar',
+        translation: 'поворачивать (girar a la derecha / a la izquierda)',
+        example: 'hay que girar a la derecha',
+      },
+      {
+        word: 'la derecha / la izquierda',
+        translation: 'правая / левая сторона. a la derecha — направо, a la izquierda — налево',
+        example: 'girar a la derecha',
+      },
+      {
+        word: 'cruzar',
+        translation: 'переходить, пересекать (улицу, площадь)',
+        example: 'cruzar la plaza',
+      },
+      {
+        word: 'al final de',
+        translation: 'в конце (улицы, коридора). Антоним — al principio de',
+        example: 'al final de la calle',
+      },
+      {
+        word: 'andando',
+        translation: 'пешком, идя (a cinco minutos andando — в пяти минутах ходьбы)',
+        example: 'a unos cinco minutos andando',
+      },
+      {
+        word: 'seguir',
+        translation: 'следовать; продолжать (e→i: sigo, sigues, sigue…). Pret. Perf.: he seguido',
+        example: 'Hemos seguido las instrucciones.',
+      },
+      {
+        word: 'la entrada',
+        translation: 'входной билет; вход (entrar — входить)',
+        example: 'comprar las entradas',
+      },
+      {
+        word: 'de nada',
+        translation: 'не за что; пожалуйста (в ответ на gracias)',
+        example: '—Gracias. —De nada.',
+      },
+      {
+        word: 'próximo, -a',
+        translation: 'следующий, ближайший (la próxima esquina — следующий угол)',
+        example: 'hasta la próxima esquina',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué quieren visitar?',
+        options: ['La catedral', 'El Museo del Prado', 'El parque del Retiro'],
+        correct: 1,
+      },
+      {
+        q: 'Después de seguir todo recto, ¿por dónde hay que ir?',
+        options: ['A la izquierda', 'A la derecha', 'Recto otra vez'],
+        correct: 1,
+      },
+      {
+        q: '¿A cuántos minutos andando está el museo?',
+        options: ['A dos minutos', 'A cinco minutos', 'A diez minutos'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Hay que + инфинитив',
+        note:
+          'Безличная конструкция: «нужно делать что-то» — без указания, кому именно. ' +
+          'hay (от haber) не меняется по лицам: hay que estudiar, hay que cruzar, hay que pagar. ' +
+          'Сравните с tener que (личная обязанность): tengo que estudiar — мне надо учиться.',
+        },
+      {
+        topic: 'Указание дороги: словарь направлений',
+        note:
+          'todo recto — прямо; a la derecha — направо; a la izquierda — налево; ' +
+          'al final de — в конце; cerca / lejos — близко / далеко; ' +
+          'enfrente de — напротив; al lado de — рядом с; a unos X minutos andando — в X минутах пешком.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-028',
+    level: 'A1',
+    day: 28,
+    title: 'El viaje a Barcelona',
+    text:
+      'Esta mañana he tomado el tren AVE de Madrid a Barcelona. ' +
+      'La estación de Atocha está llena de viajeros. ' +
+      'He comprado el billete por internet, pero he tenido que recogerlo ' +
+      'en una máquina especial.\n\n' +
+      'El tren ha salido a las nueve en punto. ' +
+      'Mi asiento es el catorce B, junto a la ventana. ' +
+      'He visto pasar campos verdes, pueblos pequeños y, al final, el mar.\n\n' +
+      'Durante el viaje he leído un libro y he tomado un café en el vagón cafetería. ' +
+      'El AVE es muy rápido: en dos horas y media hemos llegado a Barcelona. ' +
+      '¡Qué cómodo viajar así!',
+    vocabulary: [
+      {
+        word: 'el AVE',
+        translation: 'испанский высокоскоростной поезд (Alta Velocidad Española)',
+        example: 'He tomado el tren AVE.',
+      },
+      {
+        word: 'el billete',
+        translation: 'билет (на поезд, автобус, самолёт). В Лат. Америке — el boleto',
+        example: 'He comprado el billete por internet.',
+      },
+      {
+        word: 'el viajero / la viajera',
+        translation: 'пассажир, путешественник',
+        example: 'La estación está llena de viajeros.',
+      },
+      {
+        word: 'recoger',
+        translation: 'забирать, получать (билет, посылку); подбирать',
+        example: 'He tenido que recogerlo en una máquina.',
+      },
+      {
+        word: 'la máquina',
+        translation: 'машина, аппарат (la máquina de billetes — билетный автомат)',
+        example: 'una máquina especial',
+      },
+      {
+        word: 'salir',
+        translation: 'выходить; отправляться (поезд, самолёт). Pretérito Perfecto: he salido',
+        example: 'El tren ha salido a las nueve.',
+      },
+      {
+        word: 'en punto',
+        translation: 'ровно (о времени): a las nueve en punto — ровно в девять',
+        example: 'a las nueve en punto',
+      },
+      {
+        word: 'el asiento',
+        translation: 'сиденье, место (в транспорте, в зале)',
+        example: 'Mi asiento es el catorce B.',
+      },
+      {
+        word: 'junto a',
+        translation: 'рядом с (junto a la ventana — у окна)',
+        example: 'junto a la ventana',
+      },
+      {
+        word: 'la ventana',
+        translation: 'окно (la ventanilla — окошко в транспорте, кассе)',
+        example: 'junto a la ventana',
+      },
+      {
+        word: 'el pueblo',
+        translation: 'деревня, маленький город; народ',
+        example: 'pueblos pequeños',
+      },
+      {
+        word: 'el viaje',
+        translation: 'поездка, путешествие (viajar — путешествовать)',
+        example: 'durante el viaje',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Adónde viaja el narrador?',
+        options: ['A Sevilla', 'A Barcelona', 'A Valencia'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo ha comprado el billete?',
+        options: ['En la taquilla', 'Por internet', 'Por teléfono'],
+        correct: 1,
+      },
+      {
+        q: '¿Cuánto dura el viaje?',
+        options: ['Una hora', 'Dos horas y media', 'Cuatro horas'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Tener que + инфинитив (личная обязанность)',
+        note:
+          'tener que означает «должен / приходится»: he tenido que recogerlo — мне пришлось забрать его. ' +
+          'Спрягается tener (tengo, tienes, tiene…), а смысловой глагол — в инфинитиве. ' +
+          'Контраст с hay que: hay que — безличное «нужно вообще», tener que — конкретно я / ты / он.',
+      },
+      {
+        topic: 'Местоимения с инфинитивом',
+        note:
+          'Безударные местоимения (lo, la, le, me, te, se…) при инфинитиве могут стоять ДО смыслового глагола ' +
+          'или СЛИТНО после инфинитива: lo he tenido que recoger = he tenido que recogerlo. ' +
+          'Оба варианта верны; присоединение к инфинитиву — пишется одним словом.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-029',
+    level: 'A1',
+    day: 29,
+    title: 'En la tienda de recuerdos',
+    text:
+      'Esta tarde hemos visitado una tienda de recuerdos en el barrio gótico. ' +
+      'Hay muchas cosas bonitas: imanes para la nevera, postales, abanicos, ' +
+      'cerámica pintada a mano y pequeñas figuras de bailaoras.\n\n' +
+      'Mi marido ha elegido un imán con la Sagrada Familia. ' +
+      'Yo he comprado dos abanicos: uno blanco para mi madre y otro rojo para mi hermana. ' +
+      'Cuestan ocho euros cada uno.\n\n' +
+      '—¿Algo más? —pregunta el dependiente.\n' +
+      '—Sí, también queremos esta postal.\n' +
+      '—Son veinte euros en total.\n\n' +
+      'He pagado en efectivo. ' +
+      'El dependiente nos ha dado una bolsa de papel con todo dentro. ' +
+      'Mañana vamos a enviar la postal a nuestros amigos.',
+    vocabulary: [
+      {
+        word: 'el recuerdo',
+        translation: 'сувенир; воспоминание (recordar — вспоминать)',
+        example: 'una tienda de recuerdos',
+      },
+      {
+        word: 'el imán',
+        translation: 'магнит (на холодильник)',
+        example: 'un imán con la Sagrada Familia',
+      },
+      {
+        word: 'la nevera',
+        translation: 'холодильник (Испания; в Лат. Америке часто — el refrigerador)',
+        example: 'imanes para la nevera',
+      },
+      {
+        word: 'la postal',
+        translation: 'почтовая открытка',
+        example: 'enviar la postal a nuestros amigos',
+      },
+      {
+        word: 'el abanico',
+        translation: 'веер — традиционный испанский предмет от жары',
+        example: 'dos abanicos: uno blanco y otro rojo',
+      },
+      {
+        word: 'la bailaora',
+        translation: 'танцовщица фламенко (мужской вариант — el bailaor)',
+        example: 'figuras de bailaoras',
+      },
+      {
+        word: 'pintado, -a a mano',
+        translation: 'расписанный вручную',
+        example: 'cerámica pintada a mano',
+      },
+      {
+        word: 'la Sagrada Familia',
+        translation: 'Саграда Фамилия — недостроенный собор Гауди в Барселоне',
+        example: 'un imán con la Sagrada Familia',
+      },
+      {
+        word: 'cada uno',
+        translation: 'каждый, каждая штука (по…): «cuestan ocho euros cada uno» — по восемь евро каждый',
+        example: 'ocho euros cada uno',
+      },
+      {
+        word: 'en efectivo',
+        translation: 'наличными (антоним — con tarjeta)',
+        example: 'He pagado en efectivo.',
+      },
+      {
+        word: 'dentro',
+        translation: 'внутри. dentro de — внутри чего-то',
+        example: 'una bolsa con todo dentro',
+      },
+      {
+        word: 'enviar',
+        translation: 'отправлять (письмо, посылку, сообщение)',
+        example: 'enviar la postal a nuestros amigos',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué compra el marido?',
+        options: ['Una postal', 'Un imán', 'Un abanico'],
+        correct: 1,
+      },
+      {
+        q: '¿Cuánto cuesta cada abanico?',
+        options: ['Cinco euros', 'Ocho euros', 'Diez euros'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo paga la narradora?',
+        options: ['Con tarjeta', 'En efectivo', 'Por internet'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Para + получатель',
+        note:
+          'para вводит того, КОМУ предназначен предмет или действие: ' +
+          'uno blanco para mi madre, otro rojo para mi hermana, imanes para la nevera. ' +
+          'Сравните с целью: para llegar, hay que… (para + инфинитив = чтобы…).',
+      },
+      {
+        topic: 'Pretérito Perfecto: дневные итоги',
+        note:
+          'hemos visitado, ha elegido, he comprado, he pagado, ha dado — всё в рамках сегодняшнего дня. ' +
+          'Pretérito Perfecto «собирает» события незакрытого периода вокруг говорящего.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-030',
+    level: 'A1',
+    day: 30,
+    title: 'El último día',
+    text:
+      'Hoy es nuestro último día en España. Hemos pasado dos semanas inolvidables. ' +
+      'Hemos visitado Madrid, Granada, Sevilla y Barcelona. ' +
+      'Hemos comido paella en Valencia y churros con chocolate en Madrid. ' +
+      '¡Qué bien hemos comido!\n\n' +
+      'Esta mañana hemos hecho las maletas con calma. ' +
+      'Marta dice que su maleta pesa demasiado por los regalos.\n\n' +
+      'Por la tarde vamos a ir al aeropuerto en taxi. ' +
+      'El vuelo sale a las ocho de la noche. ' +
+      'Vamos a llegar a casa muy cansados, pero con la cabeza llena de recuerdos bonitos.\n\n' +
+      '¡Hasta pronto, España! Seguro que vamos a volver el próximo año.',
+    vocabulary: [
+      {
+        word: 'último, -a',
+        translation: 'последний (антоним — primero, -a)',
+        example: 'nuestro último día',
+      },
+      {
+        word: 'inolvidable',
+        translation: 'незабываемый (одна форма для м.р. и ж.р.)',
+        example: 'dos semanas inolvidables',
+      },
+      {
+        word: 'la paella',
+        translation: 'паэлья — рисовое блюдо родом из Валенсии (с морепродуктами или мясом)',
+        example: 'Hemos comido paella en Valencia.',
+      },
+      {
+        word: 'los churros con chocolate',
+        translation: 'чуррос с горячим шоколадом — традиционный испанский завтрак или полдник',
+        example: 'churros con chocolate en Madrid',
+      },
+      {
+        word: 'hacer las maletas',
+        translation: 'собирать чемоданы (фиксированная фраза)',
+        example: 'Hemos hecho las maletas con calma.',
+      },
+      {
+        word: 'la maleta',
+        translation: 'чемодан',
+        example: 'su maleta pesa demasiado',
+      },
+      {
+        word: 'pesar',
+        translation: 'весить (la maleta pesa = чемодан весит); взвешивать',
+        example: 'la maleta pesa demasiado',
+      },
+      {
+        word: 'demasiado',
+        translation: 'слишком (много). demasiado caro — слишком дорого',
+        example: 'pesa demasiado',
+      },
+      {
+        word: 'el aeropuerto',
+        translation: 'аэропорт',
+        example: 'Vamos al aeropuerto en taxi.',
+      },
+      {
+        word: 'el vuelo',
+        translation: 'рейс, полёт (volar — летать)',
+        example: 'El vuelo sale a las ocho.',
+      },
+      {
+        word: '¡Hasta pronto!',
+        translation: 'до скорого! (прощание; ср. ¡Hasta luego!, ¡Hasta mañana!)',
+        example: '¡Hasta pronto, España!',
+      },
+      {
+        word: 'seguro que',
+        translation: 'наверняка, точно (выражение уверенности)',
+        example: 'Seguro que vamos a volver.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuánto tiempo han pasado en España?',
+        options: ['Una semana', 'Dos semanas', 'Un mes'],
+        correct: 1,
+      },
+      {
+        q: '¿Por qué pesa demasiado la maleta?',
+        options: ['Por la ropa', 'Por los regalos', 'Por los libros'],
+        correct: 1,
+      },
+      {
+        q: '¿A qué hora sale el vuelo?',
+        options: ['A las seis de la tarde', 'A las ocho de la noche', 'A las diez de la noche'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Pretérito Perfecto: подведение итогов поездки',
+        note:
+          'hemos pasado, hemos visitado, hemos comido, hemos hecho — Pretérito Perfecto собирает «всё, что мы сделали» ' +
+          'за период, который ещё переживаешь как свой (отпуск, день, неделю). ' +
+          'Маркеры: hoy, esta mañana, en estas dos semanas, ya, todavía no.',
+      },
+      {
+        topic: 'Ir a + infinitivo: планы на сегодня и на будущее',
+        note:
+          'vamos a ir al aeropuerto, vamos a llegar, vamos a volver el próximo año. ' +
+          'Универсальная конструкция для будущего на A1 — заменяет «настоящее» Futuro. ' +
+          'Формула: ir в Presente + a + инфинитив. Подходит и для ближайших, и для отдалённых планов.',
+      },
+    ],
+  },
 );
