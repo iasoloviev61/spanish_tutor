@@ -1,0 +1,341 @@
+// ============================================================
+// Unidad 66 — había trabajado: pretérito pluscuamperfecto.
+// «Уже сделал к тому моменту в прошлом»: imperfecto de haber + participio.
+// ============================================================
+window.TEXTBOOK = window.TEXTBOOK || {};
+window.TEXTBOOK.u66 = {
+  id: 'u66',
+  number: 66,
+  title: { es: 'había trabajado', topic: 'Pretérito pluscuamperfecto' },
+  topicRu: 'Pretérito pluscuamperfecto — «уже сделал к тому моменту»',
+
+  // ---------------------------- ТЕОРИЯ ----------------------------
+  theory: [
+    {
+      type: 'rule',
+      es: 'El <strong>pretérito pluscuamperfecto</strong> se forma con el <em>pretérito imperfecto</em> del verbo <strong>haber</strong> y el <strong>participio</strong> del verbo principal: <em>había trabajado, habías comido, habíamos vivido…</em>',
+      ru: '<strong>Pretérito pluscuamperfecto</strong> = имперфект <em>haber</em> + причастие основного глагола (<em>-ado / -ido</em>): <em>había trabajado, habías comido, habíamos vivido…</em> Русский эквивалент — «уже сделал, ещё не сделал» к моменту в прошлом.',
+      examples: [
+        { es: 'Cuando llegué al banco, ya <strong>había cerrado</strong>.', ru: 'Когда я пришёл в банк, он уже закрылся.' },
+        { es: 'Ayer me encontré con Lolo y no lo reconocí. Se <strong>había afeitado</strong> la cabeza.', ru: 'Вчера я встретил Лоло и не узнал его. Он побрился наголо.' },
+      ],
+    },
+    {
+      type: 'heading',
+      text: 'Спряжение haber (imperfecto) + participio',
+    },
+    {
+      type: 'table',
+      caption: 'había + participio',
+      columns: ['Лицо', 'haber (imperfecto)', 'participio'],
+      colClasses: ['col-pattern', 'col-pattern', 'col-ex'],
+      rows: [
+        ['(yo)',                     '<strong>había</strong>',     '<em>trabajado, comido, vivido…</em>'],
+        ['(tú)',                      '<strong>habías</strong>',     '—'],
+        ['(usted, él, ella)',          '<strong>había</strong>',     '—'],
+        ['(nosotros, -as)',             '<strong>habíamos</strong>', '—'],
+        ['(vosotros, -as)',              '<strong>habíais</strong>',  '—'],
+        ['(ustedes, ellos, -as)',         '<strong>habían</strong>',   '—'],
+      ],
+    },
+    {
+      type: 'heading',
+      text: 'Когда употребляем',
+    },
+    {
+      type: 'rule',
+      es: 'Se usa el pluscuamperfecto para una acción <strong>terminada antes</strong> de otra acción o momento del pasado: «к тому моменту я уже…».',
+      ru: 'Pluscuamperfecto обозначает действие, которое <strong>завершилось до</strong> другого прошлого момента или другого прошедшего действия. Часто переводится на русский «уже сделал к тому моменту».',
+      examples: [
+        { es: 'Cuando llegamos a la estación, el tren ya <strong>se había ido</strong>.', ru: 'Когда мы пришли на вокзал, поезд уже ушёл.' },
+        { es: '—¿Por qué suspendiste? —No <strong>había estudiado</strong> nada.', ru: '— Почему ты завалил экзамен? — Я ничего не учил (до экзамена).' },
+      ],
+    },
+    {
+      type: 'heading',
+      text: 'Pluscuamperfecto с ya и todavía no',
+    },
+    {
+      type: 'table',
+      caption: 'ya / todavía no с pluscuamperfecto',
+      columns: ['Сигнал', 'Что значит', 'Пример'],
+      colClasses: ['col-pattern', 'col-pattern', 'col-ex'],
+      rows: [
+        ['<strong>ya</strong>',           'к тому моменту уже сделал',          '<em>Cuando conocí a Teresa, ya había tenido el niño.</em>'],
+        ['<strong>todavía no</strong>',    'к тому моменту ещё не сделал',        '<em>Cuando llamé a Antonio, todavía no se había levantado.</em>'],
+        ['<strong>no… todavía</strong>',    'то же самое (порядок слов другой)',     '<em>Concha no había acabado la carrera todavía.</em>'],
+      ],
+    },
+    {
+      type: 'rule',
+      es: 'A veces el pluscuamperfecto explica <strong>el resultado o la causa</strong> de algo en el pasado: «не смог купить, потому что забыл карточку».',
+      ru: 'Иногда pluscuamperfecto объясняет <strong>причину</strong> или <strong>следствие</strong> прошлого события: «он не сдал — потому что не учился», «они не вошли — потому что забыли ключи внутри».',
+      examples: [
+        { es: 'No pude comprar nada porque me <strong>había dejado</strong> la tarjeta de crédito.', ru: 'Я ничего не смог купить, потому что забыл (=оставил) карту.' },
+        { es: 'Cené tarde porque Sonia me <strong>había llamado</strong> a las nueve.', ru: 'Я поужинал поздно, потому что в девять мне позвонила Соня.' },
+      ],
+    },
+    {
+      type: 'atencion',
+      es: 'El participio en el pluscuamperfecto <strong>no concuerda</strong> con el sujeto: <em>Marta había llegado</em>, <em>Marta y Luis habían llegado</em>. Tampoco se separa el participio del verbo <em>haber</em>: <em>siempre había trabajado</em>, no <s>«había siempre trabajado»</s>.',
+      ru: 'Причастие в pluscuamperfecto <strong>не согласуется</strong> с подлежащим — всегда форма на <em>-o</em>: <em>Marta había llegado, Marta y Luis habían llegado</em>. И между <em>haber</em> и причастием ничего не вставляем: наречие идёт перед <em>haber</em> или после причастия.',
+      examples: [
+        { es: 'Las chicas <strong>habían salido</strong> ya. (не <s>habían salidas</s>)', ru: 'Девушки уже ушли.' },
+        { es: 'Nunca <strong>había visto</strong> tanta nieve. (не <s>había nunca visto</s>)', ru: 'Никогда не видел столько снега.' },
+      ],
+    },
+  ],
+
+  // ---------------------------- УПРАЖНЕНИЯ ----------------------------
+  exercises: [
+    {
+      id: '66.1',
+      title: 'Соберите pluscuamperfecto',
+      type: 'fill',
+      instructions: 'Запишите форму целиком. Образец: <em>(yo, trabajar) → había trabajado</em>.',
+      questions: [
+        { id: 'q1', prompt: '(yo, comer) →',                  correct: ['había comido'] },
+        { id: 'q2', prompt: '(tú, vivir) →',                    correct: ['habías vivido'] },
+        { id: 'q3', prompt: '(él, llegar) →',                    correct: ['había llegado'] },
+        { id: 'q4', prompt: '(nosotros, salir) →',                correct: ['habíamos salido'] },
+        { id: 'q5', prompt: '(vosotros, terminar) →',               correct: ['habíais terminado'] },
+        { id: 'q6', prompt: '(ellos, estudiar) →',                    correct: ['habían estudiado'] },
+        { id: 'q7', prompt: '(yo, dormir) →',                          correct: ['había dormido'] },
+        { id: 'q8', prompt: '(usted, hablar) →',                         correct: ['había hablado'] },
+      ],
+    },
+
+    {
+      id: '66.2',
+      title: 'Объедините две фразы',
+      type: 'fill',
+      instructions: 'Соедините две фразы через <em>cuando</em> + pluscuamperfecto. Образец: <em>El concierto acabó. Llegué al teatro. → Cuando llegué al teatro, el concierto había acabado.</em>',
+      questions: [
+        { id: 'q1', prompt: 'La película empezó. Llegamos al cine. →',
+          correct: ['Cuando llegamos al cine, la película había empezado.', 'Cuando llegamos al cine, la película había empezado'] },
+        { id: 'q2', prompt: 'El autobús se fue. Llegué a la parada. →',
+          correct: ['Cuando llegué a la parada, el autobús se había ido.', 'Cuando llegué a la parada, el autobús se había ido'] },
+        { id: 'q3', prompt: 'La tienda cerró. Llegamos al centro. →',
+          correct: ['Cuando llegamos al centro, la tienda había cerrado.', 'Cuando llegamos al centro, la tienda había cerrado'] },
+        { id: 'q4', prompt: 'Mis padres cenaron. Volví a casa. →',
+          correct: ['Cuando volví a casa, mis padres habían cenado.', 'Cuando volví a casa, mis padres habían cenado'] },
+        { id: 'q5', prompt: 'Hubo un accidente. Llegamos a la carretera. →',
+          correct: ['Cuando llegamos a la carretera, hubo un accidente.', 'Cuando llegamos a la carretera, había habido un accidente.', 'Cuando llegamos a la carretera, había habido un accidente'],
+          explanation: '«Había habido» подходит, если авария была раньше нашего приезда; <em>hubo</em> — если в этот же момент.' },
+      ],
+    },
+
+    {
+      id: '66.3',
+      title: 'Причина в прошлом',
+      type: 'fill',
+      instructions: 'Поставьте глагол в pluscuamperfecto, чтобы объяснить, почему случилось то, что слева.',
+      questions: [
+        { id: 'q1', prompt: 'No pudieron entrar en casa. Mis padres (dejar) ___ las llaves dentro.',
+          correct: ['habían dejado'] },
+        { id: 'q2', prompt: 'No pude comprar pan. Las tiendas (cerrar) ___.',
+          correct: ['habían cerrado'] },
+        { id: 'q3', prompt: 'Aprobó todo. (Estudiar) ___ mucho durante el año.',
+          correct: ['Había estudiado'] },
+        { id: 'q4', prompt: 'No reconocí a Paloma. Se (teñir) ___ el pelo.',
+          correct: ['había teñido'] },
+        { id: 'q5', prompt: 'Llegó tarde a la oficina. (Olvidarse) ___ del despertador.',
+          correct: ['Se había olvidado'] },
+        { id: 'q6', prompt: 'Tuvimos que volver a casa. (Yo, dejarse) ___ el móvil en la mesa.',
+          correct: ['Me había dejado'] },
+        { id: 'q7', prompt: 'No pudo hablar con él. Víctor ya (irse) ___.',
+          correct: ['se había ido'] },
+      ],
+    },
+
+    {
+      id: '66.4',
+      title: 'ya o todavía no',
+      type: 'fill',
+      instructions: 'Опишите ситуацию утра. Когда друзья пришли к Хавьеру, кто что уже сделал, а кто ещё нет? Используйте <em>ya</em> или <em>todavía no</em> + pluscuamperfecto.',
+      questions: [
+        { id: 'q1', prompt: 'Fernando — спал. (levantarse) → Fernando ___.',
+          correct: ['todavía no se había levantado', 'no se había levantado todavía'] },
+        { id: 'q2', prompt: 'Lidia — завтракала. (desayunar) → Lidia ___.',
+          correct: ['todavía no había desayunado', 'no había desayunado todavía'] },
+        { id: 'q3', prompt: 'Miguel — застилал кровать. (hacer la cama) → Miguel ___.',
+          correct: ['todavía no había hecho la cama', 'no había hecho la cama todavía'] },
+        { id: 'q4', prompt: 'Rosa — комната уже убрана. (recoger la habitación) → Rosa ___.',
+          correct: ['ya había recogido la habitación'] },
+        { id: 'q5', prompt: 'Ángel y Pilar — уже одеты. (vestirse) → Ángel y Pilar ___.',
+          correct: ['ya se habían vestido'] },
+      ],
+    },
+
+    {
+      id: '66.5',
+      title: 'Обведите правильную форму',
+      type: 'choice',
+      instructions: 'Indefinido или pluscuamperfecto?',
+      questions: [
+        { id: 'q1', prompt: 'Cuando (llegué / había llegado) a casa, mi hermano ya (cenó / había cenado).',
+          options: ['llegué / había cenado', 'había llegado / cenó', 'llegué / cenó', 'había llegado / había cenado'],
+          correct: 'llegué / había cenado',
+          explanation: 'Опорная точка в прошлом — <em>llegué</em> (indefinido). Действие до неё — pluscuamperfecto.' },
+        { id: 'q2', prompt: 'No reconocí a Lolo: se (afeitó / había afeitado) la cabeza.',
+          options: ['afeitó', 'había afeitado'],
+          correct: 'había afeitado' },
+        { id: 'q3', prompt: 'El examen fue fácil. Yo (estudié / había estudiado) mucho la noche anterior.',
+          options: ['estudié', 'había estudiado'],
+          correct: 'había estudiado' },
+        { id: 'q4', prompt: 'Ayer (vi / había visto) a Marta en el parque.',
+          options: ['vi', 'había visto'],
+          correct: 'vi',
+          explanation: 'Простой факт в прошлом — indefinido.' },
+        { id: 'q5', prompt: 'Cuando (conocí / había conocido) a Teresa, ya (tuvo / había tenido) el niño.',
+          options: ['conocí / había tenido', 'había conocido / tuvo', 'conocí / tuvo', 'había conocido / había tenido'],
+          correct: 'conocí / había tenido' },
+        { id: 'q6', prompt: 'Cuando llamé a Antonio, todavía no se (levantó / había levantado).',
+          options: ['levantó', 'había levantado'],
+          correct: 'había levantado' },
+      ],
+    },
+
+    {
+      id: '66.6',
+      title: 'Multi: где нужен pluscuamperfecto?',
+      type: 'multi',
+      instructions: 'Отметьте все фразы, в которых <strong>уместен</strong> pretérito pluscuamperfecto.',
+      questions: [
+        {
+          id: 'q1',
+          prompt: 'Где pluscuamperfecto на месте?',
+          options: [
+            'Cuando llegué a casa, mis padres ya habían cenado.',
+            'Ayer cené con mis padres a las nueve.',
+            'Antes de los veinte años, nunca había viajado al extranjero.',
+            'Anoche había viajado al extranjero por primera vez.',
+            'Cuando se conocieron, Concha todavía no había acabado la carrera.',
+            'Concha todavía no había acabado la carrera ahora.',
+            'No reconocí a Lolo: se había afeitado la cabeza.',
+            'Hoy se había afeitado la cabeza.',
+          ],
+          correct: [
+            'Cuando llegué a casa, mis padres ya habían cenado.',
+            'Antes de los veinte años, nunca había viajado al extranjero.',
+            'Cuando se conocieron, Concha todavía no había acabado la carrera.',
+            'No reconocí a Lolo: se había afeitado la cabeza.',
+          ],
+          explanation: 'Pluscuamperfecto нужен только для прошлого «к тому моменту» — не для настоящего и не для простого «вчера/анохи».',
+        },
+      ],
+    },
+
+    {
+      id: '66.7',
+      title: 'Match: глагол ↔ participio',
+      type: 'match',
+      instructions: 'Соедините инфинитив с причастием. (Все участвуют в pluscuamperfecto.)',
+      pool: ['hecho', 'dicho', 'visto', 'escrito', 'puesto', 'vuelto', 'abierto', 'roto'],
+      questions: [
+        { id: 'q1', prompt: '<em>hacer</em>',     correct: 'hecho' },
+        { id: 'q2', prompt: '<em>decir</em>',      correct: 'dicho' },
+        { id: 'q3', prompt: '<em>ver</em>',         correct: 'visto' },
+        { id: 'q4', prompt: '<em>escribir</em>',     correct: 'escrito' },
+        { id: 'q5', prompt: '<em>poner</em>',         correct: 'puesto' },
+        { id: 'q6', prompt: '<em>volver</em>',         correct: 'vuelto' },
+        { id: 'q7', prompt: '<em>abrir</em>',           correct: 'abierto' },
+        { id: 'q8', prompt: '<em>romper</em>',           correct: 'roto' },
+      ],
+    },
+
+    {
+      id: '66.8',
+      title: 'Найдите ошибку',
+      type: 'choice',
+      instructions: 'В каждом ряду одна форма построена неправильно.',
+      questions: [
+        { id: 'q1', prompt: 'Где ошибка?',
+          options: [
+            'Marta había llegado tarde.',
+            'Las chicas habían llegadas tarde.',
+            'Las chicas habían llegado tarde.',
+            'Mis hermanos ya habían cenado.',
+          ],
+          correct: 'Las chicas habían llegadas tarde.',
+          explanation: 'Причастие в pluscuamperfecto <strong>не согласуется</strong> с подлежащим: всегда <em>llegado</em>.' },
+        { id: 'q2', prompt: 'Где ошибка?',
+          options: [
+            'Nunca había visto tanta nieve.',
+            'Había nunca visto tanta nieve.',
+            'Siempre había trabajado en esta empresa.',
+            'Ya había escrito el correo cuando me llamaste.',
+          ],
+          correct: 'Había nunca visto tanta nieve.',
+          explanation: 'Между <em>haber</em> и причастием ничего не вставляется. <em>Nunca</em> — перед <em>haber</em>.' },
+        { id: 'q3', prompt: 'Где ошибка?',
+          options: [
+            'Cuando llegué, ya habían cerrado el banco.',
+            'Cuando llegué, ya habían cerrar el banco.',
+            'Cuando llegué, ya había cerrado el banco.',
+            'Cuando llegué, el banco ya había cerrado.',
+          ],
+          correct: 'Cuando llegué, ya habían cerrar el banco.',
+          explanation: 'После <em>haber</em> идёт причастие, не инфинитив.' },
+      ],
+    },
+
+    {
+      id: '66.9',
+      title: 'Из participio в pluscuamperfecto',
+      type: 'fill',
+      instructions: 'Дополните до полной формы pluscuamperfecto, согласуя <em>haber</em> с подлежащим.',
+      questions: [
+        { id: 'q1', prompt: 'Cuando salí, mi madre ya (preparar) ___ la cena. →',
+          correct: ['había preparado'] },
+        { id: 'q2', prompt: 'Antes de las once, los niños ya (dormirse) ___. →',
+          correct: ['se habían dormido'] },
+        { id: 'q3', prompt: '¿(Tú, ver) ___ alguna vez el mar antes de aquel verano? →',
+          correct: ['Habías visto'] },
+        { id: 'q4', prompt: 'Nunca (nosotros, oír) ___ una historia tan extraña. →',
+          correct: ['habíamos oído'] },
+        { id: 'q5', prompt: 'Cuando llegó la policía, los ladrones ya (escapar) ___. →',
+          correct: ['habían escapado'] },
+        { id: 'q6', prompt: 'A las diez todavía no (yo, terminar) ___ los deberes. →',
+          correct: ['había terminado'] },
+      ],
+    },
+
+    {
+      id: '66.10',
+      title: 'Multi: какие причастия неправильные?',
+      type: 'multi',
+      instructions: 'Отметьте <strong>все</strong> неправильные причастия (которые НЕ образуются по схеме <em>-ado/-ido</em>).',
+      questions: [
+        {
+          id: 'q1',
+          prompt: 'Какие причастия — нерегулярные?',
+          options: ['hablado', 'hecho', 'comido', 'dicho', 'vivido', 'escrito', 'estudiado', 'puesto', 'oído', 'visto', 'salido', 'vuelto', 'roto', 'tenido', 'abierto'],
+          correct: ['hecho', 'dicho', 'escrito', 'puesto', 'visto', 'vuelto', 'roto', 'abierto'],
+          explanation: 'Нерегулярные: <em>hecho, dicho, escrito, puesto, visto, vuelto, roto, abierto</em> (плюс <em>muerto, descubierto…</em>).',
+        },
+      ],
+    },
+
+    {
+      id: '66.11',
+      title: 'Аудио: послушайте и запишите',
+      type: 'fill',
+      instructions: 'Запишите фразу полностью.',
+      questions: [
+        { id: 'q1', prompt: '', audio: 'Cuando llegué al banco, ya había cerrado.',
+          correct: ['Cuando llegué al banco, ya había cerrado.', 'Cuando llegué al banco, ya había cerrado'] },
+        { id: 'q2', prompt: '', audio: 'No reconocí a Lolo. Se había afeitado la cabeza.',
+          correct: ['No reconocí a Lolo. Se había afeitado la cabeza.', 'No reconocí a Lolo. Se había afeitado la cabeza'] },
+        { id: 'q3', prompt: '', audio: 'Antes de los veinte años nunca había salido de mi pueblo.',
+          correct: ['Antes de los veinte años nunca había salido de mi pueblo.', 'Antes de los veinte años nunca había salido de mi pueblo'] },
+        { id: 'q4', prompt: '', audio: 'Cuando llamé a Antonio, todavía no se había levantado.',
+          correct: ['Cuando llamé a Antonio, todavía no se había levantado.', 'Cuando llamé a Antonio, todavía no se había levantado'] },
+        { id: 'q5', prompt: '', audio: 'Suspendí porque no había estudiado nada.',
+          correct: ['Suspendí porque no había estudiado nada.', 'Suspendí porque no había estudiado nada'] },
+        { id: 'q6', prompt: '', audio: 'Mis padres ya habían cenado cuando volví a casa.',
+          correct: ['Mis padres ya habían cenado cuando volví a casa.', 'Mis padres ya habían cenado cuando volví a casa'] },
+      ],
+    },
+  ],
+};

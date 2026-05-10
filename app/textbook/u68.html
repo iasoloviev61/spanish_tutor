@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unidad 68 · Futuro simple: verbos irregulares</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/textbook.css">
+</head>
+<body>
+<div class="app unit-page">
+
+  <header>
+    <div>
+      <h1>Conjugar — <span class="accent">учебник</span></h1>
+      <div class="subtitle">Unidad 68</div>
+    </div>
+    <div id="profile-bar"></div>
+  </header>
+
+  <nav class="page-nav">
+    <a href="../textbook.html">К списку модулей</a>
+  </nav>
+
+  <div id="unit-header" class="unit-header"></div>
+
+  <div class="unit-spread">
+    <section id="theory-pane" class="spread-pane theory-pane"></section>
+    <section id="practice-pane" class="spread-pane practice-pane"></section>
+  </div>
+
+  <div id="unit-summary" class="unit-summary"></div>
+
+</div>
+
+<script src="../js/db.js"></script>
+<script src="../js/profile.js"></script>
+<script src="../js/textbook.js"></script>
+<script src="../data/textbook/u68.js"></script>
+<script>
+  (async () => {
+    await App.profile.mount('#profile-bar');
+    await App.textbook.mountUnitPage('u68');
+  })();
+</script>
+</body>
+</html>
