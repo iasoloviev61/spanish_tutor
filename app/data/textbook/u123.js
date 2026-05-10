@@ -1,0 +1,340 @@
+// ============================================================
+// Unidad 123 — Reglas de acentuación (1)
+// «médico, árbol, inglés»: общее правило ударения и tilde diacrítica.
+// ============================================================
+window.TEXTBOOK = window.TEXTBOOK || {};
+window.TEXTBOOK.u123 = {
+  id: 'u123',
+  number: 123,
+  title: { es: 'médico, árbol, inglés', topic: 'Reglas de acentuación (1)' },
+  topicRu: 'Правила постановки графического ударения (часть 1)',
+
+  theory: [
+    {
+      type: 'rule',
+      es: 'En español todas las palabras de más de una sílaba tienen una <strong>sílaba fuerte</strong> (acento tónico): se pronuncia con más fuerza que las demás. A veces se marca con un signo gráfico — <strong>la tilde (´)</strong>: <em>árbol, café, hábil, médico</em>. Pero la mayoría de palabras no llevan tilde: el lugar del acento se deduce por reglas.',
+      ru: 'Любое испанское слово больше одного слога имеет ударный (сильный) слог. Иногда его обозначают «крышечкой» — <em>tilde</em>. Но в большинстве слов tilde не нужна: место ударения определяется правилами. Запоминать tilde для каждого слова не нужно — нужно знать правила.',
+      examples: [
+        { es: 'Las sílabas <strong>má</strong> en <em>her<strong>ma</strong>no</em>, <strong>Án</strong> en <em><strong>Án</strong>gel</em>, <strong>mé</strong> en <em><strong>mé</strong>dico</em> llevan el acento tónico.',
+          ru: 'Сильный (ударный) слог — например, <em>her<strong>ma</strong>no</em>, <em><strong>Án</strong>gel</em>, <em><strong>mé</strong>dico</em>.' },
+      ],
+    },
+
+    {
+      type: 'heading',
+      text: 'Два общих правила',
+    },
+    {
+      type: 'table',
+      caption: 'Когда tilde НЕ нужна (правило само работает)',
+      columns: ['Окончание слова', 'Ударение на', 'Примеры'],
+      colClasses: ['col-pattern', 'col-pattern', 'col-ex'],
+      rows: [
+        ['согласная (кроме <em>n, s</em>)', 'последний слог',
+          '<em>espa<strong>ñol</strong>, ho<strong>tel</strong>, sa<strong>lud</strong>, us<strong>ted</strong>, a<strong>mar</strong>, be<strong>ber</strong>, re<strong>loj</strong></em>'],
+        ['гласная, <em>n</em> или <em>s</em>', 'предпоследний слог',
+          '<em><strong>ca</strong>sa, <strong>li</strong>bro, restau<strong>ran</strong>te, <strong>a</strong>mas, <strong>a</strong>man, <strong>be</strong>bo, <strong>be</strong>be</em>'],
+      ],
+    },
+    {
+      type: 'rule',
+      es: 'Cuando el acento <strong>no sigue</strong> estas reglas (es decir, el sitio fuerte de la palabra es «raro»), se marca con tilde sobre la vocal acentuada.',
+      ru: 'Если ударение падает «не туда, куда положено», ставим tilde. Это и есть смысл «крышечки»: «у этого слова правило не работает — ударение здесь».',
+      examples: [
+        { es: 'pol<strong>i</strong>cía, ca<strong>fé</strong>, ra<strong>tón</strong>, in<strong>glés</strong>, <strong>fút</strong>bol, <strong>ár</strong>bol, a<strong>zú</strong>car, <strong>lá</strong>piz, bo<strong>lí</strong>grafo, <strong>mé</strong>dico, <strong>sá</strong>bado.',
+          ru: 'Ударные слоги тут «неправильные» — поэтому tilde.' },
+      ],
+    },
+
+    {
+      type: 'atencion',
+      es: 'Al cambiar el número o el género, puede cambiar la sílaba fuerte y, con ella, la tilde: <em>inglés → ingl<strong>esa</strong>, autobús → autobuses, joven → jóvenes, examen → exámenes, ratón → ratones, jersey → jerséis</em>.',
+      ru: 'При изменении числа/рода ударный слог иногда перемещается — а значит, tilde появляется или исчезает. Сравните: <em>inglés / inglesa, autobús / autobuses, joven / jóvenes, examen / exámenes</em>.',
+    },
+
+    {
+      type: 'heading',
+      text: 'Односложные слова',
+    },
+    {
+      type: 'rule',
+      es: 'Las palabras de <strong>una sola sílaba</strong> normalmente no llevan tilde: <em>pan, tren, luz, sol, sal, dos, fui, vio, dio, rey, seis</em>.',
+      ru: 'Односложные слова tilde обычно не несут: <em>pan, tren, luz, sol, sal, dos</em>. Различительная tilde — отдельная история (см. ниже).',
+    },
+
+    {
+      type: 'heading',
+      text: 'Различительная (диакритическая) tilde',
+    },
+    {
+      type: 'rule',
+      es: 'A veces se usa la tilde para <strong>distinguir palabras de igual forma y diferente significado</strong>. Estas son las más importantes:',
+      ru: 'Иногда tilde служит лишь для того, чтобы отличить пару одинаково написанных слов разного значения. Запомните эти семь пар:',
+    },
+    {
+      type: 'table',
+      caption: 'tilde diacrítica',
+      columns: ['С tilde (≠)', 'Без tilde', 'Пример'],
+      colClasses: ['col-pattern', 'col-pattern', 'col-ex'],
+      rows: [
+        ['<strong>él</strong> — личн. мест. «он»', '<strong>el</strong> — артикль',
+          '<em><strong>Él</strong> es de Hamburgo. / <strong>El</strong> coche está mal aparcado.</em>'],
+        ['<strong>sí</strong> — «да», утв.', '<strong>si</strong> — «если»',
+          '<em><strong>Sí</strong>, quiero. / <strong>Si</strong> quieres, cómpratelo.</em>'],
+        ['<strong>mí</strong> — личн. мест. «мне»', '<strong>mi</strong> — притяж. «мой»',
+          '<em>¿Es para <strong>mí</strong>? / Es <strong>mi</strong> padre.</em>'],
+        ['<strong>tú</strong> — «ты»', '<strong>tu</strong> — «твой»',
+          '<em>Y <strong>tú</strong>, ¿dónde vives? / ¿Quién es <strong>tu</strong> profesor?</em>'],
+        ['<strong>dé</strong> — глагол <em>dar</em>', '<strong>de</strong> — предлог',
+          '<em>Dile que te <strong>dé</strong> las llaves. / Es el padre <strong>de</strong> mi novia.</em>'],
+        ['<strong>sé</strong> — глагол <em>saber</em>', '<strong>se</strong> — местоимение',
+          '<em><strong>Sé</strong> hablar español. / <strong>Se</strong> levanta temprano.</em>'],
+        ['<strong>té</strong> — «чай» (сущ.)', '<strong>te</strong> — местоимение',
+          '<em>No me gusta el <strong>té</strong>. / ¿<strong>Te</strong> gusta el café?</em>'],
+      ],
+    },
+
+    {
+      type: 'heading',
+      text: 'Вопросительные и восклицательные слова',
+    },
+    {
+      type: 'rule',
+      es: 'Las palabras interrogativas y exclamativas (<em>qué, quién, dónde, cuándo, cómo, cuánto, cuál, por qué</em>) llevan <strong>tilde</strong>. Las mismas palabras como relativos o conjunciones — sin tilde (<em>que, quien, donde, cuando, como, cuanto, cual, porque</em>).',
+      ru: 'Когда слово «вопросительное» или «восклицательное» — tilde. То же слово как союз/относительное — без tilde.',
+      examples: [
+        { es: '¿<strong>Dónde</strong> vives? — Esta es la casa <strong>donde</strong> nací.', ru: '«Где?» — вопрос → <em>dónde</em>. «(Это дом,) где…» — союз → <em>donde</em>.' },
+        { es: '¿<strong>Qué</strong> quieres? — Ese es el coche <strong>que</strong> quiero.', ru: '«Что?» — <em>qué</em>. «(Машина,) которую…» — <em>que</em>.' },
+        { es: '¡<strong>Cuánto</strong> trabaja! — Trabaja <strong>cuanto</strong> puede.', ru: 'Восклицание → <em>cuánto</em>; союзное наречие → <em>cuanto</em>.' },
+      ],
+    },
+  ],
+
+  exercises: [
+    {
+      id: '123.1',
+      title: 'По правилу или с tilde?',
+      type: 'choice',
+      instructions: 'Слово оканчивается на гласную / n / s → ударение на предпоследнем; на согласную (кроме n, s) → на последнем. Иначе нужна tilde. Выберите правильную форму.',
+      questions: [
+        { id: 'q1', prompt: '«балон»',                            options: ['balon', 'balón'], correct: 'balón', explanation: 'Оканчивается на <em>n</em> — ударение должно быть на предпоследнем (<em>ba</em>lon). Но ударение здесь на последнем → tilde.' },
+        { id: 'q2', prompt: '«кабеса»',                             options: ['cabeza', 'cabéza'], correct: 'cabeza', explanation: 'Оканчивается на гласную, ударение на предпоследнем — правило работает.' },
+        { id: 'q3', prompt: '«Санчес» (фамилия)',                     options: ['Sanchez', 'Sánchez'], correct: 'Sánchez', explanation: 'Оканчивается на <em>z</em> — ударение должно быть на <em>chez</em>; но реально на <em>San</em> → tilde.' },
+        { id: 'q4', prompt: '«Эквадор»',                                options: ['Ecuador', 'Ecuádor'], correct: 'Ecuador' },
+        { id: 'q5', prompt: '«Перу»',                                    options: ['Peru', 'Perú'], correct: 'Perú', explanation: 'Гласная → ударение должно быть на предпоследнем, реально на <em>ú</em> → tilde.' },
+        { id: 'q6', prompt: '«октубре»',                                  options: ['octubre', 'octúbre'], correct: 'octubre' },
+        { id: 'q7', prompt: 'прош. время «llorar» — yo',                    options: ['lloro', 'lloró'], correct: 'lloro', explanation: 'Если речь о настоящем (<em>я плачу</em>) — без tilde. Прошлое 3 л. — <em>lloró</em>.' },
+        { id: 'q8', prompt: 'прош. время «llorar» — él',                     options: ['lloro', 'lloró'], correct: 'lloró' },
+        { id: 'q9', prompt: '«карсель»',                                     options: ['carcel', 'cárcel'], correct: 'cárcel', explanation: 'Оканчивается на <em>l</em> — должно быть на последнем; ударение на <em>cár</em> → tilde.' },
+        { id: 'q10', prompt: '«азуль»',                                       options: ['azul', 'ázul'], correct: 'azul' },
+      ],
+    },
+
+    {
+      id: '123.2',
+      title: 'Поставьте tilde, если нужна',
+      type: 'fill',
+      instructions: 'Запишите слово. Если tilde не нужна — оставьте как есть. Если нужна — добавьте.',
+      questions: [
+        { id: 'q1', prompt: 'francés (m.)',                              correct: 'francés' },
+        { id: 'q2', prompt: 'alemana (f.)',                                correct: 'alemana' },
+        { id: 'q3', prompt: 'marroquí (тоже «марокканский»)',                correct: 'marroquí', explanation: 'Гласная на конце, но ударение на ней → tilde.' },
+        { id: 'q4', prompt: '«меня зовут Пепе»',                              correct: 'Pepe' },
+        { id: 'q5', prompt: 'González (фамилия)',                               correct: 'González' },
+        { id: 'q6', prompt: 'Panamá',                                            correct: 'Panamá' },
+        { id: 'q7', prompt: 'África',                                              correct: 'África' },
+        { id: 'q8', prompt: 'alemán (m.)',                                          correct: 'alemán' },
+        { id: 'q9', prompt: 'melones (plural de «melón»)',                            correct: 'melones', explanation: 'При плюрале ударение остаётся на «lo» — теперь сразу два варианта правила работают: гласная на конце, предпоследний → без tilde.' },
+        { id: 'q10', prompt: 'lápiz',                                                  correct: 'lápiz' },
+        { id: 'q11', prompt: 'lápices (plural)',                                         correct: 'lápices' },
+        { id: 'q12', prompt: 'útil',                                                      correct: 'útil' },
+        { id: 'q13', prompt: 'árboles (plural de árbol)',                                  correct: 'árboles' },
+        { id: 'q14', prompt: 'Bogotá',                                                      correct: 'Bogotá' },
+        { id: 'q15', prompt: 'pájaro',                                                        correct: 'pájaro' },
+      ],
+    },
+
+    {
+      id: '123.3',
+      title: 'tilde diacrítica',
+      type: 'choice',
+      instructions: 'Выберите форму с tilde или без (см. таблицу выше).',
+      questions: [
+        { id: 'q1', prompt: 'No ___ nadar.',                                     options: ['se', 'sé'], correct: 'sé', explanation: 'Глагол «знаю» — с tilde.' },
+        { id: 'q2', prompt: 'Esta carta es para ___.',                              options: ['mi', 'mí'], correct: 'mí', explanation: 'Местоимение «мне» — с tilde.' },
+        { id: 'q3', prompt: '¿___ vienes?',                                            options: ['Tu', 'Tú'], correct: 'Tú' },
+        { id: 'q4', prompt: '¿___ quieres?',                                              options: ['Que', 'Qué'], correct: 'Qué' },
+        { id: 'q5', prompt: '___, tienes razón.',                                            options: ['Si', 'Sí'], correct: 'Sí' },
+        { id: 'q6', prompt: 'Es el sombrero ___ Ana.',                                          options: ['de', 'dé'], correct: 'de' },
+        { id: 'q7', prompt: 'Lo siento, no ___ quiero.',                                          options: ['te', 'té'], correct: 'te' },
+        { id: 'q8', prompt: '¿Es ese Pepe? Sí, es ___.',                                            options: ['el', 'él'], correct: 'él' },
+        { id: 'q9', prompt: '¿Quién es ___ profesora?',                                              options: ['tu', 'tú'], correct: 'tu' },
+        { id: 'q10', prompt: 'Alberto ___ acuesta siempre muy tarde.',                                  options: ['se', 'sé'], correct: 'se' },
+      ],
+    },
+
+    {
+      id: '123.4',
+      title: 'Расставьте tilde, где нужна',
+      type: 'fill',
+      instructions: 'Запишите фразу целиком, добавив tilde туда, где она нужна.',
+      questions: [
+        { id: 'q1', prompt: '¿Se acuerda de mi?',                                   correct: ['¿Se acuerda de mí?'] },
+        { id: 'q2', prompt: 'Felipe se ducha por las mananas.',                       correct: ['Felipe se ducha por las mañanas.'], explanation: 'Не tilde, а <em>ñ</em> — но не забывайте: <em>mañana</em>.' },
+        { id: 'q3', prompt: '¿A que hora te levantas?',                                 correct: ['¿A qué hora te levantas?'] },
+        { id: 'q4', prompt: 'A mi no me gusta el te.',                                    correct: ['A mí no me gusta el té.'] },
+        { id: 'q5', prompt: 'Es el coche de mi padre.',                                     correct: ['Es el coche de mi padre.'], explanation: '«мой отец» → <em>mi padre</em> (без tilde).' },
+        { id: 'q6', prompt: '¿Te gusta el zumo de pina?',                                    correct: ['¿Te gusta el zumo de piña?'] },
+        { id: 'q7', prompt: 'Prefiero que me de comida.',                                      correct: ['Prefiero que me dé comida.'] },
+        { id: 'q8', prompt: 'Si te gusta mi reloj, te lo regalo.',                                correct: ['Si te gusta mi reloj, te lo regalo.'] },
+        { id: 'q9', prompt: 'No se tocar el piano.',                                                correct: ['No sé tocar el piano.'] },
+        { id: 'q10', prompt: 'Es la chica que vive con Marisa.',                                       correct: ['Es la chica que vive con Marisa.'], explanation: '«которая» — <em>que</em> без tilde.' },
+      ],
+    },
+
+    {
+      id: '123.5',
+      title: 'Подберите правило',
+      type: 'match',
+      instructions: 'Каждому слову — правило ударения.',
+      pool: [
+        'оканчивается на гласную/n/s — ударение на предпоследнем',
+        'оканчивается на согласную (кроме n, s) — ударение на последнем',
+        '«неправильное» ударение — нужна tilde',
+        'tilde diacrítica',
+      ],
+      questions: [
+        { id: 'q1', prompt: '<em>casa</em>',                                                     correct: 'оканчивается на гласную/n/s — ударение на предпоследнем' },
+        { id: 'q2', prompt: '<em>hablar</em>',                                                     correct: 'оканчивается на согласную (кроме n, s) — ударение на последнем' },
+        { id: 'q3', prompt: '<em>árbol</em>',                                                        correct: '«неправильное» ударение — нужна tilde' },
+        { id: 'q4', prompt: '<em>café</em>',                                                            correct: '«неправильное» ударение — нужна tilde' },
+        { id: 'q5', prompt: '<em>él</em>',                                                                correct: 'tilde diacrítica' },
+        { id: 'q6', prompt: '<em>amigos</em>',                                                              correct: 'оканчивается на гласную/n/s — ударение на предпоследнем' },
+        { id: 'q7', prompt: '<em>ciudad</em>',                                                                correct: 'оканчивается на согласную (кроме n, s) — ударение на последнем' },
+      ],
+    },
+
+    {
+      id: '123.6',
+      title: 'Все слова с правильно поставленной tilde',
+      type: 'multi',
+      instructions: 'Отметьте слова, написанные без ошибок.',
+      questions: [
+        {
+          id: 'q1',
+          prompt: 'Выберите все правильные:',
+          options: [
+            'español',
+            'espáñol',
+            'hablar',
+            'háblar',
+            'casa',
+            'cása',
+            'árbol',
+            'arbol',
+            'café',
+            'cafe',
+            'México',
+            'Mexico',
+            'amigos',
+            'amígos',
+          ],
+          correct: [
+            'español',
+            'hablar',
+            'casa',
+            'árbol',
+            'café',
+            'México',
+            'amigos',
+          ],
+          explanation: '<em>español</em> — ударение на последнем (<em>l</em> ≠ n, s); <em>hablar</em> — на последнем (<em>r</em>); <em>casa, amigos</em> — на предпоследнем (гласная/n/s); <em>árbol, café, México</em> — «неправильное» ударение → tilde.',
+        },
+      ],
+    },
+
+    {
+      id: '123.7',
+      title: 'Поставьте слово во множественном числе',
+      type: 'fill',
+      instructions: 'Запишите plural. Tilde появляется или исчезает по общему правилу.',
+      questions: [
+        { id: 'q1', prompt: 'inglés →',                                                         correct: ['ingleses'], explanation: '<em>ingleses</em> — оканчивается на <em>s</em>, ударение всё ещё на «le» — правило само сработает, tilde не нужна.' },
+        { id: 'q2', prompt: 'francés →',                                                          correct: ['franceses'] },
+        { id: 'q3', prompt: 'ratón →',                                                              correct: ['ratones'] },
+        { id: 'q4', prompt: 'autobús →',                                                              correct: ['autobuses'] },
+        { id: 'q5', prompt: 'joven →',                                                                  correct: ['jóvenes'], explanation: 'Теперь ударение на «jó», правило само бы дало <em>jovenes</em> с ударением на «vé» — поэтому добавляем tilde.' },
+        { id: 'q6', prompt: 'examen →',                                                                    correct: ['exámenes'] },
+        { id: 'q7', prompt: 'jersey →',                                                                      correct: ['jerséis'] },
+      ],
+    },
+
+    {
+      id: '123.8',
+      title: 'Аудио: запишите фразу',
+      type: 'fill',
+      instructions: 'Прослушайте и запишите целиком, со всеми tilde.',
+      questions: [
+        { id: 'q1', prompt: '', audio: 'El hermano de Ángel es médico.',
+          correct: ['El hermano de Ángel es médico.'] },
+        { id: 'q2', prompt: '', audio: 'Sí, sé hablar inglés y francés.',
+          correct: ['Sí, sé hablar inglés y francés.'] },
+        { id: 'q3', prompt: '', audio: '¿Dónde está mi lápiz?',
+          correct: ['¿Dónde está mi lápiz?'] },
+        { id: 'q4', prompt: '', audio: 'A mí no me gusta el té.',
+          correct: ['A mí no me gusta el té.'] },
+        { id: 'q5', prompt: '', audio: 'El sábado vamos a Bogotá.',
+          correct: ['El sábado vamos a Bogotá.'] },
+      ],
+    },
+
+    {
+      id: '123.9',
+      title: 'Сопоставьте перевод',
+      type: 'match',
+      instructions: 'Подберите русский эквивалент.',
+      pool: [
+        'Я знаю.',
+        'Он мой.',
+        'Это для меня.',
+        'Если хочешь.',
+        'Да, конечно.',
+        'Где ты живёшь?',
+        'Дом, где я родился.',
+      ],
+      questions: [
+        { id: 'q1', prompt: '<em>Sé.</em>',                                                        correct: 'Я знаю.' },
+        { id: 'q2', prompt: '<em>Es mío.</em>',                                                      correct: 'Он мой.' },
+        { id: 'q3', prompt: '<em>Es para mí.</em>',                                                    correct: 'Это для меня.' },
+        { id: 'q4', prompt: '<em>Si quieres.</em>',                                                      correct: 'Если хочешь.' },
+        { id: 'q5', prompt: '<em>Sí, claro.</em>',                                                          correct: 'Да, конечно.' },
+        { id: 'q6', prompt: '<em>¿Dónde vives?</em>',                                                          correct: 'Где ты живёшь?' },
+        { id: 'q7', prompt: '<em>La casa donde nací.</em>',                                                       correct: 'Дом, где я родился.' },
+      ],
+    },
+
+    {
+      id: '123.10',
+      title: 'Найдите ошибку',
+      type: 'choice',
+      instructions: 'В каждом ряду одна неверная форма.',
+      questions: [
+        { id: 'q1', prompt: 'Где ошибка?',
+          options: ['árbol', 'cafe', 'café', 'lápiz'],
+          correct: 'cafe', explanation: '<em>café</em> — ударение на последнем «fé», слово на гласную → нужна tilde.' },
+        { id: 'q2', prompt: 'Где ошибка?',
+          options: ['Tú vives.', 'Es tu casa.', 'Tú casa.', 'Es para ti.'],
+          correct: 'Tú casa.', explanation: '«твой дом» — притяжательное <em>tu casa</em> (без tilde).' },
+        { id: 'q3', prompt: 'Где ошибка?',
+          options: ['¿Qué quieres?', 'El libro que leo.', '¿Que día es?', '¿Cuándo vienes?'],
+          correct: '¿Que día es?', explanation: 'Вопросительное → <em>qué día</em>.' },
+        { id: 'q4', prompt: 'Где ошибка?',
+          options: ['No sé nada.', 'Sé levanta temprano.', 'Sé hablar inglés.', 'Se ducha por las mañanas.'],
+          correct: 'Sé levanta temprano.', explanation: 'Здесь <em>se</em> — местоимение, без tilde: <em>se levanta</em>.' },
+        { id: 'q5', prompt: 'Где ошибка?',
+          options: ['Salud', 'Hablar', 'Casa', 'Cása'],
+          correct: 'Cása', explanation: '<em>casa</em> — оканчивается на гласную, ударение на предпоследнем, tilde не нужна.' },
+      ],
+    },
+  ],
+};
