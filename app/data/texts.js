@@ -924,6 +924,929 @@ window.TEXTS.push(
   },
 
   {
+    id: 'a1-012',
+    level: 'A1',
+    day: 12,
+    title: 'Lunes a viernes',
+    text:
+      'Me llamo Sofía y soy estudiante de medicina en Salamanca. ' +
+      'De lunes a viernes me levanto a las siete. ' +
+      'Primero me ducho, luego me visto rápido. Desayuno una tostada y un café con leche en la cocina.\n\n' +
+      'Tomo el autobús a las ocho. Las clases son largas pero interesantes. ' +
+      'Por la tarde estudio en la biblioteca. ' +
+      'Estoy cansada por la noche, así que me acuesto pronto, sobre las once.',
+    vocabulary: [
+      {
+        word: 'el / la estudiante',
+        translation: 'студент / студентка (одна форма для м. р. и ж. р., меняется артикль)',
+        example: 'Soy estudiante de medicina.',
+      },
+      {
+        word: 'ducharse',
+        translation: 'принимать душ — возвратный',
+        example: 'Me ducho por la mañana.',
+      },
+      {
+        word: 'vestirse',
+        translation: 'одеваться (e→i: me visto, te vistes, se viste…)',
+        example: 'Me visto rápido.',
+      },
+      {
+        word: 'la tostada',
+        translation: 'тост — поджаренный хлеб (типичный испанский завтрак)',
+        example: 'Desayuno una tostada.',
+      },
+      {
+        word: 'desayunar',
+        translation: 'завтракать; el desayuno — завтрак',
+        example: 'Desayuno una tostada y un café.',
+      },
+      {
+        word: 'el autobús',
+        translation: 'автобус (городской)',
+        example: 'Tomo el autobús a las ocho.',
+      },
+      {
+        word: 'por la tarde',
+        translation: 'днём, во второй половине дня (примерно 14:00–20:00)',
+        example: 'Por la tarde estudio en la biblioteca.',
+      },
+      {
+        word: 'la biblioteca',
+        translation: 'библиотека',
+        example: 'Estudio en la biblioteca.',
+      },
+      {
+        word: 'cansado, -a',
+        translation: 'уставший (с estar — состояние)',
+        example: 'Estoy cansada por la noche.',
+      },
+      {
+        word: 'acostarse',
+        translation: 'ложиться спать (o→ue: me acuesto, te acuestas…)',
+        example: 'Me acuesto sobre las once.',
+      },
+      {
+        word: 'sobre las once',
+        translation: 'около одиннадцати — sobre + час даёт примерное время',
+        example: 'Me acuesto sobre las once.',
+      },
+      {
+        word: 'así que',
+        translation: 'так что, поэтому (вводит следствие)',
+        example: 'Estoy cansada, así que me acuesto pronto.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué estudia Sofía?',
+        options: ['Matemáticas', 'Medicina', 'Derecho'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo va a las clases?',
+        options: ['En coche', 'En bicicleta', 'En autobús'],
+        correct: 2,
+      },
+      {
+        q: '¿A qué hora se acuesta?',
+        options: ['A las nueve', 'Sobre las once', 'A las doce y media'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Возвратные глаголы в распорядке дня',
+        note:
+          'levantarse, ducharse, vestirse, acostarse — возвратные: действие направлено на себя. ' +
+          'Местоимение всегда перед спрягаемым глаголом: me levanto, me ducho, me visto, me acuesto.',
+      },
+      {
+        topic: 'Estar для физического и эмоционального состояния',
+        note:
+          'Усталость, голод, грусть, спокойствие — временные состояния, нужен estar: ' +
+          'estoy cansada, estoy contenta, estoy tranquila. С ser получится черта характера, а не состояние.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-013',
+    level: 'A1',
+    day: 13,
+    title: 'Mi barrio de Madrid',
+    text:
+      'Madrid es mi ciudad. Es grande y bonita. ' +
+      'En el centro hay plazas hermosas, museos y muchos bares. ' +
+      'La Puerta del Sol está siempre llena de gente.\n\n' +
+      'Mi barrio se llama Lavapiés. Está al sur del centro. ' +
+      'Aquí hay tiendas pequeñas, cafeterías y un mercado tradicional. ' +
+      'Los edificios son antiguos pero las calles son alegres. ' +
+      'Por la noche, los vecinos hablan en la plaza.',
+    vocabulary: [
+      {
+        word: 'la plaza',
+        translation: 'площадь',
+        example: 'En el centro hay plazas hermosas.',
+      },
+      {
+        word: 'el museo',
+        translation: 'музей',
+        example: 'Hay museos en el centro.',
+      },
+      {
+        word: 'el bar',
+        translation: 'бар (в Испании — обычное кафе с кофе, тапасами и пивом)',
+        example: 'Hay muchos bares en el centro.',
+      },
+      {
+        word: 'la Puerta del Sol',
+        translation: 'Пуэрта-дель-Соль — главная площадь Мадрида, «нулевой километр»',
+        example: 'La Puerta del Sol está llena de gente.',
+      },
+      {
+        word: 'lleno, -a (de)',
+        translation: 'полный (чего-то); с estar — состояние',
+        example: 'La plaza está llena de gente.',
+      },
+      {
+        word: 'al sur de',
+        translation: 'к югу от (al norte de, al este de, al oeste de)',
+        example: 'Lavapiés está al sur del centro.',
+      },
+      {
+        word: 'la cafetería',
+        translation: 'кафе (где пьют кофе и едят выпечку; café более общий)',
+        example: 'En el barrio hay cafeterías.',
+      },
+      {
+        word: 'antiguo, -a',
+        translation: 'старинный, древний (перед сущ. — «бывший»: el antiguo profesor)',
+        example: 'Los edificios son antiguos.',
+      },
+      {
+        word: 'alegre',
+        translation: 'весёлый, радостный (одна форма для м. р. и ж. р.)',
+        example: 'Las calles son alegres.',
+      },
+      {
+        word: 'hermoso, -a',
+        translation: 'красивый, прекрасный (более книжное, чем bonito)',
+        example: 'plazas hermosas',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cómo se llama el barrio del narrador?',
+        options: ['Lavapiés', 'Salamanca', 'Chueca'],
+        correct: 0,
+      },
+      {
+        q: '¿Cómo está siempre la Puerta del Sol?',
+        options: ['Vacía', 'Llena de gente', 'Cerrada'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo son los edificios del barrio?',
+        options: ['Modernos', 'Antiguos', 'Bajos'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Hay vs está / están',
+        note:
+          'hay сообщает о существовании чего-то нового, чаще с неопределённым: «hay plazas, hay tiendas». ' +
+          'está / están локализуют уже известный объект: «la Puerta del Sol está en el centro», «Lavapiés está al sur».',
+      },
+      {
+        topic: 'Ser для постоянных характеристик города',
+        note:
+          'Города и районы описываем с ser: «Madrid es grande», «las calles son alegres», «los edificios son antiguos». ' +
+          'Estar — для временного состояния: «la plaza está llena hoy».',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-014',
+    level: 'A1',
+    day: 14,
+    title: 'Las cuatro estaciones',
+    text:
+      'En España hay cuatro estaciones muy diferentes. ' +
+      'En primavera el cielo está azul y los parques están llenos de flores. Hace buen tiempo.\n\n' +
+      'En verano hace mucho calor, especialmente en Sevilla. La gente come helado y bebe agua fría. ' +
+      'En otoño llueve a menudo y las hojas están amarillas y rojas. ' +
+      'En invierno hace frío en el norte; en el sur el tiempo es suave.',
+    vocabulary: [
+      {
+        word: 'la estación',
+        translation: 'время года; также «вокзал, станция»',
+        example: 'En España hay cuatro estaciones.',
+      },
+      {
+        word: 'la primavera',
+        translation: 'весна',
+        example: 'En primavera hace buen tiempo.',
+      },
+      {
+        word: 'el verano',
+        translation: 'лето',
+        example: 'En verano hace calor.',
+      },
+      {
+        word: 'el otoño',
+        translation: 'осень',
+        example: 'En otoño llueve a menudo.',
+      },
+      {
+        word: 'el invierno',
+        translation: 'зима',
+        example: 'En invierno hace frío.',
+      },
+      {
+        word: 'hace buen / mal tiempo',
+        translation: 'хорошая / плохая погода (о погоде — глагол hacer + сущ.)',
+        example: 'En primavera hace buen tiempo.',
+      },
+      {
+        word: 'hace calor / hace frío',
+        translation: 'жарко / холодно (буквально «делает жару / холод»)',
+        example: 'En verano hace mucho calor.',
+      },
+      {
+        word: 'el helado',
+        translation: 'мороженое',
+        example: 'La gente come helado.',
+      },
+      {
+        word: 'llover',
+        translation: 'идти дождю — безличный, только 3-е лицо ед. ч. (llueve)',
+        example: 'En otoño llueve a menudo.',
+      },
+      {
+        word: 'a menudo',
+        translation: 'часто (синоним con frecuencia)',
+        example: 'Llueve a menudo.',
+      },
+      {
+        word: 'la hoja',
+        translation: 'лист (дерева; также лист бумаги)',
+        example: 'Las hojas están amarillas.',
+      },
+      {
+        word: 'suave',
+        translation: 'мягкий, нежный; о погоде — умеренный, тёплый',
+        example: 'En el sur el tiempo es suave.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Dónde hace mucho calor en verano?',
+        options: ['En Bilbao', 'En Sevilla', 'En Santiago'],
+        correct: 1,
+      },
+      {
+        q: '¿Cuándo llueve a menudo?',
+        options: ['En primavera', 'En verano', 'En otoño'],
+        correct: 2,
+      },
+      {
+        q: '¿Cómo es el invierno en el sur de España?',
+        options: ['Muy frío', 'Suave', 'Nevado'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Погода: hacer + сущ. vs estar + прил.',
+        note:
+          'Для погоды: hace calor, hace frío, hace sol, hace viento, hace buen/mal tiempo. ' +
+          'Состояние неба — estar + прил.: el cielo está gris, está nublado, está despejado.',
+      },
+      {
+        topic: 'Безличные глаголы природы',
+        note:
+          'llover, nevar, granizar спрягаются только в 3-м лице ед. ч.: llueve, nieva, graniza. ' +
+          'Подлежащего нет, потому что это явление природы, а не действие конкретного субъекта.',
+      },
+      {
+        topic: 'Estar для временного цвета',
+        note:
+          'Когда цвет — временное состояние, ставим estar: «las hojas están amarillas» (только осенью). ' +
+          'Постоянный, присущий цвет — с ser: «la nieve es blanca», «el limón es amarillo».',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-015',
+    level: 'A1',
+    day: 15,
+    title: 'Tres amigos, tres profesiones',
+    text:
+      'Tengo tres amigos con profesiones muy distintas. ' +
+      'Pablo es camarero en un bar de Madrid. Trabaja por las tardes y los fines de semana. Es simpático y rápido.\n\n' +
+      'Lucía es médica en un hospital de Valencia. Lleva una bata blanca y un fonendoscopio. Está cansada pero contenta. ' +
+      'Mi amigo Andrés es informático: trabaja con ordenadores en una oficina pequeña. Habla poco, pero es muy listo.',
+    vocabulary: [
+      {
+        word: 'la profesión',
+        translation: 'профессия (мн. ч. — profesiones, без графического акцента)',
+        example: 'profesiones muy distintas',
+      },
+      {
+        word: 'distinto, -a',
+        translation: 'разный, иной (синоним diferente)',
+        example: 'tres profesiones muy distintas',
+      },
+      {
+        word: 'el camarero / la camarera',
+        translation: 'официант / официантка; в Испании — также бармен в баре',
+        example: 'Pablo es camarero en un bar.',
+      },
+      {
+        word: 'el fin de semana',
+        translation: 'выходные; мн. ч. — los fines de semana',
+        example: 'Trabaja los fines de semana.',
+      },
+      {
+        word: 'el médico / la médica',
+        translation: 'врач (форма la médica современна; раньше — la médico)',
+        example: 'Lucía es médica.',
+      },
+      {
+        word: 'la bata',
+        translation: 'халат (медицинский, рабочий; также домашний)',
+        example: 'Lleva una bata blanca.',
+      },
+      {
+        word: 'el fonendoscopio',
+        translation: 'фонендоскоп (стетоскоп врача)',
+        example: 'Lleva un fonendoscopio.',
+      },
+      {
+        word: 'contento, -a',
+        translation: 'довольный (с estar — в хорошем настроении)',
+        example: 'Está cansada pero contenta.',
+      },
+      {
+        word: 'el informático / la informática',
+        translation: 'программист, IT-специалист',
+        example: 'Andrés es informático.',
+      },
+      {
+        word: 'el ordenador',
+        translation: 'компьютер (кастильское; в Лат. Ам. — la computadora)',
+        example: 'Trabaja con ordenadores.',
+      },
+      {
+        word: 'la oficina',
+        translation: 'офис',
+        example: 'Trabaja en una oficina pequeña.',
+      },
+      {
+        word: 'listo, -a',
+        translation: 'ser listo — умный; estar listo — готов (классический контраст)',
+        example: 'Andrés es muy listo.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuál es la profesión de Pablo?',
+        options: ['Médico', 'Camarero', 'Informático'],
+        correct: 1,
+      },
+      {
+        q: '¿Dónde trabaja Lucía?',
+        options: ['En una oficina', 'En un bar', 'En un hospital'],
+        correct: 2,
+      },
+      {
+        q: '¿Con qué trabaja Andrés?',
+        options: ['Con ordenadores', 'Con coches', 'Con dinero'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Ser + профессия (без артикля)',
+        note:
+          'После ser профессия идёт без артикля: «soy profesor», «es camarero», «son médicos». ' +
+          'Артикль возвращается, когда есть прилагательное: «es una médica excelente», «es un camarero rápido».',
+      },
+      {
+        topic: 'Ser listo vs estar listo',
+        note:
+          'Es listo — «он умный, сообразительный» (черта характера). ' +
+          'Está listo — «он готов» (к выходу, к экзамену). Аналогично: es aburrido (скучный) ≠ está aburrido (ему скучно).',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-016',
+    level: 'A1',
+    day: 16,
+    title: 'Los sábados',
+    text:
+      'Los sábados son muy diferentes. ' +
+      'No me levanto temprano: duermo hasta las diez. ' +
+      'Me ducho con calma y desayuno fruta con yogur.\n\n' +
+      'Mi marido se queda en el sofá un rato. ' +
+      'Después salimos a pasear por el parque del Retiro. Comemos en una terraza tranquila. ' +
+      'Por la tarde leemos o vemos una película. No miramos el reloj. ' +
+      'Los sábados estoy relajada y feliz.',
+    vocabulary: [
+      {
+        word: 'temprano',
+        translation: 'рано (антоним — tarde)',
+        example: 'No me levanto temprano.',
+      },
+      {
+        word: 'con calma',
+        translation: 'спокойно, не торопясь',
+        example: 'Me ducho con calma.',
+      },
+      {
+        word: 'el yogur',
+        translation: 'йогурт',
+        example: 'Desayuno fruta con yogur.',
+      },
+      {
+        word: 'mi marido / mi mujer',
+        translation: 'мой муж / моя жена (кастильское; в Лат. Ам. — esposo / esposa)',
+        example: 'Mi marido se queda en el sofá.',
+      },
+      {
+        word: 'quedarse',
+        translation: 'оставаться (где-то) — возвратный',
+        example: 'Mi marido se queda en casa.',
+      },
+      {
+        word: 'pasear',
+        translation: 'гулять, прогуливаться (el paseo — прогулка)',
+        example: 'Salimos a pasear por el parque.',
+      },
+      {
+        word: 'el parque del Retiro',
+        translation: 'Парк Ретиро — главный парк в центре Мадрида',
+        example: 'Paseamos por el parque del Retiro.',
+      },
+      {
+        word: 'la terraza',
+        translation: 'терраса (уличная часть кафе или бара со столиками)',
+        example: 'Comemos en una terraza tranquila.',
+      },
+      {
+        word: 'la película',
+        translation: 'фильм',
+        example: 'Vemos una película.',
+      },
+      {
+        word: 'relajado, -a',
+        translation: 'расслабленный, спокойный (с estar — временное состояние)',
+        example: 'Estoy relajada y feliz.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Hasta qué hora duerme la narradora los sábados?',
+        options: ['Hasta las nueve', 'Hasta las diez', 'Hasta las once'],
+        correct: 1,
+      },
+      {
+        q: '¿Dónde pasean por la mañana?',
+        options: ['Por la playa', 'Por el parque del Retiro', 'Por la sierra'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo se siente los sábados?',
+        options: ['Cansada y triste', 'Relajada y feliz', 'Aburrida'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Quedarse vs quedar',
+        note:
+          'quedarse (возвратный) — «оставаться где-то»: me quedo en casa, se queda en el sofá. ' +
+          'quedar (без se) — «договариваться о встрече»: quedo con María a las cinco; либо «оставаться (в количестве)»: queda poco tiempo.',
+      },
+      {
+        topic: 'Ser feliz vs estar feliz',
+        note:
+          'ser feliz — «быть счастливым в жизни» (общая характеристика). ' +
+          'estar feliz — «быть в хорошем настроении сейчас, в данный момент». В тексте estoy feliz по субботам — про конкретные дни.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-017',
+    level: 'A1',
+    day: 17,
+    title: 'El metro y el Retiro',
+    text:
+      'Madrid tiene un metro muy bueno. Hay doce líneas y muchas estaciones. ' +
+      'La estación de Sol está justo en el centro. ' +
+      'Allí hay turistas, músicos y vendedores de helado.\n\n' +
+      'Cerca del Retiro hay un quiosco de prensa donde compro el periódico. ' +
+      'El parque es enorme y verde. Tiene un lago con barcas. ' +
+      'Mucha gente corre por los caminos o pasea con sus perros.',
+    vocabulary: [
+      {
+        word: 'el metro',
+        translation: 'метро (мадридское — одно из крупнейших в Европе)',
+        example: 'Madrid tiene un metro muy bueno.',
+      },
+      {
+        word: 'la línea',
+        translation: 'линия (метро или транспорта вообще)',
+        example: 'Hay doce líneas.',
+      },
+      {
+        word: 'el vendedor / la vendedora',
+        translation: 'продавец / продавщица (особенно уличный, в киоске)',
+        example: 'vendedores de helado',
+      },
+      {
+        word: 'el quiosco',
+        translation: 'киоск (газетный или с напитками)',
+        example: 'un quiosco de prensa',
+      },
+      {
+        word: 'la prensa',
+        translation: 'пресса — газеты и журналы вместе',
+        example: 'un quiosco de prensa',
+      },
+      {
+        word: 'el periódico',
+        translation: 'газета',
+        example: 'Compro el periódico cada día.',
+      },
+      {
+        word: 'enorme',
+        translation: 'огромный (одна форма для м. р. и ж. р.)',
+        example: 'El parque es enorme.',
+      },
+      {
+        word: 'el lago',
+        translation: 'озеро (в Ретиро есть знаменитый небольшой пруд с лодками)',
+        example: 'El parque tiene un lago.',
+      },
+      {
+        word: 'la barca',
+        translation: 'лодка (гребная); el barco — большой корабль',
+        example: 'un lago con barcas',
+      },
+      {
+        word: 'el camino',
+        translation: 'дорожка, тропа; путь',
+        example: 'La gente corre por los caminos.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuántas líneas tiene el metro según el texto?',
+        options: ['Diez', 'Doce', 'Catorce'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué compra el narrador en el quiosco?',
+        options: ['Un helado', 'Flores', 'El periódico'],
+        correct: 2,
+      },
+      {
+        q: '¿Qué hay en el lago del Retiro?',
+        options: ['Patos', 'Barcas', 'Peces'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Hay vs está — расширение',
+        note:
+          'Новое в пространстве — hay: «hay doce líneas», «hay un quiosco», «hay turistas». ' +
+          'Известный, конкретный объект — está / están: «la estación de Sol está en el centro». ' +
+          'После hay чаще идёт неопределённый артикль или его отсутствие, после está — определённый.',
+      },
+      {
+        topic: 'Глаголы движения с por',
+        note:
+          'por означает «через / по»: pasear por el parque, correr por los caminos, viajar por España. ' +
+          'Это движение «по поверхности, внутри пространства», а не от точки A к точке B (для этого — de … a …).',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-018',
+    level: 'A1',
+    day: 18,
+    title: 'Día de lluvia en Bilbao',
+    text:
+      'Hoy hace mal tiempo en Bilbao. El cielo está gris y llueve sin parar desde las ocho. ' +
+      'Hace mucho viento y la temperatura es baja.\n\n' +
+      'Por eso, no salimos a la playa. Nos quedamos en casa. ' +
+      'Mi marido prepara chocolate caliente y yo busco una película. ' +
+      'También leo un libro sobre Galicia. Mañana, si hace sol, vamos al monte. ' +
+      'Pero hoy estamos tranquilos y calientes en el sofá.',
+    vocabulary: [
+      {
+        word: 'sin parar',
+        translation: 'без перерыва, не переставая',
+        example: 'Llueve sin parar desde las ocho.',
+      },
+      {
+        word: 'hace viento',
+        translation: 'ветрено (el viento — ветер)',
+        example: 'Hace mucho viento.',
+      },
+      {
+        word: 'hace sol',
+        translation: 'солнечно (el sol — солнце)',
+        example: 'Si hace sol, vamos al monte.',
+      },
+      {
+        word: 'la temperatura',
+        translation: 'температура',
+        example: 'La temperatura es baja.',
+      },
+      {
+        word: 'por eso',
+        translation: 'поэтому, по этой причине (вводит следствие)',
+        example: 'Llueve. Por eso no salimos.',
+      },
+      {
+        word: 'la playa',
+        translation: 'пляж (Бильбао — на берегу Кантабрийского моря)',
+        example: 'No salimos a la playa.',
+      },
+      {
+        word: 'el chocolate caliente',
+        translation: 'горячий шоколад — густой испанский напиток, часто с чуррос',
+        example: 'Mi marido prepara chocolate caliente.',
+      },
+      {
+        word: 'buscar',
+        translation: 'искать (без предлога: busco una película, не *busco para…)',
+        example: 'Busco una película.',
+      },
+      {
+        word: 'el monte',
+        translation: 'гора, лесистая возвышенность; ir al monte — выбраться в лес/в горы',
+        example: 'Vamos al monte.',
+      },
+      {
+        word: 'Galicia',
+        translation: 'Галисия — зелёный регион на северо-западе Испании',
+        example: 'Leo un libro sobre Galicia.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cómo está el cielo hoy?',
+        options: ['Azul', 'Gris', 'Despejado'],
+        correct: 1,
+      },
+      {
+        q: '¿Por qué no salen a la playa?',
+        options: ['Hace mucho calor', 'Llueve y hace viento', 'Es muy tarde'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué prepara el marido?',
+        options: ['Chocolate caliente', 'Café', 'Sopa'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Погода: hacer + сущ., estar + прил., llover',
+        note:
+          'hace + сущ.: hace frío, hace calor, hace sol, hace viento, hace buen/mal tiempo. ' +
+          'estar + прил. — о состоянии неба: el cielo está gris, está nublado, está despejado. ' +
+          'llover, nevar — безличные, только 3-е лицо ед. ч.: llueve, nieva.',
+      },
+      {
+        topic: 'Porque vs por eso',
+        note:
+          'porque вводит причину: «no salimos porque llueve». ' +
+          'por eso — связка перед следствием: «llueve, por eso no salimos». ' +
+          'Грамматически: porque + подлежащее + сказуемое; por eso — самостоятельная связка между предложениями.',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-019',
+    level: 'A1',
+    day: 19,
+    title: 'Profesiones en la familia',
+    text:
+      'En mi familia hay profesiones muy diferentes. ' +
+      'Mi padre es mecánico. Trabaja en un taller cerca de casa y siempre tiene las manos sucias.\n\n' +
+      'Mi tía Marta es abogada en un despacho del centro. Es elegante y muy seria en el trabajo. ' +
+      'Mi primo Daniel es panadero. Se levanta a las cuatro de la madrugada para hacer pan fresco. ' +
+      'Vende también pasteles los domingos. Todos están contentos con su trabajo.',
+    vocabulary: [
+      {
+        word: 'el mecánico / la mecánica',
+        translation: 'автомеханик',
+        example: 'Mi padre es mecánico.',
+      },
+      {
+        word: 'el taller',
+        translation: 'мастерская, автосервис',
+        example: 'Trabaja en un taller.',
+      },
+      {
+        word: 'sucio, -a',
+        translation: 'грязный (антоним — limpio)',
+        example: 'Tiene las manos sucias.',
+      },
+      {
+        word: 'el abogado / la abogada',
+        translation: 'юрист, адвокат',
+        example: 'Mi tía es abogada.',
+      },
+      {
+        word: 'el despacho',
+        translation: 'кабинет; адвокатская / нотариальная контора',
+        example: 'Trabaja en un despacho del centro.',
+      },
+      {
+        word: 'elegante',
+        translation: 'элегантный (одна форма для м. р. и ж. р.)',
+        example: 'Mi tía es elegante.',
+      },
+      {
+        word: 'serio, -a',
+        translation: 'серьёзный',
+        example: 'Es muy seria en el trabajo.',
+      },
+      {
+        word: 'el panadero / la panadera',
+        translation: 'пекарь (la panadería — булочная)',
+        example: 'Mi primo es panadero.',
+      },
+      {
+        word: 'la madrugada',
+        translation: 'раннее утро, ещё затемно (примерно 3–6 утра)',
+        example: 'Se levanta a las cuatro de la madrugada.',
+      },
+      {
+        word: 'fresco, -a',
+        translation: 'свежий (pan fresco — свежий хлеб; agua fresca — прохладная вода)',
+        example: 'pan fresco',
+      },
+      {
+        word: 'vender',
+        translation: 'продавать (антоним — comprar)',
+        example: 'Vende pasteles los domingos.',
+      },
+      {
+        word: 'el pastel',
+        translation: 'пирожное, торт (la pastelería — кондитерская)',
+        example: 'Vende pasteles.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuál es la profesión del padre?',
+        options: ['Mecánico', 'Abogado', 'Panadero'],
+        correct: 0,
+      },
+      {
+        q: '¿A qué hora se levanta Daniel?',
+        options: ['A las seis', 'A las cinco', 'A las cuatro'],
+        correct: 2,
+      },
+      {
+        q: '¿Cómo está la familia con su trabajo?',
+        options: ['Cansada', 'Contenta', 'Aburrida'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Para + infinitivo (цель)',
+        note:
+          'para + инфинитив выражает цель: «se levanta para hacer pan» = «встаёт, чтобы делать хлеб». ' +
+          'После para — всегда инфинитив, если подлежащее не меняется.',
+      },
+      {
+        topic: 'Ser elegante / estar elegante',
+        note:
+          'ser elegante — постоянная черта: «mi tía es elegante» (всегда). ' +
+          'estar elegante — временный вид: «hoy estás muy elegante» (сегодня выглядишь элегантно). ' +
+          'Тот же контраст с serio: es serio (характер) ≠ está serio (сейчас хмурится).',
+      },
+    ],
+  },
+
+  {
+    id: 'a1-020',
+    level: 'A1',
+    day: 20,
+    title: 'Una mañana en el barrio',
+    text:
+      'Es martes por la mañana en mi barrio de Valencia. ' +
+      'El sol brilla y la plaza está llena de actividad. ' +
+      'Don Manuel abre su panadería a las siete. Doña Lucía pasea con su perro pequeño.\n\n' +
+      'Los niños van al colegio con sus mochilas pesadas. ' +
+      'En el bar, dos señores leen el periódico y toman café. ' +
+      'Yo voy al trabajo a pie. Es solo un cuarto de hora. ' +
+      'La vida del barrio es tranquila y alegre.',
+    vocabulary: [
+      {
+        word: 'brillar',
+        translation: 'светить, сиять',
+        example: 'El sol brilla.',
+      },
+      {
+        word: 'la panadería',
+        translation: 'булочная, пекарня',
+        example: 'Don Manuel abre su panadería.',
+      },
+      {
+        word: 'el colegio',
+        translation: 'школа (начальная и средняя в Испании)',
+        example: 'Los niños van al colegio.',
+      },
+      {
+        word: 'la mochila',
+        translation: 'рюкзак',
+        example: 'mochilas pesadas',
+      },
+      {
+        word: 'pesado, -a',
+        translation: 'тяжёлый; о человеке — занудный, утомительный',
+        example: 'mochilas pesadas',
+      },
+      {
+        word: 'a pie',
+        translation: 'пешком (ir a pie — идти пешком)',
+        example: 'Voy al trabajo a pie.',
+      },
+      {
+        word: 'un cuarto de hora',
+        translation: 'четверть часа, 15 минут; media hora — полчаса',
+        example: 'Es solo un cuarto de hora.',
+      },
+      {
+        word: 'la vida',
+        translation: 'жизнь',
+        example: 'La vida del barrio es tranquila.',
+      },
+      {
+        word: 'abrir',
+        translation: 'открывать (антоним — cerrar)',
+        example: 'Abre la panadería a las siete.',
+      },
+      {
+        word: 'tomar (café, té)',
+        translation: 'пить (кофе / чай) — в Испании tomar заменяет beber для напитков',
+        example: 'Toman café en el bar.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿En qué ciudad pasa la escena?',
+        options: ['Madrid', 'Sevilla', 'Valencia'],
+        correct: 2,
+      },
+      {
+        q: '¿Cómo va el narrador al trabajo?',
+        options: ['En coche', 'A pie', 'En metro'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué hacen los señores en el bar?',
+        options: ['Comen', 'Leen y toman café', 'Trabajan'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Ir + a + место (направление)',
+        note:
+          'ir + a + lugar: voy al trabajo, van al colegio, vamos al parque. ' +
+          'Спряжение ir: voy, vas, va, vamos, vais, van. ' +
+          'Это движение к месту — не путать с «ir a + инфинитив» (ближайшее будущее, отдельная конструкция).',
+      },
+      {
+        topic: 'Время: cuartos и media',
+        note:
+          'un cuarto de hora = 15 минут; media hora = 30 минут; tres cuartos de hora = 45 минут. ' +
+          'Для времени суток: son las tres y cuarto (3:15), son las tres y media (3:30), son las cuatro menos cuarto (3:45).',
+      },
+    ],
+  },
+
+  {
     id: 'a1-021',
     level: 'A1',
     day: 21,
