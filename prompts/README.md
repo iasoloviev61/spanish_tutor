@@ -61,6 +61,31 @@
 | 23 | [batch-23.md](batch-23.md) | 116–120 | `batch/23-conjunciones-oraciones` | `units-116-120` | Союзы, целевые/временные/причинные/уступит. |
 | 24 | [batch-24.md](batch-24.md) | 121–126 | `batch/24-impersonales-acentuacion-vos` | `units-121-126` + `textbook-complete-v1.0.0` | Финал: consecutivas, impersonales, acentuación, vos |
 
+## Тексты A1 — отдельная фича
+
+Параллельно с учебником ведётся фича «учебные тексты для чтения» —
+30 текстов A1 с прогрессией по дням. Эталон формата лежит прямо в
+`app/data/texts.js` (пилотные тексты дней 1, 11, 21 — по одному из каждого
+блока прогрессии). Объект текста: `id, level, day, title, text, vocabulary,
+questions, grammar_notes` — см. эталон.
+
+Промпты идут отдельной серией `texts-a1-batch-NN.md` со своим namespace
+веток (`texts-a1/NN-slug`) и тегов (`texts-a1-AAA-BBB`).
+
+| № | Файл | Дни | Ветка | Тег | Грамматика и темы |
+| --- | --- | --- | --- | --- | --- |
+| 01 | [texts-a1-batch-01.md](texts-a1-batch-01.md) | 2–10 | `texts-a1/01-presente-cotidiano` | `texts-a1-002-010` | Presente, повседневное (семья/дом/еда/числа/цвета/дни недели) |
+| 02 | [texts-a1-batch-02.md](texts-a1-batch-02.md) | 12–20 | `texts-a1/02-rutina-ciudad` | `texts-a1-012-020` | ser/estar/hay, возвратные; рутина/город/погода/профессии |
+| 03 | [texts-a1-batch-03.md](texts-a1-batch-03.md) | 22–30 | `texts-a1/03-perfecto-viajes` | `texts-a1-022-030` + `texts-a1-complete-v1.0.0` | Pretérito Perfecto, ir a, придаточные; путешествия/магазины/диалоги |
+
+Отличия от textbook-батчей:
+
+- **Нет PDF-источника** — тексты пишутся с нуля по заданным теме и прогрессии.
+- **Нет HTML-страниц** на каждый текст и обновлений `textbook.html`/`index.html`.
+  Все объекты живут в одном файле `app/data/texts.js` (массив `window.TEXTS`).
+- **Вставка по дням, не в конец.** Якорь Edit — между уже существующими текстами,
+  чтобы массив оставался отсортированным по полю `day`.
+
 ## Соответствие страниц
 
 - Книжная страница `N` = PDF-страница `N + 2` (две страницы передней
