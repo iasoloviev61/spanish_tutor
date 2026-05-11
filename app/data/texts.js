@@ -4212,4 +4212,1282 @@ window.TEXTS.push(
       },
     ],
   },
+
+  {
+    id: 'a2-011',
+    level: 'A2',
+    day: 11,
+    title: 'La casa de mis abuelos',
+    text:
+      'Cuando era pequeño, mis veranos eran siempre los mismos: ocho semanas en la casa de mis abuelos, ' +
+      'en un pueblo de Asturias. La casa tenía dos plantas y un tejado de pizarra negra. ' +
+      'Olía a leña y a manzanas. En el salón había una chimenea enorme; mi abuelo Antón la encendía cada tarde, incluso en julio.\n\n' +
+      'Mi abuela Pilar siempre llevaba un delantal azul y unas zapatillas viejas. ' +
+      'Yo bajaba al huerto con ella y recogíamos tomates y judías verdes. ' +
+      'Por la noche, mi abuelo nos contaba cuentos antiguos sobre lobos y pastores.\n\n' +
+      'Una tarde de agosto, mientras yo leía en el patio, llegó una tormenta tremenda. ' +
+      'La luz se fue durante tres horas. ' +
+      'Encendimos velas en la cocina y mi abuela preparó chocolate caliente. ' +
+      'Aquella tarde a oscuras se quedó para siempre en mi memoria, con la voz tranquila de mi abuelo entre las sombras.',
+    vocabulary: [
+      {
+        word: 'la planta',
+        translation: 'этаж (la primera planta — второй этаж по нашим меркам; la planta baja — нулевой)',
+        example: 'La casa tenía dos plantas.',
+      },
+      {
+        word: 'el tejado',
+        translation: 'крыша (un tejado de pizarra / de tejas)',
+        example: 'un tejado de pizarra negra',
+      },
+      {
+        word: 'la pizarra',
+        translation: 'сланец; школьная доска (двойное значение)',
+        example: 'un tejado de pizarra',
+      },
+      {
+        word: 'oler a',
+        translation: 'пахнуть чем-то (irreg.: huelo, hueles, huele…)',
+        example: 'Olía a leña y a manzanas.',
+      },
+      {
+        word: 'la leña',
+        translation: 'дрова (cortar leña — рубить дрова; антоним el carbón — уголь)',
+        example: 'Olía a leña.',
+      },
+      {
+        word: 'la chimenea',
+        translation: 'камин; печная труба',
+        example: 'En el salón había una chimenea enorme.',
+      },
+      {
+        word: 'encender',
+        translation: 'зажигать (e→ie: enciendo, enciendes…; антоним apagar)',
+        example: 'La encendía cada tarde.',
+      },
+      {
+        word: 'el delantal',
+        translation: 'фартук (носят повара и хозяйки на кухне)',
+        example: 'Mi abuela llevaba un delantal azul.',
+      },
+      {
+        word: 'el huerto',
+        translation: 'огород (el jardín — сад декоративный; el huerto — где растёт еда)',
+        example: 'Yo bajaba al huerto con ella.',
+      },
+      {
+        word: 'las judías verdes',
+        translation: 'стручковая фасоль (la judía blanca — белая фасоль)',
+        example: 'Recogíamos tomates y judías verdes.',
+      },
+      {
+        word: 'el cuento',
+        translation: 'сказка, рассказ (contar un cuento — рассказывать сказку)',
+        example: 'Mi abuelo nos contaba cuentos antiguos.',
+      },
+      {
+        word: 'el lobo',
+        translation: 'волк (la loba — волчица; герой испанских сказок)',
+        example: 'cuentos antiguos sobre lobos y pastores',
+      },
+      {
+        word: 'la tormenta',
+        translation: 'гроза, буря (la tormenta de verano — летняя гроза)',
+        example: 'Llegó una tormenta tremenda.',
+      },
+      {
+        word: 'la vela',
+        translation: 'свеча (encender una vela — зажечь свечу)',
+        example: 'Encendimos velas en la cocina.',
+      },
+      {
+        word: 'a oscuras',
+        translation: 'в темноте (estar a oscuras — сидеть в темноте; la oscuridad — темнота)',
+        example: 'Aquella tarde a oscuras se quedó en mi memoria.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Dónde pasaba los veranos el narrador?',
+        options: ['En Galicia', 'En Asturias', 'En Cataluña'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué llevaba siempre la abuela Pilar?',
+        options: ['Un delantal azul', 'Un sombrero', 'Un vestido rojo'],
+        correct: 0,
+      },
+      {
+        q: '¿Cuánto duró el corte de luz?',
+        options: ['Una hora', 'Tres horas', 'Toda la noche'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Pretérito Imperfecto: окончания регулярных глаголов',
+        note:
+          'У -ar глаголов в Imperfecto окончания -aba, -abas, -aba, -ábamos, -abais, -aban. ' +
+          'У -er и -ir — одинаковые: -ía, -ías, -ía, -íamos, -íais, -ían. ' +
+          'В тексте: -ar — «llevaba un delantal», «bajaba al huerto», «contaba cuentos»; ' +
+          '-er/-ir — «tenía dos plantas», «olía a leña», «encendía la chimenea», «leía en el patio». ' +
+          'Это базовое время для описания «как было раньше».',
+      },
+      {
+        topic: 'Imperfecto vs Indefinido: фон и событие',
+        note:
+          'Imperfecto рисует декорации (era pequeño, tenía dos plantas, olía a leña, mi abuelo encendía la chimenea) — ' +
+          'это длящийся, повторяющийся фон. Indefinido вводит конкретное событие, разрывающее фон: ' +
+          '«llegó una tormenta», «la luz se fue», «encendimos velas». Эти два времени дополняют друг друга, ' +
+          'как фотография (Imperfecto) и кадр короткого видео (Indefinido).',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-012',
+    level: 'A2',
+    day: 12,
+    title: 'Mi colegio de Cuenca',
+    text:
+      'Cuando tenía nueve años, vivía en Cuenca y estudiaba en un colegio pequeño cerca del casco antiguo. ' +
+      'Todos los días seguíamos la misma rutina y a mí me encantaba.\n\n' +
+      'Las clases empezaban a las nueve. La profesora doña Mercedes nos saludaba uno por uno desde la puerta. ' +
+      'Por la mañana teníamos matemáticas, lengua y ciencias. ' +
+      'A las once sonaba el timbre del recreo y salíamos corriendo al patio. ' +
+      'Yo siempre llevaba un bocadillo de jamón y un cartón de zumo en la mochila.\n\n' +
+      'Después del recreo, doña Mercedes leía un capítulo de un libro en voz alta. ' +
+      'Yo cerraba los ojos y la imaginaba todo. A la una volvíamos a casa para comer.\n\n' +
+      'Un viernes de mayo, doña Mercedes faltó por primera vez en cinco años. Estaba enferma. ' +
+      'Aquel día comprendimos cuánto la queríamos.',
+    vocabulary: [
+      {
+        word: 'el casco antiguo',
+        translation: 'старый город, исторический центр (синоним el casco histórico)',
+        example: 'cerca del casco antiguo',
+      },
+      {
+        word: 'la rutina',
+        translation: 'распорядок дня, привычный уклад (la rutina diaria)',
+        example: 'Seguíamos la misma rutina.',
+      },
+      {
+        word: 'encantar (me encanta)',
+        translation: 'очень нравиться. Глагол типа gustar: me encanta, te encanta…',
+        example: 'A mí me encantaba.',
+      },
+      {
+        word: 'uno por uno',
+        translation: 'один за другим, поодиночке (синоним uno a uno)',
+        example: 'Nos saludaba uno por uno.',
+      },
+      {
+        word: 'las matemáticas',
+        translation: 'математика (в испанском всегда мн.ч.!)',
+        example: 'Teníamos matemáticas y lengua.',
+      },
+      {
+        word: 'la lengua',
+        translation: 'язык (школьный предмет: la lengua española); язык во рту',
+        example: 'Teníamos matemáticas, lengua y ciencias.',
+      },
+      {
+        word: 'las ciencias',
+        translation: 'естественные науки как школьный предмет (мн.ч.)',
+        example: 'Teníamos lengua y ciencias.',
+      },
+      {
+        word: 'el timbre',
+        translation: 'звонок (дверной или школьный); тембр голоса',
+        example: 'Sonaba el timbre del recreo.',
+      },
+      {
+        word: 'el recreo',
+        translation: 'перемена в школе (la hora del recreo — большая перемена)',
+        example: 'el timbre del recreo',
+      },
+      {
+        word: 'el patio',
+        translation: 'двор; патио — внутренний дворик испанского дома',
+        example: 'Salíamos corriendo al patio.',
+      },
+      {
+        word: 'la mochila',
+        translation: 'рюкзак (классика для школы и путешествий)',
+        example: 'un bocadillo en la mochila',
+      },
+      {
+        word: 'el cartón',
+        translation: 'картон; пакет из картона (un cartón de zumo / de leche)',
+        example: 'un cartón de zumo',
+      },
+      {
+        word: 'el capítulo',
+        translation: 'глава (книги); серия (сериала)',
+        example: 'Leía un capítulo en voz alta.',
+      },
+      {
+        word: 'en voz alta',
+        translation: 'вслух (антоним en voz baja — шёпотом)',
+        example: 'Leía un capítulo en voz alta.',
+      },
+      {
+        word: 'faltar',
+        translation: 'отсутствовать; не хватать (me falta tiempo — мне не хватает времени)',
+        example: 'Doña Mercedes faltó por primera vez.',
+      },
+      {
+        word: 'enfermo, -a',
+        translation: 'больной (estar enfermo — болеть; антоним sano — здоровый)',
+        example: 'Estaba enferma.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cómo se llamaba la profesora?',
+        options: ['Doña Pilar', 'Doña Mercedes', 'Doña Carmen'],
+        correct: 1,
+      },
+      {
+        q: '¿A qué hora era el recreo?',
+        options: ['A las nueve', 'A las once', 'A la una'],
+        correct: 1,
+      },
+      {
+        q: '¿Por qué faltó la profesora un viernes de mayo?',
+        options: ['Estaba de viaje', 'Estaba enferma', 'Tenía una boda'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperfecto для рутины и привычек',
+        note:
+          'Imperfecto — идеальное время для «todos los días», «siempre», «cada mañana», «por la mañana», «a las once». ' +
+          'Это маркеры повторяемости. В тексте: «las clases empezaban a las nueve», «yo siempre llevaba un bocadillo», ' +
+          '«a la una volvíamos a casa». Indefinido такие фразы не любит — он закрывает событие, а не растягивает его.',
+      },
+      {
+        topic: 'Imperfecto + Indefinido: фон и разрыв привычки',
+        note:
+          'Когда привычный фон описан в Imperfecto, появление Indefinido означает разрыв: ' +
+          '«Doña Mercedes nos saludaba uno por uno» (привычка) → «Un viernes de mayo, faltó por primera vez» (разрыв). ' +
+          'Маркер «un viernes», «un día», «una mañana» — типичный сигнал Indefinido внутри Imperfecto-описания.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-013',
+    level: 'A2',
+    day: 13,
+    title: 'Los domingos de verano',
+    text:
+      'De pequeño, los domingos de verano eran sagrados en mi familia. ' +
+      'Vivíamos en Cáceres y, en cuanto terminaba el curso, nos íbamos al campo. ' +
+      'Mi padre conducía una furgoneta blanca llena de cacharros y juguetes.\n\n' +
+      'La casa de campo estaba al lado de un río. ' +
+      'Por la mañana, mi hermana Inés y yo bajábamos a pescar con cañas viejas. ' +
+      'Casi nunca cogíamos nada, pero pasábamos horas riendo bajo los chopos. ' +
+      'Al mediodía, mi madre llamaba desde la terraza: «¡A comer, que se enfría la paella!».\n\n' +
+      'Por la tarde dormíamos la siesta en hamacas, entre dos árboles. ' +
+      'Yo escuchaba el zumbido de las cigarras y me quedaba dormido enseguida.\n\n' +
+      'Un domingo de agosto vimos pasar un zorro junto al río. ' +
+      'Mi hermana sacó una foto con la cámara nueva de papá. ' +
+      'Todavía la conservamos en el álbum.',
+    vocabulary: [
+      {
+        word: 'sagrado, -a',
+        translation: 'священный, неприкосновенный (un ritual sagrado)',
+        example: 'Los domingos eran sagrados.',
+      },
+      {
+        word: 'en cuanto',
+        translation: 'как только (en cuanto llegó — как только пришёл)',
+        example: 'En cuanto terminaba el curso, nos íbamos.',
+      },
+      {
+        word: 'la furgoneta',
+        translation: 'фургон (la camioneta — пикап в Лат. Америке)',
+        example: 'Una furgoneta blanca llena de cacharros.',
+      },
+      {
+        word: 'el cacharro',
+        translation: 'старая вещь, рухлядь; кухонная утварь (los cacharros de la cocina)',
+        example: 'llena de cacharros y juguetes',
+      },
+      {
+        word: 'el juguete',
+        translation: 'игрушка (la tienda de juguetes — магазин игрушек)',
+        example: 'cacharros y juguetes',
+      },
+      {
+        word: 'el río',
+        translation: 'река (el Tajo, el Guadalquivir, el Ebro — главные испанские реки)',
+        example: 'La casa estaba al lado de un río.',
+      },
+      {
+        word: 'pescar',
+        translation: 'рыбачить, ловить рыбу (la pesca — рыбалка; el pescador — рыбак)',
+        example: 'Bajábamos a pescar con cañas viejas.',
+      },
+      {
+        word: 'la caña (de pescar)',
+        translation: 'удочка; стебель тростника',
+        example: 'pescar con cañas viejas',
+      },
+      {
+        word: 'el chopo',
+        translation: 'тополь — типичное дерево испанских речных берегов',
+        example: 'bajo los chopos',
+      },
+      {
+        word: 'la siesta',
+        translation: 'послеобеденный сон (dormir la siesta — священная традиция Испании)',
+        example: 'Dormíamos la siesta en hamacas.',
+      },
+      {
+        word: 'la hamaca',
+        translation: 'гамак (мн.ч. las hamacas)',
+        example: 'en hamacas, entre dos árboles',
+      },
+      {
+        word: 'el zumbido',
+        translation: 'жужжание; гудение (от zumbar)',
+        example: 'el zumbido de las cigarras',
+      },
+      {
+        word: 'la cigarra',
+        translation: 'цикада — символ испанского лета на юге',
+        example: 'el zumbido de las cigarras',
+      },
+      {
+        word: 'el zorro',
+        translation: 'лиса; хитрый человек (es un zorro)',
+        example: 'Vimos pasar un zorro junto al río.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Adónde iba la familia los domingos de verano?',
+        options: ['Al campo', 'A la playa', 'A la sierra'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué hacían el narrador e Inés por la mañana?',
+        options: ['Cocinaban', 'Pescaban', 'Leían'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué animal vieron junto al río un domingo de agosto?',
+        options: ['Un zorro', 'Un ciervo', 'Un jabalí'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperfecto: ser, ir, ver — три неправильных',
+        note:
+          'Только три глагола в Imperfecto имеют неправильные формы. ' +
+          'ser: era, eras, era, éramos, erais, eran. ' +
+          'ir: iba, ibas, iba, íbamos, ibais, iban. ' +
+          'ver: veía, veías, veía, veíamos, veíais, veían (i сохраняется, как у регулярных -er). ' +
+          'В тексте: «los domingos eran sagrados», «nos íbamos al campo».',
+      },
+      {
+        topic: 'Привычки в прошлом — Imperfecto',
+        note:
+          'Imperfecto рассказывает о том, что повторялось много раз, без указания на конкретный случай: ' +
+          '«vivíamos», «bajábamos», «pasábamos», «dormíamos», «escuchaba». ' +
+          'Русский эквивалент — «бывало, мы…», «мы постоянно…». Это время устойчивой картины прошлого, ' +
+          'а не отдельных дней. «Un domingo de agosto vimos un zorro» уже выбивается из ритма — отсюда Indefinido.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-014',
+    level: 'A2',
+    day: 14,
+    title: 'Toledo, ayer y hoy',
+    text:
+      'Cuando mi padre era joven, en los años setenta, Toledo era una ciudad casi vacía los fines de semana. ' +
+      'Apenas pasaban turistas por las calles estrechas. ' +
+      'Los artesanos vivían y trabajaban dentro de la muralla. ' +
+      'Mi padre recuerda el olor a metal de los talleres de espadas y la voz de un viejo afilador que recorría el barrio en bicicleta.\n\n' +
+      'Hoy todo es distinto. Cada mañana llegan veinte autobuses de turistas desde Madrid. ' +
+      'Las tiendas de espadas son ahora bazares con imanes y postales. ' +
+      'Los artesanos auténticos quedan pocos y trabajan en pueblos cercanos.\n\n' +
+      'El año pasado volví con mi padre. Subimos al mirador del Valle al atardecer. ' +
+      'Él se quedó callado un buen rato, mirando la ciudad dorada bajo el sol. ' +
+      '«Aquí, hace cuarenta años, había silencio», me dijo. ' +
+      'La nostalgia es así: vive en los detalles que ya nadie ve.',
+    vocabulary: [
+      {
+        word: 'apenas',
+        translation: 'едва, почти не (apenas conozco — едва знаком)',
+        example: 'Apenas pasaban turistas.',
+      },
+      {
+        word: 'estrecho, -a',
+        translation: 'узкий (антоним ancho — широкий)',
+        example: 'por las calles estrechas',
+      },
+      {
+        word: 'el artesano / la artesana',
+        translation: 'ремесленник, мастер ручной работы (la artesanía — рукоделие)',
+        example: 'Los artesanos vivían dentro de la muralla.',
+      },
+      {
+        word: 'la muralla',
+        translation: 'городская стена (la muralla de Ávila — знаменитая стена Авилы)',
+        example: 'dentro de la muralla',
+      },
+      {
+        word: 'la espada',
+        translation: 'меч, шпага (Toledo знаменит своими историческими клинками)',
+        example: 'los talleres de espadas',
+      },
+      {
+        word: 'el afilador',
+        translation: 'точильщик ножей — старая бродячая профессия, ездили на велосипеде со свистулькой',
+        example: 'la voz de un viejo afilador',
+      },
+      {
+        word: 'el bazar',
+        translation: 'базар; сувенирная лавка с дешёвыми товарами',
+        example: 'bazares con imanes y postales',
+      },
+      {
+        word: 'la postal',
+        translation: 'почтовая открытка (mandar una postal — отправить открытку)',
+        example: 'bazares con imanes y postales',
+      },
+      {
+        word: 'auténtico, -a',
+        translation: 'настоящий, подлинный (un cuero auténtico)',
+        example: 'Los artesanos auténticos quedan pocos.',
+      },
+      {
+        word: 'cercano, -a',
+        translation: 'близкий (un pueblo cercano; un familiar cercano)',
+        example: 'trabajan en pueblos cercanos',
+      },
+      {
+        word: 'el mirador',
+        translation: 'смотровая площадка (el mirador del Valle — обзорная точка над Толедо)',
+        example: 'Subimos al mirador del Valle.',
+      },
+      {
+        word: 'callado, -a',
+        translation: 'молчаливый, замолчавший (quedarse callado — замолчать)',
+        example: 'Se quedó callado un buen rato.',
+      },
+      {
+        word: 'un buen rato',
+        translation: 'довольно долго (un rato — некоторое время; un buen rato — приличный отрезок)',
+        example: 'Se quedó callado un buen rato.',
+      },
+      {
+        word: 'dorado, -a',
+        translation: 'золотистый, золотой по цвету (el oro — золото)',
+        example: 'la ciudad dorada bajo el sol',
+      },
+      {
+        word: 'la nostalgia',
+        translation: 'ностальгия, тоска по прошлому (tener nostalgia de — скучать по)',
+        example: 'La nostalgia vive en los detalles.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cómo era Toledo en los años setenta los fines de semana?',
+        options: ['Lleno de turistas', 'Casi vacío', 'Muy ruidoso'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué hacían los artesanos antiguamente?',
+        options: ['Vivían y trabajaban dentro de la muralla', 'Trabajaban en Madrid', 'Vendían recuerdos'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué dijo el padre en el mirador del Valle?',
+        options: ['«Toledo está mejor ahora»', '«Hace cuarenta años, había silencio»', '«Aquí no quiero volver»'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperfecto vs Presente: «antes» / «hoy»',
+        note:
+          'Чтобы сравнить «раньше» и «сейчас», испанский использует Imperfecto + Presente: ' +
+          '«antes vivían dentro de la muralla» (Imperfecto) // «hoy trabajan en pueblos cercanos» (Presente). ' +
+          'Это формула рассказа об изменениях. Маркеры: antes, en los años setenta, en aquella época / hoy, ahora, en la actualidad.',
+      },
+      {
+        topic: 'Había + sustantivo: безличное Imperfecto',
+        note:
+          'Глагол haber в Imperfecto в значении «было / был кто-то / что-то» — только форма «había»: ' +
+          'había silencio, había muchos turistas, había una tienda en cada esquina. ' +
+          'Никогда не «habían» (это ошибка для существования). В тексте: «aquí había silencio».',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-015',
+    level: 'A2',
+    day: 15,
+    title: 'Cómo conocí a Marta',
+    text:
+      'Conocí a Marta el dos de septiembre de 2013, durante una boda en Vigo. ' +
+      'Aún recuerdo cómo era ella aquel día: llevaba un vestido verde menta, gafas redondas y una sonrisa tímida. ' +
+      'Estaba sola en una mesa cerca del jardín y miraba el mar.\n\n' +
+      'Yo era amigo del novio y andaba bastante perdido entre cien invitados. ' +
+      'De repente, alguien me empujó sin querer y mi copa de vino fue a parar sobre el mantel de Marta. ' +
+      'Le pedí mil disculpas y ella se rio en silencio.\n\n' +
+      'Hablamos toda la cena. ' +
+      'Le encantaban los libros de viajes, odiaba el reguetón y trabajaba como veterinaria en Pontevedra. ' +
+      'Cuando terminó el banquete, le dejé mi teléfono en una servilleta.\n\n' +
+      'Marta me llamó al día siguiente. ' +
+      'Doce años más tarde, todavía guardamos esa servilleta entre las páginas de un libro.',
+    vocabulary: [
+      {
+        word: 'tímido, -a',
+        translation: 'застенчивый, робкий (la timidez — застенчивость)',
+        example: 'una sonrisa tímida',
+      },
+      {
+        word: 'redondo, -a',
+        translation: 'круглый (la mesa redonda; gafas redondas)',
+        example: 'gafas redondas',
+      },
+      {
+        word: 'perdido, -a',
+        translation: 'потерянный, заблудившийся (estar perdido — быть в растерянности)',
+        example: 'Andaba bastante perdido.',
+      },
+      {
+        word: 'el invitado / la invitada',
+        translation: 'приглашённый, гость (la lista de invitados)',
+        example: 'entre cien invitados',
+      },
+      {
+        word: 'empujar',
+        translation: 'толкать (empujar la puerta; un empujón — толчок)',
+        example: 'Alguien me empujó sin querer.',
+      },
+      {
+        word: 'sin querer',
+        translation: 'нечаянно, не нарочно (антоним a propósito)',
+        example: 'Me empujó sin querer.',
+      },
+      {
+        word: 'la copa',
+        translation: 'бокал (una copa de vino); тж. кубок в спорте',
+        example: 'mi copa de vino',
+      },
+      {
+        word: 'ir a parar',
+        translation: 'оказаться где-то, попасть (el balón fue a parar al jardín)',
+        example: 'Mi copa fue a parar sobre el mantel.',
+      },
+      {
+        word: 'el mantel',
+        translation: 'скатерть (poner el mantel — стелить скатерть)',
+        example: 'el mantel de Marta',
+      },
+      {
+        word: 'pedir disculpas',
+        translation: 'извиняться, просить прощения (disculparse — извиниться)',
+        example: 'Le pedí mil disculpas.',
+      },
+      {
+        word: 'en silencio',
+        translation: 'молча, в тишине (el silencio — тишина)',
+        example: 'Ella se rio en silencio.',
+      },
+      {
+        word: 'odiar',
+        translation: 'ненавидеть (el odio — ненависть)',
+        example: 'Odiaba el reguetón.',
+      },
+      {
+        word: 'el reguetón',
+        translation: 'реггетон — латиноамериканский жанр, популярный и спорный в Испании',
+        example: 'Odiaba el reguetón.',
+      },
+      {
+        word: 'el veterinario / la veterinaria',
+        translation: 'ветеринар (тж. la veterinaria — «ветеринария» как наука)',
+        example: 'Trabajaba como veterinaria.',
+      },
+      {
+        word: 'al día siguiente',
+        translation: 'на следующий день (синоним al otro día)',
+        example: 'Marta me llamó al día siguiente.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Dónde conoció el narrador a Marta?',
+        options: ['En una boda en Vigo', 'En una fiesta en Madrid', 'En un viaje a Pontevedra'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué pasó con la copa de vino?',
+        options: ['Se rompió en el suelo', 'Fue a parar sobre el mantel de Marta', 'La bebió Marta'],
+        correct: 1,
+      },
+      {
+        q: '¿De qué trabajaba Marta?',
+        options: ['De abogada', 'De veterinaria', 'De profesora'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Cuando lo/la conocí, era… — описание человека в момент знакомства',
+        note:
+          'Знакомство — точечное событие (Indefinido), а описание человека в момент знакомства — фон (Imperfecto): ' +
+          '«Conocí a Marta… llevaba un vestido verde, era amigo del novio, trabajaba como veterinaria». ' +
+          'Conocer в Indefinido значит «познакомиться», а не «знал»: la conocí = я с ней познакомился; ' +
+          'la conocía = я её (уже) знал.',
+      },
+      {
+        topic: 'Глаголы типа gustar в Imperfecto',
+        note:
+          'gustar, encantar, doler, parecer работают с косвенным дополнением: ' +
+          'le encantaban los libros (мн.: книги нравились ей), me gustaba el cine (ед.: мне нравилось кино). ' +
+          'В Imperfecto особенно частотно для прошлых пристрастий: «de pequeño me encantaba la nieve».',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-016',
+    level: 'A2',
+    day: 16,
+    title: 'Una tarde de invierno',
+    text:
+      'Aquella tarde de invierno hacía un frío horrible en Madrid. ' +
+      'Yo estaba en mi piso de Lavapiés, sentado en el sofá con una manta sobre las piernas. ' +
+      'Leía una novela de Pérez Galdós y bebía un té caliente. ' +
+      'La calefacción ronroneaba y mi gato dormía a mi lado. Todo era perfecto.\n\n' +
+      'De pronto, alguien llamó al timbre con insistencia. ' +
+      'Me sorprendí mucho: no esperaba a nadie. ' +
+      'Abrí la puerta y vi a mi vecina Carmen, blanca como el papel. ' +
+      'Sus llaves se cayeron al patio interior y ya no podía entrar en casa. ' +
+      'Llevaba quince minutos en el rellano, sin chaqueta y sin móvil.\n\n' +
+      'La invité a pasar y le ofrecí un té caliente. ' +
+      'Mientras Carmen se calentaba las manos, llamé al portero del edificio. ' +
+      'Media hora más tarde, ella ya estaba en su salón. ' +
+      'Yo volví a mi libro y, casi sin querer, sonreí.',
+    vocabulary: [
+      {
+        word: 'la manta',
+        translation: 'плед, одеяло (la manta eléctrica — электроодеяло)',
+        example: 'con una manta sobre las piernas',
+      },
+      {
+        word: 'la novela',
+        translation: 'роман (литературный жанр); la novela negra — детектив',
+        example: 'Leía una novela.',
+      },
+      {
+        word: 'Pérez Galdós',
+        translation: 'Бенито Перес Гальдос (1843–1920) — главный испанский романист XIX в., «испанский Бальзак»',
+        example: 'una novela de Pérez Galdós',
+      },
+      {
+        word: 'la calefacción',
+        translation: 'отопление (la calefacción central; encender la calefacción)',
+        example: 'La calefacción ronroneaba.',
+      },
+      {
+        word: 'ronronear',
+        translation: 'мурлыкать (о кошке); тихо гудеть (об отоплении, моторе)',
+        example: 'La calefacción ronroneaba.',
+      },
+      {
+        word: 'de pronto',
+        translation: 'вдруг (синоним de repente; чуть более книжный)',
+        example: 'De pronto, alguien llamó al timbre.',
+      },
+      {
+        word: 'con insistencia',
+        translation: 'настойчиво (la insistencia — настойчивость)',
+        example: 'llamó al timbre con insistencia',
+      },
+      {
+        word: 'blanco como el papel',
+        translation: 'белый как бумага — о цвете лица от страха или шока',
+        example: 'mi vecina Carmen, blanca como el papel',
+      },
+      {
+        word: 'Lavapiés',
+        translation: 'Лавапьес — мультикультурный район в центре Мадрида, рядом с Антоном-Мартином',
+        example: 'mi piso de Lavapiés',
+      },
+      {
+        word: 'el patio interior',
+        translation: 'внутренний двор-колодец (типичен для старых мадридских домов)',
+        example: 'Sus llaves se cayeron al patio interior.',
+      },
+      {
+        word: 'el rellano',
+        translation: 'лестничная площадка (на каждом этаже)',
+        example: 'Llevaba quince minutos en el rellano.',
+      },
+      {
+        word: 'el portero / la portera',
+        translation: 'консьерж, привратник (во многих старых испанских домах)',
+        example: 'Llamé al portero del edificio.',
+      },
+      {
+        word: 'calentarse',
+        translation: 'согреваться (calentar — нагревать; e→ie: caliento, calientas…)',
+        example: 'Mientras Carmen se calentaba las manos.',
+      },
+      {
+        word: 'sonreír',
+        translation: 'улыбаться (la sonrisa — улыбка; e→i: sonrío, sonríes…)',
+        example: 'Casi sin querer, sonreí.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué estaba haciendo el narrador antes del timbre?',
+        options: ['Cocinaba', 'Leía y bebía té', 'Jugaba con el gato'],
+        correct: 1,
+      },
+      {
+        q: '¿Por qué Carmen no podía entrar en casa?',
+        options: ['Sus llaves se cayeron al patio interior', 'Olvidó la dirección', 'Se le rompió la puerta'],
+        correct: 0,
+      },
+      {
+        q: '¿Cuánto tiempo llevaba Carmen en el rellano?',
+        options: ['Cinco minutos', 'Quince minutos', 'Una hora'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Прерванное действие: Imperfecto + cuando + Indefinido',
+        note:
+          'Классическая схема рассказа: длящееся действие в Imperfecto + внезапный сбой в Indefinido. ' +
+          '«Yo leía / mi gato dormía / la calefacción ronroneaba… cuando alguien llamó al timbre». ' +
+          'Imperfecto держит сцену открытой, как полотно; Indefinido прокалывает её одной точкой. ' +
+          'Альтернатива: «estaba leyendo cuando…» — Imperfecto от estar + герундий.',
+      },
+      {
+        topic: 'Mientras + Imperfecto: параллельные действия',
+        note:
+          'Mientras («пока, в то время как») просит Imperfecto, потому что описывает фоновое действие, ' +
+          'параллельное другому: «Mientras Carmen se calentaba las manos, llamé al portero». ' +
+          'Одно действие длится (Imperfecto), второе закончилось внутри него (Indefinido).',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-017',
+    level: 'A2',
+    day: 17,
+    title: 'Mi Madrid de los años noventa',
+    text:
+      'Mi Madrid de los años noventa no se parecía nada al de hoy. ' +
+      'Yo tenía catorce años, vivía con mis padres en un piso de Argüelles y conocía la ciudad como la palma de mi mano. ' +
+      'Por las tardes bajaba al kiosco de don Andrés a comprar el tebeo de Mortadelo. ' +
+      'Costaba ciento setenta y cinco pesetas.\n\n' +
+      'Los autobuses eran rojos y olían a gasolina. ' +
+      'Los teléfonos públicos funcionaban con monedas y siempre había alguien gritando dentro de la cabina. ' +
+      'La gente fumaba en los bares, en los aviones y hasta en el metro. ' +
+      'Las tiendas cerraban a las dos para la comida y volvían a abrir a las cinco.\n\n' +
+      'Un sábado de 1998 mi padre me llevó al Bernabéu por primera vez. ' +
+      'Pisé el césped con la mirada, no con los pies. ' +
+      'Aquella tarde decidí que el Real Madrid era mío para siempre.',
+    vocabulary: [
+      {
+        word: 'parecerse a',
+        translation: 'быть похожим на (te pareces a tu padre — ты похож на отца)',
+        example: 'No se parecía nada al Madrid de hoy.',
+      },
+      {
+        word: 'la palma de la mano',
+        translation: 'ладонь (conocer como la palma de la mano — знать как свои пять пальцев)',
+        example: 'Conocía la ciudad como la palma de mi mano.',
+      },
+      {
+        word: 'el tebeo',
+        translation: 'детский комикс (типично испанское слово; в Лат. Ам. — la historieta)',
+        example: 'el tebeo de Mortadelo',
+      },
+      {
+        word: 'Mortadelo',
+        translation: 'Мортадело — герой испанских комиксов Ф. Ибаньеса с 1958 года',
+        example: 'el tebeo de Mortadelo',
+      },
+      {
+        word: 'la peseta',
+        translation: 'песета — испанская валюта до 2002 г. (166,386 песет = 1 евро)',
+        example: 'Costaba ciento setenta y cinco pesetas.',
+      },
+      {
+        word: 'la gasolina',
+        translation: 'бензин (la gasolinera — заправка)',
+        example: 'olían a gasolina',
+      },
+      {
+        word: 'la moneda',
+        translation: 'монета; денежная единица (la moneda única europea — евро)',
+        example: 'funcionaban con monedas',
+      },
+      {
+        word: 'la cabina (de teléfono)',
+        translation: 'телефонная будка (в 90-е стояли почти на каждом углу)',
+        example: 'dentro de la cabina',
+      },
+      {
+        word: 'fumar',
+        translation: 'курить (el fumador — курильщик; prohibido fumar — курить запрещено)',
+        example: 'La gente fumaba en los bares.',
+      },
+      {
+        word: 'el avión',
+        translation: 'самолёт (en avión — самолётом; el aeropuerto — аэропорт)',
+        example: 'fumaba en los bares, en los aviones y hasta en el metro',
+      },
+      {
+        word: 'el Bernabéu',
+        translation: 'стадион Santiago Bernabéu — домашний стадион «Реала» в Мадриде',
+        example: 'me llevó al Bernabéu por primera vez',
+      },
+      {
+        word: 'el césped',
+        translation: 'газон, трава (футбольное поле — un campo de césped)',
+        example: 'Pisé el césped con la mirada.',
+      },
+      {
+        word: 'la mirada',
+        translation: 'взгляд (от mirar; una mirada triste)',
+        example: 'Pisé el césped con la mirada.',
+      },
+      {
+        word: 'los años noventa',
+        translation: '90-е годы (los años setenta — 70-е; en aquella época — в ту эпоху)',
+        example: 'Mi Madrid de los años noventa.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué iba a comprar el narrador al kiosco?',
+        options: ['Caramelos', 'Un tebeo', 'El periódico'],
+        correct: 1,
+      },
+      {
+        q: '¿A qué hora cerraban las tiendas para la comida?',
+        options: ['A las dos', 'A las cinco', 'A las siete'],
+        correct: 0,
+      },
+      {
+        q: '¿Adónde lo llevó su padre un sábado de 1998?',
+        options: ['Al Prado', 'Al Bernabéu', 'A la sierra'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperfecto для описания эпохи',
+        note:
+          'Imperfecto — единственное прошедшее время для описания «как было устроено» в определённую эпоху: ' +
+          '«los autobuses eran rojos», «la gente fumaba en los bares», «las tiendas cerraban a las dos». ' +
+          'Это не серия событий, а параллельная картинка ушедшего мира. ' +
+          'Indefinido здесь будет ошибкой — он закрыл бы каждую сцену.',
+      },
+      {
+        topic: 'Imperfecto: tenía X años, hacía X tiempo',
+        note:
+          '«Tenía catorce años» (мне было 14 лет) — стандартная формула возраста в прошлом, всегда Imperfecto. ' +
+          'Сравни: «cumplí catorce años» (мне исполнилось 14) — Indefinido для самого момента дня рождения. ' +
+          'Так же: «hacía un frío horrible» (стоял жуткий холод) — Imperfecto для длящейся погоды.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-018',
+    level: 'A2',
+    day: 18,
+    title: 'La maestra del pueblo',
+    text:
+      'Mi abuela Encarna fue maestra durante cuarenta y un años en un pueblo de León. ' +
+      'Cuando empezó a trabajar, en 1948, tenía solo veinte años y compartía aula con cuarenta niños de edades distintas. ' +
+      'No había libros para todos, así que ella escribía los textos a mano y los pasaba de un pupitre a otro.\n\n' +
+      'Su sueldo era pequeñísimo y la vida en el pueblo, dura. ' +
+      'En invierno, los alumnos llegaban al aula con las manos heladas, y mi abuela encendía la estufa de leña antes de empezar la clase. ' +
+      'Algunas familias no podían pagar lápices, así que ella los compraba con su propio dinero.\n\n' +
+      'Mi abuela se jubiló en 1989. Aquel verano, todo el pueblo organizó una fiesta en la plaza. ' +
+      'Vinieron antiguos alumnos desde Madrid, Barcelona e incluso Alemania. ' +
+      'Le regalaron una placa de plata. ' +
+      'Ella lloró y dijo solo: «Tuve mucha suerte».',
+    vocabulary: [
+      {
+        word: 'el maestro / la maestra',
+        translation: 'учитель/учительница начальной школы (el profesor — средняя школа и универ)',
+        example: 'Mi abuela fue maestra.',
+      },
+      {
+        word: 'el aula',
+        translation: 'класс (помещение). Жен. рода, но артикль «el» в ед. ч. для звучности: el aula, las aulas',
+        example: 'compartía aula con cuarenta niños',
+      },
+      {
+        word: 'compartir',
+        translation: 'делить с кем-то, делиться (compartir el piso — снимать квартиру вместе)',
+        example: 'Compartía aula con cuarenta niños.',
+      },
+      {
+        word: 'el pupitre',
+        translation: 'парта (мебель в классе)',
+        example: 'de un pupitre a otro',
+      },
+      {
+        word: 'a mano',
+        translation: 'от руки, вручную (escribir a mano; hecho a mano — ручной работы)',
+        example: 'escribía los textos a mano',
+      },
+      {
+        word: 'helado, -a',
+        translation: 'замёрзший, ледяной (las manos heladas; el agua helada). Тж. сущ. el helado — мороженое',
+        example: 'con las manos heladas',
+      },
+      {
+        word: 'la estufa',
+        translation: 'печка, обогреватель (la estufa de leña — дровяная печь)',
+        example: 'encendía la estufa de leña',
+      },
+      {
+        word: 'el lápiz',
+        translation: 'карандаш (мн.ч. los lápices — с -c-)',
+        example: 'no podían pagar lápices',
+      },
+      {
+        word: 'propio, -a',
+        translation: 'свой собственный (con mi propio dinero — на свои собственные деньги)',
+        example: 'con su propio dinero',
+      },
+      {
+        word: 'jubilarse',
+        translation: 'выходить на пенсию (la jubilación — пенсия; un jubilado — пенсионер)',
+        example: 'Mi abuela se jubiló en 1989.',
+      },
+      {
+        word: 'la placa',
+        translation: 'табличка, мемориальная пластина (una placa de plata — серебряная табличка)',
+        example: 'Le regalaron una placa de plata.',
+      },
+      {
+        word: 'la plata',
+        translation: 'серебро (металл и цвет; las bodas de plata — серебряная свадьба)',
+        example: 'una placa de plata',
+      },
+      {
+        word: 'incluso',
+        translation: 'даже (incluso él lo sabe — даже он это знает)',
+        example: 'desde Madrid, Barcelona e incluso Alemania',
+      },
+      {
+        word: 'tener suerte',
+        translation: 'везти, быть удачливым (¡qué suerte! — какая удача!; la suerte — удача)',
+        example: 'Tuve mucha suerte.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuántos años trabajó la abuela como maestra?',
+        options: ['Veinte', 'Cuarenta y uno', 'Cincuenta'],
+        correct: 1,
+      },
+      {
+        q: '¿Por qué encendía la estufa antes de empezar la clase?',
+        options: ['Para preparar café', 'Porque los alumnos llegaban con las manos heladas', 'Porque era la tradición'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué le regalaron en la fiesta de la plaza?',
+        options: ['Una placa de plata', 'Un viaje', 'Un libro'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperfecto: фон длинной жизни; Indefinido: ключевые точки',
+        note:
+          'Биография строится из двух слоёв. ' +
+          'Фон Imperfecto: «compartía aula», «escribía a mano», «llegaban con las manos heladas», «no podían pagar lápices». ' +
+          'Ключевые точки Indefinido: «empezó a trabajar en 1948», «se jubiló en 1989», «vinieron antiguos alumnos», «le regalaron una placa», «lloró y dijo». ' +
+          'Imperfecto — «как было всю жизнь», Indefinido — узловые события.',
+      },
+      {
+        topic: 'Edades en Imperfecto vs Indefinido',
+        note:
+          'Возраст в момент действия — Imperfecto: «tenía veinte años». ' +
+          'Достижение круглой даты — Indefinido: «cumplió sesenta años». ' +
+          'Один глагол (tener), разное значение. В тексте: «tenía solo veinte años» — её возраст в момент начала работы.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-019',
+    level: 'A2',
+    day: 19,
+    title: 'Un viaje a los Pirineos',
+    text:
+      'Cuando tenía once años, mi familia hizo un viaje en coche por los Pirineos. ' +
+      'Fue mi primer viaje largo y todo me pareció una aventura. ' +
+      'Mi madre conducía y cantaba; mi padre miraba el mapa y discutía con ella amablemente; ' +
+      'mi hermano Marcos y yo íbamos detrás, peleando por el lado de la ventanilla.\n\n' +
+      'Dormíamos en hostales pequeños y baratos. ' +
+      'Cada mañana cogíamos cosas raras del bufé: un plato de queso, dos cruasanes, dos manzanas para el camino. ' +
+      'Mi madre nos miraba con cara de horror, pero no decía nada.\n\n' +
+      'Una mañana, cerca de Jaca, vimos un rebaño de ovejas que cruzaba la carretera. ' +
+      'Paramos el coche y bajamos. ' +
+      'El pastor llevaba una boina vieja y un perro negro con la lengua fuera. ' +
+      'Nos saludó con la mano. ' +
+      'Aquella imagen se me quedó grabada para siempre: las montañas verdes, las ovejas tranquilas y nosotros, fascinados, en mitad de Aragón.',
+    vocabulary: [
+      {
+        word: 'la aventura',
+        translation: 'приключение (los libros de aventuras — приключенческие книги)',
+        example: 'Todo me pareció una aventura.',
+      },
+      {
+        word: 'amablemente',
+        translation: 'любезно, дружелюбно (от amable; суффикс -mente = русское «-о»)',
+        example: 'discutía con ella amablemente',
+      },
+      {
+        word: 'la ventanilla',
+        translation: 'окошко в машине / поезде / у кассы (уменьш. от ventana)',
+        example: 'el lado de la ventanilla',
+      },
+      {
+        word: 'pelear',
+        translation: 'драться; ссориться (la pelea — драка, ссора)',
+        example: 'peleando por el lado de la ventanilla',
+      },
+      {
+        word: 'el hostal',
+        translation: 'недорогая гостиница, между хостелом и отелем (los hostales de carretera — придорожные)',
+        example: 'Dormíamos en hostales pequeños y baratos.',
+      },
+      {
+        word: 'el bufé',
+        translation: 'буфет, шведский стол (un bufé libre — самообслуживание)',
+        example: 'Cogíamos cosas raras del bufé.',
+      },
+      {
+        word: 'raro, -a',
+        translation: 'странный; редкий (una persona rara — странный человек)',
+        example: 'cosas raras del bufé',
+      },
+      {
+        word: 'con cara de horror',
+        translation: 'с ужасом на лице (poner cara de horror — состроить ужасное лицо)',
+        example: 'nos miraba con cara de horror',
+      },
+      {
+        word: 'el rebaño',
+        translation: 'стадо (овец, коз); в переносном — паства',
+        example: 'un rebaño de ovejas',
+      },
+      {
+        word: 'la oveja',
+        translation: 'овца (el cordero — ягнёнок; la oveja negra — паршивая овца)',
+        example: 'un rebaño de ovejas',
+      },
+      {
+        word: 'la boina',
+        translation: 'берет — типичный головной убор пастухов и старшего поколения',
+        example: 'una boina vieja',
+      },
+      {
+        word: 'con la lengua fuera',
+        translation: 'высунув язык (о запыхавшемся человеке или собаке; перен. «выматываясь»)',
+        example: 'un perro negro con la lengua fuera',
+      },
+      {
+        word: 'quedarse grabado, -a',
+        translation: 'остаться в памяти, врезаться (grabar — записывать, гравировать)',
+        example: 'Aquella imagen se me quedó grabada.',
+      },
+      {
+        word: 'en mitad de',
+        translation: 'посреди (синоним en medio de)',
+        example: 'en mitad de Aragón',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuántos años tenía el narrador durante el viaje?',
+        options: ['Nueve', 'Once', 'Trece'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué cogían cada mañana del bufé?',
+        options: ['Solo café', 'Cosas raras: queso, cruasanes, manzanas', 'Tortilla y zumo'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué vieron una mañana cerca de Jaca?',
+        options: ['Un rebaño de ovejas', 'Un oso', 'Una cabaña abandonada'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperfecto для параллельных действий в сцене',
+        note:
+          'Когда нужно описать сразу несколько одновременных действий в прошлом, испанский ставит их все в Imperfecto: ' +
+          '«Mi madre conducía y cantaba; mi padre miraba el mapa y discutía; nosotros íbamos detrás, peleando». ' +
+          'Так создаётся «многокамерная» сцена, как в кино. Если бы все глаголы были в Indefinido, ' +
+          'эпизод стал бы цепочкой шагов, а не общим планом.',
+      },
+      {
+        topic: 'Indefinido внутри Imperfecto-описания',
+        note:
+          'После долгого описания (Imperfecto) Indefinido резко выделяет конкретный момент: ' +
+          '«Una mañana, cerca de Jaca, vimos un rebaño… paramos el coche… el pastor nos saludó». ' +
+          'Маркеры «una mañana», «una tarde», «un día» — почти всегда сигнал перехода к Indefinido.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-020',
+    level: 'A2',
+    day: 20,
+    title: 'El álbum de fotos',
+    text:
+      'El otro día, mientras buscaba unas llaves perdidas, encontré un álbum de fotos enorme en el armario. ' +
+      'Lo bajé al salón y lo abrí con cuidado. Las páginas crujían y olían a polvo.\n\n' +
+      'En la primera foto, en blanco y negro, mi abuelo tenía dieciocho años y un bigote muy serio. ' +
+      'Estaba en uniforme militar delante de un cuartel de Cádiz. ' +
+      'En la segunda foto, mis padres estaban en la playa de San Sebastián; ' +
+      'mi madre era jovencísima y llevaba un bañador de lunares. ' +
+      'En la tercera, una niña pequeña de tres años, con coletas y un osito de peluche enorme, sonreía a la cámara. Era yo.\n\n' +
+      'Pasé la tarde entera mirando las fotos. ' +
+      'Cada imagen me contaba un pedazo de la familia. ' +
+      'Cuando llegó mi mujer, le enseñé el álbum y nos quedamos charlando hasta las once. ' +
+      'Las llaves, por cierto, aparecieron en mi chaqueta.',
+    vocabulary: [
+      {
+        word: 'crujir',
+        translation: 'скрипеть, хрустеть (las hojas crujen — листья шуршат)',
+        example: 'Las páginas crujían.',
+      },
+      {
+        word: 'el polvo',
+        translation: 'пыль; порошок (quitar el polvo — вытирать пыль)',
+        example: 'Olían a polvo.',
+      },
+      {
+        word: 'en blanco y negro',
+        translation: 'чёрно-белый (для фото или фильма; антоним a color — цветной)',
+        example: 'la primera foto, en blanco y negro',
+      },
+      {
+        word: 'el bigote',
+        translation: 'усы (la barba — борода; el flequillo — чёлка)',
+        example: 'un bigote muy serio',
+      },
+      {
+        word: 'el uniforme',
+        translation: 'форма, мундир (el uniforme escolar / militar)',
+        example: 'Estaba en uniforme militar.',
+      },
+      {
+        word: 'el cuartel',
+        translation: 'казарма, военная часть (el cuartel general — штаб)',
+        example: 'delante de un cuartel de Cádiz',
+      },
+      {
+        word: 'jovencísimo, -a',
+        translation: 'очень молодой (превосходная absoluto: joven + -ísimo, со вставкой -c-)',
+        example: 'Mi madre era jovencísima.',
+      },
+      {
+        word: 'el bañador',
+        translation: 'купальник, плавки (en la playa, en la piscina)',
+        example: 'un bañador de lunares',
+      },
+      {
+        word: 'los lunares',
+        translation: 'горошек (рисунок); родинки на коже (un vestido de lunares — платье в горошек)',
+        example: 'un bañador de lunares',
+      },
+      {
+        word: 'las coletas',
+        translation: 'два хвостика по бокам (hacer coletas — заплести хвостики; la coleta — один хвост)',
+        example: 'una niña con coletas',
+      },
+      {
+        word: 'el osito de peluche',
+        translation: 'плюшевый мишка (el oso — медведь; el peluche — плюш как материал и игрушка)',
+        example: 'un osito de peluche enorme',
+      },
+      {
+        word: 'el pedazo',
+        translation: 'кусок (un pedazo de pan; un pedazo de la familia — частичка семьи)',
+        example: 'un pedazo de la familia',
+      },
+      {
+        word: 'charlar',
+        translation: 'болтать, непринуждённо беседовать (la charla — беседа)',
+        example: 'Nos quedamos charlando hasta las once.',
+      },
+      {
+        word: 'por cierto',
+        translation: 'кстати (для введения попутной темы)',
+        example: 'Las llaves, por cierto, aparecieron.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué buscaba el narrador cuando encontró el álbum?',
+        options: ['Unas llaves perdidas', 'Un libro', 'Las gafas de su mujer'],
+        correct: 0,
+      },
+      {
+        q: '¿Cómo iba vestido el abuelo en la primera foto?',
+        options: ['Con un traje azul', 'Con uniforme militar', 'Con un jersey rojo'],
+        correct: 1,
+      },
+      {
+        q: '¿Dónde aparecieron las llaves al final?',
+        options: ['En el bolso', 'En el armario', 'En su chaqueta'],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperfecto в описании фотографии',
+        note:
+          'Описание содержимого старой фотографии — каноническое применение Imperfecto: ' +
+          '«mi abuelo tenía dieciocho años», «llevaba un bañador de lunares», «sonreía a la cámara». ' +
+          'Фотография — это замороженный кадр времени. Imperfecto идеально для него: ' +
+          'он рисует, а не двигает действие.',
+      },
+      {
+        topic: 'Mientras + Imperfecto / Indefinido — типичная завязка',
+        note:
+          '«Mientras buscaba unas llaves, encontré un álbum» — длящееся действие (buscaba) и ' +
+          'случайная находка (encontré). Та же схема, что «mientras leía, llamaron al timbre»: ' +
+          'фон + укол события. Дальше в тексте всё разворачивается уже в Indefinido (lo bajé, lo abrí, pasé la tarde).',
+      },
+    ],
+  },
 );
