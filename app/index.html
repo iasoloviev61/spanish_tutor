@@ -22,7 +22,7 @@
     gap: 16px;
   }
   @media (min-width: 720px) {
-    .home-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .home-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
   }
   .home-card {
     display: flex;
@@ -144,12 +144,24 @@
       </div>
     </a>
 
+    <a href="reading.html" class="home-card">
+      <span class="home-card-mark">D</span>
+      <div class="home-card-eyebrow">Leer</div>
+      <h2 class="home-card-title">Чтение</h2>
+      <p class="home-card-desc">Короткие тексты с TTS, всплывающим переводом и проверкой понимания. От Presente до Pretérito Perfecto.</p>
+      <div class="home-card-meta">
+        <span id="meta-reading">…</span>
+        <span class="home-card-arrow">открыть →</span>
+      </div>
+    </a>
+
   </div>
 
 </div>
 
 <script src="js/db.js"></script>
 <script src="js/profile.js"></script>
+<script src="data/texts.js"></script>
 <script src="data/textbook/u01.js"></script>
 <script src="data/textbook/u02.js"></script>
 <script src="data/textbook/u03.js"></script>
@@ -292,6 +304,25 @@
       meta.textContent = `${units.length} модулей · ${ever}/${totalQs} вопросов`;
     } else {
       meta.textContent = `${units.length} модулей · ${totalQs} вопросов`;
+    }
+
+    // прогресс по чтению — по тому же ключу, что использует reading.js
+    const a1 = (window.TEXTS || []).filter((t) => t.level === 'A1');
+    const metaReading = document.getElementById('meta-reading');
+    if (user) {
+      const key = 'spanish_reading_v1:' + user.id;
+      let done = 0;
+      try {
+        const raw = localStorage.getItem(key);
+        if (raw) {
+          const p = JSON.parse(raw);
+          const ids = new Set(a1.map((t) => t.id));
+          done = (p.completed_days || []).filter((id) => ids.has(id)).length;
+        }
+      } catch (e) { /* игнор */ }
+      metaReading.textContent = `${done}/${a1.length} дней`;
+    } else {
+      metaReading.textContent = `${a1.length} текстов`;
     }
   })();
 </script>

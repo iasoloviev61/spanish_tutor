@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Чтение · Español</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/textbook.css">
+<link rel="stylesheet" href="css/reading.css">
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <div>
+      <h1>Conjugar — <span class="accent">чтение</span></h1>
+      <div class="subtitle">короткие тексты с TTS и проверкой понимания</div>
+    </div>
+    <div id="profile-bar"></div>
+  </header>
+
+  <nav class="page-nav">
+    <a href="index.html">Главная</a> &nbsp;·&nbsp; <a href="trainer.html">Тренажёр</a> &nbsp;·&nbsp; <a href="textbook.html">Учебник</a> &nbsp;·&nbsp; <a href="notes.html">Конспект</a>
+  </nav>
+
+  <div id="read-hub" class="reading reading-screen"></div>
+  <div id="read-screen" class="reading reading-screen" hidden></div>
+
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/profile.js"></script>
+<script src="data/texts.js"></script>
+<script src="js/reading.js"></script>
+<script>
+  (async () => {
+    await App.profile.mount('#profile-bar');
+    await App.reading.mount();
+  })();
+</script>
+</body>
+</html>
