@@ -9803,4 +9803,1794 @@ window.TEXTS.push(
       },
     ],
   },
+
+  {
+    id: 'b1-021',
+    level: 'B1',
+    day: 21,
+    title: 'Si yo fuera otra persona',
+    text:
+      'A veces, sobre todo los domingos por la tarde, me pongo a fantasear con la vida que llevaría si yo fuera otra persona. ' +
+      'No es una nostalgia triste; más bien un juego mental que me ayuda a entenderme mejor.\n\n' +
+      'Si yo fuera más valiente, dejaría mañana mismo el trabajo de la oficina y abriría una pequeña librería en Lavapiés. ' +
+      'La imagino con paredes amarillas y una mesa larga, donde la gente se quedaría hasta tarde hablando de novelas. ' +
+      'Si tuviera ahorros suficientes, me lanzaría sin pensármelo dos veces. ' +
+      'De momento, sin embargo, sigo en el despacho de la calle Velázquez.\n\n' +
+      'Si yo fuera mi vecina, la que vive sola con dos gatos en el cuarto piso, supongo que viajaría mucho más. ' +
+      'Ella, en cambio, dice que si pudiera, no se movería de Madrid. ' +
+      'Curioso, ¿no? Cada uno sueña con la vida del otro.\n\n' +
+      'Si yo viviera en un pueblo pequeño, por ejemplo en algún rincón de la Alpujarra, tendría huerto y conocería a todos los vecinos por su nombre. ' +
+      'Por otro lado, echaría de menos los cines de versión original y las librerías independientes que tanto disfruto en la ciudad.\n\n' +
+      'Y si yo supiera tocar bien el piano, me dedicaría a dar pequeños conciertos en cafeterías de barrio. ' +
+      'Empecé de niña, lo dejé a los quince y, por más que lo intente ahora, no recupero la soltura.\n\n' +
+      'A pesar de que estos juegos no cambian nada, sí me sirven para una cosa: distinguir lo que de verdad me falta de lo que solo es curiosidad. ' +
+      'Quizá, si fuera más sincera conmigo misma, ya habría dado algún paso. ' +
+      'De momento, lo escribo y lo dejo aquí.',
+    vocabulary: [
+      {
+        word: 'fantasear con',
+        translation: 'фантазировать, мечтать о чём-то (fantasear con una idea; la fantasía — фантазия)',
+        example: 'me pongo a fantasear con la vida que llevaría',
+      },
+      {
+        word: 'la nostalgia',
+        translation: 'ностальгия, тоска по прошлому (sentir nostalgia de algo; nostálgico, -a — ностальгический)',
+        example: 'no es una nostalgia triste',
+      },
+      {
+        word: 'valiente',
+        translation: 'смелый, храбрый (un acto valiente; el valor — храбрость)',
+        example: 'si yo fuera más valiente',
+      },
+      {
+        word: 'lanzarse',
+        translation: 'броситься, рискнуть (lanzarse a un proyecto; el lanzamiento — запуск)',
+        example: 'me lanzaría sin pensármelo dos veces',
+      },
+      {
+        word: 'el despacho',
+        translation: 'кабинет, контора (el despacho del jefe; despachar — обслуживать, отправлять)',
+        example: 'sigo en el despacho de la calle Velázquez',
+      },
+      {
+        word: 'el cuarto piso',
+        translation: 'четвёртый этаж (в Испании planta baja = первый, primer piso = второй и т.д.)',
+        example: 'vive sola con dos gatos en el cuarto piso',
+      },
+      {
+        word: 'el rincón',
+        translation: 'уголок, потаённое место (un rincón tranquilo; los rincones del país — все уголки страны)',
+        example: 'en algún rincón de la Alpujarra',
+      },
+      {
+        word: 'la Alpujarra',
+        translation: 'горный район Андалусии у южных склонов Сьерра-Невады, известный белыми деревнями',
+        example: 'en algún rincón de la Alpujarra',
+      },
+      {
+        word: 'el huerto',
+        translation: 'огород (где растут овощи; ср. el jardín — сад с цветами)',
+        example: 'tendría huerto y conocería a todos los vecinos',
+      },
+      {
+        word: 'la versión original',
+        translation: 'оригинальная озвучка фильма (cines V.O. — кинотеатры с оригинальной озвучкой и субтитрами)',
+        example: 'los cines de versión original',
+      },
+      {
+        word: 'la cafetería de barrio',
+        translation: 'местное кафе в районе (барное кафе с домашней атмосферой, типично испанское)',
+        example: 'pequeños conciertos en cafeterías de barrio',
+      },
+      {
+        word: 'la soltura',
+        translation: 'лёгкость, беглость (soltura al hablar; suelto, -a — свободный, расслабленный)',
+        example: 'no recupero la soltura',
+      },
+      {
+        word: 'por más que',
+        translation: 'сколько бы ни (+ Subjuntivo; синоним: aunque)',
+        example: 'por más que lo intente ahora',
+      },
+      {
+        word: 'a pesar de que',
+        translation: 'несмотря на то что (+ Indicativo, когда факт реален; + Subjuntivo для гипотезы)',
+        example: 'a pesar de que estos juegos no cambian nada',
+      },
+      {
+        word: 'distinguir',
+        translation: 'различать, отличать (distinguir A de B; la distinción — различие)',
+        example: 'distinguir lo que de verdad me falta',
+      },
+      {
+        word: 'dar un paso',
+        translation: 'сделать шаг (figurative — решиться на что-то; dar el primer paso)',
+        example: 'ya habría dado algún paso',
+      },
+      {
+        word: 'sincero, -a',
+        translation: 'искренний, откровенный (ser sincero con alguien; la sinceridad — искренность)',
+        example: 'si fuera más sincera conmigo misma',
+      },
+      {
+        word: 'de momento',
+        translation: 'пока что, на данный момент (синоним: por ahora; antónimo: definitivamente)',
+        example: 'De momento, sigo en el despacho.',
+      },
+      {
+        word: 'tocar el piano',
+        translation: 'играть на пианино (tocar + instrumento; tocar la guitarra, el violín)',
+        example: 'si yo supiera tocar bien el piano',
+      },
+      {
+        word: 'el ahorro',
+        translation: 'сбережение, экономия (los ahorros — накопления; ahorrar — экономить)',
+        example: 'si tuviera ahorros suficientes',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué haría la narradora si fuera más valiente?',
+        options: [
+          'Dejaría la oficina y abriría una pequeña librería en Lavapiés',
+          'Se mudaría inmediatamente a un pueblo de la Alpujarra',
+          'Daría conciertos de piano en cafeterías',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Qué le pasaría a la narradora si viviera en un pueblo de la Alpujarra?',
+        options: [
+          'Aprendería por fin a tocar el piano',
+          'Tendría huerto pero echaría de menos los cines en V.O. y las librerías independientes',
+          'Viajaría mucho más a otros países',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Para qué le sirven a la narradora estos juegos mentales?',
+        options: [
+          'Para tomar decisiones inmediatas sobre su vida',
+          'Para olvidarse del trabajo en la oficina',
+          'Para distinguir lo que de verdad le falta de lo que es solo curiosidad',
+        ],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Condicional de tipo 2: si + Imperfecto de subjuntivo, Condicional simple',
+        note:
+          'Условное предложение 2-го типа описывает гипотезу о настоящем или маловероятном будущем: «si yo fuera más valiente, dejaría el trabajo», «si tuviera ahorros, me lanzaría», «si yo viviera en un pueblo, tendría huerto», «si yo supiera tocar bien el piano, me dedicaría a dar conciertos», «si fuera más sincera, habría dado algún paso». ' +
+          'Структура: si + Imperfecto de subjuntivo (формы на -ra: fuera, tuviera, viviera, supiera, pudiera), в главной — Condicional simple (dejaría, tendría, me dedicaría) или, реже, Condicional compuesto (habría dado).',
+      },
+      {
+        topic: 'Imperfecto de subjuntivo: ключевые неправильные формы',
+        note:
+          'Imperfecto de subjuntivo строится от 3-го лица мн. ч. Pretérito indefinido, заменяя -ron на -ra: hablaron → hablara, comieron → comiera. ' +
+          'Неправильные глаголы наследуют ту же основу: fueron (ser/ir) → fuera; tuvieron → tuviera; supieron → supiera; pudieron → pudiera. ' +
+          'Параллельные формы на -se (fuese, tuviese, supiese) — равноправные, чаще книжные. В Испании активнее -ra.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-022',
+    level: 'B1',
+    day: 22,
+    title: 'Lo que mi abuela me contó',
+    text:
+      'Cuando era pequeña, los veranos los pasaba en casa de mi abuela, en un pueblo de Soria. ' +
+      'Por las noches, mientras me ayudaba a preparar la cena, ella me iba contando trozos de su vida que yo escuchaba con la boca abierta. ' +
+      'Hoy, treinta años después, me doy cuenta de cuánto me marcaron aquellos relatos.\n\n' +
+      'Una tarde, mi abuela me dijo que de joven había querido ser maestra. ' +
+      'Me explicó que había aprobado el examen, pero que sus padres no le habían permitido irse a estudiar a la capital. ' +
+      'Me contó que aquello la había dolido durante años. ' +
+      'Sin embargo, añadió que con el tiempo había encontrado otra forma de enseñar: cuidaba de los niños del barrio y les leía cuentos por las tardes.\n\n' +
+      'Otra noche me contó que mi abuelo y ella se habían conocido en una verbena. ' +
+      'Recordaba que él la había sacado a bailar tres veces, y que después le había pedido permiso para escribirle. ' +
+      'Me decía que en aquella época las cartas tardaban semanas, pero que precisamente esa espera hacía que cada palabra pesara más.\n\n' +
+      'También me preguntó alguna vez si yo creía que la gente de ahora se quería igual que antes. ' +
+      'Yo no supe qué responderle. ' +
+      'Ella, en cambio, sonrió y dijo que el cariño era el mismo, solo que cambiaban las formas. ' +
+      'Me aseguró que algún día yo entendería lo que quería decir.\n\n' +
+      'De pequeña no presté demasiada atención a aquellas frases. ' +
+      'Por más que mi abuela me las repitiera, yo solo pensaba en salir al patio a jugar con mis primos. ' +
+      'Hoy, en cambio, me sorprendo recordándolas casi a diario. ' +
+      'Ojalá la hubiera escuchado mejor entonces.',
+    vocabulary: [
+      {
+        word: 'Soria',
+        translation: 'провинция и одноимённый город в Кастилии и Леоне, известная сельскими пейзажами и стихами Антонио Мачадо',
+        example: 'en un pueblo de Soria',
+      },
+      {
+        word: 'el trozo',
+        translation: 'кусок, отрывок (un trozo de pan, un trozo de vida; figurado: фрагмент)',
+        example: 'me iba contando trozos de su vida',
+      },
+      {
+        word: 'con la boca abierta',
+        translation: 'разинув рот; с большим удивлением (escuchar con la boca abierta)',
+        example: 'yo escuchaba con la boca abierta',
+      },
+      {
+        word: 'marcar a alguien',
+        translation: 'оставить след в ком-то, повлиять (figurative; un acontecimiento que marcó mi vida)',
+        example: 'cuánto me marcaron aquellos relatos',
+      },
+      {
+        word: 'el relato',
+        translation: 'рассказ, повествование (un relato corto; relatar — рассказывать)',
+        example: 'me marcaron aquellos relatos',
+      },
+      {
+        word: 'el examen',
+        translation: 'экзамен (aprobar el examen — сдать; suspender el examen — провалить)',
+        example: 'había aprobado el examen',
+      },
+      {
+        word: 'la capital',
+        translation: 'столица (la capital de un país; el capital, м.р. — капитал, деньги)',
+        example: 'irse a estudiar a la capital',
+      },
+      {
+        word: 'doler durante años',
+        translation: 'болеть долгие годы (figurative — о душевной боли; me duele que…)',
+        example: 'aquello la había dolido durante años',
+      },
+      {
+        word: 'cuidar de alguien',
+        translation: 'заботиться о ком-то (cuidar de los niños, de los mayores; el cuidado — забота)',
+        example: 'cuidaba de los niños del barrio',
+      },
+      {
+        word: 'la verbena',
+        translation: 'народное гуляние с танцами, обычно в честь святого покровителя (verbena de San Juan)',
+        example: 'se habían conocido en una verbena',
+      },
+      {
+        word: 'sacar a bailar',
+        translation: 'пригласить танцевать (a alguien); sacar al baile — синоним',
+        example: 'él la había sacado a bailar tres veces',
+      },
+      {
+        word: 'pedir permiso',
+        translation: 'просить разрешения (pedir permiso a alguien para hacer algo; el permiso)',
+        example: 'le había pedido permiso para escribirle',
+      },
+      {
+        word: 'tardar',
+        translation: 'задерживаться, занимать время (las cartas tardan semanas; tardar en + inf.)',
+        example: 'las cartas tardaban semanas',
+      },
+      {
+        word: 'la espera',
+        translation: 'ожидание (la sala de espera — зал ожидания; esperar — ждать)',
+        example: 'precisamente esa espera hacía que cada palabra pesara más',
+      },
+      {
+        word: 'precisamente',
+        translation: 'именно, как раз (precisamente por eso — именно поэтому)',
+        example: 'precisamente esa espera hacía que pesara más',
+      },
+      {
+        word: 'el cariño',
+        translation: 'нежность, привязанность (sentir cariño por alguien; con cariño — с любовью)',
+        example: 'el cariño era el mismo',
+      },
+      {
+        word: 'asegurar',
+        translation: 'уверять, заверять (asegurar que + Indicativo; el seguro — страховка)',
+        example: 'me aseguró que algún día yo entendería',
+      },
+      {
+        word: 'prestar atención',
+        translation: 'обращать внимание (a algo / a alguien; sin prestar atención — невнимательно)',
+        example: 'no presté demasiada atención a aquellas frases',
+      },
+      {
+        word: 'el patio',
+        translation: 'двор, патио (en las casas españolas — внутренний двор; jugar en el patio)',
+        example: 'salir al patio a jugar con mis primos',
+      },
+      {
+        word: 'a diario',
+        translation: 'ежедневно, каждый день (casi a diario — почти каждый день; diario — газета или дневник)',
+        example: 'me sorprendo recordándolas casi a diario',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Por qué la abuela no llegó a ser maestra?',
+        options: [
+          'Porque suspendió el examen de acceso',
+          'Porque sus padres no le permitieron irse a estudiar a la capital',
+          'Porque prefirió cuidar de los niños del barrio',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo se habían conocido los abuelos según el relato?',
+        options: [
+          'En una verbena, donde él la sacó a bailar tres veces',
+          'Por correspondencia, a través de cartas',
+          'En el patio de la casa de Soria',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Cómo recuerda hoy la narradora aquellas conversaciones?',
+        options: [
+          'Casi no se acuerda de ellas',
+          'Se le aparecen casi a diario y se arrepiente de no haber escuchado mejor',
+          'Las considera exageradas y poco creíbles',
+        ],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Estilo indirecto en pasado: согласование времён',
+        note:
+          'Когда вводный глагол стоит в прошлом (me dijo, me contó, me explicó, me preguntó), времена в придаточном сдвигаются: presente → Imperfecto («el cariño era el mismo»), perfecto/indefinido → Pluscuamperfecto («había querido ser maestra», «había aprobado el examen», «se habían conocido», «la había sacado a bailar», «le había pedido permiso»), futuro → Condicional («algún día yo entendería»). ' +
+          'Прямой вопрос превращается в косвенный с si: «¿crees…?» → «me preguntó si yo creía…».',
+      },
+      {
+        topic: 'Pluscuamperfecto de indicativo в последовательности прошлых событий',
+        note:
+          '«Había querido ser maestra», «había aprobado el examen», «se habían conocido en una verbena», «la había dolido durante años» — Pluscuamperfecto (había + participio) указывает на действие, которое уже завершилось до другого прошлого момента. ' +
+          'Здесь это нужно дважды: и для согласования времён в косвенной речи, и для отметки «более раннего» прошлого внутри самого рассказа.',
+      },
+      {
+        topic: 'Imperfecto de subjuntivo после «hacer que» и «por más que»',
+        note:
+          '«Hacía que cada palabra pesara más» — после hacer que идёт Subjuntivo, в прошлом — Imperfecto de subjuntivo. ' +
+          '«Por más que mi abuela me las repitiera» — уступительная конструкция в прошлом тоже требует Imperfecto de subjuntivo.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-023',
+    level: 'B1',
+    day: 23,
+    title: 'Récord de visitantes en el Prado, según el museo',
+    text:
+      'El Museo del Prado anunció ayer que ha cerrado el año con más de cuatro millones de visitantes, una cifra histórica para la pinacoteca madrileña. ' +
+      'El director general, en rueda de prensa, aseguró que se trata del mejor resultado de la última década. ' +
+      '«Si me hubieran dicho hace tres años que íbamos a llegar a estas cifras, no lo habría creído», admitió ante los periodistas.\n\n' +
+      'Las autoridades culturales atribuyen este éxito a varios factores. ' +
+      'Por un lado, las exposiciones temporales dedicadas a Sorolla y a Goya, que atrajeron a un público joven que tradicionalmente no acudía al museo. ' +
+      'Por otro lado, los acuerdos con compañías aéreas, que han incluido entradas combinadas en sus paquetes turísticos. ' +
+      'La concejala de Turismo del Ayuntamiento de Madrid declaró que «la cultura se ha convertido, sin duda, en uno de los principales motores económicos del centro de la ciudad».\n\n' +
+      'No todo, sin embargo, son buenas noticias. ' +
+      'Algunos guías independientes se quejaron de las colas y de la masificación en las salas más populares. ' +
+      '«Habría que limitar los grupos en horas punta», propuso una de las profesionales consultadas. ' +
+      '«De ahí que pidamos al museo que estudie cupos por franjas horarias.»\n\n' +
+      'El propio Prado reconoce el problema. ' +
+      'Según fuentes internas, se está preparando un plan piloto para el próximo otoño: las visitas se distribuirán por turnos de noventa minutos y, si las pruebas funcionan, el sistema se extenderá al resto del año. ' +
+      '«Por más que crezca la demanda, no podemos sacrificar la experiencia del visitante», concluyó el director.\n\n' +
+      'Mientras tanto, los aficionados al arte siguen llenando las salas. ' +
+      'Hoy, sábado, las entradas en línea para esta tarde ya estaban agotadas a media mañana.',
+    vocabulary: [
+      {
+        word: 'la pinacoteca',
+        translation: 'картинная галерея, музей живописи (cultismo, синоним: museo de pintura)',
+        example: 'una cifra histórica para la pinacoteca madrileña',
+      },
+      {
+        word: 'la rueda de prensa',
+        translation: 'пресс-конференция (en rueda de prensa — на пресс-конференции; convocar una rueda de prensa)',
+        example: 'el director general, en rueda de prensa, aseguró',
+      },
+      {
+        word: 'la cifra',
+        translation: 'цифра, число (una cifra récord; las cifras del paro — данные по безработице)',
+        example: 'íbamos a llegar a estas cifras',
+      },
+      {
+        word: 'atribuir a',
+        translation: 'приписывать чему-то, объяснять чем-то (atribuir el éxito a; la atribución)',
+        example: 'atribuyen este éxito a varios factores',
+      },
+      {
+        word: 'la exposición temporal',
+        translation: 'временная выставка (en contraste con la colección permanente)',
+        example: 'las exposiciones temporales dedicadas a Sorolla y a Goya',
+      },
+      {
+        word: 'atraer',
+        translation: 'привлекать (atraer público, atraer la atención; e→ai в претерите: atrajo)',
+        example: 'atrajeron a un público joven',
+      },
+      {
+        word: 'acudir a',
+        translation: 'приходить, посещать (acudir al médico, al museo; синоним formal: ir a)',
+        example: 'un público que tradicionalmente no acudía al museo',
+      },
+      {
+        word: 'la compañía aérea',
+        translation: 'авиакомпания (una aerolínea — синоним; volar con una compañía aérea)',
+        example: 'los acuerdos con compañías aéreas',
+      },
+      {
+        word: 'la entrada combinada',
+        translation: 'комбинированный билет (один билет на несколько объектов или услуг)',
+        example: 'entradas combinadas en sus paquetes turísticos',
+      },
+      {
+        word: 'el / la concejal/-a',
+        translation: 'член городского совета, ответственный за определённую сферу (concejala de Turismo)',
+        example: 'la concejala de Turismo del Ayuntamiento de Madrid',
+      },
+      {
+        word: 'el motor económico',
+        translation: 'экономический двигатель, движущая сила экономики (figurative)',
+        example: 'uno de los principales motores económicos del centro',
+      },
+      {
+        word: 'la masificación',
+        translation: 'перегруженность массой людей, чрезмерная популярность места (la masificación turística)',
+        example: 'la masificación en las salas más populares',
+      },
+      {
+        word: 'la cola',
+        translation: 'очередь (hacer cola — стоять в очереди; в Лат. Америке — la fila)',
+        example: 'se quejaron de las colas',
+      },
+      {
+        word: 'las horas punta',
+        translation: 'часы пик (en horas punta; en hora valle — в спокойные часы)',
+        example: 'limitar los grupos en horas punta',
+      },
+      {
+        word: 'el cupo',
+        translation: 'квота, лимит (un cupo de plazas; cupo limitado)',
+        example: 'cupos por franjas horarias',
+      },
+      {
+        word: 'la franja horaria',
+        translation: 'временной интервал, временной слот (una franja de 9 a 11; las franjas matinales)',
+        example: 'cupos por franjas horarias',
+      },
+      {
+        word: 'de ahí que',
+        translation: 'отсюда то, что; именно поэтому (+ Subjuntivo — устойчивый триггер)',
+        example: 'De ahí que pidamos al museo que estudie cupos.',
+      },
+      {
+        word: 'el plan piloto',
+        translation: 'пилотный проект, пробная программа (un plan piloto para probar)',
+        example: 'se está preparando un plan piloto',
+      },
+      {
+        word: 'el turno',
+        translation: 'смена, временной слот (turnos de noventa minutos; trabajar a turnos)',
+        example: 'turnos de noventa minutos',
+      },
+      {
+        word: 'sacrificar',
+        translation: 'жертвовать, отказываться от чего-то (sacrificar la calidad por el precio; el sacrificio)',
+        example: 'no podemos sacrificar la experiencia del visitante',
+      },
+      {
+        word: 'agotado, -a',
+        translation: 'распроданный; вымотанный (las entradas están agotadas; estoy agotado — я выжат)',
+        example: 'las entradas en línea ya estaban agotadas',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué cifra anunció el Museo del Prado?',
+        options: [
+          'Más de cuatro millones de visitantes en el último año',
+          'Cuatro millones de euros en ingresos anuales',
+          'Cuatrocientas mil entradas combinadas vendidas',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Qué proponen algunos guías para resolver el problema de la masificación?',
+        options: [
+          'Cerrar el museo los fines de semana',
+          'Limitar los grupos en horas punta y establecer cupos por franjas horarias',
+          'Subir el precio de la entrada general',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿En qué consiste el plan piloto que prepara el Prado?',
+        options: [
+          'En cerrar las salas más populares al público',
+          'En sustituir las exposiciones temporales por permanentes',
+          'En distribuir las visitas por turnos de noventa minutos, con extensión al resto del año si funciona',
+        ],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Condicional de tipo 3: si + Pluscuamperfecto de subjuntivo, Condicional compuesto',
+        note:
+          '«Si me hubieran dicho hace tres años que íbamos a llegar a estas cifras, no lo habría creído» — классическое 3-е условное о невозможном прошлом. ' +
+          'Структура: si + Pluscuamperfecto de subjuntivo (hubiera/hubiese + participio) в придаточной, Condicional compuesto (habría + participio) в главной. ' +
+          'Используется, когда событие в прошлом не произошло и его последствия мы только воображаем.',
+      },
+      {
+        topic: 'De ahí que + Subjuntivo',
+        note:
+          '«De ahí que pidamos al museo que estudie cupos» — устойчивый коннектор причины-следствия, всегда требующий Subjuntivo. ' +
+          'Переводится как «именно поэтому, отсюда то, что». Внутри также часто появляются дополнительные триггеры Subjuntivo (pedir que + Subjuntivo).',
+      },
+      {
+        topic: 'Estilo indirecto в журналистском тексте',
+        note:
+          '«Aseguró que se trata del mejor resultado», «declaró que la cultura se ha convertido», «admitió que no lo habría creído», «propuso una profesional consultada» — глаголы речи без сдвига времён, когда внутренняя цитата сохраняет свою временную опору. ' +
+          'Прямая цитата в кавычках «…» и косвенная свободно чередуются — характерная техника испанской журналистики.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-024',
+    level: 'B1',
+    day: 24,
+    title: 'Ojalá hubiera dicho algo',
+    text:
+      'Llevo varias semanas dándole vueltas a una conversación que tuve con mi padre el verano pasado. ' +
+      'Estábamos cenando los dos solos en su casa de Aranjuez y, en un momento, él me preguntó por qué nunca me había planteado mudarme a vivir cerca de él, ahora que se había quedado viudo. ' +
+      'Yo le contesté con una broma y cambié de tema. Ojalá no lo hubiera hecho.\n\n' +
+      'Ojalá hubiera tenido el valor de decirle la verdad: que sí lo había pensado muchas veces, pero que el trabajo me ataba a Barcelona. ' +
+      'Si hubiera sido honesta aquella noche, quizá habríamos hablado de soluciones intermedias, de visitas más frecuentes, de algún proyecto compartido. ' +
+      'En cambio, dejé pasar la oportunidad.\n\n' +
+      'Mi padre murió en diciembre, de manera repentina. ' +
+      'Desde entonces, el remordimiento me visita por las noches con preguntas que ya no tienen respuesta. ' +
+      'Si yo hubiera dicho algo, ¿habría cambiado realmente algo? No lo sé. ' +
+      'Pero al menos no estaría arrastrando este peso.\n\n' +
+      'Mi hermana, que es la persona más práctica del mundo, me repite que no me torture. ' +
+      'Dice que nuestro padre sabía perfectamente cuánto lo queríamos, que no hace falta verbalizarlo todo. ' +
+      'Y, en parte, le doy la razón. ' +
+      'Sin embargo, hay frases que se quedan sin decir y luego pesan toda la vida.\n\n' +
+      'He aprendido algo, y lo escribo por si a alguien le sirve: cuando uno tenga delante a alguien importante y se le presente la ocasión de decir lo que de verdad piensa, conviene que hable, aunque cueste, aunque dé vergüenza. ' +
+      'Ojalá hubiera sabido todo esto antes. Ojalá.',
+    vocabulary: [
+      {
+        word: 'darle vueltas a algo',
+        translation: 'снова и снова обдумывать что-то (no le des más vueltas — не зацикливайся)',
+        example: 'dándole vueltas a una conversación',
+      },
+      {
+        word: 'Aranjuez',
+        translation: 'городок в 50 км к югу от Мадрида, известный королевским дворцом и садами',
+        example: 'en su casa de Aranjuez',
+      },
+      {
+        word: 'plantearse',
+        translation: 'задумываться о чём-то, рассматривать как вариант (plantearse un cambio; el planteamiento)',
+        example: 'nunca me había planteado mudarme',
+      },
+      {
+        word: 'quedarse viudo, -a',
+        translation: 'овдоветь (el viudo, la viuda — вдовец, вдова)',
+        example: 'ahora que se había quedado viudo',
+      },
+      {
+        word: 'la broma',
+        translation: 'шутка (contestar con una broma; bromear — шутить; en broma — в шутку)',
+        example: 'yo le contesté con una broma',
+      },
+      {
+        word: 'el valor',
+        translation: 'смелость, мужество; также ценность (no tuve el valor de decirlo; valiente — смелый)',
+        example: 'ojalá hubiera tenido el valor de decirle la verdad',
+      },
+      {
+        word: 'atar a',
+        translation: 'привязывать (figurative — el trabajo me ata a; literal — связывать верёвкой)',
+        example: 'el trabajo me ataba a Barcelona',
+      },
+      {
+        word: 'honesto, -a',
+        translation: 'честный (ser honesto con alguien; la honestidad)',
+        example: 'si hubiera sido honesta aquella noche',
+      },
+      {
+        word: 'la solución intermedia',
+        translation: 'компромиссное решение (между двумя крайностями)',
+        example: 'soluciones intermedias',
+      },
+      {
+        word: 'compartido, -a',
+        translation: 'общий, совместный (un proyecto compartido; compartir — делить)',
+        example: 'algún proyecto compartido',
+      },
+      {
+        word: 'dejar pasar la oportunidad',
+        translation: 'упустить возможность (синоним: perder la oportunidad)',
+        example: 'dejé pasar la oportunidad',
+      },
+      {
+        word: 'de manera repentina',
+        translation: 'внезапно, неожиданно (repentino, -a — внезапный; синоним: de golpe)',
+        example: 'Mi padre murió en diciembre, de manera repentina.',
+      },
+      {
+        word: 'el remordimiento',
+        translation: 'угрызения совести, чувство вины (sentir remordimiento; синоним: el cargo de conciencia)',
+        example: 'el remordimiento me visita por las noches',
+      },
+      {
+        word: 'arrastrar (figurative)',
+        translation: 'тащить, нести (figurative — arrastrar un peso, una culpa; el arrastre)',
+        example: 'no estaría arrastrando este peso',
+      },
+      {
+        word: 'torturarse',
+        translation: 'мучить себя, терзаться (no te tortures; la tortura)',
+        example: 'me repite que no me torture',
+      },
+      {
+        word: 'verbalizar',
+        translation: 'выражать словами, проговаривать (verbalizar una emoción; verbal — словесный)',
+        example: 'no hace falta verbalizarlo todo',
+      },
+      {
+        word: 'dar la razón',
+        translation: 'согласиться, признать чью-то правоту (dar la razón a alguien; tener razón)',
+        example: 'en parte, le doy la razón',
+      },
+      {
+        word: 'pesar (figurative)',
+        translation: 'давить, тяготить (las palabras no dichas pesan; el peso — вес, тяжесть)',
+        example: 'frases que pesan toda la vida',
+      },
+      {
+        word: 'presentarse la ocasión',
+        translation: 'представиться случаю, подвернуться возможности (cuando se presenta la ocasión)',
+        example: 'se le presente la ocasión de decir',
+      },
+      {
+        word: 'dar vergüenza',
+        translation: 'быть стыдно (me da vergüenza hablar en público; la vergüenza — стыд)',
+        example: 'aunque dé vergüenza',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué le había preguntado el padre a la narradora durante la cena en Aranjuez?',
+        options: [
+          'Por qué nunca se había planteado mudarse a vivir cerca de él',
+          'Si pensaba dejar Barcelona para casarse',
+          'Si su hermana estaba enfadada con él',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Qué dice la hermana de la narradora sobre el padre?',
+        options: [
+          'Que el padre estaba decepcionado con sus hijas',
+          'Que el padre sabía cuánto lo querían y que no hace falta verbalizarlo todo',
+          'Que el padre habría preferido vivir solo',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Cuál es la conclusión final de la narradora?',
+        options: [
+          'Que es mejor no hablar nunca de los sentimientos',
+          'Que el silencio entre familiares es más sincero que las palabras',
+          'Que cuando uno tiene delante a alguien importante, conviene hablar, aunque cueste o dé vergüenza',
+        ],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Ojalá + Pluscuamperfecto de subjuntivo: сожаление о прошлом',
+        note:
+          '«Ojalá no lo hubiera hecho», «ojalá hubiera tenido el valor», «ojalá hubiera sabido todo esto antes» — формула выражения сожаления о невыполненном прошлом действии. ' +
+          'Структура: ojalá + hubiera/hubiese + participio. ' +
+          'Если бы речь шла о настоящем, было бы «ojalá tuviera el valor», а о будущем — «ojalá tenga el valor».',
+      },
+      {
+        topic: 'Условие 3-го типа: si hubiera + participio, habría + participio',
+        note:
+          '«Si hubiera sido honesta aquella noche, habríamos hablado de soluciones intermedias», «si yo hubiera dicho algo, ¿habría cambiado algo?» — гипотеза о невозможном прошлом. ' +
+          'Иногда главная часть содержит Condicional simple, когда речь о текущем последствии: «si hubiera dicho algo, no estaría arrastrando este peso» (сейчас не нёс бы груза).',
+      },
+      {
+        topic: 'Aunque cueste, aunque dé vergüenza',
+        note:
+          'Aunque + Subjuntivo в значении «даже если» (гипотеза или допущение): «aunque cueste» — даже если трудно, «aunque dé vergüenza» — даже если стыдно. ' +
+          'Сравни с aunque + Indicativo, фиксирующим факт: «aunque cuesta, lo hago» — действительно трудно, и всё равно делаю.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-025',
+    level: 'B1',
+    day: 25,
+    title: 'El día que perdí el último tren',
+    text:
+      'Aquel viernes había prometido a Clara que llegaría a tiempo a la cena de su cumpleaños. ' +
+      'Habíamos quedado a las nueve en un restaurante del barrio de Gracia, en Barcelona, y yo iba en tren desde Tarragona. ' +
+      'Para no fallar, había salido del trabajo dos horas antes y había metido el regalo en la mochila la noche anterior.\n\n' +
+      'Sin embargo, todo se torció en la estación. ' +
+      'Cuando llegué al andén, el tren ya había salido cinco minutos antes. ' +
+      'Resultó que habían adelantado el horario por unas obras en la vía y nadie me había avisado por mensaje. ' +
+      'Pregunté al revisor por el siguiente y me dijo que no había más servicios hasta las once. ' +
+      'Llamé a Clara enseguida; ella, que ya había llegado al restaurante, intentó tranquilizarme, pero noté que la voz le temblaba.\n\n' +
+      'Me senté en un banco del andén y respiré hondo. ' +
+      'Pensé en alquilar un coche, pero la oficina ya había cerrado. ' +
+      'Probé con un taxi compartido: tampoco había plazas. ' +
+      'Al final, una pareja que también había perdido el tren propuso pedir un coche entre los tres y compartir gastos. ' +
+      'Acepté sin dudarlo.\n\n' +
+      'Llegamos a Barcelona a la una de la madrugada. ' +
+      'La cena ya había terminado, pero Clara me había guardado un trozo de tarta y una vela encendida sobre la mesa. ' +
+      'Cuando me vio entrar, no me echó en cara nada de lo que yo había temido. ' +
+      'Solo dijo: «Me alegro mucho de que estés aquí». ' +
+      'Aquella frase, la verdad, me hizo más bien que mil disculpas mías.\n\n' +
+      'Han pasado seis meses. Cada vez que cojo un tren, compruebo el horario tres veces. ' +
+      'Pero, sobre todo, recuerdo aquella vela.',
+    vocabulary: [
+      {
+        word: 'a tiempo',
+        translation: 'вовремя (llegar a tiempo; antónimo: tarde)',
+        example: 'llegaría a tiempo a la cena',
+      },
+      {
+        word: 'Gracia',
+        translation: 'район Барселоны к северу от Эшампле, с узкими улицами и атмосферой деревни внутри города',
+        example: 'un restaurante del barrio de Gracia',
+      },
+      {
+        word: 'Tarragona',
+        translation: 'портовый город в Каталонии, около 100 км к югу от Барселоны',
+        example: 'yo iba en tren desde Tarragona',
+      },
+      {
+        word: 'la mochila',
+        translation: 'рюкзак (en mi mochila — у меня в рюкзаке)',
+        example: 'había metido el regalo en la mochila',
+      },
+      {
+        word: 'torcerse',
+        translation: 'пойти не так (algo se tuerce — что-то идёт наперекосяк; o→ue: se tuerce)',
+        example: 'todo se torció en la estación',
+      },
+      {
+        word: 'el andén',
+        translation: 'платформа на вокзале (el andén número tres; subir al andén)',
+        example: 'cuando llegué al andén',
+      },
+      {
+        word: 'adelantar',
+        translation: 'передвинуть на более раннее время; обгонять (adelantar el horario; adelantar a un coche)',
+        example: 'habían adelantado el horario por unas obras',
+      },
+      {
+        word: 'la vía',
+        translation: 'железнодорожный путь; также путь в широком смысле (las vías del tren; por vía aérea)',
+        example: 'unas obras en la vía',
+      },
+      {
+        word: 'el revisor / la revisora',
+        translation: 'контролёр в поезде (revisar — проверять; revisar billetes)',
+        example: 'Pregunté al revisor por el siguiente.',
+      },
+      {
+        word: 'respirar hondo',
+        translation: 'глубоко вздохнуть (figurative — успокоиться; ср.: respira hondo y cuenta hasta diez)',
+        example: 'respiré hondo',
+      },
+      {
+        word: 'alquilar',
+        translation: 'арендовать, снимать (alquilar un coche, un piso; el alquiler — аренда)',
+        example: 'Pensé en alquilar un coche.',
+      },
+      {
+        word: 'el taxi compartido',
+        translation: 'такси, делимое между несколькими пассажирами (compartir el taxi)',
+        example: 'Probé con un taxi compartido.',
+      },
+      {
+        word: 'la plaza',
+        translation: 'место (в транспорте, на курсе, в самолёте); также городская площадь',
+        example: 'tampoco había plazas',
+      },
+      {
+        word: 'compartir gastos',
+        translation: 'делить расходы (между несколькими людьми)',
+        example: 'compartir gastos entre los tres',
+      },
+      {
+        word: 'la madrugada',
+        translation: 'ранний предрассветный час, поздняя ночь (a las dos de la madrugada — в два ночи)',
+        example: 'a la una de la madrugada',
+      },
+      {
+        word: 'la vela encendida',
+        translation: 'зажжённая свеча (la vela — свеча; encender — зажигать; encendido — зажжённый)',
+        example: 'una vela encendida sobre la mesa',
+      },
+      {
+        word: 'echar en cara',
+        translation: 'упрекнуть, бросить в лицо (echarle algo en cara a alguien)',
+        example: 'no me echó en cara nada',
+      },
+      {
+        word: 'mil disculpas',
+        translation: 'тысяча извинений (выражение преувеличенного раскаяния)',
+        example: 'mil disculpas mías',
+      },
+      {
+        word: 'comprobar',
+        translation: 'проверять, удостоверяться (compruebo, compruebas; la comprobación)',
+        example: 'compruebo el horario tres veces',
+      },
+      {
+        word: 'hacer bien (a alguien)',
+        translation: 'идти на пользу, оказывать благотворное действие (esa frase me hizo bien)',
+        example: 'me hizo más bien que mil disculpas',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Por qué perdió el tren la narradora?',
+        options: [
+          'Porque salió tarde del trabajo',
+          'Porque habían adelantado el horario por unas obras en la vía y nadie la avisó',
+          'Porque se equivocó de estación',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo consiguió finalmente llegar a Barcelona?',
+        options: [
+          'Alquilando un coche en una oficina abierta',
+          'En el siguiente tren de las once de la noche',
+          'Compartiendo un coche con una pareja que también había perdido el tren',
+        ],
+        correct: 2,
+      },
+      {
+        q: '¿Cómo reaccionó Clara al ver entrar a la narradora?',
+        options: [
+          'No le echó en cara nada y solo dijo que se alegraba mucho de que estuviera allí',
+          'Le exigió mil disculpas por haber llegado tan tarde',
+          'Estaba ya dormida y no se enteró de su llegada',
+        ],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Pluscuamperfecto + Indefinido в рассказе',
+        note:
+          'Pluscuamperfecto (había prometido, había salido, había metido, había salido el tren, habían adelantado, había avisado, había llegado, había cerrado, había perdido, había guardado, había temido, había terminado) маркирует действия, завершённые до основного события прошлого. ' +
+          'Основная линия рассказа идёт в Pretérito indefinido: llegué, pregunté, llamé, me senté, pensé, probé, acepté, llegamos, vio, dijo, recuerdo. ' +
+          'Контраст этих двух времён — сердце испанского нарративного прошлого.',
+      },
+      {
+        topic: 'Lo que yo había temido: косвенное упоминание прошлой эмоции',
+        note:
+          '«No me echó en cara nada de lo que yo había temido» — выражение «lo que + clause» как существительное-объект. ' +
+          'Здесь había temido — Pluscuamperfecto, потому что страх предшествовал моменту встречи. ' +
+          'Сравни: lo que pensaba, lo que esperaba, lo que había imaginado.',
+      },
+      {
+        topic: 'Me alegro mucho de que estés aquí',
+        note:
+          'Глаголы эмоции (alegrarse de que, sorprenderse de que, lamentar que) фиксируют Subjuntivo. ' +
+          '«Me alegro de que estés aquí» — действие estar относится к настоящему, поэтому Presente de subjuntivo. ' +
+          'Если бы момент был в прошлом, было бы «me alegré de que estuvieras allí» (Imperfecto de subjuntivo).',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-026',
+    level: 'B1',
+    day: 26,
+    title: 'Concepción Arenal, una vida adelantada a su tiempo',
+    text:
+      'Concepción Arenal (1820–1893) es una de las figuras más singulares de la España del siglo XIX. ' +
+      'Nacida en Ferrol, en una familia liberal, vivió una trayectoria llena de hitos imposibles para una mujer de su época. ' +
+      'Si hubiera nacido cincuenta años después, probablemente habría podido estudiar con normalidad en cualquier universidad europea. ' +
+      'En cambio, tuvo que asistir como oyente a las clases de Derecho en Madrid disfrazada de hombre, ya que las mujeres no eran admitidas.\n\n' +
+      'A los treinta y un años, después de que la prensa la conociera y la criticara duramente, se trasladó con su marido al campo gallego. ' +
+      'Allí escribió sus primeras obras importantes. ' +
+      'Cuando él murió, en 1857, Concepción se quedó sola con sus hijos y, en lugar de retirarse, dio un giro radical a su vida pública.\n\n' +
+      'En 1864 fue nombrada Visitadora General de Cárceles de Mujeres, un cargo creado expresamente para ella. ' +
+      'Recorrió prisiones, denunció condiciones inhumanas y propuso reformas que parecían imposibles. ' +
+      'Pidió que se separase a los presos por edades, que se les enseñase un oficio, que se respetaran sus derechos básicos. ' +
+      'Por más que la administración tardó décadas en aplicarlas, sus ideas marcaron un hito en la historia del derecho penitenciario español.\n\n' +
+      'Más tarde se dedicó a la beneficencia, a la educación de mujeres trabajadoras y a la defensa de los emigrantes. ' +
+      'Publicó decenas de libros y artículos. ' +
+      'Si hubiera vivido en otra época, su nombre estaría hoy en los manuales escolares al lado de los grandes reformadores europeos.\n\n' +
+      'Murió en Vigo, casi olvidada por el poder oficial. ' +
+      'Sin embargo, el tiempo ha puesto las cosas en su sitio: hoy se la reconoce, por fin, como una pionera del feminismo y del humanismo modernos.',
+    vocabulary: [
+      {
+        word: 'singular',
+        translation: 'уникальный, исключительный (una figura singular; sin singular — единственный в своём роде)',
+        example: 'una de las figuras más singulares',
+      },
+      {
+        word: 'Ferrol',
+        translation: 'портовый город в Галисии, исторический центр испанского военно-морского флота',
+        example: 'Nacida en Ferrol',
+      },
+      {
+        word: 'la trayectoria',
+        translation: 'жизненный путь, профессиональный путь (la trayectoria profesional; trazar una trayectoria)',
+        example: 'vivió una trayectoria llena de hitos',
+      },
+      {
+        word: 'el hito',
+        translation: 'веха, значимое событие (un hito histórico; marcar un hito — стать вехой)',
+        example: 'una trayectoria llena de hitos',
+      },
+      {
+        word: 'el / la oyente',
+        translation: 'вольнослушатель; слушатель (asistir como oyente — посещать без зачёта; los oyentes — слушатели)',
+        example: 'asistir como oyente a las clases de Derecho',
+      },
+      {
+        word: 'disfrazado, -a de',
+        translation: 'переодетый кем-то/во что-то (el disfraz — костюм, маскировка; disfrazarse de)',
+        example: 'disfrazada de hombre',
+      },
+      {
+        word: 'admitido, -a',
+        translation: 'допущенный, принятый (admitir a alguien; la admisión — приём)',
+        example: 'las mujeres no eran admitidas',
+      },
+      {
+        word: 'trasladarse',
+        translation: 'переезжать, перебираться (trasladarse al campo; el traslado — переезд)',
+        example: 'se trasladó con su marido al campo gallego',
+      },
+      {
+        word: 'gallego, -a',
+        translation: 'галисийский, относящийся к Галисии (el campo gallego; el gallego — галисийский язык)',
+        example: 'se trasladó al campo gallego',
+      },
+      {
+        word: 'dar un giro radical',
+        translation: 'резко изменить курс (un giro de 180 grados — поворот на 180°; girar — поворачивать)',
+        example: 'dio un giro radical a su vida pública',
+      },
+      {
+        word: 'el / la visitador, -a',
+        translation: 'инспектор, лицо, осуществляющее официальные посещения (Visitadora General de Cárceles)',
+        example: 'fue nombrada Visitadora General de Cárceles',
+      },
+      {
+        word: 'la cárcel',
+        translation: 'тюрьма (estar en la cárcel; el cárcel — неправильно, всегда ж.р.)',
+        example: 'Visitadora General de Cárceles de Mujeres',
+      },
+      {
+        word: 'el cargo',
+        translation: 'должность, пост (un cargo público; ocupar un cargo)',
+        example: 'un cargo creado expresamente para ella',
+      },
+      {
+        word: 'denunciar',
+        translation: 'разоблачать, обличать, заявлять (denunciar abusos, denunciar a la policía; la denuncia)',
+        example: 'denunció condiciones inhumanas',
+      },
+      {
+        word: 'el preso, la presa',
+        translation: 'заключённый, заключённая (los presos políticos; la prisión — тюрьма)',
+        example: 'que se separase a los presos por edades',
+      },
+      {
+        word: 'el oficio',
+        translation: 'ремесло, профессия (aprender un oficio; oficios manuales — ручные ремёсла)',
+        example: 'que se les enseñase un oficio',
+      },
+      {
+        word: 'el derecho penitenciario',
+        translation: 'пенитенциарное право (отрасль права, регулирующая исполнение наказаний)',
+        example: 'la historia del derecho penitenciario español',
+      },
+      {
+        word: 'la beneficencia',
+        translation: 'благотворительность (obras de beneficencia; el benefactor — благотворитель)',
+        example: 'se dedicó a la beneficencia',
+      },
+      {
+        word: 'la decena',
+        translation: 'десяток (una decena de libros — около десятка; ср. docena — дюжина)',
+        example: 'Publicó decenas de libros y artículos.',
+      },
+      {
+        word: 'el manual escolar',
+        translation: 'школьный учебник (синоним: el libro de texto)',
+        example: 'estaría hoy en los manuales escolares',
+      },
+      {
+        word: 'el / la pionero, -a',
+        translation: 'пионер, первопроходец (un pionero de un campo; pionero en algo)',
+        example: 'una pionera del feminismo y del humanismo modernos',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cómo logró Concepción Arenal asistir a clases de Derecho en Madrid?',
+        options: [
+          'Pidiendo un permiso especial al rey',
+          'Estudiando por correspondencia desde Galicia',
+          'Asistiendo como oyente disfrazada de hombre, ya que las mujeres no eran admitidas',
+        ],
+        correct: 2,
+      },
+      {
+        q: '¿Qué reformas propuso desde su cargo de Visitadora General de Cárceles?',
+        options: [
+          'Separar a los presos por edades, enseñarles un oficio y respetar sus derechos básicos',
+          'Construir nuevas cárceles más grandes en todo el país',
+          'Reducir las penas de cárcel a la mitad',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Cómo se la reconoce hoy?',
+        options: [
+          'Como una novelista romántica menor',
+          'Como una pionera del feminismo y del humanismo modernos',
+          'Como una crítica del derecho penitenciario europeo',
+        ],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Condicional de tipo 3 con un puente al presente',
+        note:
+          '«Si hubiera nacido cincuenta años después, habría podido estudiar» — обычное 3-е условное о невозможном прошлом. ' +
+          '«Si hubiera vivido en otra época, su nombre estaría hoy en los manuales escolares» — гипотеза о прошлом, но последствие проецируется в настоящее, поэтому в главной части — Condicional simple, а не compuesto. Этот тип называется condicional mixto.',
+      },
+      {
+        topic: 'Pidió que se separase / se enseñase / se respetaran',
+        note:
+          '«Pidió que se separase a los presos por edades, que se les enseñase un oficio, que se respetaran sus derechos básicos» — глагол pidió в Indefinido тянет придаточное в Imperfecto de subjuntivo. ' +
+          'Формы на -se (separase, enseñase) и -ra (respetaran) — равноправные. В одном тексте могут чередоваться без потери смысла, как здесь.',
+      },
+      {
+        topic: 'Después de que + Subjuntivo для прошлого',
+        note:
+          '«Después de que la prensa la conociera y la criticara» — у después de que после времени-прошлого требуется Imperfecto de subjuntivo. ' +
+          'Хотя в речи Латинской Америки нередко допускается Indicativo («después de que la conoció»), в Испании письменная норма твёрдо требует Subjuntivo.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-027',
+    level: 'B1',
+    day: 27,
+    title: 'Querido Daniel, treinta años después',
+    text:
+      'Querido Daniel:\n\n' +
+      'Te escribo desde el cuarto donde guardo las cosas viejas, después de encontrar por casualidad una foto nuestra de la facultad. ' +
+      'Aparecemos en la cafetería de Filología, con jerséis horribles y caras de no haber dormido en una semana. ¡Cuánto tiempo!\n\n' +
+      'Llevo días pensando en aquellos cursos. ' +
+      'Si hubiéramos sabido entonces lo que sabemos ahora, ¿habríamos elegido los mismos caminos? ' +
+      'Yo creo que sí, aunque por motivos distintos. ' +
+      'Tú repetías que querías ser profesor para «no dejar que se perdiera la lengua de tu pueblo» y, mira, lo conseguiste. ' +
+      'Yo, en cambio, me marché a Bruselas casi por accidente y la traducción acabó siendo mi vida.\n\n' +
+      'Hay días en los que me asalta una añoranza extraña. ' +
+      'No es que quiera volver a aquella época: éramos pobres, dormíamos mal y discutíamos por todo. ' +
+      'Pero entonces todo parecía posible. ' +
+      'Si me hubieran preguntado a los veintidós si pensaba acabar en una oficina europea, habría dicho que no, rotundamente. ' +
+      'La vida me llevó por su cuenta.\n\n' +
+      'Recuerdo que tú, una noche, junto al río, me dijiste que lo importante no era llegar a ningún sitio concreto, sino seguir caminando con los ojos abiertos. ' +
+      'Aquella frase se me quedó grabada. ' +
+      'En los momentos malos, me la repito. ' +
+      'No te imaginas cuántas veces me ha ayudado, sobre todo cuando dudé del rumbo que había tomado.\n\n' +
+      'Me gustaría volver a verte antes del verano. ' +
+      'He visto que tienes un congreso en Bruselas en mayo: avísame y te invito a una cena casera. ' +
+      'Si no puedes, voy yo a Compostela: hace años que no pruebo una empanada de bonito como Dios manda.\n\n' +
+      'Cuídate mucho. Un abrazo enorme,\n\nMarta',
+    vocabulary: [
+      {
+        word: 'por casualidad',
+        translation: 'случайно (encontrar algo por casualidad; la casualidad — случайность)',
+        example: 'después de encontrar por casualidad una foto nuestra',
+      },
+      {
+        word: 'la facultad',
+        translation: 'факультет (la facultad de Filología, de Derecho; ir a la facultad — учиться в универе)',
+        example: 'una foto nuestra de la facultad',
+      },
+      {
+        word: 'el jersey',
+        translation: 'свитер (исп. castellano; в Лат. Америке: el suéter, в Мексике: el pulóver)',
+        example: 'con jerséis horribles',
+      },
+      {
+        word: 'la Filología',
+        translation: 'филология (la Facultad de Filología; filólogo — филолог)',
+        example: 'en la cafetería de Filología',
+      },
+      {
+        word: 'la cara de no haber dormido',
+        translation: 'вид невыспавшегося человека (tener cara de + circunstancia)',
+        example: 'caras de no haber dormido en una semana',
+      },
+      {
+        word: 'marcharse',
+        translation: 'уезжать, уходить (marcharse a otro país; la marcha — отъезд)',
+        example: 'me marché a Bruselas casi por accidente',
+      },
+      {
+        word: 'por accidente',
+        translation: 'случайно, по стечению обстоятельств (синоним: por casualidad)',
+        example: 'me marché a Bruselas casi por accidente',
+      },
+      {
+        word: 'asaltar (figurative)',
+        translation: 'нахлынуть, охватить (me asalta una duda; el asalto — нападение)',
+        example: 'me asalta una añoranza extraña',
+      },
+      {
+        word: 'la añoranza',
+        translation: 'тоска, грусть по чему-то прошедшему (añorar — тосковать; la nostalgia — синоним)',
+        example: 'me asalta una añoranza extraña',
+      },
+      {
+        word: 'discutir',
+        translation: 'спорить; обсуждать (discutir por todo — спорить из-за всего; la discusión)',
+        example: 'discutíamos por todo',
+      },
+      {
+        word: 'rotundamente',
+        translation: 'категорично, безоговорочно (negar rotundamente — категорически отрицать)',
+        example: 'habría dicho que no, rotundamente',
+      },
+      {
+        word: 'llevar a alguien por su cuenta',
+        translation: 'идти своим чередом, вести (la vida me llevó por su cuenta — жизнь распорядилась сама)',
+        example: 'La vida me llevó por su cuenta.',
+      },
+      {
+        word: 'quedarse grabado, -a',
+        translation: 'запечатлеться, врезаться в память (una frase se me quedó grabada; grabar — записывать)',
+        example: 'Aquella frase se me quedó grabada.',
+      },
+      {
+        word: 'el rumbo',
+        translation: 'направление, курс (cambiar de rumbo; sin rumbo — без направления; figurative — жизненный курс)',
+        example: 'cuando dudé del rumbo que había tomado',
+      },
+      {
+        word: 'dudar de',
+        translation: 'сомневаться в чём-то (dudar de algo / de alguien; la duda — сомнение)',
+        example: 'dudé del rumbo que había tomado',
+      },
+      {
+        word: 'el congreso',
+        translation: 'конференция, конгресс (un congreso médico, científico; ir a un congreso)',
+        example: 'tienes un congreso en Bruselas en mayo',
+      },
+      {
+        word: 'la cena casera',
+        translation: 'домашний ужин (casero, -a — домашний; la comida casera)',
+        example: 'te invito a una cena casera',
+      },
+      {
+        word: 'Compostela',
+        translation: 'Сантьяго-де-Компостела — столица Галисии, конечная точка паломнического пути Камино де Сантьяго',
+        example: 'voy yo a Compostela',
+      },
+      {
+        word: 'la empanada de bonito',
+        translation: 'галисийский пирог с тунцом, традиционное блюдо (la empanada — пирог; el bonito — тунец)',
+        example: 'una empanada de bonito como Dios manda',
+      },
+      {
+        word: 'como Dios manda',
+        translation: 'как следует, по-настоящему (выражение одобрения: una cena como Dios manda)',
+        example: 'una empanada de bonito como Dios manda',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué encontró Marta por casualidad?',
+        options: [
+          'Una carta de Daniel de hace treinta años',
+          'Una foto suya y de Daniel de la facultad de Filología',
+          'Un diario antiguo de la universidad',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué le había dicho Daniel a Marta una noche junto al río?',
+        options: [
+          'Que lo importante era llegar lo antes posible a una buena oficina',
+          'Que tenían que dejar la facultad y trabajar enseguida',
+          'Que lo importante no era llegar a ningún sitio concreto, sino seguir caminando con los ojos abiertos',
+        ],
+        correct: 2,
+      },
+      {
+        q: '¿Qué propone Marta para volver a verse?',
+        options: [
+          'Verse en su congreso de Bruselas en mayo, o ir ella a Compostela',
+          'Quedar en Madrid durante el verano',
+          'Verse en la facultad donde estudiaron',
+        ],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Condicional de tipo 3 en una reflexión personal',
+        note:
+          '«Si hubiéramos sabido entonces lo que sabemos ahora, ¿habríamos elegido los mismos caminos?», «si me hubieran preguntado a los veintidós, habría dicho que no» — гипотезы о невозможном прошлом. ' +
+          'Pluscuamperfecto de subjuntivo + Condicional compuesto — устойчивая конструкция для размышлений о пройденном пути.',
+      },
+      {
+        topic: 'Para que se perdiera / no dejar que se perdiera',
+        note:
+          '«No dejar que se perdiera la lengua de tu pueblo» — глагол dejar в прошлом + que + Imperfecto de subjuntivo. ' +
+          'Этот же механизм действует с querer, pedir, esperar в прошлом: «quería que viniera», «pidió que se quedara». Главный глагол в Imperfecto или Indefinido — придаточный в Imperfecto de subjuntivo.',
+      },
+      {
+        topic: 'No es que quiera volver: отрицание мнения и Subjuntivo',
+        note:
+          '«No es que quiera volver a aquella época» — конструкция «no es que + Subjuntivo» используется, чтобы оговорить: «дело не в том, что я хочу…». ' +
+          'Сравни с подтверждением: «es que quiero volver» — Indicativo, потому что это утверждение факта.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-028',
+    level: 'B1',
+    day: 28,
+    title: 'Si lo hubiera sabido',
+    text:
+      'Acabo de leer una entrevista a Manuel, un compañero de la universidad, ahora director de una empresa de energías renovables en Sevilla. ' +
+      'Yo lo conocía bien: estudiamos juntos cuatro años, compartíamos apuntes y, en aquella época, ni a él ni a mí nos interesaba especialmente el sector. ' +
+      'Hoy, leyendo cómo ha levantado todo aquello, no puedo evitar pensar en lo que pudo ser.\n\n' +
+      'Si hubiera aceptado, allá por el dos mil ocho, la propuesta de unirme al pequeño proyecto que él entonces preparaba, mi vida sería ahora muy distinta. ' +
+      'Habría participado desde el principio en algo que ha terminado por crear cien puestos de trabajo. ' +
+      'Tendría una experiencia técnica que ahora me falta. ' +
+      'Probablemente, también, habría aprendido a tomar decisiones difíciles antes y mejor.\n\n' +
+      'Pero rechacé la oferta. ' +
+      'Si lo hubiera pensado con calma, si hubiera consultado a más gente, quizá habría visto el potencial. ' +
+      'Por entonces, estaba convencido de que la administración pública era el camino seguro. ' +
+      'Aprobé las oposiciones, me instalé en mi puesto y, durante años, no me arrepentí.\n\n' +
+      'Sin embargo, hace algún tiempo, algo cambió. ' +
+      'Empecé a sentirme estancado. ' +
+      'Si hubiera tenido más curiosidad, si me hubiera atrevido en su momento, podría estar haciendo otra cosa. ' +
+      'No es un drama. ' +
+      'Lo que más me duele es no haber probado.\n\n' +
+      'Estos días intento sacar una conclusión útil. ' +
+      'Mi pareja, que es psicóloga, me dice que reescribir el pasado no sirve de nada, y tiene razón. ' +
+      'Por eso he decidido aplicar el «si hubiera» al futuro: si dentro de diez años no quiero pensar «ojalá lo hubiera intentado», más vale que lo intente ahora.\n\n' +
+      'Mañana llamo a Manuel.',
+    vocabulary: [
+      {
+        word: 'las energías renovables',
+        translation: 'возобновляемые источники энергии (la energía solar, eólica; el sector renovable)',
+        example: 'una empresa de energías renovables en Sevilla',
+      },
+      {
+        word: 'compartir apuntes',
+        translation: 'делиться конспектами (los apuntes — записи на лекциях; tomar apuntes — конспектировать)',
+        example: 'compartíamos apuntes',
+      },
+      {
+        word: 'levantar (un proyecto)',
+        translation: 'построить, поднять с нуля (figurative — levantar una empresa, un negocio)',
+        example: 'cómo ha levantado todo aquello',
+      },
+      {
+        word: 'lo que pudo ser',
+        translation: 'то, что могло быть (выражение сожаления о несостоявшемся)',
+        example: 'pensar en lo que pudo ser',
+      },
+      {
+        word: 'la propuesta',
+        translation: 'предложение (una propuesta de trabajo; proponer — предлагать)',
+        example: 'la propuesta de unirme al pequeño proyecto',
+      },
+      {
+        word: 'unirse a',
+        translation: 'присоединиться к (unirse a un equipo, a un proyecto; la unión)',
+        example: 'la propuesta de unirme al pequeño proyecto',
+      },
+      {
+        word: 'el puesto de trabajo',
+        translation: 'рабочее место, должность (crear puestos de trabajo; el puesto = должность)',
+        example: 'cien puestos de trabajo',
+      },
+      {
+        word: 'tomar decisiones',
+        translation: 'принимать решения (tomar una decisión difícil; la toma de decisiones)',
+        example: 'aprender a tomar decisiones difíciles',
+      },
+      {
+        word: 'rechazar',
+        translation: 'отклонить, отказаться (rechazar una oferta, una invitación; el rechazo)',
+        example: 'rechacé la oferta',
+      },
+      {
+        word: 'consultar a',
+        translation: 'консультироваться с, советоваться (consultar a un experto; la consulta)',
+        example: 'si hubiera consultado a más gente',
+      },
+      {
+        word: 'el potencial',
+        translation: 'потенциал, возможности (ver el potencial de algo; potencial — возможный)',
+        example: 'habría visto el potencial',
+      },
+      {
+        word: 'la administración pública',
+        translation: 'государственная служба, государственная администрация (trabajar en la administración pública)',
+        example: 'la administración pública era el camino seguro',
+      },
+      {
+        word: 'las oposiciones',
+        translation: 'конкурсные экзамены на государственную должность (aprobar las oposiciones; opositar)',
+        example: 'Aprobé las oposiciones.',
+      },
+      {
+        word: 'instalarse',
+        translation: 'обосноваться, устроиться (instalarse en un puesto, en una ciudad; la instalación)',
+        example: 'me instalé en mi puesto',
+      },
+      {
+        word: 'arrepentirse de',
+        translation: 'раскаиваться, сожалеть (e→ie: me arrepiento; el arrepentimiento — раскаяние)',
+        example: 'durante años, no me arrepentí',
+      },
+      {
+        word: 'estancado, -a',
+        translation: 'застойный, тупиковый (figurative — sentirse estancado; el estancamiento — застой)',
+        example: 'Empecé a sentirme estancado.',
+      },
+      {
+        word: 'atreverse a',
+        translation: 'осмелиться, решиться (atreverse a hacer algo; el atrevimiento — дерзость)',
+        example: 'si me hubiera atrevido en su momento',
+      },
+      {
+        word: 'en su momento',
+        translation: 'в своё время, тогда, когда нужно было (decirlo en su momento)',
+        example: 'si me hubiera atrevido en su momento',
+      },
+      {
+        word: 'no servir de nada',
+        translation: 'ни к чему не служить, быть бесполезным (no sirve de nada llorar)',
+        example: 'reescribir el pasado no sirve de nada',
+      },
+      {
+        word: 'más vale que',
+        translation: 'лучше уж (+ Subjuntivo; más vale que vayas — лучше иди)',
+        example: 'más vale que lo intente ahora',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Quién es Manuel y de qué se arrepiente el narrador?',
+        options: [
+          'Un compañero de universidad que en 2008 le propuso unirse a un proyecto que el narrador rechazó',
+          'Un antiguo jefe del narrador que lo despidió injustamente',
+          'Un primo lejano que emigró a Sevilla sin pedirle consejo',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Por qué rechazó el narrador la propuesta de Manuel?',
+        options: [
+          'Porque no confiaba en Manuel como persona',
+          'Porque estaba convencido de que la administración pública era el camino seguro y aprobó las oposiciones',
+          'Porque su familia se oponía al sector renovable',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué conclusión saca al final?',
+        options: [
+          'Que va a dejar inmediatamente su puesto en la administración',
+          'Que ya es demasiado tarde para cambiar nada',
+          'Que aplicará el «si hubiera» al futuro: más vale intentarlo ahora que arrepentirse dentro de diez años',
+        ],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Condicional 3 mixto: si hubiera + part., Condicional simple en el presente',
+        note:
+          '«Si hubiera aceptado la propuesta, mi vida sería ahora muy distinta», «si me hubiera atrevido en su momento, podría estar haciendo otra cosa», «si hubiera tenido más curiosidad, tendría una experiencia técnica» — гипотеза о прошлом с проекцией в настоящее. ' +
+          'Главная часть в Condicional simple (sería, tendría, podría), потому что мы описываем актуальное на сегодня последствие.',
+      },
+      {
+        topic: 'Condicional 3 puro: habría + participio',
+        note:
+          '«Habría participado desde el principio», «habría aprendido a tomar decisiones», «habría visto el potencial» — Condicional compuesto, когда последствие тоже относится к прошлому, к гипотетической линии жизни. ' +
+          'В одном тексте часто чередуются 3-е условное (compuesto) и 3-е смешанное (simple) — это нормально и точно отражает смысл.',
+      },
+      {
+        topic: 'Más vale que / no sirve de nada',
+        note:
+          '«Más vale que lo intente ahora» — устойчивая конструкция совета или предупреждения, всегда с Subjuntivo. ' +
+          '«No sirve de nada reescribir el pasado» — с инфинитивом, потому что субъект общий (никто). Если бы мы упомянули конкретного субъекта, был бы Subjuntivo: «no sirve de nada que lo reescribas».',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-029',
+    level: 'B1',
+    day: 29,
+    title: 'Entrevista a Lucía, gallega en Buenos Aires',
+    text:
+      'Lucía García, treinta y ocho años, lleva quince viviendo en Buenos Aires. ' +
+      'La conozco desde el colegio en Lugo y, aprovechando que ha venido a pasar las Navidades con su familia, le pido que me cuente cómo ha sido su trayectoria en Argentina.\n\n' +
+      '—¿Cómo fue que acabaste allí?\n\n' +
+      '—Fue una serie de casualidades —responde—. ' +
+      'Yo había estudiado Veterinaria y, recién terminada la carrera, una amiga me propuso un voluntariado con caballos en la Patagonia. ' +
+      'Si me hubieran dicho que aquellos tres meses cambiarían mi rumbo, no lo habría creído. ' +
+      'Pero conocí a Diego, mi marido, en la primera semana.\n\n' +
+      'Lucía cuenta que al principio pensó quedarse solo medio año. ' +
+      'Sin embargo, surgió una oportunidad de trabajo en una clínica veterinaria de Buenos Aires y, después de muchas dudas, decidió probar. ' +
+      'Sus padres, al saberlo, le pidieron que se lo pensara dos veces. ' +
+      'Ella les contestó que volvería si las cosas no funcionaban.\n\n' +
+      '—Y no volvieron a hablarte de eso, supongo.\n\n' +
+      '—No, qué va. ' +
+      'Pero sé que mi madre me echó muchísimo de menos los primeros años. ' +
+      'Yo también la añoraba. ' +
+      'La añoranza por la familia es lo más duro de estar fuera: te das cuenta de los hitos que te pierdes, las cenas familiares, los cumpleaños, los nietos que crecen sin ti.\n\n' +
+      'Le pregunto si se siente más argentina o más española. Sonríe.\n\n' +
+      '—Ni una cosa ni la otra. ' +
+      'Mi rumbo me ha hecho gallega-porteña. ' +
+      'Hablo con vos cuando hablo con Diego y con vosotros cuando hablo con vosotros. Y ya está.\n\n' +
+      'Antes de despedirnos, le pregunto qué le diría a alguien que duda entre quedarse o irse. ' +
+      'Lo piensa unos segundos.\n\n' +
+      '—Que escuche a su miedo, pero que no le obedezca. Que pruebe.',
+    vocabulary: [
+      {
+        word: 'Lugo',
+        translation: 'город в Галисии с римскими стенами, центр одноимённой провинции',
+        example: 'La conozco desde el colegio en Lugo.',
+      },
+      {
+        word: 'Buenos Aires',
+        translation: 'столица Аргентины и крупнейший порт Латинской Америки',
+        example: 'lleva quince viviendo en Buenos Aires',
+      },
+      {
+        word: 'la Veterinaria',
+        translation: 'ветеринария (la facultad de Veterinaria; el veterinario — ветеринар)',
+        example: 'Yo había estudiado Veterinaria.',
+      },
+      {
+        word: 'recién + participio',
+        translation: 'только что (recién terminada la carrera = только окончив университет)',
+        example: 'recién terminada la carrera',
+      },
+      {
+        word: 'el voluntariado',
+        translation: 'волонтёрство, добровольческая программа (hacer un voluntariado; el voluntario)',
+        example: 'un voluntariado con caballos en la Patagonia',
+      },
+      {
+        word: 'la Patagonia',
+        translation: 'южный регион Аргентины и Чили с горами, ледниками и стадами овец',
+        example: 'un voluntariado con caballos en la Patagonia',
+      },
+      {
+        word: 'la serie de casualidades',
+        translation: 'череда случайностей (una serie de + sustantivo; la serie televisiva — сериал)',
+        example: 'Fue una serie de casualidades.',
+      },
+      {
+        word: 'surgir',
+        translation: 'возникнуть, появиться (surgir una oportunidad; el surgimiento)',
+        example: 'surgió una oportunidad de trabajo',
+      },
+      {
+        word: 'pensárselo dos veces',
+        translation: 'подумать дважды (рекомендуют, прежде чем принять важное решение)',
+        example: 'le pidieron que se lo pensara dos veces',
+      },
+      {
+        word: 'qué va',
+        translation: 'да нет, ну что вы (разговорное опровержение)',
+        example: '—No, qué va.',
+      },
+      {
+        word: 'echar de menos',
+        translation: 'скучать по кому-то / чему-то (echar de menos a alguien; синоним: extrañar)',
+        example: 'mi madre me echó muchísimo de menos',
+      },
+      {
+        word: 'añorar',
+        translation: 'тосковать по кому-то / чему-то (более книжно, чем echar de menos)',
+        example: 'Yo también la añoraba.',
+      },
+      {
+        word: 'el rumbo',
+        translation: 'направление, курс жизни (cambiar de rumbo; sin rumbo fijo)',
+        example: 'cambiarían mi rumbo',
+      },
+      {
+        word: 'estar fuera',
+        translation: 'жить вне родной страны (estar fuera — быть в эмиграции; los emigrantes)',
+        example: 'lo más duro de estar fuera',
+      },
+      {
+        word: 'el nieto, la nieta',
+        translation: 'внук, внучка (los nietos — внуки; el / la abuelo, -a — дедушка, бабушка)',
+        example: 'los nietos que crecen sin ti',
+      },
+      {
+        word: 'el / la porteño, -a',
+        translation: 'житель Буэнос-Айреса (el puerto — порт; коренной столичный аргентинец)',
+        example: 'me ha hecho gallega-porteña',
+      },
+      {
+        word: 'el voseo',
+        translation: 'употребление vos вместо tú, типичное для Аргентины, Уругвая и Центральной Америки',
+        example: 'hablo con vos cuando hablo con Diego',
+      },
+      {
+        word: 'obedecer',
+        translation: 'повиноваться, слушаться (obedecer a alguien; el obediente — послушный)',
+        example: 'que escuche a su miedo, pero que no le obedezca',
+      },
+      {
+        word: 'duro, -a (figurative)',
+        translation: 'тяжёлый (психологически); грубый (lo más duro — самое тяжёлое; la dureza)',
+        example: 'lo más duro de estar fuera',
+      },
+      {
+        word: 'crecer sin alguien',
+        translation: 'расти без кого-то (los nietos que crecen sin ti — внуки, растущие без тебя)',
+        example: 'los nietos que crecen sin ti',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cómo llegó Lucía a vivir en Argentina?',
+        options: [
+          'Su familia se trasladó con ella cuando era adolescente',
+          'Por una serie de casualidades: fue a la Patagonia como voluntaria con caballos y conoció a su marido',
+          'Conseguió una beca de doctorado en Buenos Aires desde España',
+        ],
+        correct: 1,
+      },
+      {
+        q: 'Según Lucía, ¿qué es lo más duro de vivir en el extranjero?',
+        options: [
+          'La diferencia de idioma con su marido argentino',
+          'El clima y la lejanía del mar',
+          'La añoranza por la familia y los hitos que se pierde: cenas, cumpleaños, nietos que crecen sin ti',
+        ],
+        correct: 2,
+      },
+      {
+        q: '¿Qué consejo le da a alguien que duda entre quedarse o irse?',
+        options: [
+          'Que escuche a su miedo, pero que no le obedezca; que pruebe',
+          'Que no se vaya nunca lejos de su familia',
+          'Que decida lo antes posible para no perder oportunidades',
+        ],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Estilo indirecto en pasado: cuenta que / le pidieron que',
+        note:
+          '«Lucía cuenta que al principio pensó quedarse» — глагол contar в настоящем сохраняет времена внутри. ' +
+          '«Sus padres le pidieron que se lo pensara dos veces» — pedir в Indefinido тянет придаточное в Imperfecto de subjuntivo. ' +
+          '«Ella les contestó que volvería si las cosas no funcionaban» — Indefinido contestó → Condicional volvería (будущее с точки зрения прошлого) + Imperfecto в условной части.',
+      },
+      {
+        topic: 'Imperativo indirecto: que escuche a su miedo, que no le obedezca, que pruebe',
+        note:
+          'Совет, переданный в косвенной речи, оформляется через «que + Subjuntivo» без вступительного глагола. ' +
+          '«Que escuche a su miedo» = пусть слушает свой страх; «que no le obedezca» = пусть ему не подчиняется; «que pruebe» = пусть попробует. Это вежливый и распространённый способ сформулировать рекомендацию.',
+      },
+      {
+        topic: 'Si me hubieran dicho que cambiarían mi rumbo',
+        note:
+          '«Si me hubieran dicho que aquellos tres meses cambiarían mi rumbo, no lo habría creído» — здесь интересно совмещение: в придаточном Pluscuamperfecto de subjuntivo (hubieran dicho), в косвенной части Condicional simple (cambiarían), в главной — Condicional compuesto (habría creído). ' +
+          'Condicional simple тут заменяет «будущее» с точки зрения прошлого: то, что должно было произойти потом.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-030',
+    level: 'B1',
+    day: 30,
+    title: 'Un año con el español',
+    text:
+      'Hace exactamente un año, empecé este cuaderno con la intención de leer un texto al día en español. ' +
+      'Hoy lo termino sentada en la misma silla, con la misma taza de café y, aparentemente, la misma vida. ' +
+      'Aparentemente, porque por dentro ha cambiado bastante.\n\n' +
+      'Si me hubieran dicho hace doce meses que iba a leer noventa textos, que escribiría resúmenes, que respondería a casi trescientas preguntas, no lo habría creído. ' +
+      'Lo cierto es que al principio dudaba mucho. ' +
+      '¿Serviría de algo media hora al día? ¿No sería mejor apuntarme a una academia? ' +
+      'Por más que lo intentara, no veía progresos. ' +
+      'Sin embargo, seguí, sobre todo por curiosidad.\n\n' +
+      'A los dos meses noté algo nuevo: empecé a soñar, alguna noche, en español. ' +
+      'A los seis, fui capaz de leer un periódico sin diccionario, aunque con esfuerzo. ' +
+      'Hoy, doce meses después, puedo seguir un debate en la radio, leer una novela contemporánea con placer y, sobre todo, sostener una conversación de una hora sin pasar al inglés.\n\n' +
+      'Si yo fuera profesora, recomendaría este método: poco a poco, todos los días, sin saltarse el ritual. ' +
+      'La constancia importa más que la intensidad. ' +
+      'De ahí que, cuando vienen estudiantes a preguntarme cuántas horas hay que estudiar, les diga: «No me preguntes horas; pregúntame días». ' +
+      'Cualquiera que haya aprendido un idioma sabe que esa es la verdad incómoda.\n\n' +
+      'Echando la vista atrás, no me arrepiento de casi nada. ' +
+      'Bueno, sí, de una cosa: ojalá hubiera empezado antes. ' +
+      'Si hubiera dedicado a esto los años que perdí dudando, hablaría hoy con muchísima más facilidad. ' +
+      'En cambio, lo importante es que empecé. Mejor tarde que nunca.\n\n' +
+      'Mañana abro un cuaderno nuevo. ' +
+      'Quiero leer literatura latinoamericana sin traducción. ' +
+      'Será otro rumbo, otro hito. ' +
+      'Pero el método no cambia: un texto al día. Hasta otra.',
+    vocabulary: [
+      {
+        word: 'el cuaderno',
+        translation: 'тетрадь (un cuaderno de notas; ср. el libro — книга)',
+        example: 'empecé este cuaderno',
+      },
+      {
+        word: 'la intención',
+        translation: 'намерение (con la intención de + inf.; intencionalmente — намеренно)',
+        example: 'con la intención de leer un texto al día',
+      },
+      {
+        word: 'aparentemente',
+        translation: 'по виду, на первый взгляд (aparentar — казаться; la apariencia — внешний вид)',
+        example: 'aparentemente, la misma vida',
+      },
+      {
+        word: 'por dentro',
+        translation: 'внутри, изнутри (cambiar por dentro; antónimo: por fuera)',
+        example: 'por dentro ha cambiado bastante',
+      },
+      {
+        word: 'el resumen',
+        translation: 'резюме, краткое изложение (escribir un resumen; resumir — резюмировать)',
+        example: 'escribiría resúmenes',
+      },
+      {
+        word: 'apuntarse a',
+        translation: 'записаться (на курс, в школу; apuntarse a una academia)',
+        example: '¿No sería mejor apuntarme a una academia?',
+      },
+      {
+        word: 'el progreso',
+        translation: 'прогресс, продвижение (ver progresos; progresar — прогрессировать)',
+        example: 'no veía progresos',
+      },
+      {
+        word: 'el esfuerzo',
+        translation: 'усилие (con esfuerzo; esforzarse — стараться; sin esfuerzo — без труда)',
+        example: 'aunque con esfuerzo',
+      },
+      {
+        word: 'seguir un debate',
+        translation: 'следить за дебатами, понимать беседу (seguir = понимать ход; seguir hablando — продолжать)',
+        example: 'seguir un debate en la radio',
+      },
+      {
+        word: 'la novela contemporánea',
+        translation: 'современный роман (contemporáneo, -a — современный; ср. clásico)',
+        example: 'leer una novela contemporánea con placer',
+      },
+      {
+        word: 'sostener una conversación',
+        translation: 'поддерживать беседу (sostener = поддерживать; sostener un diálogo)',
+        example: 'sostener una conversación de una hora',
+      },
+      {
+        word: 'pasar al inglés',
+        translation: 'переключиться на английский (pasar a otro idioma; el cambio de código)',
+        example: 'sin pasar al inglés',
+      },
+      {
+        word: 'saltarse algo',
+        translation: 'пропустить (saltarse una clase, una norma; saltar — прыгать)',
+        example: 'sin saltarse el ritual',
+      },
+      {
+        word: 'el ritual',
+        translation: 'ритуал, привычная процедура (un ritual diario; ritualizar)',
+        example: 'sin saltarse el ritual',
+      },
+      {
+        word: 'la constancia',
+        translation: 'постоянство, упорство (la constancia importa; constante — постоянный)',
+        example: 'la constancia importa más que la intensidad',
+      },
+      {
+        word: 'la intensidad',
+        translation: 'интенсивность, сила (la intensidad del esfuerzo; intenso, -a)',
+        example: 'la constancia importa más que la intensidad',
+      },
+      {
+        word: 'la verdad incómoda',
+        translation: 'неудобная правда (una verdad que cuesta aceptar)',
+        example: 'esa es la verdad incómoda',
+      },
+      {
+        word: 'echar la vista atrás',
+        translation: 'оглянуться назад, посмотреть в прошлое (figurative — al hacer balance)',
+        example: 'Echando la vista atrás, no me arrepiento.',
+      },
+      {
+        word: 'mejor tarde que nunca',
+        translation: 'лучше поздно, чем никогда (распространённая поговорка)',
+        example: 'lo importante es que empecé. Mejor tarde que nunca.',
+      },
+      {
+        word: 'la literatura latinoamericana',
+        translation: 'латиноамериканская литература (García Márquez, Borges, Cortázar, Bolaño…)',
+        example: 'leer literatura latinoamericana sin traducción',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué dudas tenía la narradora al empezar el cuaderno?',
+        options: [
+          'Si serviría de algo media hora al día y si no sería mejor apuntarse a una academia',
+          'Si tendría tiempo para hacer también un curso de italiano',
+          'Si encontraría textos suficientes en español para todo un año',
+        ],
+        correct: 0,
+      },
+      {
+        q: 'Según la narradora, ¿qué importa más al aprender un idioma?',
+        options: [
+          'La intensidad: muchas horas seguidas en pocas semanas',
+          'La constancia: poco a poco, todos los días, sin saltarse el ritual',
+          'La elección de la academia adecuada',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿De qué se arrepiente al final de este año?',
+        options: [
+          'De haber leído textos demasiado fáciles',
+          'De no haberse apuntado a una academia',
+          'Solo de una cosa: ojalá hubiera empezado antes, en los años que perdió dudando',
+        ],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Final del recorrido B1: Imperfecto y Pluscuamperfecto de subjuntivo, condicionales 2 y 3',
+        note:
+          'Текст-эпилог собирает почти весь арсенал последнего блока: Imperfecto de subjuntivo («por más que lo intentara», «si yo fuera profesora», «cualquiera que haya aprendido»), Pluscuamperfecto de subjuntivo («si me hubieran dicho», «ojalá hubiera empezado antes», «si hubiera dedicado»), 2-е условное («recomendaría este método»), 3-е условное смешанное («si hubiera dedicado, hablaría hoy con más facilidad»). ' +
+          'Эти конструкции — главное приобретение B1-C.',
+      },
+      {
+        topic: 'De ahí que les diga / cualquiera que haya aprendido',
+        note:
+          '«De ahí que les diga» — устойчивая связка причины-следствия с Subjuntivo. ' +
+          '«Cualquiera que haya aprendido un idioma» — относительное местоимение cualquiera с неопределённым антецедентом требует Subjuntivo (haya aprendido). Сравни: «la persona que aprendió un idioma» — конкретный человек, Indicativo.',
+      },
+      {
+        topic: 'Lo importante es que empecé',
+        note:
+          'Конструкция «lo + adjetivo + es que» обычно тянет Indicativo, если констатируется факт: «lo importante es que empecé». ' +
+          'Если же выражается субъективная оценка эмоции, идёт Subjuntivo: «lo importante es que empieces — главное, чтобы ты начал». В этом тексте автор подтверждает факт, поэтому Indicativo.',
+      },
+    ],
+  },
 );
