@@ -2972,4 +2972,1244 @@ window.TEXTS.push(
       },
     ],
   },
+
+  {
+    id: 'a2-001',
+    level: 'A2',
+    day: 1,
+    title: 'El profesor de Historia',
+    text:
+      'Hace muchos años estudié en un colegio público de Salamanca. ' +
+      'Empecé a los seis años y terminé a los dieciséis. ' +
+      'Mi profesor favorito fue don Antonio, el profesor de Historia. ' +
+      'Aquel hombre nos contó la historia de España con pasión y con humor.\n\n' +
+      'Una vez, en sexto curso, organicé con mis amigos una pequeña fiesta sorpresa por su cumpleaños. ' +
+      'Compramos una tarta y escribimos juntos una carta. ' +
+      'Don Antonio se emocionó mucho y nos dio las gracias delante de toda la clase.\n\n' +
+      'El último año hicimos el viaje de fin de curso a Mallorca. ' +
+      'Aquellos días fueron preciosos. ' +
+      'Aprendí a conocer mejor a mis compañeros y descubrí que los mejores recuerdos del colegio no fueron los exámenes.',
+    vocabulary: [
+      {
+        word: 'el curso',
+        translation: 'учебный год; класс (sexto curso — шестой класс)',
+        example: 'Una vez, en sexto curso, organicé una fiesta.',
+      },
+      {
+        word: 'la pasión',
+        translation: 'страсть, увлечённость (con pasión — с увлечением)',
+        example: 'Nos contó la historia con pasión.',
+      },
+      {
+        word: 'organizar',
+        translation: 'организовать (Indef: organicé, organizaste, organizó…)',
+        example: 'Organicé una fiesta sorpresa.',
+      },
+      {
+        word: 'la fiesta sorpresa',
+        translation: 'вечеринка-сюрприз (приложение sorpresa в постпозиции)',
+        example: 'una pequeña fiesta sorpresa por su cumpleaños',
+      },
+      {
+        word: 'la tarta',
+        translation: 'торт (la torta — лепёшка; в кондитерской tarta)',
+        example: 'Compramos una tarta.',
+      },
+      {
+        word: 'emocionarse',
+        translation: 'разволноваться, растрогаться (возвратный)',
+        example: 'Don Antonio se emocionó mucho.',
+      },
+      {
+        word: 'dar las gracias',
+        translation: 'благодарить (буквально «дать благодарности»)',
+        example: 'Nos dio las gracias delante de la clase.',
+      },
+      {
+        word: 'delante de',
+        translation: 'перед, лицом к (delante de la clase — перед всем классом)',
+        example: 'delante de toda la clase',
+      },
+      {
+        word: 'el viaje de fin de curso',
+        translation: 'выпускная поездка (традиция испанских школ в последний год)',
+        example: 'Hicimos el viaje de fin de curso a Mallorca.',
+      },
+      {
+        word: 'precioso, -a',
+        translation: 'чудесный, восхитительный (синоним maravilloso)',
+        example: 'Aquellos días fueron preciosos.',
+      },
+      {
+        word: 'descubrir',
+        translation: 'открыть, обнаружить (participio descubierto)',
+        example: 'Descubrí que los exámenes no fueron lo más importante.',
+      },
+      {
+        word: 'el examen',
+        translation: 'экзамен (мн. ч. los exámenes — с тильдой!)',
+        example: 'los exámenes del último año',
+      },
+      {
+        word: 'el compañero / la compañera',
+        translation: 'товарищ; одноклассник, коллега (compañero de clase)',
+        example: 'Aprendí a conocer mejor a mis compañeros.',
+      },
+      {
+        word: 'aquel, aquella, aquellos, aquellas',
+        translation: 'тот, та (дальний демонстратив — для воспоминаний из прошлого)',
+        example: 'Aquel hombre nos contó la historia.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿A qué edad empezó el colegio?',
+        options: ['A los seis años', 'A los ocho años', 'A los diez años'],
+        correct: 0,
+      },
+      {
+        q: '¿Por qué organizó la fiesta sorpresa?',
+        options: ['Por un examen', 'Por el cumpleaños del profesor', 'Por el fin de curso'],
+        correct: 1,
+      },
+      {
+        q: '¿Adónde fueron en el viaje de fin de curso?',
+        options: ['A Mallorca', 'A Granada', 'A Barcelona'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Pretérito Indefinido: формы регулярных глаголов',
+        note:
+          'Окончания -ar: -é, -aste, -ó, -amos, -asteis, -aron (estudié, terminé, organicé, compramos). ' +
+          'Окончания -er/-ir: -í, -iste, -ió, -imos, -isteis, -ieron (aprendí, descubrí, escribimos). ' +
+          'Используется для законченных событий в прошлом, оторванных от настоящего.',
+      },
+      {
+        topic: 'Маркеры законченного прошлого',
+        note:
+          'С Pretérito Indefinido работают «закрытые» во времени маркеры: hace muchos años, una vez, ' +
+          'el último año, en 2010, aquel día. В тексте: «Hace muchos años estudié», «Una vez organicé», ' +
+          '«El último año hicimos», «Aquellos días fueron preciosos».',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-002',
+    level: 'A2',
+    day: 2,
+    title: 'Mi primer día en la oficina',
+    text:
+      'El lunes pasado empecé en mi nueva empresa. ' +
+      'Llegué media hora antes para no llegar tarde el primer día. ' +
+      'El edificio está en el centro de Madrid, cerca de la Puerta del Sol.\n\n' +
+      'En la entrada me esperó Beatriz, la responsable de recursos humanos. ' +
+      'Me dio una tarjeta y me enseñó toda la oficina. ' +
+      'Conocí a doce compañeros nuevos. Olvidé los nombres enseguida, claro.\n\n' +
+      'A las once tuve una reunión con el jefe. ' +
+      'Hablamos del proyecto, de los plazos y del sueldo. ' +
+      'Él fue muy amable y me dio confianza. ' +
+      'Por la tarde firmé el contrato y salí del edificio a las siete, cansado pero contento.',
+    vocabulary: [
+      {
+        word: 'la empresa',
+        translation: 'компания, фирма (la empresa familiar — семейная фирма)',
+        example: 'Empecé en mi nueva empresa.',
+      },
+      {
+        word: 'el responsable / la responsable de',
+        translation: 'ответственный за; руководитель отдела',
+        example: 'Beatriz, la responsable de recursos humanos.',
+      },
+      {
+        word: 'los recursos humanos',
+        translation: 'отдел кадров, HR (буквально «человеческие ресурсы»)',
+        example: 'la responsable de recursos humanos',
+      },
+      {
+        word: 'enseguida',
+        translation: 'сразу, тут же (синоним inmediatamente)',
+        example: 'Olvidé los nombres enseguida.',
+      },
+      {
+        word: 'la reunión',
+        translation: 'совещание, встреча (tener una reunión — иметь совещание)',
+        example: 'A las once tuve una reunión con el jefe.',
+      },
+      {
+        word: 'el jefe / la jefa',
+        translation: 'начальник, шеф (el jefe directo — непосредственный начальник)',
+        example: 'Tuve una reunión con el jefe.',
+      },
+      {
+        word: 'el plazo',
+        translation: 'срок, дедлайн (cumplir un plazo — соблюдать срок)',
+        example: 'Hablamos de los plazos.',
+      },
+      {
+        word: 'el sueldo',
+        translation: 'зарплата (el salario — синоним, чуть формальнее)',
+        example: 'Hablamos del sueldo.',
+      },
+      {
+        word: 'amable',
+        translation: 'любезный, приветливый (одна форма для м.р. и ж.р.)',
+        example: 'Él fue muy amable.',
+      },
+      {
+        word: 'la confianza',
+        translation: 'доверие; уверенность (dar confianza — внушать доверие)',
+        example: 'Me dio confianza.',
+      },
+      {
+        word: 'el contrato',
+        translation: 'договор, контракт (firmar un contrato — подписать контракт)',
+        example: 'Firmé el contrato.',
+      },
+      {
+        word: 'firmar',
+        translation: 'подписывать; la firma — подпись',
+        example: 'Firmé el contrato.',
+      },
+      {
+        word: 'olvidar',
+        translation: 'забывать (olvidé, olvidaste, olvidó… — без -se в кастильском)',
+        example: 'Olvidé los nombres enseguida.',
+      },
+      {
+        word: 'el proyecto',
+        translation: 'проект (trabajar en un proyecto)',
+        example: 'Hablamos del proyecto.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuándo empezó en la nueva empresa?',
+        options: ['Ayer', 'El lunes pasado', 'La semana que viene'],
+        correct: 1,
+      },
+      {
+        q: '¿Quién le esperó en la entrada?',
+        options: ['El jefe', 'Beatriz, la de recursos humanos', 'Un compañero nuevo'],
+        correct: 1,
+      },
+      {
+        q: '¿A qué hora salió del edificio?',
+        options: ['A las seis', 'A las siete', 'A las ocho'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Pretérito Indefinido: tener, dar, ser/ir',
+        note:
+          'tener: tuve, tuviste, tuvo, tuvimos, tuvisteis, tuvieron. ' +
+          'dar: di, diste, dio, dimos, disteis, dieron — короткие формы без ударений. ' +
+          'ser и ir в Indefinido совпадают: fui, fuiste, fue, fuimos, fuisteis, fueron. ' +
+          'В тексте: «tuve una reunión», «me dio una tarjeta», «Él fue muy amable».',
+      },
+      {
+        topic: 'Орфография -ar в Indefinido',
+        note:
+          'У -ar глаголов на -gar, -car, -zar в 1 л. ед. ч. меняется согласная для сохранения звука: ' +
+          'llegar → llegué (не llegé), empezar → empecé (не empezé), buscar → busqué. ' +
+          'В тексте: «empecé en mi nueva empresa», «Llegué media hora antes».',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-003',
+    level: 'A2',
+    day: 3,
+    title: 'La boda de mi primo Javier',
+    text:
+      'El sábado pasado celebramos la boda de mi primo Javier en un pueblo cerca de Sevilla. ' +
+      'Mi mujer y yo cogimos el coche el viernes por la tarde y llegamos justo antes de la cena.\n\n' +
+      'La ceremonia fue por la mañana, en una pequeña iglesia. ' +
+      'La novia se llama Lucía y entró del brazo de su padre con un vestido blanco preciosísimo. ' +
+      'Mi tía no pudo contener las lágrimas.\n\n' +
+      'Después fuimos a un cortijo. ' +
+      'Hubo una comida larga, con jamón, gambas y un cordero asado increíble. ' +
+      'Más tarde brindamos por los novios con cava. ' +
+      'Bailamos hasta las cinco de la mañana. ' +
+      'Aquella noche todos olvidamos las preocupaciones del trabajo.',
+    vocabulary: [
+      {
+        word: 'la ceremonia',
+        translation: 'церемония (la ceremonia civil / religiosa)',
+        example: 'La ceremonia fue por la mañana.',
+      },
+      {
+        word: 'la iglesia',
+        translation: 'церковь, храм (с маленькой буквы как здание)',
+        example: 'en una pequeña iglesia',
+      },
+      {
+        word: 'la novia / el novio',
+        translation: 'невеста / жених; также «девушка / парень» (отношения)',
+        example: 'La novia se llama Lucía.',
+      },
+      {
+        word: 'el vestido',
+        translation: 'платье (un vestido blanco — белое платье)',
+        example: 'un vestido blanco preciosísimo',
+      },
+      {
+        word: 'preciosísimo, -a',
+        translation: 'просто восхитительный (превосходная absoluto: precioso + -ísimo)',
+        example: 'un vestido blanco preciosísimo',
+      },
+      {
+        word: 'la lágrima',
+        translation: 'слеза (contener las lágrimas — сдерживать слёзы)',
+        example: 'No pudo contener las lágrimas.',
+      },
+      {
+        word: 'contener',
+        translation: 'сдерживать; содержать (спрягается как tener: contuve, contuviste…)',
+        example: 'No pudo contener las lágrimas.',
+      },
+      {
+        word: 'el cortijo',
+        translation: 'кортихо — андалусское поместье с белым домом и виноградниками',
+        example: 'Después fuimos a un cortijo.',
+      },
+      {
+        word: 'la gamba',
+        translation: 'креветка (gambas a la plancha — креветки на гриле)',
+        example: 'Hubo gambas y jamón.',
+      },
+      {
+        word: 'el cordero asado',
+        translation: 'жареный молочный ягнёнок — кастильское праздничное блюдо',
+        example: 'un cordero asado increíble',
+      },
+      {
+        word: 'brindar por',
+        translation: 'поднимать тост за; el brindis — тост',
+        example: 'Brindamos por los novios.',
+      },
+      {
+        word: 'el cava',
+        translation: 'кава — испанское игристое вино из Каталонии',
+        example: 'Brindamos con cava.',
+      },
+      {
+        word: 'la preocupación',
+        translation: 'забота, тревога (от preocuparse — беспокоиться)',
+        example: 'olvidamos las preocupaciones del trabajo',
+      },
+      {
+        word: 'entrar del brazo de',
+        translation: 'войти под руку с (брать под руку — coger del brazo)',
+        example: 'Entró del brazo de su padre.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Dónde celebraron la boda?',
+        options: ['En Sevilla', 'En un pueblo cerca de Sevilla', 'En Madrid'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo era el vestido de la novia?',
+        options: ['Blanco', 'Rojo', 'Azul'],
+        correct: 0,
+      },
+      {
+        q: '¿Hasta qué hora bailaron?',
+        options: ['Hasta las tres', 'Hasta las cinco de la mañana', 'Hasta las siete'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Indefinido неправильные: poder, haber',
+        note:
+          'poder: pude, pudiste, pudo, pudimos, pudisteis, pudieron. ' +
+          'haber в значении «было, состоялось» — только форма hubo (без рода и числа): hubo una fiesta, hubo problemas. ' +
+          'В тексте: «no pudo contener las lágrimas», «hubo una comida larga».',
+      },
+      {
+        topic: 'Связки внутри рассказа',
+        note:
+          'Внутри одного эпизода Indefinido тянется через «después», «más tarde», «aquella noche», «hasta las cinco». ' +
+          'Эти слова не требуют новой даты — они связывают шаги одного закрытого периода. ' +
+          'Сравни с маркерами Pretérito Perfecto (hoy, esta semana, ya), которые тянут к настоящему.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-004',
+    level: 'A2',
+    day: 4,
+    title: 'La mudanza a Bilbao',
+    text:
+      'En septiembre de 2018 me mudé de Salamanca a Bilbao. ' +
+      'Encontré un trabajo nuevo en una empresa de ingeniería y decidí cambiar de vida. ' +
+      'La mudanza fue dura: dos camiones, muchas cajas y un día entero subiendo y bajando escaleras.\n\n' +
+      'Mi piso nuevo tiene tres habitaciones y un balcón pequeño con vistas al monte. ' +
+      'Los primeros días me sentí muy solo y la lluvia del País Vasco me sorprendió mucho.\n\n' +
+      'Por suerte, mis vecinos fueron muy amables. ' +
+      'Una pareja joven, Iker y Maite, me invitó a cenar el segundo fin de semana. ' +
+      'Probé el bacalao al pil-pil y bebí sidra por primera vez. ' +
+      'Aquella noche entendí algo importante: Bilbao va a ser mi nueva casa.',
+    vocabulary: [
+      {
+        word: 'la mudanza',
+        translation: 'переезд (hacer una mudanza — переезжать с вещами)',
+        example: 'La mudanza fue dura.',
+      },
+      {
+        word: 'mudarse',
+        translation: 'переезжать (возвратный: me mudé, te mudaste, se mudó…)',
+        example: 'Me mudé de Salamanca a Bilbao.',
+      },
+      {
+        word: 'la ingeniería',
+        translation: 'инженерия; инженерное дело (estudiar ingeniería)',
+        example: 'una empresa de ingeniería',
+      },
+      {
+        word: 'duro, -a',
+        translation: 'тяжёлый, трудный; жёсткий на ощупь (un día duro)',
+        example: 'La mudanza fue dura.',
+      },
+      {
+        word: 'el camión',
+        translation: 'грузовик (мн. ч. los camiones — с тильдой!)',
+        example: 'dos camiones para la mudanza',
+      },
+      {
+        word: 'la escalera',
+        translation: 'лестница (мн. ч. часто, если ступенек много)',
+        example: 'subiendo y bajando escaleras',
+      },
+      {
+        word: 'el País Vasco',
+        translation: 'Страна Басков — автономия на севере Испании, столица Витория',
+        example: 'la lluvia del País Vasco',
+      },
+      {
+        word: 'la pareja',
+        translation: 'пара (двое людей); партнёр (mi pareja — моя половинка)',
+        example: 'Una pareja joven, Iker y Maite, me invitó.',
+      },
+      {
+        word: 'el bacalao al pil-pil',
+        translation: 'треска в эмульсии из её собственного желатина — баскское блюдо',
+        example: 'Probé el bacalao al pil-pil.',
+      },
+      {
+        word: 'la sidra',
+        translation: 'сидр (на севере Испании пьют асуйскую и баскскую сидру)',
+        example: 'Bebí sidra por primera vez.',
+      },
+      {
+        word: 'cambiar de vida',
+        translation: 'изменить жизнь, поменять образ жизни (cambiar de + сущ. без артикля)',
+        example: 'Decidí cambiar de vida.',
+      },
+      {
+        word: 'sentirse solo, -a',
+        translation: 'чувствовать себя одиноко (sentir e→ie: me siento, te sientes…)',
+        example: 'Me sentí muy solo.',
+      },
+      {
+        word: 'sorprender',
+        translation: 'удивлять (sorprenderse — удивляться)',
+        example: 'La lluvia me sorprendió mucho.',
+      },
+      {
+        word: 'por suerte',
+        translation: 'к счастью (антоним por desgracia — к несчастью)',
+        example: 'Por suerte, mis vecinos fueron amables.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuándo se mudó a Bilbao?',
+        options: ['En septiembre de 2018', 'En enero de 2019', 'Hace un mes'],
+        correct: 0,
+      },
+      {
+        q: '¿Cómo se llaman los vecinos jóvenes?',
+        options: ['Carlos y Marta', 'Iker y Maite', 'Javier y Lucía'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué probó por primera vez?',
+        options: ['Paella y sangría', 'Churros y chocolate', 'Bacalao al pil-pil y sidra'],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Pretérito Indefinido: ser e ir comparten formas',
+        note:
+          'fui, fuiste, fue, fuimos, fuisteis, fueron — одинаковы у ser и ir. ' +
+          'Значение определяется контекстом: «La mudanza fue dura» (ser — «была»), ' +
+          '«Después fuimos a un cortijo» (ir — «пошли»), «mis vecinos fueron muy amables» (ser).',
+      },
+      {
+        topic: 'Контраст Indefinido / Pretérito Perfecto',
+        note:
+          'Indefinido — для закрытого этапа без связи с настоящим: «me mudé en 2018». ' +
+          'Pretérito Perfecto — для опыта или связи с настоящим: «¿Te has mudado alguna vez?», «Hoy he firmado el contrato». ' +
+          'В этом тексте Indefinido описывает целый этап жизни, оторванный от сегодня.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-005',
+    level: 'A2',
+    day: 5,
+    title: 'Aquel verano en Cádiz',
+    text:
+      'En agosto de 1998 mis padres alquilaron una casita en la costa de Cádiz. ' +
+      'Pasamos allí cuatro semanas inolvidables. ' +
+      'Yo aprendí a nadar con mi padre. ' +
+      'Al principio tuve miedo, pero el último día llegué nadando hasta una boya lejana sin descansar.\n\n' +
+      'Un sábado fuimos en barco a una isla pequeña y desierta. ' +
+      'Llevamos la merienda y comimos bocadillos en la playa. ' +
+      'Por la tarde mi hermano Pablo encontró un cangrejo entre las rocas y lo dejó dentro de mi cubo. ' +
+      'Yo grité y él se rio mucho.\n\n' +
+      'Una noche mis padres prepararon una barbacoa de sardinas en la arena. ' +
+      'Después vimos un atardecer rojo sobre el Atlántico. ' +
+      'Aquel momento nunca lo olvidé.',
+    vocabulary: [
+      {
+        word: 'la casita',
+        translation: 'домик (уменьшительное от casa, суффикс -ita)',
+        example: 'Alquilaron una casita en la costa.',
+      },
+      {
+        word: 'alquilar',
+        translation: 'снимать в аренду; el alquiler — арендная плата',
+        example: 'Mis padres alquilaron una casita.',
+      },
+      {
+        word: 'la costa',
+        translation: 'побережье (la Costa del Sol, la Costa Brava — испанские побережья)',
+        example: 'una casita en la costa de Cádiz',
+      },
+      {
+        word: 'tener miedo',
+        translation: 'бояться (tener miedo a / de algo — бояться чего-либо)',
+        example: 'Al principio tuve miedo.',
+      },
+      {
+        word: 'la boya',
+        translation: 'буй, поплавок (в море отмечает безопасную зону)',
+        example: 'Llegué nadando hasta una boya lejana.',
+      },
+      {
+        word: 'la isla',
+        translation: 'остров (las islas Canarias, las Baleares)',
+        example: 'Fuimos en barco a una isla.',
+      },
+      {
+        word: 'desierto, -a',
+        translation: 'необитаемый, пустынный (una isla desierta)',
+        example: 'una isla pequeña y desierta',
+      },
+      {
+        word: 'la merienda',
+        translation: 'полдник (испанский приём пищи около 17–18 часов)',
+        example: 'Llevamos la merienda a la playa.',
+      },
+      {
+        word: 'el cangrejo',
+        translation: 'краб (los cangrejos del Cantábrico — крабы Бискайского залива)',
+        example: 'Mi hermano encontró un cangrejo.',
+      },
+      {
+        word: 'el cubo',
+        translation: 'ведро, ведёрко (для песка на пляже)',
+        example: 'Lo dejó dentro de mi cubo.',
+      },
+      {
+        word: 'reírse',
+        translation: 'смеяться (Indef: me reí, te reíste, se rio, nos reímos, os reísteis, se rieron)',
+        example: 'Él se rio mucho.',
+      },
+      {
+        word: 'la barbacoa',
+        translation: 'барбекю, шашлык; жаровня (hacer una barbacoa)',
+        example: 'una barbacoa de sardinas en la arena',
+      },
+      {
+        word: 'la sardina',
+        translation: 'сардина (sardinas a la brasa — сардины на углях, классика юга Испании)',
+        example: 'una barbacoa de sardinas',
+      },
+      {
+        word: 'el atardecer',
+        translation: 'закат, вечерние сумерки (от atardecer — вечереть; синоним la puesta de sol)',
+        example: 'Vimos un atardecer rojo sobre el Atlántico.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuántas semanas pasaron en Cádiz?',
+        options: ['Dos', 'Tres', 'Cuatro'],
+        correct: 2,
+      },
+      {
+        q: '¿Qué aprendió aquel verano?',
+        options: ['A nadar', 'A pescar', 'A cocinar'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué encontró su hermano Pablo?',
+        options: ['Una concha', 'Un cangrejo', 'Un pez pequeño'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Indefinido у -ir с переменой в 3-м лице',
+        note:
+          'Глаголы на -ir типа sentir, dormir, pedir, reírse, seguir в 3-м лице (él, ellos) меняют корень: ' +
+          'sentir → sintió/sintieron; dormir → durmió/durmieron; pedir → pidió/pidieron; ' +
+          'reírse → (se) rio / (se) rieron; seguir → siguió/siguieron. ' +
+          'В тексте: «él se rio mucho».',
+      },
+      {
+        topic: 'Aquel — далёкая дистанция в воспоминании',
+        note:
+          'Указательные aquel/aquella/aquellos/aquellas подчёркивают удалённость во времени или пространстве: ' +
+          '«aquel verano», «aquella noche», «aquel momento». В воспоминаниях о далёком прошлом они звучат особенно живо.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-006',
+    level: 'A2',
+    day: 6,
+    title: 'Antoni Gaudí, un genio singular',
+    text:
+      'Antoni Gaudí nació en 1852 en Reus, un pequeño pueblo de Cataluña. ' +
+      'De joven se mudó a Barcelona para estudiar arquitectura. ' +
+      'Trabajó duro y leyó libros de botánica, geometría y religión. ' +
+      'Toda esa mezcla apareció después en sus edificios.\n\n' +
+      'En 1883 aceptó la dirección de las obras de la Sagrada Familia. ' +
+      'Dedicó cuarenta y tres años a este proyecto. ' +
+      'También diseñó la Casa Batlló, la Casa Milà y el Parque Güell. ' +
+      'Sus formas curvas y sus colores sorprendieron a toda Europa.\n\n' +
+      'Gaudí vivió con humildad y rezó cada día. ' +
+      'Una tarde de junio de 1926, un tranvía lo atropelló cerca de su iglesia favorita. ' +
+      'Murió tres días más tarde. ' +
+      'La Sagrada Familia todavía no está terminada.',
+    vocabulary: [
+      {
+        word: 'el genio',
+        translation: 'гений; характер (mal genio — дурной нрав)',
+        example: 'Antoni Gaudí, un genio singular.',
+      },
+      {
+        word: 'de joven',
+        translation: 'в молодости (как наречие времени; ср. de niño — в детстве)',
+        example: 'De joven se mudó a Barcelona.',
+      },
+      {
+        word: 'la arquitectura',
+        translation: 'архитектура (estudiar arquitectura — учиться на архитектора)',
+        example: 'Se mudó para estudiar arquitectura.',
+      },
+      {
+        word: 'la mezcla',
+        translation: 'смесь, сочетание (от mezclar — смешивать)',
+        example: 'Toda esa mezcla apareció en sus edificios.',
+      },
+      {
+        word: 'aparecer',
+        translation: 'появляться (Indef: aparecí, apareciste, apareció…; participio aparecido)',
+        example: 'Toda esa mezcla apareció en sus edificios.',
+      },
+      {
+        word: 'aceptar',
+        translation: 'принять; согласиться (aceptar un trabajo — согласиться на работу)',
+        example: 'Aceptó la dirección de las obras.',
+      },
+      {
+        word: 'las obras',
+        translation: 'стройка, строительные работы (ед. ч. la obra — произведение, постройка)',
+        example: 'la dirección de las obras de la Sagrada Familia',
+      },
+      {
+        word: 'dedicar',
+        translation: 'посвящать (dedicar tiempo / dedicar un libro a alguien)',
+        example: 'Dedicó cuarenta y tres años al proyecto.',
+      },
+      {
+        word: 'diseñar',
+        translation: 'проектировать, разрабатывать дизайн (el diseño — дизайн)',
+        example: 'Diseñó la Casa Batlló y el Parque Güell.',
+      },
+      {
+        word: 'la forma',
+        translation: 'форма (de forma triangular — треугольной формы)',
+        example: 'Sus formas curvas sorprendieron a Europa.',
+      },
+      {
+        word: 'curvo, -a',
+        translation: 'изогнутый, кривой (антоним recto — прямой)',
+        example: 'formas curvas',
+      },
+      {
+        word: 'la humildad',
+        translation: 'скромность, смирение (con humildad — со смирением)',
+        example: 'Vivió con humildad.',
+      },
+      {
+        word: 'el tranvía',
+        translation: 'трамвай (только мужского рода, как el día)',
+        example: 'Un tranvía lo atropelló.',
+      },
+      {
+        word: 'atropellar',
+        translation: 'сбить (о машине, трамвае); атрополевать пешехода',
+        example: 'Un tranvía lo atropelló.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Dónde nació Gaudí?',
+        options: ['En Barcelona', 'En Reus', 'En Madrid'],
+        correct: 1,
+      },
+      {
+        q: '¿Cuántos años dedicó a la Sagrada Familia?',
+        options: ['Veinte', 'Treinta y cinco', 'Cuarenta y tres'],
+        correct: 2,
+      },
+      {
+        q: '¿Cómo murió Gaudí?',
+        options: ['De enfermedad', 'En un accidente de tranvía', 'De vejez'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Indefinido como tiempo de las biografías',
+        note:
+          'Биографии — классический жанр для Pretérito Indefinido: nació, vivió, trabajó, dedicó, diseñó, murió. ' +
+          'Жизнь героя — закрытый отрезок, оторванный от настоящего. Маркеры — точные годы (en 1852, en 1883, en 1926) ' +
+          'или эпохи (de joven, de mayor).',
+      },
+      {
+        topic: 'Indefinido: leer, oír, caer — i → y в 3-м лице',
+        note:
+          'У глаголов с гласной перед окончанием -er/-ir буква -i- между гласными превращается в -y-: ' +
+          'leer → leí, leíste, leyó, leímos, leísteis, leyeron; ' +
+          'oír → oí, oíste, oyó, oímos, oísteis, oyeron; ' +
+          'caer → caí, caíste, cayó, caímos, caísteis, cayeron. ' +
+          'В тексте: «leyó libros de botánica».',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-007',
+    level: 'A2',
+    day: 7,
+    title: 'La rueda pinchada',
+    text:
+      'Hace dos años hice el Camino de Santiago en bicicleta con mi amigo Daniel. ' +
+      'El cuarto día tuvimos un susto curioso. ' +
+      'A las tres de la tarde, en una carretera cerca de Burgos, la rueda de mi bici se pinchó de repente.\n\n' +
+      'Como no llevamos repuesto, paramos al borde del camino. ' +
+      'Después de media hora apareció un peregrino mayor, un tal Eduardo, con barba blanca y mochila enorme. ' +
+      'Sacó un parche de su bolsillo y reparó la rueda en diez minutos. ' +
+      'No quiso aceptar dinero. ' +
+      'Nos dio dos manzanas y siguió su camino.\n\n' +
+      'Aquel hombre nos salvó la tarde. ' +
+      'Llegamos a Burgos antes del anochecer y dormimos como dos angelitos.',
+    vocabulary: [
+      {
+        word: 'el Camino de Santiago',
+        translation: 'Путь Святого Иакова — паломнический маршрут к Сантьяго-де-Компостела',
+        example: 'Hice el Camino de Santiago en bicicleta.',
+      },
+      {
+        word: 'la bici (la bicicleta)',
+        translation: 'велосипед; ir en bici — ехать на велосипеде',
+        example: 'la rueda de mi bici',
+      },
+      {
+        word: 'el susto',
+        translation: 'испуг; неприятный сюрприз (dar un susto — испугать)',
+        example: 'Tuvimos un susto curioso.',
+      },
+      {
+        word: 'la carretera',
+        translation: 'шоссе, трасса (la carretera nacional — национальная трасса)',
+        example: 'en una carretera cerca de Burgos',
+      },
+      {
+        word: 'la rueda',
+        translation: 'колесо (la rueda delantera / trasera — переднее / заднее)',
+        example: 'La rueda de mi bici se pinchó.',
+      },
+      {
+        word: 'pincharse',
+        translation: 'проколоться (о колесе); pinchar — проколоть, уколоть',
+        example: 'La rueda se pinchó de repente.',
+      },
+      {
+        word: 'de repente',
+        translation: 'вдруг, внезапно (синоним de pronto)',
+        example: 'La rueda se pinchó de repente.',
+      },
+      {
+        word: 'el repuesto',
+        translation: 'запаска, запасная деталь (la rueda de repuesto)',
+        example: 'No llevamos repuesto.',
+      },
+      {
+        word: 'el borde',
+        translation: 'край (al borde del camino — на обочине)',
+        example: 'Paramos al borde del camino.',
+      },
+      {
+        word: 'el peregrino / la peregrina',
+        translation: 'паломник / паломница (peregrinos del Camino — путники на Пути)',
+        example: 'Apareció un peregrino mayor.',
+      },
+      {
+        word: 'la barba',
+        translation: 'борода (con barba blanca — с седой бородой)',
+        example: 'un peregrino con barba blanca',
+      },
+      {
+        word: 'el parche',
+        translation: 'заплатка (для камеры колеса) — un parche para la rueda',
+        example: 'Sacó un parche de su bolsillo.',
+      },
+      {
+        word: 'el bolsillo',
+        translation: 'карман (de bolsillo — карманный)',
+        example: 'Sacó un parche del bolsillo.',
+      },
+      {
+        word: 'el anochecer',
+        translation: 'наступление ночи, сумерки (antes del anochecer — до темноты)',
+        example: 'Llegamos antes del anochecer.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cómo hicieron el Camino de Santiago?',
+        options: ['A pie', 'En bicicleta', 'En coche'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué le pasó a la rueda?',
+        options: ['Se pinchó', 'Se rompió', 'Se cayó'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué les dio el peregrino al final?',
+        options: ['Dinero', 'Agua', 'Dos manzanas'],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Hace + tiempo + Indefinido',
+        note:
+          '«Hace dos años hice el Camino» = «два года назад я прошёл Путь». ' +
+          'Формула: hace + срок + глагол в Indefinido. Порядок гибкий: ' +
+          '«Hice el Camino hace dos años» — смысл тот же. Маркер — для законченных событий, привязанных ко времени.',
+      },
+      {
+        topic: 'Indefinido: querer, poder, saber — особые оттенки',
+        note:
+          'В Indefinido эти глаголы звучат сильнее, чем в Presente: ' +
+          'querer → quise (захотел / попытался); no quise (отказался). ' +
+          'poder → pude (смог сделать); no pude (не смог, не удалось). ' +
+          'saber → supe (узнал, выяснил), а не «знал». В тексте: «No quiso aceptar dinero» = «отказался брать».',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-008',
+    level: 'A2',
+    day: 8,
+    title: 'Mi primer viaje a España',
+    text:
+      'Mi primer viaje a España fue en 2014, después de mi último examen de universidad. ' +
+      'Compré un billete barato a Madrid y reservé una habitación en un albergue del centro. ' +
+      'Aterricé a las dos de la madrugada, agotado.\n\n' +
+      'Por la mañana salí a la calle y me perdí enseguida. ' +
+      'Pregunté a un señor en una panadería. ' +
+      'Él me explicó el camino con mucha paciencia y me regaló un cruasán. ' +
+      'Aquel pequeño gesto me sorprendió mucho.\n\n' +
+      'Pasé cinco días en Madrid. ' +
+      'Visité el Museo del Prado, paseé por El Retiro y probé los churros con chocolate de San Ginés. ' +
+      'Una tarde fui a un partido del Atlético. ' +
+      'Volví a casa enamorado del país. Desde entonces he vuelto siete veces más.',
+    vocabulary: [
+      {
+        word: 'reservar',
+        translation: 'бронировать (una habitación, una mesa); la reserva — бронь',
+        example: 'Reservé una habitación en un albergue.',
+      },
+      {
+        word: 'el albergue',
+        translation: 'хостел; приют для паломников на Камино',
+        example: 'un albergue del centro',
+      },
+      {
+        word: 'aterrizar',
+        translation: 'приземляться (el aterrizaje — посадка)',
+        example: 'Aterricé a las dos de la madrugada.',
+      },
+      {
+        word: 'agotado, -a',
+        translation: 'измотанный, очень уставший (estar agotado — быть выжатым)',
+        example: 'Aterricé agotado.',
+      },
+      {
+        word: 'perderse',
+        translation: 'теряться, заблудиться (Indef: me perdí, te perdiste…)',
+        example: 'Me perdí enseguida.',
+      },
+      {
+        word: 'la paciencia',
+        translation: 'терпение (tener paciencia — иметь терпение; perder la paciencia — терять терпение)',
+        example: 'Me explicó el camino con mucha paciencia.',
+      },
+      {
+        word: 'el cruasán',
+        translation: 'круассан (заимствование из французского; в Испании пишут именно так)',
+        example: 'Me regaló un cruasán.',
+      },
+      {
+        word: 'el gesto',
+        translation: 'жест; поступок (un gesto amable — добрый жест)',
+        example: 'Aquel pequeño gesto me sorprendió.',
+      },
+      {
+        word: 'el Museo del Prado',
+        translation: 'Музей Прадо — главный художественный музей Мадрида (Веласкес, Гойя)',
+        example: 'Visité el Museo del Prado.',
+      },
+      {
+        word: 'El Retiro',
+        translation: 'Парк Ретиро в центре Мадрида (полное название Parque del Buen Retiro)',
+        example: 'paseé por El Retiro',
+      },
+      {
+        word: 'San Ginés',
+        translation: 'Chocolatería San Ginés — легендарное кафе в Мадриде, открытое с 1894 г.',
+        example: 'los churros con chocolate de San Ginés',
+      },
+      {
+        word: 'el partido',
+        translation: 'матч (también: партия в политике); el partido del Atlético',
+        example: 'Fui a un partido del Atlético.',
+      },
+      {
+        word: 'enamorarse de',
+        translation: 'влюбиться в (estar enamorado de — быть влюблённым в)',
+        example: 'Volví enamorado del país.',
+      },
+      {
+        word: 'desde entonces',
+        translation: 'с тех пор (синоним de aquel momento en adelante)',
+        example: 'Desde entonces he vuelto siete veces más.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuándo viajó a España por primera vez?',
+        options: ['En 2010', 'En 2014', 'En 2018'],
+        correct: 1,
+      },
+      {
+        q: '¿Quién le regaló un cruasán?',
+        options: ['El recepcionista del albergue', 'Un taxista', 'Un señor en una panadería'],
+        correct: 2,
+      },
+      {
+        q: '¿Cuántas veces más ha vuelto a España desde entonces?',
+        options: ['Tres', 'Cinco', 'Siete'],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Contraste Indefinido / Pretérito Perfecto',
+        note:
+          'Indefinido — для закрытой поездки 2014 года: «viajé», «pasé cinco días», «volví». ' +
+          'Pretérito Perfecto — для опыта, связанного с настоящим: «desde entonces he vuelto siete veces más». ' +
+          'В одном тексте оба времени стоят рядом и хорошо контрастируют. ' +
+          'Сравни: «hoy he comido paella» (Perfecto) и «ayer comí paella» (Indef).',
+      },
+      {
+        topic: 'Маркеры законченного прошлого',
+        note:
+          'Indefinido притягивает: en 2014, por la mañana, una tarde, aquel pequeño gesto, después de + сущ. ' +
+          'В отличие от них, hoy, esta mañana, ya, todavía no, alguna vez зовут Pretérito Perfecto. ' +
+          'Маркер в начале предложения — лучшая подсказка для выбора времени.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-009',
+    level: 'A2',
+    day: 9,
+    title: 'Los San Fermines de Pamplona',
+    text:
+      'En julio de 2017 viajé a Pamplona con tres amigos para vivir los San Fermines. ' +
+      'Llegamos el día seis por la noche, muy emocionados. ' +
+      'Nos pusimos la camisa blanca y el pañuelo rojo y bajamos a la plaza.\n\n' +
+      'A medianoche escuchamos el chupinazo, el cohete que inaugura las fiestas. ' +
+      'La multitud gritó, cantó y brindó hasta el amanecer. ' +
+      'Yo nunca vi tanta gente junta en una sola plaza.\n\n' +
+      'El siete de julio mis amigos corrieron el primer encierro. ' +
+      'Yo no me atreví: preferí mirar desde un balcón. ' +
+      'Los toros pasaron en menos de tres minutos. ' +
+      'Pablo tropezó, cayó y se levantó rapidísimo. ' +
+      'Por suerte, nadie de nosotros se hizo daño.',
+    vocabulary: [
+      {
+        word: 'los San Fermines',
+        translation: 'Сан-Фермин — праздник в Памплоне с 6 по 14 июля (encierro, бои быков, музыка)',
+        example: 'Viajé a Pamplona para vivir los San Fermines.',
+      },
+      {
+        word: 'emocionado, -a',
+        translation: 'взволнованный, эмоциональный (от emoción)',
+        example: 'Llegamos muy emocionados.',
+      },
+      {
+        word: 'la medianoche',
+        translation: 'полночь (a medianoche — в полночь; антоним el mediodía — полдень)',
+        example: 'A medianoche escuchamos el chupinazo.',
+      },
+      {
+        word: 'el chupinazo',
+        translation: 'чупинасо — открывающая ракета фестиваля Сан-Фермин 6 июля в 12:00',
+        example: 'Escuchamos el chupinazo.',
+      },
+      {
+        word: 'el cohete',
+        translation: 'ракета (фейерверк или космическая)',
+        example: 'el cohete que inaugura las fiestas',
+      },
+      {
+        word: 'inaugurar',
+        translation: 'открывать (праздник, выставку); la inauguración — открытие',
+        example: 'el cohete que inaugura las fiestas',
+      },
+      {
+        word: 'la multitud',
+        translation: 'толпа, множество людей (una multitud de turistas)',
+        example: 'La multitud gritó y cantó.',
+      },
+      {
+        word: 'el amanecer',
+        translation: 'рассвет (al amanecer — на рассвете; антоним el anochecer)',
+        example: 'cantó hasta el amanecer',
+      },
+      {
+        word: 'el encierro',
+        translation: 'бег быков по узким улицам Памплоны — символ Сан-Фермина',
+        example: 'Mis amigos corrieron el primer encierro.',
+      },
+      {
+        word: 'atreverse a',
+        translation: 'отважиться, рискнуть (+ инфинитив)',
+        example: 'Yo no me atreví a correr.',
+      },
+      {
+        word: 'el toro',
+        translation: 'бык (la corrida de toros — коррида; la plaza de toros — арена)',
+        example: 'Los toros pasaron en menos de tres minutos.',
+      },
+      {
+        word: 'tropezar',
+        translation: 'споткнуться (e→ie: tropiezo, tropiezas, tropieza…)',
+        example: 'Pablo tropezó y cayó.',
+      },
+      {
+        word: 'hacerse daño',
+        translation: 'получить травму, ушибиться (¿te has hecho daño? — ты ушибся?)',
+        example: 'Nadie se hizo daño.',
+      },
+      {
+        word: 'rapidísimo, -a',
+        translation: 'очень быстрый/быстро (превосходная absoluto: rápido + -ísimo)',
+        example: 'Se levantó rapidísimo.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿De qué color es el pañuelo de los San Fermines?',
+        options: ['Blanco', 'Rojo', 'Azul'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué es el chupinazo?',
+        options: ['Una canción tradicional', 'Un cohete que abre las fiestas', 'Un baile típico'],
+        correct: 1,
+      },
+      {
+        q: '¿Quién corrió el encierro?',
+        options: ['Todos', 'Los amigos del narrador', 'Solo el narrador'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Indefinido: poner, hacer',
+        note:
+          'poner: puse, pusiste, puso, pusimos, pusisteis, pusieron. ' +
+          'hacer: hice, hiciste, hizo (с -z- по орфографии), hicimos, hicisteis, hicieron. ' +
+          'В тексте: «Nos pusimos la camisa blanca», «nadie se hizo daño».',
+      },
+      {
+        topic: 'Indefinido: ver, dar — 1 и 3 л. без ударения',
+        note:
+          'У коротких глаголов ver и dar формы 1 и 3 л. ед. ч. пишутся без ударения: ' +
+          'ver → vi, viste, vio, vimos, visteis, vieron; ' +
+          'dar → di, diste, dio, dimos, disteis, dieron. ' +
+          'В тексте: «Yo nunca vi tanta gente».',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-010',
+    level: 'A2',
+    day: 10,
+    title: 'El día más importante de mi vida',
+    text:
+      'El día más importante de mi vida fue el catorce de abril de 2016. ' +
+      'Aquella mañana mi mujer me despertó a las cinco. ' +
+      '«Carlos, ya empezó», dijo en voz baja, con una sonrisa nerviosa. ' +
+      'Cogí las llaves y la pequeña maleta del bebé y bajamos al coche.\n\n' +
+      'En el hospital de Salamanca todo pasó muy deprisa. ' +
+      'Después de cuatro horas larguísimas, la matrona vino y me dijo: «Felicidades, papá». ' +
+      'Entré en la sala y vi por primera vez a mi hija Lucía.\n\n' +
+      'Aquel día comprendí por fin lo que mis padres sintieron cuando yo nací. ' +
+      'Llamé a toda la familia, lloré como un niño y no dormí en treinta horas. ' +
+      'Pero fui más feliz que nunca.',
+    vocabulary: [
+      {
+        word: 'despertar / despertarse',
+        translation: 'будить (кого-то) / просыпаться (возвратный). e→ie',
+        example: 'Mi mujer me despertó a las cinco.',
+      },
+      {
+        word: 'en voz baja',
+        translation: 'тихим голосом, шёпотом (антоним en voz alta — громко)',
+        example: 'Dijo en voz baja.',
+      },
+      {
+        word: 'nervioso, -a',
+        translation: 'нервный, взволнованный (estar nervioso — нервничать)',
+        example: 'con una sonrisa nerviosa',
+      },
+      {
+        word: 'el bebé',
+        translation: 'младенец, малыш (с маленькой буквы; род всегда мужской)',
+        example: 'la pequeña maleta del bebé',
+      },
+      {
+        word: 'deprisa',
+        translation: 'быстро, в спешке (синоним rápidamente; антоним despacio)',
+        example: 'Todo pasó muy deprisa.',
+      },
+      {
+        word: 'larguísimo, -a',
+        translation: 'очень длинный (превосходная absoluto: largo + -ísimo)',
+        example: 'cuatro horas larguísimas',
+      },
+      {
+        word: 'la matrona',
+        translation: 'акушерка (медсестра, принимающая роды)',
+        example: 'La matrona vino y me dijo: «Felicidades».',
+      },
+      {
+        word: '¡Felicidades!',
+        translation: 'поздравляю! (универсальное; ¡Feliz cumpleaños! — с днём рождения)',
+        example: 'Felicidades, papá.',
+      },
+      {
+        word: 'la sala',
+        translation: 'зал; палата (la sala de partos — родильное отделение)',
+        example: 'Entré en la sala.',
+      },
+      {
+        word: 'comprender',
+        translation: 'понимать (синоним entender; comprender una situación)',
+        example: 'Aquel día comprendí lo que sintieron mis padres.',
+      },
+      {
+        word: 'sentir',
+        translation: 'чувствовать (e→ie в Presente; e→i в 3-м л. Indefinido: sintió, sintieron)',
+        example: 'lo que mis padres sintieron cuando yo nací',
+      },
+      {
+        word: 'llorar',
+        translation: 'плакать (llorar de alegría / de pena — плакать от радости / от горя)',
+        example: 'Lloré como un niño.',
+      },
+      {
+        word: 'nacer',
+        translation: 'рождаться (Indef: nací, naciste, nació, nacimos, nacisteis, nacieron)',
+        example: 'cuando yo nací',
+      },
+      {
+        word: 'más ... que nunca',
+        translation: 'как никогда (más feliz que nunca — счастливее, чем когда-либо)',
+        example: 'Fui más feliz que nunca.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuándo nació la hija?',
+        options: ['El catorce de abril de 2016', 'En enero de 2016', 'En 2018'],
+        correct: 0,
+      },
+      {
+        q: '¿Quién despertó al narrador esa mañana?',
+        options: ['Su madre', 'Su mujer', 'El médico'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo se llama la hija?',
+        options: ['Marta', 'Lucía', 'Sofía'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Indefinido: decir, venir',
+        note:
+          'decir: dije, dijiste, dijo, dijimos, dijisteis, dijeron (3 л. мн. — dijeron, без -i-!). ' +
+          'venir: vine, viniste, vino, vinimos, vinisteis, vinieron. ' +
+          'Это «голосовые» глаголы рассказа — постоянно вводят прямую речь: «—Felicidades, papá— me dijo».',
+      },
+      {
+        topic: 'Indefinido в обзорной фразе',
+        note:
+          '«El día más importante de mi vida fue…» — типичная Indefinido-формула для подведения итогов одного события. ' +
+          'Сравни с Perfecto: «Es el día más importante que he vivido» — связь с настоящим, опыт длится. ' +
+          'Indefinido «закрывает» событие как точку на временной линии.',
+      },
+    ],
+  },
 );
