@@ -6849,4 +6849,1344 @@ window.TEXTS.push(
       },
     ],
   },
+
+  {
+    id: 'b1-001',
+    level: 'B1',
+    day: 1,
+    title: 'Carta a Pablo desde Sevilla',
+    text:
+      'Querido Pablo:\n\n' +
+      'Llevo dos semanas en Sevilla y por fin tengo un rato para escribirte. ' +
+      'La ciudad me ha conquistado: el piso es pequeño, pero tiene un balcón con vistas al patio. ' +
+      'Por las mañanas, una vecina canta flamenco mientras cocina; espero que nunca deje de hacerlo.\n\n' +
+      'Mi empresa quiere que aprenda andaluz en seis meses. ¡Cosa imposible! ' +
+      'Pero he conocido a Lucía, una sevillana paciente que me corrige cada día. ' +
+      'Le pido que me hable despacio, aunque ella prefiere que practique con el ritmo natural del barrio. Y tiene razón.\n\n' +
+      'Por las tardes paseo por Triana, junto al río. ' +
+      'Me alegra que mi madre venga la próxima semana: deseo que vea Sevilla antes de que empiecen las lluvias de otoño. ' +
+      'He reservado mesa en un restaurante con terraza; espero que el camarero hable con calma para que ella entienda algo.\n\n' +
+      '¿Y tú? ¿Cuándo te decides a visitarme? ' +
+      'Quiero que reserves al menos cinco días: dos para Sevilla, uno para Cádiz y dos para descansar en la playa. ' +
+      'No aceptaré excusas. Espero que tengas vacaciones en noviembre y que el nuevo trabajo no te quite todo el tiempo libre.\n\n' +
+      'Un abrazo enorme,\nMarta',
+    vocabulary: [
+      {
+        word: 'el rato',
+        translation: 'небольшой промежуток времени, «минутка» (un rato — недолго; pasar el rato — проводить время)',
+        example: 'por fin tengo un rato para escribirte',
+      },
+      {
+        word: 'conquistar',
+        translation: 'покорить, завоевать; в переносном смысле — пленить (la ciudad me ha conquistado)',
+        example: 'La ciudad me ha conquistado.',
+      },
+      {
+        word: 'el balcón',
+        translation: 'балкон (типичный элемент испанской улицы; el balcón da a la calle)',
+        example: 'un balcón con vistas al patio',
+      },
+      {
+        word: 'el patio',
+        translation: 'внутренний двор дома (типичная испанская архитектура; el patio andaluz)',
+        example: 'con vistas al patio',
+      },
+      {
+        word: 'la vista',
+        translation: 'вид, обзор (con vistas a — с видом на; la vista al mar)',
+        example: 'un balcón con vistas al patio',
+      },
+      {
+        word: 'dejar de + inf',
+        translation: 'переставать что-либо делать (deja de fumar — бросает курить)',
+        example: 'espero que nunca deje de hacerlo',
+      },
+      {
+        word: 'andaluz, -a',
+        translation: 'андалусский; андалусец / южноиспанский диалект (de Andalucía)',
+        example: 'que aprenda andaluz en seis meses',
+      },
+      {
+        word: 'paciente',
+        translation: 'терпеливый (как прилагательное); la paciencia — терпение',
+        example: 'una sevillana paciente que me corrige',
+      },
+      {
+        word: 'corregir',
+        translation: 'исправлять, корректировать (e→i: corrijo, corriges, corrige…)',
+        example: 'me corrige cada día',
+      },
+      {
+        word: 'junto a',
+        translation: 'рядом с, около (синоним al lado de; junto al río — у самой реки)',
+        example: 'paseo por Triana, junto al río',
+      },
+      {
+        word: 'la terraza',
+        translation: 'летняя терраса кафе/ресторана; также балкон-терраса',
+        example: 'un restaurante con terraza',
+      },
+      {
+        word: 'con calma',
+        translation: 'спокойно, не торопясь (hablar con calma; tomarse las cosas con calma)',
+        example: 'que el camarero hable con calma',
+      },
+      {
+        word: 'decidirse a',
+        translation: 'решиться на что-то (decidirse a hacer algo — после колебаний принять решение)',
+        example: '¿Cuándo te decides a visitarme?',
+      },
+      {
+        word: 'la excusa',
+        translation: 'отговорка, оправдание (poner excusas — отнекиваться; sin excusas — без отговорок)',
+        example: 'No aceptaré excusas.',
+      },
+      {
+        word: 'quitar (tiempo / dinero) a alguien',
+        translation: 'отнимать, забирать у кого-либо (que no te quite tiempo — чтобы не отнимал у тебя время)',
+        example: 'que el nuevo trabajo no te quite todo el tiempo libre',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué quiere la empresa de Marta?',
+        options: ['Que aprenda andaluz en seis meses', 'Que vuelva a Madrid', 'Que enseñe español a otros'],
+        correct: 0,
+      },
+      {
+        q: '¿Quién corrige el español de Marta?',
+        options: ['Su jefa', 'Su madre', 'Lucía, una sevillana paciente'],
+        correct: 2,
+      },
+      {
+        q: '¿Cuántos días, al menos, le pide reservar a Pablo?',
+        options: ['Tres días', 'Cinco días', 'Diez días'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Subjuntivo после глаголов воли и желания',
+        note:
+          'Когда субъект главного предложения хочет, чтобы что-то делал другой субъект, в придаточном после que идёт Presente de Subjuntivo. ' +
+          'В тексте: «quiere que aprenda», «espero que deje», «pido que hable», «prefiere que practique», «deseo que vea», «quiero que reserves», «espero que tengas». ' +
+          'Если субъект тот же — инфинитив без que: «quiero aprender», «espero leer».',
+      },
+      {
+        topic: 'Antes de que / para que + Subjuntivo',
+        note:
+          'Союзы antes de que, para que (а также sin que, hasta que в значении будущего) всегда требуют Subjuntivo. ' +
+          'В тексте: «antes de que empiecen las lluvias», «para que ella entienda algo». ' +
+          'Это одна из самых стабильных конструкций B1: запомните союз — и автоматически ставьте subjuntivo.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-002',
+    level: 'B1',
+    day: 2,
+    title: 'Mis ojalás de junio',
+    text:
+      'Es viernes por la noche, junio se acaba y escribo desde mi cocina de Bilbao, con un café frío que ya no me apetece. ' +
+      'Es un buen momento para los ojalás.\n\n' +
+      'Ojalá llueva mañana. Llevamos un mes sin agua y el jardín está triste, los tomates apenas crecen. ' +
+      'Ojalá los meteorólogos se equivoquen y, en vez de calor, nos traigan tormenta.\n\n' +
+      'Ojalá mi hermana acepte el puesto de Valencia. Lleva dos años en una empresa que la agota; un cambio le sentaría bien. ' +
+      'Sé que duda, sé que tiene miedo, pero ojalá se atreva. Yo, en su lugar, ya diría que sí.\n\n' +
+      'Ojalá mis padres viajen este otoño. Nunca han visto Mallorca. ' +
+      'Mi madre me dice por teléfono que no son edades para aviones; yo le contesto que ojalá deje de poner excusas y se compre el billete.\n\n' +
+      'Y, sobre todo, ojalá pueda terminar la novela que llevo escribiendo desde Reyes. Solo me faltan dos capítulos. ' +
+      'Ojalá la inspiración no se vaya de vacaciones antes que yo.\n\n' +
+      'Mañana es otro día. Cierro el ordenador y, en silencio, repito un último ojalá: ojalá duerma bien.',
+    vocabulary: [
+      {
+        word: 'ojalá',
+        translation: 'дай бог; хоть бы (от арабского «in šā\\u2019a llāh» — «если пожелает Бог»); всегда + Subjuntivo',
+        example: 'Ojalá llueva mañana.',
+      },
+      {
+        word: 'apetecer (a alguien)',
+        translation: 'хотеться (мне хочется); строится как gustar: me apetece un café',
+        example: 'un café frío que ya no me apetece',
+      },
+      {
+        word: 'equivocarse',
+        translation: 'ошибаться (equivocarse de número; me he equivocado — я ошибся)',
+        example: 'Ojalá los meteorólogos se equivoquen.',
+      },
+      {
+        word: 'el meteorólogo / la meteoróloga',
+        translation: 'метеоролог (la meteorología — наука о погоде; el hombre del tiempo — телеведущий)',
+        example: 'Ojalá los meteorólogos se equivoquen.',
+      },
+      {
+        word: 'la tormenta',
+        translation: 'гроза, буря (la tormenta de verano; tormenta de ideas — мозговой штурм)',
+        example: 'nos traigan tormenta',
+      },
+      {
+        word: 'agotar (a alguien)',
+        translation: 'изматывать, выматывать (agotar a alguien; estar agotado — быть выжатым)',
+        example: 'una empresa que la agota',
+      },
+      {
+        word: 'el puesto',
+        translation: 'должность, рабочее место (un puesto de trabajo; quedarse sin puesto — потерять работу)',
+        example: 'Ojalá mi hermana acepte el puesto de Valencia.',
+      },
+      {
+        word: 'atreverse a',
+        translation: 'осмеливаться, рискнуть (atreverse a hacer algo; no me atrevo — не решаюсь)',
+        example: 'ojalá se atreva',
+      },
+      {
+        word: 'sentar bien / mal a alguien',
+        translation: 'идти на пользу/во вред; быть к лицу (le sentaría bien — пошло бы на пользу)',
+        example: 'un cambio le sentaría bien',
+      },
+      {
+        word: 'el billete',
+        translation: 'билет (на самолёт, поезд); банкнота. В Лат. Америке часто el boleto',
+        example: 'se compre el billete',
+      },
+      {
+        word: 'faltar (a alguien)',
+        translation: 'не хватать (строится как gustar: me faltan dos capítulos — мне не хватает двух глав)',
+        example: 'Solo me faltan dos capítulos.',
+      },
+      {
+        word: 'el capítulo',
+        translation: 'глава (книги); серия (сериала); статья кодекса',
+        example: 'me faltan dos capítulos',
+      },
+      {
+        word: 'la inspiración',
+        translation: 'вдохновение (inspirar — вдохновлять; inspirarse en — вдохновляться чем-то)',
+        example: 'Ojalá la inspiración no se vaya.',
+      },
+      {
+        word: 'los Reyes',
+        translation: 'праздник Богоявления, 6 января — главный детский праздник в Испании, когда дарят подарки',
+        example: 'la novela que llevo escribiendo desde Reyes',
+      },
+      {
+        word: 'en silencio',
+        translation: 'молча, в тишине (guardar silencio — хранить молчание)',
+        example: 'repito un último ojalá en silencio',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Desde dónde escribe el narrador?',
+        options: ['Madrid', 'Bilbao', 'Valencia'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué espera el narrador para mañana?',
+        options: ['Sol y calor', 'Lluvia y tormenta', 'Nieve'],
+        correct: 1,
+      },
+      {
+        q: '¿Cuántos capítulos le faltan para terminar la novela?',
+        options: ['Cinco', 'Tres', 'Dos'],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Ojalá + Presente de Subjuntivo',
+        note:
+          'Слово ojalá (от арабского «дай бог») всегда сочетается с Subjuntivo. ' +
+          'С Presente de Subjuntivo выражается надежда на настоящее или будущее: «ojalá llueva», «ojalá se atreva», «ojalá pueda», «ojalá duerma bien», «ojalá viajen», «ojalá no se vaya». ' +
+          'Это эмоционально сильнее, чем espero que: ojalá подразумевает, что говорящий хочет, но не контролирует исход.',
+      },
+      {
+        topic: 'Indicativo для факта + Subjuntivo для пожелания',
+        note:
+          'Типичный B1-баланс: рядом ставятся уверенное знание (Indicativo) и пожелание (Subjuntivo). ' +
+          'В тексте: «Sé que duda, sé que tiene miedo» (объективная констатация — Indicativo), «pero ojalá se atreva» (то, чего хочу я — Subjuntivo). ' +
+          'Так же: «Mi madre me dice que no son edades para aviones» (Indicativo) против «yo le contesto que ojalá deje de poner excusas» (Subjuntivo после ojalá).',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-003',
+    level: 'B1',
+    day: 3,
+    title: 'Carta a mi madre',
+    text:
+      'Mamá:\n\n' +
+      'Te escribo desde Madrid después de hablar contigo esta tarde. ' +
+      'He pensado en lo que me has contado del piso y de la rodilla, y quiero que leas esto con paciencia.\n\n' +
+      'Es importante que vayas al médico la semana que viene. No solo a la consulta del pueblo: pide que te manden al traumatólogo de León. ' +
+      'No quiero que esperes seis meses más con dolor.\n\n' +
+      'También es necesario que dejes de subir tú sola la compra al segundo piso. ' +
+      'Habla con doña Pilar, paga a su hijo veinte euros la semana y deja que él lo haga. ' +
+      'No es lujo, es sentido común.\n\n' +
+      'Otra cosa, mamá: te pido que llames a Carmen. Sé que hace tiempo que no os veis, pero ella te quiere y se preocupa. ' +
+      'Es una pena que dos amigas de toda la vida se distancien por un malentendido tonto.\n\n' +
+      'Y, por favor, no quiero que sigas conduciendo de noche. La carretera de Astorga es peligrosa y tus ojos ya no son los de antes. ' +
+      'Si necesitas ir al cine en invierno, te recojo yo en el coche.\n\n' +
+      'Te llamo el domingo. Cuídate.\nTu hija, Sofía',
+    vocabulary: [
+      {
+        word: 'la rodilla',
+        translation: 'колено (las rodillas — колени; ponerse de rodillas — встать на колени)',
+        example: 'lo que me has contado del piso y de la rodilla',
+      },
+      {
+        word: 'la consulta',
+        translation: 'приём (у врача); кабинет; запрос (la consulta médica — врачебный приём)',
+        example: 'No solo a la consulta del pueblo',
+      },
+      {
+        word: 'el traumatólogo / la traumatóloga',
+        translation: 'травматолог (специалист по костям и суставам; la traumatología)',
+        example: 'pide que te manden al traumatólogo de León',
+      },
+      {
+        word: 'mandar a alguien a (un especialista)',
+        translation: 'направлять (к специалисту); также: посылать, командовать (mandar a hacer algo)',
+        example: 'que te manden al traumatólogo',
+      },
+      {
+        word: 'la compra',
+        translation: 'покупка; продукты, закупленные за один поход в магазин (hacer la compra, subir la compra)',
+        example: 'que dejes de subir tú sola la compra',
+      },
+      {
+        word: 'doña',
+        translation: 'почтительное обращение к женщине + имя (как señora, но теплее: doña Pilar)',
+        example: 'Habla con doña Pilar.',
+      },
+      {
+        word: 'el lujo',
+        translation: 'роскошь; излишество (un coche de lujo; permitirse un lujo)',
+        example: 'No es lujo, es sentido común.',
+      },
+      {
+        word: 'el sentido común',
+        translation: 'здравый смысл (no tener sentido común — действовать неразумно)',
+        example: 'es sentido común',
+      },
+      {
+        word: 'distanciarse',
+        translation: 'отдаляться, переставать общаться (distanciarse de un amigo)',
+        example: 'que dos amigas de toda la vida se distancien',
+      },
+      {
+        word: 'el malentendido',
+        translation: 'недоразумение (mal- + entender; un malentendido tonto — глупая размолвка)',
+        example: 'por un malentendido tonto',
+      },
+      {
+        word: 'tonto, -a',
+        translation: 'глупый, нелепый (una idea tonta; hacer el tonto — валять дурака)',
+        example: 'un malentendido tonto',
+      },
+      {
+        word: 'conducir',
+        translation: 'водить машину (conduzco, conduces…); el carnet de conducir — водительские права',
+        example: 'no quiero que sigas conduciendo de noche',
+      },
+      {
+        word: 'la carretera',
+        translation: 'шоссе, трасса (la carretera nacional; за городом — главные дороги в Испании)',
+        example: 'La carretera de Astorga es peligrosa.',
+      },
+      {
+        word: 'peligroso, -a',
+        translation: 'опасный (el peligro — опасность; ¡cuidado, peligroso!)',
+        example: 'La carretera de Astorga es peligrosa.',
+      },
+      {
+        word: 'recoger (a alguien)',
+        translation: 'заехать за кем-то; также: собирать, поднимать (recoger los juguetes)',
+        example: 'te recojo yo en el coche',
+      },
+    ],
+    questions: [
+      {
+        q: '¿De qué le duele a la madre?',
+        options: ['La rodilla', 'La espalda', 'La cabeza'],
+        correct: 0,
+      },
+      {
+        q: '¿Quién es Carmen?',
+        options: ['La hermana de la madre', 'Una amiga de toda la vida', 'La hija mayor de Sofía'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué le pide la hija sobre conducir?',
+        options: ['Que use solo el tren', 'Que no conduzca de noche', 'Que venda el coche'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Expresiones impersonales + Subjuntivo',
+        note:
+          'Безличные конструкции, выражающие оценку или необходимость, требуют Subjuntivo: es importante que, es necesario que, es una pena que. ' +
+          'В тексте: «es importante que vayas», «es necesario que dejes», «es una pena que dos amigas se distancien». ' +
+          'Логика: говорящий не констатирует факт, а оценивает желательность — поэтому не Indicativo, а Subjuntivo.',
+      },
+      {
+        topic: 'Querer / pedir + que + Subjuntivo (отрицание сохраняет Subjuntivo)',
+        note:
+          'После глаголов воли в утверждении или отрицании — всегда Subjuntivo: «no quiero que esperes», «no quiero que sigas», «te pido que llames», «pide que te manden». ' +
+          'Объект просьбы или желания всегда новый субъект в придаточном.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-004',
+    level: 'B1',
+    day: 4,
+    title: 'Cinco minutos sin móvil',
+    text:
+      'Esta tarde, en una terraza de Lavapiés, una pareja estuvo dos horas sin hablarse. ' +
+      'Cada uno miraba su móvil mientras el café se enfriaba. ' +
+      'No es una imagen rara: la vemos cada día. Pero quizá ha llegado el momento de decir algo.\n\n' +
+      'Es importante que aprendamos a estar presentes. ' +
+      'Una conversación con la pareja, con un amigo, con la abuela, no se construye entre notificaciones. ' +
+      'Es necesario que cerremos la pantalla y miremos a los ojos.\n\n' +
+      'Es raro que un grupo de adolescentes coma junto sin tres móviles en la mesa. ' +
+      'Y, sin embargo, es una pena que ellos se pierdan la ironía de su tío, la receta exacta de la tortilla de la abuela o la historia de cómo se conocieron sus padres. ' +
+      'Esos detalles no llegan por WhatsApp.\n\n' +
+      'No estoy en contra del móvil. Es útil que tengamos GPS, traductor, billetes electrónicos. ' +
+      'Pero es bueno que existan momentos cerrados al teléfono. ' +
+      'En casa proponemos una regla: durante la comida, los móviles se quedan en una cesta junto a la puerta. Funciona.\n\n' +
+      'Vivimos rápido, miramos poco. Es urgente que recuperemos la atención antes de que olvidemos cómo se habla.',
+    vocabulary: [
+      {
+        word: 'enfriarse',
+        translation: 'остывать (el café se enfría; enfriar — охлаждать)',
+        example: 'mientras el café se enfriaba',
+      },
+      {
+        word: 'la imagen',
+        translation: 'образ, картина (una imagen rara — нечастая картина; la imagen de un país)',
+        example: 'No es una imagen rara.',
+      },
+      {
+        word: 'presente (estar presente)',
+        translation: 'присутствующий; внимательный к моменту («быть здесь и сейчас»)',
+        example: 'Es importante que aprendamos a estar presentes.',
+      },
+      {
+        word: 'la pantalla',
+        translation: 'экран (телевизора, телефона, кинотеатра); la pantalla pequeña — телевидение',
+        example: 'que cerremos la pantalla',
+      },
+      {
+        word: 'la notificación',
+        translation: 'уведомление (push-уведомление; notificar — извещать)',
+        example: 'no se construye entre notificaciones',
+      },
+      {
+        word: 'el / la adolescente',
+        translation: 'подросток (la adolescencia — подростковый возраст)',
+        example: 'un grupo de adolescentes',
+      },
+      {
+        word: 'la ironía',
+        translation: 'ирония (con ironía — с иронией; irónico, -a — ироничный)',
+        example: 'que ellos se pierdan la ironía de su tío',
+      },
+      {
+        word: 'la receta',
+        translation: 'рецепт (кулинарный или медицинский); la receta de la tortilla',
+        example: 'la receta exacta de la tortilla de la abuela',
+      },
+      {
+        word: 'perderse algo',
+        translation: 'пропустить, упустить (te has perdido la fiesta — ты пропустил вечеринку)',
+        example: 'que ellos se pierdan la ironía',
+      },
+      {
+        word: 'estar en contra de',
+        translation: 'быть против (sinónimo: oponerse a; антоним a favor de)',
+        example: 'No estoy en contra del móvil.',
+      },
+      {
+        word: 'proponer',
+        translation: 'предлагать (o→ue: propongo, propones, propone…); la propuesta — предложение',
+        example: 'En casa proponemos una regla.',
+      },
+      {
+        word: 'la regla',
+        translation: 'правило (las reglas del juego); также линейка (для черчения)',
+        example: 'proponemos una regla',
+      },
+      {
+        word: 'la cesta',
+        translation: 'корзина (плетёная; la cesta de la compra — продуктовая корзина)',
+        example: 'los móviles se quedan en una cesta',
+      },
+      {
+        word: 'recuperar',
+        translation: 'вернуть, восстановить (recuperar el tiempo perdido; la recuperación)',
+        example: 'que recuperemos la atención',
+      },
+      {
+        word: 'urgente',
+        translation: 'срочный, неотложный (es urgente — срочно нужно; la urgencia — экстренность)',
+        example: 'Es urgente que recuperemos la atención.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Dónde ocurre la escena inicial?',
+        options: ['En una terraza de Lavapiés', 'En el metro de Madrid', 'En un restaurante de Barcelona'],
+        correct: 0,
+      },
+      {
+        q: '¿Cuál es la regla que propone la familia del autor?',
+        options: [
+          'No usar móvil en todo el día',
+          'Dejar los móviles en una cesta junto a la puerta durante la comida',
+          'Apagar los móviles a las nueve de la noche',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué opina el autor sobre el móvil?',
+        options: [
+          'Cree que hay que prohibirlo por completo',
+          'Solo lo considera útil para el GPS',
+          'Reconoce su utilidad, pero pide momentos sin él',
+        ],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Es + adjetivo + que + Subjuntivo — целая галерея',
+        note:
+          'Текст собирает почти весь набор безличных оценок B1: «es importante que aprendamos», «es necesario que cerremos», «es raro que coma», «es una pena que se pierdan», «es útil que tengamos», «es bueno que existan», «es urgente que recuperemos». ' +
+          'Все они оценивают ситуацию (важно/нужно/жаль/полезно/срочно) и поэтому требуют Subjuntivo, а не Indicativo.',
+      },
+      {
+        topic: 'Antes de que + Subjuntivo (повторение)',
+        note:
+          'В финале: «antes de que olvidemos cómo se habla». ' +
+          'Та же логика, что в b1-001: союз antes de que всегда вводит Subjuntivo, потому что событие ещё не произошло и относится к гипотетическому будущему.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-005',
+    level: 'B1',
+    day: 5,
+    title: 'Carta a Andrés',
+    text:
+      'Querido Andrés:\n\n' +
+      'Te debía esta carta. Mucho ha pasado desde la boda de Carmen.\n\n' +
+      'Me alegra muchísimo que hayas vuelto a Madrid. La oferta de la universidad es lo que esperabas y, por una vez, te toca a ti elegir. ' +
+      'Siento que en Berlín hayas pasado dos inviernos solo, pero estoy contenta de que ahora tengamos otra vez los domingos.\n\n' +
+      'Me molesta, sin embargo, que tu hermana siga sin hablarte. ' +
+      'He tratado de entender su postura y no la veo. ' +
+      'Lamento que ella no se dé cuenta del esfuerzo que tú has hecho. ' +
+      'No es justo que tú cargues con un silencio que no inventaste.\n\n' +
+      'Por otro lado, me sorprende que la tía Mercedes te haya escrito. ¡Después de quince años! ' +
+      'Me alegro de que el correo te haya llegado a tiempo. ' +
+      'Espero que respondas: una llamada bastaría. ' +
+      'Es una pena que pierdas esa oportunidad por orgullo.\n\n' +
+      'Yo, por mi parte, sigo nerviosa con el examen del miércoles. ' +
+      'Me da rabia que el tribunal cambie la fecha cada dos por tres. ' +
+      'Pero, tranquilo, no voy a hundirme.\n\n' +
+      'Cena el viernes en mi casa, lentejas y vino de Toro. Trae a Lola si le apetece. Un abrazo.\nMarta',
+    vocabulary: [
+      {
+        word: 'deber algo a alguien',
+        translation: 'быть должным (письмо, услугу, деньги); te debo una llamada',
+        example: 'Te debía esta carta.',
+      },
+      {
+        word: 'la oferta',
+        translation: 'предложение (рабочее, коммерческое); en oferta — со скидкой',
+        example: 'La oferta de la universidad es lo que esperabas.',
+      },
+      {
+        word: 'tocar a alguien',
+        translation: 'настать чья-то очередь; выпадать (a ti te toca elegir; me toca pagar)',
+        example: 'por una vez, te toca a ti elegir',
+      },
+      {
+        word: 'la postura',
+        translation: 'позиция, точка зрения; также поза тела (la postura del cuerpo)',
+        example: 'He tratado de entender su postura.',
+      },
+      {
+        word: 'el esfuerzo',
+        translation: 'усилие, старание (hacer un esfuerzo; el esfuerzo merece la pena)',
+        example: 'del esfuerzo que tú has hecho',
+      },
+      {
+        word: 'cargar con',
+        translation: 'нести бремя, отвечать за (cargar con la culpa, con un silencio, con una responsabilidad)',
+        example: 'que tú cargues con un silencio que no inventaste',
+      },
+      {
+        word: 'lamentar',
+        translation: 'сожалеть, скорбеть (lamento que…; lo lamento — сожалею, мне жаль)',
+        example: 'Lamento que ella no se dé cuenta.',
+      },
+      {
+        word: 'el orgullo',
+        translation: 'гордость; гордыня (negativo: por orgullo — из гордости)',
+        example: 'que pierdas esa oportunidad por orgullo',
+      },
+      {
+        word: 'bastar',
+        translation: 'хватать, быть достаточным (basta con + inf; con eso basta)',
+        example: 'una llamada bastaría',
+      },
+      {
+        word: 'la oportunidad',
+        translation: 'возможность, шанс (perder una oportunidad; aprovechar la oportunidad)',
+        example: 'que pierdas esa oportunidad',
+      },
+      {
+        word: 'dar rabia a alguien',
+        translation: 'бесить, раздражать (¡qué rabia! — какая досада!; me da rabia que…)',
+        example: 'Me da rabia que el tribunal cambie la fecha.',
+      },
+      {
+        word: 'el tribunal',
+        translation: 'экзаменационная или судебная комиссия (el tribunal del examen; el tribunal supremo)',
+        example: 'que el tribunal cambie la fecha',
+      },
+      {
+        word: 'cada dos por tres',
+        translation: 'постоянно, через раз (idiomatic: то и дело)',
+        example: 'cambie la fecha cada dos por tres',
+      },
+      {
+        word: 'hundirse',
+        translation: 'идти ко дну; пасть духом (hundirse en la tristeza; el barco se hunde)',
+        example: 'no voy a hundirme',
+      },
+      {
+        word: 'las lentejas',
+        translation: 'чечевица — типичное домашнее блюдо в Испании (lentejas con chorizo)',
+        example: 'cena en mi casa, lentejas y vino de Toro',
+      },
+      {
+        word: 'el vino de Toro',
+        translation: 'красное вино из района Toro (Castilla y León), плотное и насыщенное',
+        example: 'lentejas y vino de Toro',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Por qué se alegra la narradora?',
+        options: ['Porque Andrés ha vuelto a Madrid', 'Porque ha terminado el examen', 'Porque su hermana le ha hablado'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué le sorprende de la tía Mercedes?',
+        options: ['Que viva todavía en Madrid', 'Que haya escrito después de quince años', 'Que le mande dinero'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué cena prepara la narradora?',
+        options: ['Tortilla y ensalada', 'Pescado y vino blanco', 'Lentejas y vino de Toro'],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Verbos de emoción + que + Subjuntivo',
+        note:
+          'Эмоциональная реакция всегда вводит Subjuntivo через que: «me alegra que», «siento que», «me molesta que», «me sorprende que», «lamento que», «me da rabia que», «estoy contenta de que». ' +
+          'Объект эмоции — то, что вызывает чувство; именно поэтому он подаётся не как факт (Indicativo), а как «то, что я переживаю» (Subjuntivo).',
+      },
+      {
+        topic: 'Pretérito Perfecto de Subjuntivo: haya + participio',
+        note:
+          'Когда эмоция касается недавнего, уже совершённого события, используется Pretérito Perfecto de Subjuntivo — haber в форме Subjuntivo + participio: ' +
+          '«me alegra que hayas vuelto», «siento que hayas pasado», «me sorprende que la tía Mercedes te haya escrito», «me alegro de que el correo te haya llegado». ' +
+          'Это естественное продолжение Presente de Subjuntivo: те же формы haya / hayas / haya / hayamos / hayáis / hayan + participio.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-006',
+    level: 'B1',
+    day: 6,
+    title: 'En la consulta',
+    text:
+      '—Buenos días, doctora. Vengo porque mi marido lleva tres semanas con dolor en la espalda.\n\n' +
+      '—Pase, siéntese. ¿Le aparece el dolor por la mañana o por la noche?\n\n' +
+      '—Sobre todo de noche. Él dice que es la silla del despacho, pero yo dudo que sea solo eso.\n\n' +
+      '—Hace bien en venir. No creo que se trate de un problema grave, pero conviene mirarlo. ¿Hace deporte?\n\n' +
+      '—Tres veces a la semana, en el gimnasio del barrio. Ahora bien, no estoy segura de que levante pesas con la postura correcta.\n\n' +
+      '—Es probable que tenga el músculo cargado. Le voy a pedir una radiografía, aunque dudo que veamos nada serio. ' +
+      'Mientras tanto, que evite las pesas y que duerma con un cojín entre las rodillas.\n\n' +
+      '—¿Y si el dolor sigue después de la radiografía?\n\n' +
+      '—Pediremos resonancia. Pero, repito: no creo que haga falta. ' +
+      'Es raro que una hernia aparezca a los treinta y cinco años sin un golpe fuerte. Lo más probable es que sea un mal apoyo.\n\n' +
+      '—Gracias, doctora. ¿Cuándo nos darán la cita?\n\n' +
+      '—Esta misma semana. Pasen por recepción y díganle a Rocío que es de mi parte.',
+    vocabulary: [
+      {
+        word: 'la espalda',
+        translation: 'спина (dolor de espalda — боль в спине; dar la espalda — повернуться спиной)',
+        example: 'dolor en la espalda',
+      },
+      {
+        word: 'el despacho',
+        translation: 'рабочий кабинет (en casa o en la oficina); тж. el despacho del jefe',
+        example: 'es la silla del despacho',
+      },
+      {
+        word: 'tratarse de',
+        translation: 'идти речь о (¿de qué se trata? — о чём речь?; no se trata de eso)',
+        example: 'No creo que se trate de un problema grave.',
+      },
+      {
+        word: 'convenir + inf',
+        translation: 'стоит, следует (безличный совет: conviene mirarlo — стоит посмотреть)',
+        example: 'conviene mirarlo',
+      },
+      {
+        word: 'levantar pesas',
+        translation: 'поднимать тяжести (la pesa — гиря/штанга; el levantamiento de pesas — тяжёлая атлетика)',
+        example: 'no estoy segura de que levante pesas con la postura correcta',
+      },
+      {
+        word: 'cargado, -a (un músculo)',
+        translation: 'напряжённый, перегруженный (мышца); о компьютере — заряженный',
+        example: 'Es probable que tenga el músculo cargado.',
+      },
+      {
+        word: 'la radiografía',
+        translation: 'рентген (la radio — здесь сокращение; hacer una radiografía)',
+        example: 'Le voy a pedir una radiografía.',
+      },
+      {
+        word: 'el cojín',
+        translation: 'подушка декоративная или ортопедическая (la almohada — подушка для сна)',
+        example: 'que duerma con un cojín entre las rodillas',
+      },
+      {
+        word: 'la resonancia',
+        translation: 'МРТ; также: резонанс (la resonancia magnética)',
+        example: 'Pediremos resonancia.',
+      },
+      {
+        word: 'la hernia',
+        translation: 'грыжа (la hernia discal — грыжа межпозвоночного диска)',
+        example: 'que una hernia aparezca a los treinta y cinco años',
+      },
+      {
+        word: 'el golpe',
+        translation: 'удар (un golpe fuerte; de golpe — внезапно; golpe de suerte — везение)',
+        example: 'sin un golpe fuerte',
+      },
+      {
+        word: 'el apoyo',
+        translation: 'опора, поддержка (un mal apoyo — неправильная опора; el apoyo moral)',
+        example: 'Lo más probable es que sea un mal apoyo.',
+      },
+      {
+        word: 'la cita',
+        translation: 'запись на приём; назначенная встреча; цитата. Pedir cita — записаться',
+        example: '¿Cuándo nos darán la cita?',
+      },
+      {
+        word: 'la recepción',
+        translation: 'стойка регистрации (en una clínica, en un hotel); также: приём (вечер)',
+        example: 'Pasen por recepción.',
+      },
+      {
+        word: 'de mi parte',
+        translation: 'от меня (передайте от меня; de parte de quién — от кого?)',
+        example: 'díganle a Rocío que es de mi parte',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuánto lleva el marido con dolor?',
+        options: ['Una semana', 'Tres semanas', 'Tres meses'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué duda la mujer del marido?',
+        options: ['Que el dolor sea solo por la silla del despacho', 'Que su marido haga deporte', 'Que el médico ayude'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué cree la doctora sobre la hernia?',
+        options: [
+          'Que es muy probable',
+          'Que es raro a los treinta y cinco años sin un golpe fuerte',
+          'Que ya la tiene confirmada',
+        ],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Verbos de duda y negación de opinión + Subjuntivo',
+        note:
+          'После глаголов сомнения и отрицания мнения подчинённое идёт в Subjuntivo: «dudo que sea», «no creo que se trate», «no estoy segura de que levante», «dudo que veamos», «no creo que haga falta». ' +
+          'Утвердительные creo que, estoy segura de que, no dudo de que тянут за собой Indicativo — речь идёт об уверенности.',
+      },
+      {
+        topic: 'Que + Subjuntivo как мягкая команда',
+        note:
+          'Врач говорит «que evite las pesas», «que duerma con un cojín» — это укороченная форма от «(quiero) que evite». ' +
+          'В испанском такие распоряжения от врача, учителя или родителя звучат естественнее, чем прямой Imperativo. ' +
+          'Конструкция: que + Presente de Subjuntivo + остальное предложение.',
+      },
+      {
+        topic: 'Es probable que / es raro que + Subjuntivo',
+        note:
+          'Безличные оценки вероятности тоже идут с Subjuntivo: «es probable que tenga el músculo cargado», «es raro que una hernia aparezca», «lo más probable es que sea un mal apoyo». ' +
+          'Чем выше уверенность (es seguro que, es evidente que), тем чаще возвращается Indicativo.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-007',
+    level: 'B1',
+    day: 7,
+    title: 'Brindis para Carmen y Diego',
+    text:
+      'Familia, amigos, queridos novios:\n\n' +
+      'Me han pedido unas palabras y, aunque odio los micrófonos, no puedo decir que no a Carmen, que es como una hermana.\n\n' +
+      'Queremos que vuestra vida juntos empiece despacio. Que no haya prisa en nada importante. ' +
+      'Diego, tú que eres ingeniero, deseamos que no calcules la felicidad como un puente: ella se hace, no se diseña. ' +
+      'Carmen, tú que eres profesora, te pedimos que no corrijas demasiado: el matrimonio no es un examen.\n\n' +
+      'Deseamos que vuestra casa de Vigo huela siempre a pan recién hecho. Que la lluvia gallega no os apague el ánimo. ' +
+      'Y, sobre todo, que tengáis paciencia las mañanas difíciles, porque las habrá.\n\n' +
+      'Que los amigos que estamos hoy aquí seamos también los de las crisis. ' +
+      'Que las parejas que llevan veinte años casadas, como mis padres, os den un consejo cuando os perdáis. ' +
+      'Que el abuelo Manolo, que nos mira desde donde esté, sienta que su nieta ha elegido bien.\n\n' +
+      'Que vuestros viajes sean largos, vuestros enfados breves y vuestras risas, contagiosas. ' +
+      'Y, por favor, que la próxima sobrina llegue antes de tres años, que la familia espera con ganas.\n\n' +
+      '¡Por Carmen y Diego, salud!',
+    vocabulary: [
+      {
+        word: 'el brindis',
+        translation: 'тост (на застолье; hacer un brindis; brindar por alguien — поднимать бокал за кого-то)',
+        example: '¡Por Carmen y Diego, salud!',
+      },
+      {
+        word: 'el micrófono',
+        translation: 'микрофон (hablar por el micrófono; pasar el micrófono — передавать слово)',
+        example: 'odio los micrófonos',
+      },
+      {
+        word: 'diseñar',
+        translation: 'проектировать, разрабатывать дизайн (diseñar un puente, una página web; el diseñador)',
+        example: 'la felicidad se hace, no se diseña',
+      },
+      {
+        word: 'el matrimonio',
+        translation: 'брак, супружество; также: супружеская пара (un matrimonio mayor)',
+        example: 'el matrimonio no es un examen',
+      },
+      {
+        word: 'el ingeniero / la ingeniera',
+        translation: 'инженер (ingeniero civil, ingeniero informático); la ingeniería — инженерия',
+        example: 'tú que eres ingeniero',
+      },
+      {
+        word: 'el puente',
+        translation: 'мост; также: «продлённые выходные» в Испании (hacer puente)',
+        example: 'la felicidad no se calcula como un puente',
+      },
+      {
+        word: 'el ánimo',
+        translation: 'дух, настроение (estar de buen ánimo; apagar el ánimo — выбивать почву из-под ног)',
+        example: 'Que la lluvia gallega no os apague el ánimo.',
+      },
+      {
+        word: 'apagar',
+        translation: 'гасить, тушить, выключать (apagar la luz, el fuego, el ánimo)',
+        example: 'que no os apague el ánimo',
+      },
+      {
+        word: 'la crisis',
+        translation: 'кризис (crisis económica, crisis de pareja; в B1-блоке — слово актуальной взрослой жизни)',
+        example: 'los amigos de las crisis',
+      },
+      {
+        word: 'el enfado',
+        translation: 'ссора, недовольство (enfadarse con alguien; estar enfadado — сердиться)',
+        example: 'vuestros enfados breves',
+      },
+      {
+        word: 'la risa',
+        translation: 'смех (reírse de algo; soltar la risa — расхохотаться)',
+        example: 'vuestras risas, contagiosas',
+      },
+      {
+        word: 'contagioso, -a',
+        translation: 'заразительный (una risa contagiosa); о болезни — заразный',
+        example: 'risas contagiosas',
+      },
+      {
+        word: 'la sobrina / el sobrino',
+        translation: 'племянница / племянник (los sobrinos — племянники, нередко: внуки в широком смысле)',
+        example: 'la próxima sobrina',
+      },
+      {
+        word: 'la nieta / el nieto',
+        translation: 'внучка / внук (los nietos — внуки; los abuelos — бабушка с дедушкой)',
+        example: 'que su nieta ha elegido bien',
+      },
+      {
+        word: 'con ganas',
+        translation: 'с воодушевлением, с охотой (tener ganas de — хотеть; con muchas ganas)',
+        example: 'la familia espera con ganas',
+      },
+    ],
+    questions: [
+      {
+        q: '¿De qué profesión es Diego?',
+        options: ['Profesor', 'Ingeniero', 'Médico'],
+        correct: 1,
+      },
+      {
+        q: '¿Dónde van a vivir los novios?',
+        options: ['En Vigo', 'En Madrid', 'En Sevilla'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué desea el orador para la próxima sobrina?',
+        options: ['Que llegue antes de tres años', 'Que llegue antes de cinco años', 'Que no llegue nunca'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Que + Subjuntivo: пожелания через короткий тост',
+        note:
+          'Когда речь обращена ко всем сразу и формула воли упрощена, используется que + Subjuntivo: ' +
+          '«que vuestra vida empiece despacio», «que no haya prisa», «que vuestra casa huela a pan», «que la lluvia no os apague el ánimo», «que tengáis paciencia», «que seamos los amigos de las crisis», «que vuestros viajes sean largos». ' +
+          'Это стандартный жанр испанского brindis: «que…» в начале каждой реплики.',
+      },
+      {
+        topic: 'Vosotros в кастильском испанском',
+        note:
+          'Тост обращён к двоим — поэтому повсеместно формы vosotros: «tengáis», «vuestra casa», «os apague», «os perdáis», «vuestros viajes», «vuestras risas». ' +
+          'В Латинской Америке вместо этого был бы ustedes: «tengan», «su casa», «les apague», «se pierdan». Это маркер именно испанского испанского.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-008',
+    level: 'B1',
+    day: 8,
+    title: 'Reseña: «Volver», de Almodóvar',
+    text:
+      'Anoche volví a ver «Volver», de Almodóvar, después de casi diez años. ' +
+      'Sigue siendo una de las películas que más me han marcado, aunque hoy me chirrían algunas cosas.\n\n' +
+      'No creo que el guion sea perfecto. Hay diálogos que envejecen mal y una escena del entierro que dura demasiado. ' +
+      'Tampoco creo que la trama se sostenga sin las actrices: si quitas a Penélope Cruz y a Carmen Maura, no queda película.\n\n' +
+      'Pero no dudo de que la dirección artística es brillante. ' +
+      'Los rojos de La Mancha, las cocinas de pueblo, las viejas que cuchichean en el patio: cada plano podría colgarse en una pared.\n\n' +
+      'No me parece que el protagonista masculino aporte gran cosa, y es una pena que Almodóvar lo despache tan pronto. ' +
+      'La película es de mujeres, sí, pero un personaje masculino más cuidado daría más fuerza al conjunto.\n\n' +
+      'Es probable que muchos espectadores jóvenes la sientan lenta. Me da igual. ' +
+      'Yo creo que cada cinco años conviene revisar las películas que nos formaron: nos descubrimos cambiados.\n\n' +
+      '¿Recomendable? Sin duda, aunque dudo que vuelvas a salir con la misma idea sobre las madres, las hijas y los secretos de pueblo.',
+    vocabulary: [
+      {
+        word: 'la reseña',
+        translation: 'рецензия, обзор (de una película, un libro, un restaurante); reseñar — рецензировать',
+        example: 'reseña de «Volver»',
+      },
+      {
+        word: 'marcar a alguien',
+        translation: 'оставить глубокий след (una película que me ha marcado; marcar la diferencia)',
+        example: 'las películas que más me han marcado',
+      },
+      {
+        word: 'chirriar',
+        translation: 'скрипеть; в переносном смысле — резать слух, не сходиться (me chirría esta escena)',
+        example: 'me chirrían algunas cosas',
+      },
+      {
+        word: 'el guion',
+        translation: 'сценарий фильма (в современной норме без accent: с 2010 г.); тж. дефис',
+        example: 'No creo que el guion sea perfecto.',
+      },
+      {
+        word: 'envejecer',
+        translation: 'стареть; устаревать (envejecer mal — стареть плохо; envejecer con dignidad)',
+        example: 'diálogos que envejecen mal',
+      },
+      {
+        word: 'la trama',
+        translation: 'сюжет, интрига (la trama de la novela; una trama complicada)',
+        example: 'que la trama se sostenga',
+      },
+      {
+        word: 'sostenerse',
+        translation: 'держаться, опираться (sostenerse sin actrices, sostenerse en pie)',
+        example: 'que la trama se sostenga sin las actrices',
+      },
+      {
+        word: 'la dirección artística',
+        translation: 'художественная постановка (декорации, костюмы, цвет; el director artístico)',
+        example: 'la dirección artística es brillante',
+      },
+      {
+        word: 'cuchichear',
+        translation: 'шептаться (на ухо, втихаря; el cuchicheo)',
+        example: 'las viejas que cuchichean en el patio',
+      },
+      {
+        word: 'el plano',
+        translation: 'кадр (в кино); план (общий, крупный); тж. карта города (el plano de Madrid)',
+        example: 'cada plano podría colgarse en una pared',
+      },
+      {
+        word: 'aportar',
+        translation: 'привносить, добавлять, вносить вклад (aportar ideas, aportar gran cosa)',
+        example: 'no me parece que el protagonista masculino aporte gran cosa',
+      },
+      {
+        word: 'despachar (un personaje)',
+        translation: 'быстро избавиться (от персонажа); тж. отправлять, разбирать (correo, asuntos)',
+        example: 'que Almodóvar lo despache tan pronto',
+      },
+      {
+        word: 'el conjunto',
+        translation: 'целое, ансамбль (en conjunto — в целом; el conjunto de la obra)',
+        example: 'daría más fuerza al conjunto',
+      },
+      {
+        word: 'el espectador / la espectadora',
+        translation: 'зритель (en el cine, en el teatro); el público — публика в целом',
+        example: 'muchos espectadores jóvenes',
+      },
+      {
+        word: 'revisar',
+        translation: 'пересматривать, перепроверять (una película, los apuntes, el coche)',
+        example: 'conviene revisar las películas que nos formaron',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuánto tiempo llevaba el narrador sin ver «Volver»?',
+        options: ['Casi cinco años', 'Casi diez años', 'Casi veinte años'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué opina del guion?',
+        options: [
+          'Que es perfecto',
+          'Que no es perfecto y envejece mal en algunos diálogos',
+          'Que es lo mejor de la película',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué destaca como brillante?',
+        options: ['Las actrices secundarias', 'La música', 'La dirección artística'],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'No creer / no pensar / no parecer / dudar que + Subjuntivo',
+        note:
+          'В отзыве рецензент сомневается — и поэтому почти везде Subjuntivo: «no creo que el guion sea perfecto», «tampoco creo que la trama se sostenga», «no me parece que el protagonista aporte gran cosa», «dudo que vuelvas a salir». ' +
+          'Контраст утверждения и отрицания: «no dudo de que la dirección artística es brillante» — Indicativo, потому что здесь полная уверенность.',
+      },
+      {
+        topic: 'Es probable que / es una pena que + Subjuntivo',
+        note:
+          'В тексте: «es probable que muchos espectadores la sientan lenta», «es una pena que Almodóvar lo despache tan pronto». ' +
+          'Та же логика безличных оценок, что в b1-003 и b1-004: всё, что описывает вероятность или эмоциональную оценку, тянет за собой Subjuntivo.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-009',
+    level: 'B1',
+    day: 9,
+    title: 'Carta a Elena',
+    text:
+      'Elena, querida:\n\n' +
+      'He leído tres veces tu última carta. Me he tomado tiempo, ya sabes que no suelo opinar sin pensar. Hoy sí me siento preparada.\n\n' +
+      'Sobre lo del traslado a Barcelona: no creo que sea una decisión arriesgada como tú dices. ' +
+      'Quince años en la misma ciudad pesan, y yo no pienso que cambiar de aires sea huir. ' +
+      'Tú eres una mujer adulta con un trabajo estable; nadie está exigiendo que te lances al vacío.\n\n' +
+      'No me parece justo que tu pareja insista en quedarse «por la familia». ' +
+      'La familia, querida, viaja contigo si es de verdad familia. ' +
+      'Y dudo que tus padres, que tanto te conocen, prefieran verte amargada en León a verte feliz en el Maresme.\n\n' +
+      'Sobre el dinero, no me preocupa lo que escribes. ' +
+      'Es importante que mires los números con calma, pero no creo que un piso barato cerca del mar sea un sueño imposible. ' +
+      'Hay vida fuera de la Diagonal.\n\n' +
+      'Eso sí: te pido que no me hagas caso del todo. Cada uno decide su rumbo. Yo solo escribo lo que pienso, con cariño.\n\n' +
+      'Llámame cuando lo hayas hablado con Jorge. Un abrazo grande.\nMarta',
+    vocabulary: [
+      {
+        word: 'el traslado',
+        translation: 'переезд (de ciudad, de empresa); trasladarse a — переезжать',
+        example: 'lo del traslado a Barcelona',
+      },
+      {
+        word: 'arriesgado, -a',
+        translation: 'рискованный (una decisión arriesgada; el riesgo — риск; arriesgar — рисковать)',
+        example: 'no creo que sea una decisión arriesgada',
+      },
+      {
+        word: 'pesar',
+        translation: 'весить; в переносном смысле — тяготить, давить (los años pesan; me pesa la conciencia)',
+        example: 'Quince años en la misma ciudad pesan.',
+      },
+      {
+        word: 'cambiar de aires',
+        translation: 'сменить обстановку (буквально: «сменить воздух»; типичная испанская идиома)',
+        example: 'no pienso que cambiar de aires sea huir',
+      },
+      {
+        word: 'huir',
+        translation: 'убегать, спасаться (huir de un problema; la huida — бегство)',
+        example: 'que cambiar de aires sea huir',
+      },
+      {
+        word: 'estable',
+        translation: 'устойчивый, стабильный (un trabajo estable; la estabilidad)',
+        example: 'un trabajo estable',
+      },
+      {
+        word: 'exigir',
+        translation: 'требовать (e→i: exijo, exiges, exige…); la exigencia — требование',
+        example: 'nadie está exigiendo que te lances al vacío',
+      },
+      {
+        word: 'lanzarse a',
+        translation: 'броситься, кинуться (lanzarse al vacío, lanzarse a hacer algo)',
+        example: 'que te lances al vacío',
+      },
+      {
+        word: 'insistir en',
+        translation: 'настаивать на (insistir en quedarse; la insistencia)',
+        example: 'tu pareja insista en quedarse',
+      },
+      {
+        word: 'amargado, -a',
+        translation: 'озлобленный, обиженный на жизнь (amargar — горчить; amargo — горький)',
+        example: 'verte amargada en León',
+      },
+      {
+        word: 'el Maresme',
+        translation: 'прибрежная зона к северу от Барселоны, серия маленьких городков у моря',
+        example: 'verte feliz en el Maresme',
+      },
+      {
+        word: 'la Diagonal',
+        translation: 'главный диагональный проспект Барселоны (Avinguda Diagonal), символ дорогого центра',
+        example: 'Hay vida fuera de la Diagonal.',
+      },
+      {
+        word: 'el rumbo',
+        translation: 'курс, направление (el rumbo de la vida; cambiar de rumbo)',
+        example: 'Cada uno decide su rumbo.',
+      },
+      {
+        word: 'hacer caso a alguien',
+        translation: 'слушать, прислушиваться (hazme caso — послушай меня; no hacer ni caso — ноль внимания)',
+        example: 'te pido que no me hagas caso del todo',
+      },
+      {
+        word: 'del todo',
+        translation: 'полностью, до конца (no del todo — не вполне; estar del todo de acuerdo)',
+        example: 'que no me hagas caso del todo',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué piensa la narradora sobre el traslado de Elena?',
+        options: ['Que no es una decisión arriesgada', 'Que es claramente una huida', 'Que es imposible'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué dice de la pareja de Elena?',
+        options: [
+          'Que insiste en quedarse «por la familia» y a la narradora no le parece justo',
+          'Que la apoya en todo',
+          'Que ya se ha mudado a Barcelona',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Qué le pide la narradora al final?',
+        options: [
+          'Que le haga caso del todo',
+          'Que no le haga caso del todo, porque cada uno decide su rumbo',
+          'Que no la llame nunca más',
+        ],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'No creer / no pensar / no parecer + que + Subjuntivo (повторение)',
+        note:
+          'Личное мнение в отрицании — Subjuntivo: «no creo que sea una decisión arriesgada», «no pienso que cambiar de aires sea huir», «no me parece justo que tu pareja insista», «no creo que un piso barato sea un sueño imposible», «dudo que tus padres prefieran». ' +
+          'В утверждении те же глаголы дали бы Indicativo: «creo que es», «pienso que…».',
+      },
+      {
+        topic: 'Cuando + Pretérito Perfecto de Subjuntivo для будущего действия',
+        note:
+          'Финальное «Llámame cuando lo hayas hablado con Jorge» — нормальная B1-структура: cuando + Subjuntivo для будущего, и именно Pret Perfecto de Subjuntivo, потому что говорящий имеет в виду «после того, как ты это уже обсудишь». ' +
+          'Сравни: «cuando llegues» (когда приедешь) и «cuando hayas llegado» (когда уже приедешь, после прибытия).',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-010',
+    level: 'B1',
+    day: 10,
+    title: 'Un año sin redes sociales',
+    text:
+      'Hace exactamente un año cerré todas mis redes. Instagram, Twitter, LinkedIn. ' +
+      'La pregunta que más recibo en estos meses es la misma: ¿no te aburres? La respuesta corta es no. La larga, esta.\n\n' +
+      'Es bueno que reconozcamos lo que se gana al silencio. Lo primero es el tiempo. ' +
+      'Antes pasaba dos horas al día revisando vidas ajenas; hoy esas dos horas las dedico a leer o a cocinar despacio. ' +
+      'No creo que sea saludable consumir tanta información cada día.\n\n' +
+      'También es bueno que nuestra cabeza descanse. Sin notificaciones constantes, los pensamientos se ordenan: aparecen ideas que llevaban años esperando. ' +
+      'No pretendo que todo el mundo siga este camino, pero quizá deba probarlo más gente.\n\n' +
+      'Por otro lado, no diré que sea fácil. He perdido el contacto con amigos que solo escriben por allí. ' +
+      'Es triste que algunas amistades dependan tanto de un like. ' +
+      'Y me molesta que las invitaciones a bodas y cumpleaños lleguen por aplicaciones que ya no abro.\n\n' +
+      '¿Volveré? Lo dudo. Espero que algún día las redes cambien y que la conversación pese más que la imagen. ' +
+      'Mientras tanto, sigo leyendo libros de papel en una cafetería de Malasaña.',
+    vocabulary: [
+      {
+        word: 'la red social',
+        translation: 'социальная сеть (las redes sociales — соцсети; la red — сеть в широком смысле)',
+        example: 'cerré todas mis redes',
+      },
+      {
+        word: 'aburrirse',
+        translation: 'скучать (me aburro; el aburrimiento — скука; aburrido — скучный или скучающий)',
+        example: '¿no te aburres?',
+      },
+      {
+        word: 'ajeno, -a',
+        translation: 'чужой, не свой (vidas ajenas; lo ajeno — чужое)',
+        example: 'revisando vidas ajenas',
+      },
+      {
+        word: 'saludable',
+        translation: 'полезный для здоровья (una comida saludable; la salud — здоровье)',
+        example: 'no creo que sea saludable',
+      },
+      {
+        word: 'la cantidad',
+        translation: 'количество (la cantidad de — количество чего-то; en grandes cantidades)',
+        example: 'tanta información cada día',
+      },
+      {
+        word: 'ordenarse',
+        translation: 'приходить в порядок (los pensamientos se ordenan); ordenar — упорядочивать',
+        example: 'los pensamientos se ordenan',
+      },
+      {
+        word: 'pretender',
+        translation: 'претендовать, стремиться к, утверждать (⚠️ ложный друг: НЕ «делать вид»)',
+        example: 'No pretendo que todo el mundo siga este camino.',
+      },
+      {
+        word: 'el contacto',
+        translation: 'связь, контакт (perder el contacto; mantener el contacto)',
+        example: 'He perdido el contacto con amigos.',
+      },
+      {
+        word: 'la amistad',
+        translation: 'дружба (una amistad de años; el amigo / la amiga — друг/подруга)',
+        example: 'algunas amistades dependan tanto de un like',
+      },
+      {
+        word: 'depender de',
+        translation: 'зависеть от (depender de algo / de alguien; la dependencia)',
+        example: 'que algunas amistades dependan tanto de un like',
+      },
+      {
+        word: 'el like',
+        translation: 'лайк (англицизм; меньшинство пишет «me gusta», но в речи обычно el like)',
+        example: 'dependan tanto de un like',
+      },
+      {
+        word: 'la aplicación',
+        translation: 'приложение (мобильное; la app — короткая форма); тж. применение',
+        example: 'aplicaciones que ya no abro',
+      },
+      {
+        word: 'constante',
+        translation: 'постоянный, непрерывный (notificaciones constantes; la constancia — постоянство)',
+        example: 'sin notificaciones constantes',
+      },
+      {
+        word: 'mientras tanto',
+        translation: 'тем временем, между тем (синоним entretanto)',
+        example: 'Mientras tanto, sigo leyendo libros de papel.',
+      },
+      {
+        word: 'el papel',
+        translation: 'бумага; роль (un libro de papel — бумажная книга; un papel importante — важная роль)',
+        example: 'libros de papel',
+      },
+      {
+        word: 'la cafetería',
+        translation: 'кафе с сидячими местами, где подают кофе и закуски (≠ el café как напиток)',
+        example: 'una cafetería de Malasaña',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué dejó de hacer el autor hace un año?',
+        options: ['Trabajar en oficinas', 'Usar las redes sociales', 'Leer libros de papel'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué ha ganado, según el autor?',
+        options: ['Más dinero', 'Tiempo y descanso mental', 'Más seguidores'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué le molesta al autor?',
+        options: [
+          'Que las invitaciones lleguen por aplicaciones que ya no abre',
+          'Que sus amigos le envíen demasiadas cartas',
+          'Que las cafeterías cierren tarde',
+        ],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Galería de triggers de Subjuntivo en un mismo texto',
+        note:
+          'Пост в блоге собирает все ключевые группы B1-блока: «es bueno que reconozcamos», «no creo que sea saludable», «es bueno que nuestra cabeza descanse», «no pretendo que todo el mundo siga», «quizá deba probarlo más gente», «es triste que algunas amistades dependan», «me molesta que las invitaciones lleguen», «espero que las redes cambien y que la conversación pese». ' +
+          'Это компактный обзор тем дней 1–10: воля, эмоция, сомнение, безличная оценка.',
+      },
+      {
+        topic: 'Quizá / quizás + Subjuntivo',
+        note:
+          'Quizá и quizás вводят сомнение и часто берут Subjuntivo, особенно когда говорящий по-настоящему не уверен: «quizá deba probarlo más gente». ' +
+          'С Indicativo (quizá debe probarlo) звучало бы как более вероятное предположение; с Subjuntivo — как открытая гипотеза. На B1 Subjuntivo здесь — стандарт.',
+      },
+    ],
+  },
 );
