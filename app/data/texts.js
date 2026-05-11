@@ -8189,4 +8189,1618 @@ window.TEXTS.push(
       },
     ],
   },
+
+  {
+    id: 'b1-011',
+    level: 'B1',
+    day: 11,
+    title: 'Cuando vuelva de Lisboa',
+    text:
+      'Estoy en Lisboa, en un café junto al Tajo, y aprovecho el wifi para escribirte rápido. ' +
+      'Cuando vuelva a Madrid el domingo por la noche, te llamo y montamos algo en serio.\n\n' +
+      'Mira, cuando llegue al piso, lo primero que pienso hacer es dormir doce horas seguidas. ' +
+      'Llevo cinco días caminando sin parar y noto las piernas pesadas. ' +
+      'Después, en cuanto recupere fuerzas, quiero ver a mi hermana: ella prometió enseñarme las fotos de la boda tan pronto como yo aterrice en España.\n\n' +
+      'Lo importante: cuando tenga un hueco entre semana, paso por tu barrio. ' +
+      'Antes de que termine octubre, quiero probar ese peruano del que tanto hablas. ' +
+      'Reserva tú, por favor; yo invito esta vez.\n\n' +
+      'He hablado con Lola y dice que, en cuanto le confirmen el bonus de fin de año, organizaremos una escapada a Asturias, tan pronto como ella acabe el proyecto del banco. ' +
+      'Yo me apunto. Cuando se cierren las fechas, te aviso por WhatsApp.\n\n' +
+      'A propósito, mi madre quiere que vayamos a comer a su casa cuando volvamos de Asturias. ' +
+      'Ya conoces sus paellas. De hecho, dice que esta vez la hará con marisco fresco del mercado de Avilés.\n\n' +
+      'Una cosa más: cuando me toque hacer las maletas mañana por la noche, te llamo por videollamada para que veas el piso donde me he quedado. ' +
+      'Es una joya del barrio de Alfama, con azulejos azules en la fachada. Un abrazo enorme desde Portugal.\n\nMarta',
+    vocabulary: [
+      {
+        word: 'el Tajo',
+        translation: 'река Тахо — крупнейшая на Иберийском полуострове, течёт через Толедо и впадает в океан в Лиссабоне',
+        example: 'un café junto al Tajo',
+      },
+      {
+        word: 'aprovechar',
+        translation: 'воспользоваться, использовать; aprovechar para + inf — пользуясь моментом сделать что-то',
+        example: 'aprovecho el wifi para escribirte',
+      },
+      {
+        word: 'montar algo',
+        translation: 'устроить, организовать (montar una fiesta, montar un plan); разг. — затеять',
+        example: 'montamos algo en serio',
+      },
+      {
+        word: 'seguido, -a',
+        translation: 'подряд, кряду (doce horas seguidas; dos días seguidos)',
+        example: 'dormir doce horas seguidas',
+      },
+      {
+        word: 'en cuanto',
+        translation: 'как только (союз времени; + Subjuntivo для будущего, + Indicativo для прошлого)',
+        example: 'en cuanto recupere fuerzas',
+      },
+      {
+        word: 'tan pronto como',
+        translation: 'как только, сразу как (синоним en cuanto; + Subjuntivo для будущего)',
+        example: 'tan pronto como yo aterrice',
+      },
+      {
+        word: 'aterrizar',
+        translation: 'приземляться (про самолёт); el aterrizaje — посадка; антоним despegar',
+        example: 'tan pronto como yo aterrice en España',
+      },
+      {
+        word: 'el hueco',
+        translation: 'окошко, свободный промежуток; буквально «дыра, пустое место» (tener un hueco en la agenda)',
+        example: 'cuando tenga un hueco entre semana',
+      },
+      {
+        word: 'entre semana',
+        translation: 'в будни (в отличие от fin de semana — выходные)',
+        example: 'cuando tenga un hueco entre semana',
+      },
+      {
+        word: 'la escapada',
+        translation: 'короткая поездка, вылазка (una escapada de fin de semana; escaparse — улизнуть)',
+        example: 'organizaremos una escapada a Asturias',
+      },
+      {
+        word: 'apuntarse a',
+        translation: 'записаться, присоединиться (a un curso, a un plan); ¡me apunto! — я в деле!',
+        example: 'Yo me apunto.',
+      },
+      {
+        word: 'avisar',
+        translation: 'предупредить, дать знать (avisar a alguien de algo; el aviso — уведомление)',
+        example: 'te aviso por WhatsApp',
+      },
+      {
+        word: 'a propósito',
+        translation: 'кстати, к слову; также «нарочно» (lo hizo a propósito — он сделал это нарочно)',
+        example: 'A propósito, mi madre quiere que vayamos.',
+      },
+      {
+        word: 'de hecho',
+        translation: 'на самом деле, фактически (вводное; синоним: en realidad)',
+        example: 'De hecho, dice que esta vez la hará con marisco.',
+      },
+      {
+        word: 'el marisco',
+        translation: 'морепродукты (креветки, мидии и т.п.); кастильский собирательный термин',
+        example: 'la hará con marisco fresco',
+      },
+      {
+        word: 'tocarle a alguien hacer algo',
+        translation: 'настать чья-то очередь делать что-то (me toca pagar; cuando me toque hacer las maletas)',
+        example: 'cuando me toque hacer las maletas',
+      },
+      {
+        word: 'el azulejo',
+        translation: 'изразец, расписная керамическая плитка — характерный элемент португальских и испанских фасадов',
+        example: 'con azulejos azules en la fachada',
+      },
+      {
+        word: 'la fachada',
+        translation: 'фасад здания (la fachada principal; en sentido figurado: показная сторона)',
+        example: 'azulejos azules en la fachada',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué piensa hacer la narradora en cuanto llegue a su piso?',
+        options: ['Dormir doce horas seguidas', 'Llamar a su madre', 'Ver a su hermana'],
+        correct: 0,
+      },
+      {
+        q: '¿Cuándo organizarán la escapada a Asturias?',
+        options: [
+          'Antes de que termine octubre',
+          'Tan pronto como Lola acabe el proyecto del banco y le confirmen el bonus',
+          'Cuando la narradora aterrice en Madrid',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué le propone hacer a Pablo por videollamada?',
+        options: [
+          'Que vean juntos las fotos de la boda',
+          'Que reserve mesa en el restaurante peruano',
+          'Que vea el piso de Alfama donde se ha quedado',
+        ],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Cuando / en cuanto / tan pronto como + Subjuntivo для будущего',
+        note:
+          'Союзы времени, когда речь идёт о ещё не случившемся, обязательно требуют Subjuntivo: «cuando vuelva», «cuando llegue», «en cuanto recupere fuerzas», «tan pronto como yo aterrice», «cuando tenga un hueco», «cuando se cierren las fechas», «cuando volvamos», «cuando me toque». ' +
+          'Если же речь о привычке или прошлом, те же союзы возьмут Indicativo: «cuando llego a casa, ceno» (обычно), «cuando llegué, cené» (прошлое).',
+      },
+      {
+        topic: 'Antes de que / para que (повторение)',
+        note:
+          '«Antes de que termine octubre» и «para que veas el piso» — стабильные триггеры Subjuntivo. ' +
+          'Antes de que всегда вводит будущее или гипотетическое событие; para que всегда выражает цель. Ни один из этих союзов не сочетается с Indicativo.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-012',
+    level: 'B1',
+    day: 12,
+    title: 'Para que entiendas',
+    text:
+      'Hijo, te dejo esta nota en la nevera para que la leas con calma cuando vuelvas del instituto. ' +
+      'Tu padre y yo hemos hablado largo y, antes de que pongas mala cara, déjanos explicarte.\n\n' +
+      'Te subimos la paga semanal, sí, pero a fin de que aprendas a administrar el dinero de verdad. ' +
+      'Te damos veinte euros más cada viernes para que puedas pagarte tú el transporte, el bocadillo del recreo y algún capricho razonable. ' +
+      'No es un regalo: es una herramienta para que practiques.\n\n' +
+      'A cambio, te pedimos dos cosas pequeñas. La primera: que apuntes en el móvil lo que gastas, para que a fin de mes podamos sentarnos los tres y mirar los números sin discusiones. ' +
+      'La segunda: que metas el cinco por ciento en la hucha de la cocina, para que tengas un colchón en caso de imprevisto.\n\n' +
+      'Sé lo que estás pensando: «mamá ya está con sus clases». No es eso. Te lo decimos para que entiendas cómo funciona una casa por dentro. ' +
+      'Cuando tengas dieciocho años y vivas fuera, no quiero que te encuentres pagando intereses al banco sin enterarte.\n\n' +
+      'Por cierto: el sábado, cena con la abuela. Habla bajito al principio, para que ella se vaya enterando del plan poco a poco; ya sabes cómo se pone con el tema del dinero.\n\n' +
+      'Hay tortilla en el horno. Cómete media, deja media para tu hermana. Un beso enorme.\nMamá',
+    vocabulary: [
+      {
+        word: 'la nota',
+        translation: 'записка, заметка; tomar nota — записать; dejar una nota — оставить записку',
+        example: 'te dejo esta nota en la nevera',
+      },
+      {
+        word: 'la nevera',
+        translation: 'холодильник (кастильский вариант; в Лат. Америке часто el refrigerador, в Мексике el refri)',
+        example: 'te dejo esta nota en la nevera',
+      },
+      {
+        word: 'la paga',
+        translation: 'карманные деньги (los padres dan paga a los hijos); также жалование (la paga extra)',
+        example: 'Te subimos la paga semanal.',
+      },
+      {
+        word: 'administrar',
+        translation: 'распоряжаться, управлять (administrar el dinero, una empresa); la administración',
+        example: 'aprendas a administrar el dinero',
+      },
+      {
+        word: 'a fin de que',
+        translation: 'с целью того, чтобы (книжный синоним para que; всегда + Subjuntivo)',
+        example: 'a fin de que aprendas a administrar',
+      },
+      {
+        word: 'el bocadillo',
+        translation: 'испанский сэндвич — багет с начинкой; el bocadillo de jamón — типичная еда в школе',
+        example: 'el bocadillo del recreo',
+      },
+      {
+        word: 'el recreo',
+        translation: 'школьная перемена (в colegio и instituto); recrearse — отдыхать, развлекаться',
+        example: 'el bocadillo del recreo',
+      },
+      {
+        word: 'el capricho',
+        translation: 'каприз, прихоть; algún capricho — какое-то баловство (un capricho razonable — разумная прихоть)',
+        example: 'algún capricho razonable',
+      },
+      {
+        word: 'la herramienta',
+        translation: 'инструмент (как предмет, так и в переносном смысле — средство)',
+        example: 'una herramienta para que practiques',
+      },
+      {
+        word: 'a cambio',
+        translation: 'взамен, в обмен (a cambio de algo; sin pedir nada a cambio)',
+        example: 'A cambio, te pedimos dos cosas.',
+      },
+      {
+        word: 'apuntar',
+        translation: 'записывать (apuntar en el cuaderno; apuntar lo que gastas); тж. apuntarse a — записаться',
+        example: 'que apuntes lo que gastas',
+      },
+      {
+        word: 'la hucha',
+        translation: 'копилка (домашняя; ahorrar en la hucha; el ahorro — сбережения)',
+        example: 'que metas el cinco por ciento en la hucha',
+      },
+      {
+        word: 'el colchón',
+        translation: 'матрас; в переносном смысле — финансовая подушка (un colchón económico)',
+        example: 'para que tengas un colchón en caso de imprevisto',
+      },
+      {
+        word: 'el imprevisto',
+        translation: 'непредвиденное событие, неожиданность (en caso de imprevisto; surgir un imprevisto)',
+        example: 'en caso de imprevisto',
+      },
+      {
+        word: 'los intereses',
+        translation: 'проценты (по кредиту); тж. интересы (мн.ч. от el interés)',
+        example: 'pagando intereses al banco',
+      },
+      {
+        word: 'enterarse de',
+        translation: 'узнавать, разбираться, замечать (no se entera — он не врубается; enterarse de algo)',
+        example: 'sin enterarte',
+      },
+      {
+        word: 'por cierto',
+        translation: 'кстати (вводное; синоним a propósito); НЕ путать с «por supuesto» — конечно',
+        example: 'Por cierto: el sábado, cena con la abuela.',
+      },
+      {
+        word: 'ponerse (con un tema)',
+        translation: 'завестись на тему, разойтись (ya sabes cómo se pone — ты знаешь, как её заносит)',
+        example: 'ya sabes cómo se pone con el tema del dinero',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Por qué le suben la paga al hijo?',
+        options: [
+          'Para que aprenda a administrar el dinero',
+          'Para que deje de pedir cosas a sus padres',
+          'Para que ahorre y se compre un móvil',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Qué dos cosas le piden a cambio?',
+        options: [
+          'Que estudie más y que ayude en casa',
+          'Que apunte sus gastos y que meta el cinco por ciento en la hucha',
+          'Que llame a la abuela y que limpie su habitación',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué consejo le da la madre sobre la cena del sábado?',
+        options: [
+          'Que no vaya, mejor quedarse en casa',
+          'Que hable bajito al principio, para que la abuela se vaya enterando del plan poco a poco',
+          'Que le cuente todo de golpe a la abuela',
+        ],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Para que / a fin de que + Subjuntivo (цель)',
+        note:
+          'Конструкции цели всегда требуют Subjuntivo, если субъекты главного и придаточного — разные. ' +
+          'В тексте: «para que la leas», «a fin de que aprendas», «para que puedas pagarte», «para que practiques», «para que podamos sentarnos», «para que tengas un colchón», «para que entiendas», «para que ella se vaya enterando». ' +
+          'Если субъект тот же, используется para + инфинитив: «trabajo para ahorrar» (не «para que ahorre»).',
+      },
+      {
+        topic: 'Antes de que / cuando + Subjuntivo (повторение)',
+        note:
+          '«Antes de que pongas mala cara» и «cuando vuelvas del instituto», «cuando tengas dieciocho años» — снова союзы будущего и предостережения с Subjuntivo. ' +
+          'На B1 они работают как единый паттерн: союз времени или цели, обращённый в будущее или гипотезу → Subjuntivo автоматически.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-013',
+    level: 'B1',
+    day: 13,
+    title: 'Aunque llueva',
+    text:
+      'Mi abuela tiene una frase para todo: «Aunque llueva, el camino se hace andando». ' +
+      'La oigo desde niña y, a mis veintinueve años, empieza a tener sentido del todo.\n\n' +
+      'Este lunes, aunque sea difícil, voy a dejar mi trabajo en la consultora. ' +
+      'Llevo cuatro años allí. Gano bien, viajo a Frankfurt cada dos meses, mi jefe me valora. ' +
+      'Y, sin embargo, vuelvo a casa vacía cada noche. ' +
+      'Aunque mi madre piense que estoy loca, no quiero esperar a los cuarenta para reaccionar.\n\n' +
+      'He montado un pequeño taller de cerámica en Lavapiés con dos amigas. ' +
+      'Aunque al principio ganemos poco, los números salen: tenemos clientes, una web sencilla y una página de Instagram que crece despacio. ' +
+      'Aunque no nos hagamos ricas, vamos a vivir tranquilas. ' +
+      'Aunque el primer invierno sea duro, sé que aguantaremos.\n\n' +
+      'Mis amigas de la oficina no lo entienden. ' +
+      'Aunque tú insistas en que «estás muy bien», muchos de nosotros estamos cansados de oficinas grises. ' +
+      'Aunque resulte raro decirlo, prefiero las manos sucias de barro a las uñas perfectas de las reuniones de los viernes.\n\n' +
+      'Mi padre me ha sorprendido. Aunque él mismo trabajó cuarenta años en una fábrica, ayer me dijo: «Hija, aunque te equivoques, hazlo. Lo importante es elegir tú». ' +
+      'Le di un abrazo larguísimo.\n\n' +
+      'Pongo punto final a esta carta porque llaman al timbre. ' +
+      'Aunque no sé qué saldrá de todo esto, mañana firmo la baja voluntaria y se acabó. Voy a por ello.',
+    vocabulary: [
+      {
+        word: 'aunque',
+        translation: 'хотя, даже если; + Subjuntivo для гипотезы или уступки в будущем, + Indicativo для констатации факта',
+        example: 'Aunque llueva, el camino se hace andando.',
+      },
+      {
+        word: 'la consultora',
+        translation: 'консалтинговая фирма (la consultora estratégica; el consultor — консультант)',
+        example: 'voy a dejar mi trabajo en la consultora',
+      },
+      {
+        word: 'valorar a alguien',
+        translation: 'ценить, придавать значение (mi jefe me valora; sentirse valorado)',
+        example: 'mi jefe me valora',
+      },
+      {
+        word: 'vacío, -a',
+        translation: 'пустой; в переносном смысле — опустошённый (sentirse vacío; el vacío — пустота)',
+        example: 'vuelvo a casa vacía cada noche',
+      },
+      {
+        word: 'reaccionar',
+        translation: 'отреагировать, начать действовать (reaccionar a tiempo; la reacción)',
+        example: 'no quiero esperar a los cuarenta para reaccionar',
+      },
+      {
+        word: 'el taller',
+        translation: 'мастерская; также семинар (un taller de cerámica; un taller de escritura)',
+        example: 'un pequeño taller de cerámica',
+      },
+      {
+        word: 'la cerámica',
+        translation: 'керамика (как материал и как ремесло; un jarrón de cerámica)',
+        example: 'un taller de cerámica',
+      },
+      {
+        word: 'los números salen',
+        translation: 'цифры сходятся, концы с концами сводятся (если no salen los números — не сходится)',
+        example: 'los números salen',
+      },
+      {
+        word: 'aguantar',
+        translation: 'выдерживать, терпеть (aguantar el dolor, aguantar un invierno duro)',
+        example: 'sé que aguantaremos',
+      },
+      {
+        word: 'gris',
+        translation: 'серый; в переносном смысле — унылый, безликий (un día gris; una oficina gris)',
+        example: 'cansados de oficinas grises',
+      },
+      {
+        word: 'resultar',
+        translation: 'оказываться, выходить (resulta raro — звучит странно; el resultado — результат)',
+        example: 'Aunque resulte raro decirlo',
+      },
+      {
+        word: 'el barro',
+        translation: 'глина; грязь после дождя (manos sucias de barro; un cacharro de barro)',
+        example: 'las manos sucias de barro',
+      },
+      {
+        word: 'la uña',
+        translation: 'ноготь (las uñas perfectas; comerse las uñas — грызть ногти)',
+        example: 'las uñas perfectas de las reuniones',
+      },
+      {
+        word: 'equivocarse',
+        translation: 'ошибаться (повторение из b1-002; aunque te equivoques — даже если ошибёшься)',
+        example: 'aunque te equivoques, hazlo',
+      },
+      {
+        word: 'el timbre',
+        translation: 'дверной звонок; tocar / llamar al timbre — звонить в дверь',
+        example: 'llaman al timbre',
+      },
+      {
+        word: 'la baja voluntaria',
+        translation: 'добровольное увольнение по своей инициативе (firmar la baja; coger la baja — взять отпуск по болезни)',
+        example: 'mañana firmo la baja voluntaria',
+      },
+      {
+        word: 'ir a por ello / algo',
+        translation: 'идти за этим, рвануть; разг. — браться за дело решительно (¡a por ello!)',
+        example: 'Voy a por ello.',
+      },
+      {
+        word: 'poner punto final a',
+        translation: 'поставить точку, завершить (poner punto final a una carta, a una etapa)',
+        example: 'Pongo punto final a esta carta.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué decisión va a tomar la narradora este lunes?',
+        options: [
+          'Pedir un aumento en la consultora',
+          'Dejar su trabajo en la consultora y dedicarse al taller de cerámica',
+          'Mudarse a Frankfurt definitivamente',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo reacciona el padre de la narradora?',
+        options: [
+          'Le pide que no se equivoque, que vuelva atrás',
+          'No le habla durante días',
+          'La apoya: «aunque te equivoques, hazlo; lo importante es elegir tú»',
+        ],
+        correct: 2,
+      },
+      {
+        q: '¿Qué prefiere la narradora?',
+        options: [
+          'Las uñas perfectas de las reuniones',
+          'Las manos sucias de barro del taller',
+          'Trabajar desde casa para la consultora',
+        ],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Aunque + Subjuntivo: уступка и гипотеза',
+        note:
+          'Aunque вводит уступку. С Subjuntivo это означает «даже если» (гипотеза или признание, что говорящий не считает факт релевантным): «aunque llueva», «aunque sea difícil», «aunque mi madre piense», «aunque al principio ganemos poco», «aunque no nos hagamos ricas», «aunque el primer invierno sea duro», «aunque tú insistas», «aunque resulte raro», «aunque él mismo trabajó… aunque te equivoques», «aunque no sé qué saldrá» (последнее с Indicativo — это уже факт). ' +
+          'Сравни: «aunque llueve» (хотя сейчас идёт дождь, факт) vs «aunque llueva» (даже если пойдёт, гипотеза).',
+      },
+      {
+        topic: 'Subjuntivo не обязательно «нереально»',
+        note:
+          'Важный нюанс B1: aunque + Subjuntivo не всегда значит «маловероятно». Часто это просто способ показать, что говорящий не делает упор на факт. «Aunque sea difícil» можно сказать, даже зная, что точно будет трудно — это уступка, не сомнение. ' +
+          'Решение «Subjuntivo / Indicativo» здесь — стилистическое: с Subjuntivo звучит решительнее и более «по-литературному».',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-014',
+    level: 'B1',
+    day: 14,
+    title: 'Diez consejos antes del campamento',
+    text:
+      'Queridas familias:\n\n' +
+      'El sábado salimos hacia el campamento de los Pirineos. Antes del viaje, por favor, hablad con vuestros hijos. ' +
+      'Os dejamos una lista breve de cosas que sí y de cosas que no.\n\n' +
+      'A los niños: no perdáis de vista al monitor, sobre todo en el autobús y en los senderos. ' +
+      'No abráis la mochila grande hasta que lleguemos al refugio; ahí dentro va el saco de dormir y se moja con nada. ' +
+      'No bebáis del río, por bonito que parezca; el agua se llena con el sol. ' +
+      'No durmáis con el móvil en la cama: lo entregáis a las diez y se devuelve por la mañana.\n\n' +
+      'No os preocupéis por el frío de la primera noche: en el refugio hay mantas suficientes. ' +
+      'Si alguno se siente mal, no esperéis a la mañana; avisad al monitor enseguida. ' +
+      'No os peleéis por los turnos de ducha: hay agua para todos.\n\n' +
+      'A los padres: no enviéis paquetes de comida durante la semana; la cocina está organizada. ' +
+      'No llaméis al móvil del niño: si surge una urgencia, marcad el número del campamento que aparece al final de esta carta. ' +
+      'No descarguéis aplicaciones de geolocalización sin avisar a los monitores; rompe la dinámica.\n\n' +
+      'Por último, un par de consejos en positivo. ' +
+      'Confiad en el equipo. Disfrutad de una semana sin pantallas en casa. Y, sobre todo, recordad: a los niños les sienta bien dormir con estrellas.\n\nUn abrazo,\nIsabel — coordinadora del campamento',
+    vocabulary: [
+      {
+        word: 'el campamento',
+        translation: 'лагерь, кемпинг (un campamento de verano; campamento escolar)',
+        example: 'el campamento de los Pirineos',
+      },
+      {
+        word: 'los Pirineos',
+        translation: 'Пиренеи — горный массив на границе Испании и Франции; популярны для летних лагерей',
+        example: 'salimos hacia el campamento de los Pirineos',
+      },
+      {
+        word: 'el monitor / la monitora',
+        translation: 'вожатый, инструктор (в детских лагерях; tж. ведущий курса)',
+        example: 'no perdáis de vista al monitor',
+      },
+      {
+        word: 'perder de vista',
+        translation: 'упустить из виду (no perder de vista a alguien)',
+        example: 'no perdáis de vista al monitor',
+      },
+      {
+        word: 'el sendero',
+        translation: 'тропа, тропинка (sendero de montaña; el senderismo — пеший туризм)',
+        example: 'en los senderos',
+      },
+      {
+        word: 'el refugio',
+        translation: 'горный приют, убежище (refugio de montaña; refugiarse — укрываться)',
+        example: 'hasta que lleguemos al refugio',
+      },
+      {
+        word: 'el saco de dormir',
+        translation: 'спальный мешок (типичный предмет в кемпинге)',
+        example: 'ahí dentro va el saco de dormir',
+      },
+      {
+        word: 'mojarse',
+        translation: 'намокнуть (se moja con nada — намокает от чего угодно); mojar — мочить',
+        example: 'se moja con nada',
+      },
+      {
+        word: 'por bonito que parezca',
+        translation: 'каким бы красивым ни казалось (конструкция por + adj + que + Subjuntivo)',
+        example: 'por bonito que parezca',
+      },
+      {
+        word: 'entregar',
+        translation: 'сдавать, вручать (entregar el móvil, entregar un trabajo); la entrega — сдача, доставка',
+        example: 'lo entregáis a las diez',
+      },
+      {
+        word: 'devolverse / devolver',
+        translation: 'возвращать, отдавать обратно (te lo devuelvo; se devuelve por la mañana)',
+        example: 'se devuelve por la mañana',
+      },
+      {
+        word: 'la manta',
+        translation: 'одеяло, плед (taparse con una manta; una manta de lana)',
+        example: 'hay mantas suficientes',
+      },
+      {
+        word: 'pelearse por',
+        translation: 'ссориться, драться из-за чего-то (pelearse por una tontería; la pelea — драка, ссора)',
+        example: 'no os peleéis por los turnos de ducha',
+      },
+      {
+        word: 'el turno',
+        translation: 'очередь, смена (turno de ducha, turno de noche; pedir turno — записаться в очередь)',
+        example: 'los turnos de ducha',
+      },
+      {
+        word: 'el paquete',
+        translation: 'посылка, упаковка (un paquete de comida; recibir un paquete)',
+        example: 'no enviéis paquetes de comida',
+      },
+      {
+        word: 'surgir',
+        translation: 'возникнуть, появиться (surge un problema; surgió la idea)',
+        example: 'si surge una urgencia',
+      },
+      {
+        word: 'marcar (un número)',
+        translation: 'набирать (номер телефона); тж. отмечать (marcar una fecha)',
+        example: 'marcad el número del campamento',
+      },
+      {
+        word: 'la geolocalización',
+        translation: 'геолокация (определение местоположения; aplicaciones de geolocalización)',
+        example: 'no descarguéis aplicaciones de geolocalización',
+      },
+      {
+        word: 'sentar bien (a alguien)',
+        translation: 'идти на пользу (a los niños les sienta bien — детям это полезно; повторение из b1-002)',
+        example: 'a los niños les sienta bien dormir con estrellas',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué no deben hacer los niños con el móvil?',
+        options: [
+          'No deben encenderlo nunca',
+          'No deben dormir con el móvil en la cama: lo entregan a las diez',
+          'No deben llamar a sus padres durante la semana',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué tienen que hacer los padres si surge una urgencia?',
+        options: [
+          'Llamar al móvil del niño',
+          'Esperar a la mañana siguiente',
+          'Marcar el número del campamento que aparece al final de la carta',
+        ],
+        correct: 2,
+      },
+      {
+        q: '¿Qué consejo en positivo da Isabel al final?',
+        options: [
+          'Disfrutar de una semana sin pantallas en casa y confiar en el equipo',
+          'Enviar paquetes con comida favorita',
+          'Descargar la aplicación de geolocalización oficial',
+        ],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperativo negativo: no + Subjuntivo presente',
+        note:
+          'Отрицательный императив образуется только через Subjuntivo. ' +
+          'Vosotros (типично для Испании): «no perdáis», «no abráis», «no bebáis», «no durmáis», «no os preocupéis», «no esperéis», «no os peleéis», «no enviéis», «no llaméis», «no descarguéis». ' +
+          'Ту: «no hables», «no salgas», «no te preocupes». ' +
+          'Утвердительный императив имеет свои формы (perded, abrid, bebed), но в отрицании все шесть лиц берут Subjuntivo.',
+      },
+      {
+        topic: 'Hasta que + Subjuntivo для будущего; por + adj + que + Subjuntivo',
+        note:
+          '«No abráis la mochila hasta que lleguemos al refugio» — hasta que с Subjuntivo, потому что речь о будущем. ' +
+          '«Por bonito que parezca» — фиксированная уступительная конструкция по схеме «por + прилагательное + que + Subjuntivo», смысл: «каким бы … ни казалось». Часто встречается на B1.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-015',
+    level: 'B1',
+    day: 15,
+    title: 'Lo que dice Lucía',
+    text:
+      'Hoy he comido con Lucía, mi amiga sevillana, y traigo material. Dejo aquí todo lo que cuenta, así no se me olvida.\n\n' +
+      'Lucía dice que su nuevo piso de Triana le encanta y que la luz por la tarde es de postal. ' +
+      'Añade que el balcón es minúsculo, pero que ella es feliz con poco. ' +
+      'A mí, que tantas veces hemos hablado del tamaño de las cosas, me hace gracia oírle decir esto.\n\n' +
+      'Cuenta que su madre está mejor del corazón. ' +
+      'Asegura que el cardiólogo del Virgen del Rocío es un crack y que las pruebas han salido bien. ' +
+      'Comenta también que su padre, en cambio, sigue tan terco como siempre: no quiere ni oír hablar de gimnasia para mayores. ' +
+      'Le dice a su madre que está «como un toro» y se ríe.\n\n' +
+      'Por el trabajo, explica que el bufete por fin la trata bien. ' +
+      'Cuenta que su jefa le ha subido el sueldo y le promete dos viernes libres al mes. ' +
+      'Repite que necesita aire, que llevaba dos años a pleno gas. ' +
+      'Reconoce que se le iban las tardes en la oficina sin notarlo.\n\n' +
+      'Sobre Carlos, su pareja, está en plena mudanza. ' +
+      'Lucía afirma que él la está ayudando muchísimo, aunque mete las cajas en el orden equivocado. ' +
+      'Dice riéndose que prefiere que él monte mal los muebles a que no monte nada. ' +
+      'Buena filosofía, pienso yo.\n\n' +
+      'Antes de irse, me asegura que viene a Madrid en diciembre y que esta vez se queda tres días. ' +
+      '¡Por fin!',
+    vocabulary: [
+      {
+        word: 'traer material',
+        translation: 'разг. — принести материал (новости, тему для разговора); идиоматически',
+        example: 'traigo material',
+      },
+      {
+        word: 'de postal',
+        translation: 'как с открытки, очень красивый (un paisaje de postal; una luz de postal)',
+        example: 'la luz por la tarde es de postal',
+      },
+      {
+        word: 'minúsculo, -a',
+        translation: 'крохотный, миниатюрный (un piso minúsculo; антоним enorme)',
+        example: 'el balcón es minúsculo',
+      },
+      {
+        word: 'hacer gracia a alguien',
+        translation: 'забавлять, казаться смешным (me hace gracia — мне это смешно; строится как gustar)',
+        example: 'me hace gracia oírle decir esto',
+      },
+      {
+        word: 'añadir',
+        translation: 'добавить (a una conversación, a una comida; la suma — сложение)',
+        example: 'Añade que el balcón es minúsculo.',
+      },
+      {
+        word: 'asegurar',
+        translation: 'заверять, гарантировать (asegurar que…; el seguro — страховка; la aseguradora)',
+        example: 'Asegura que el cardiólogo es un crack.',
+      },
+      {
+        word: 'el / la crack',
+        translation: 'разг. — мастер своего дела, ас (англицизм; un crack del fútbol, un crack en medicina)',
+        example: 'el cardiólogo es un crack',
+      },
+      {
+        word: 'la prueba',
+        translation: 'анализ, обследование; также проба, испытание (las pruebas médicas; una prueba de selectividad)',
+        example: 'las pruebas han salido bien',
+      },
+      {
+        word: 'terco, -a',
+        translation: 'упрямый (синоним testarudo; ser terco como una mula)',
+        example: 'sigue tan terco como siempre',
+      },
+      {
+        word: 'como un toro',
+        translation: 'идиома — здоров как бык, в полном порядке (фольклорная фраза)',
+        example: 'está «como un toro»',
+      },
+      {
+        word: 'el bufete',
+        translation: 'юридическая фирма, адвокатская контора (trabajar en un bufete; el bufete de abogados)',
+        example: 'el bufete por fin la trata bien',
+      },
+      {
+        word: 'el sueldo',
+        translation: 'зарплата (cobrar un sueldo, subir el sueldo; el salario — официальный термин)',
+        example: 'le ha subido el sueldo',
+      },
+      {
+        word: 'a pleno gas',
+        translation: 'разг. — на полной скорости, на полную катушку (vivir a pleno gas; синоним a tope)',
+        example: 'llevaba dos años a pleno gas',
+      },
+      {
+        word: 'irse el tiempo / la tarde',
+        translation: 'разг. — время уходит, незаметно проходит (se me va la tarde; se me ha ido el día)',
+        example: 'se le iban las tardes en la oficina',
+      },
+      {
+        word: 'la mudanza',
+        translation: 'переезд (с вещами); mudarse — переезжать; estar de mudanza',
+        example: 'está en plena mudanza',
+      },
+      {
+        word: 'meter (algo en orden / desorden)',
+        translation: 'класть, засовывать (meter las cajas; meter la pata — оплошать)',
+        example: 'mete las cajas en el orden equivocado',
+      },
+      {
+        word: 'afirmar',
+        translation: 'утверждать (afirmar que…; la afirmación; антоним negar)',
+        example: 'Lucía afirma que él la está ayudando.',
+      },
+      {
+        word: 'reconocer',
+        translation: 'признавать (reconocer un error; reconocer a alguien — узнать кого-то в лицо)',
+        example: 'Reconoce que se le iban las tardes.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué cuenta Lucía sobre su nuevo piso de Triana?',
+        options: [
+          'Que le encanta y que la luz por la tarde es de postal',
+          'Que es demasiado caro y va a dejarlo',
+          'Que no tiene balcón',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Cómo está su padre, según Lucía?',
+        options: [
+          'Está peor y no sale de casa',
+          'Sigue tan terco como siempre y no quiere oír hablar de gimnasia',
+          'Acepta hacer ejercicio cada mañana',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué prefiere Lucía sobre Carlos durante la mudanza?',
+        options: [
+          'Que él monte mal los muebles a que no monte nada',
+          'Que él no toque nada y deje todo al transportista',
+          'Que él se vaya y vuelva cuando todo esté listo',
+        ],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Estilo indirecto en presente: глаголы речи + que + Indicativo',
+        note:
+          'Когда мы пересказываем чужие слова, оставаясь в настоящем («Lucía dice que…», «cuenta que…», «asegura que…», «explica que…», «repite que…», «afirma que…», «reconoce que…»), придаточное с фактом стоит в Indicativo: «dice que su piso le encanta», «cuenta que su madre está mejor», «explica que el bufete la trata bien». ' +
+          'На B1 это базовая модель: говорящий передаёт чужое утверждение как реальный факт — отсюда Indicativo.',
+      },
+      {
+        topic: 'Volición внутри косвенной речи → Subjuntivo',
+        note:
+          'Если исходная реплика содержала желание или просьбу, в косвенной речи появляется Subjuntivo: «prefiere que él monte mal los muebles a que no monte nada». ' +
+          'То есть: косвенная речь не «отменяет» правила выбора между Indicativo и Subjuntivo — они применяются по типу действия (факт vs воля/эмоция/оценка), как и в прямой речи.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-016',
+    level: 'B1',
+    day: 16,
+    title: 'Le pido que me ayude',
+    text:
+      'Llevo dos semanas intentando aprender a usar el ordenador nuevo y, después de mucho pensarlo, le pido a mi sobrino Iván que me ayude. ' +
+      'Iván tiene dieciocho años y, desde niño, ha sido el más paciente con su abuela.\n\n' +
+      'Le ruego que venga el sábado por la mañana, no muy temprano. ' +
+      'Le advierto que tengo libreta, bolígrafo y café preparados. ' +
+      'Él se ríe por WhatsApp y me responde que no me preocupe, que tiene toda la mañana libre.\n\n' +
+      'El sábado llega puntual. Empezamos por el correo. ' +
+      'Le pido que me explique cómo se manda un archivo grande sin que el ordenador se enfade. ' +
+      'Me aconseja que use un servicio de la nube, pero también me recomienda que aprenda a comprimir carpetas, «porque hay correos antiguos que no aceptan archivos pesados».\n\n' +
+      'Después le pido que me enseñe a hablar con mi hija por videollamada. ' +
+      'Me sugiere que ponga el portátil un poco más alto y, sobre todo, me prohíbe que mire fijamente al icono de la pantalla: «mira a la cámara, abuela, si no, parece que estás triste».\n\n' +
+      'A media mañana surge un problema con las contraseñas. ' +
+      'Iván me pide que no apunte la contraseña en un papel pegado al monitor; me ruega que use un gestor sencillo en el móvil. ' +
+      'Acepto, aunque protesto un poco. ' +
+      'Él me promete que volveremos a repasarlo el sábado siguiente, para que no se me olvide.\n\n' +
+      'Acabamos comiendo tortilla. ' +
+      'Antes de irse, le pido una cosa más: que llame de vez en cuando sin esperar a que su tía organice nada. Me da un beso y me dice que lo hará.',
+    vocabulary: [
+      {
+        word: 'el sobrino / la sobrina',
+        translation: 'племянник / племянница (parentesco directo; tía / tío — тётя / дядя)',
+        example: 'le pido a mi sobrino Iván que me ayude',
+      },
+      {
+        word: 'rogar',
+        translation: 'просить настойчиво, упрашивать (o→ue: ruego, ruegas, ruega…; rogar a alguien que + Subjuntivo)',
+        example: 'Le ruego que venga el sábado.',
+      },
+      {
+        word: 'advertir',
+        translation: 'предупреждать (e→ie: advierto, adviertes, advierte…; la advertencia — предупреждение)',
+        example: 'Le advierto que tengo libreta y bolígrafo.',
+      },
+      {
+        word: 'la libreta',
+        translation: 'тетрадь, блокнот (libreta de notas, libreta de direcciones)',
+        example: 'tengo libreta, bolígrafo y café preparados',
+      },
+      {
+        word: 'puntual',
+        translation: 'пунктуальный (llegar puntual; la puntualidad)',
+        example: 'El sábado llega puntual.',
+      },
+      {
+        word: 'enfadarse',
+        translation: 'сердиться, злиться (кастильский глагол; в Лат. Америке enojarse); el enfado — раздражение',
+        example: 'sin que el ordenador se enfade',
+      },
+      {
+        word: 'aconsejar',
+        translation: 'советовать (aconsejar a alguien que + Subjuntivo; el consejo — совет)',
+        example: 'Me aconseja que use un servicio de la nube.',
+      },
+      {
+        word: 'la nube',
+        translation: 'облако; в IT — облачный сервис (guardar en la nube; servicios de la nube)',
+        example: 'un servicio de la nube',
+      },
+      {
+        word: 'recomendar',
+        translation: 'рекомендовать (e→ie: recomiendo, recomiendas…; recomendar que + Subjuntivo)',
+        example: 'me recomienda que aprenda a comprimir carpetas',
+      },
+      {
+        word: 'comprimir',
+        translation: 'сжимать, архивировать (comprimir un archivo; un archivo comprimido)',
+        example: 'aprenda a comprimir carpetas',
+      },
+      {
+        word: 'sugerir',
+        translation: 'предлагать, наводить на мысль (e→ie/i: sugiero, sugieres…; la sugerencia)',
+        example: 'Me sugiere que ponga el portátil más alto.',
+      },
+      {
+        word: 'prohibir',
+        translation: 'запрещать (prohibir a alguien que + Subjuntivo; la prohibición)',
+        example: 'me prohíbe que mire fijamente al icono',
+      },
+      {
+        word: 'fijamente',
+        translation: 'пристально, в упор (mirar fijamente; fijar la mirada en algo)',
+        example: 'que mire fijamente al icono de la pantalla',
+      },
+      {
+        word: 'la contraseña',
+        translation: 'пароль (cambiar la contraseña; un gestor de contraseñas — менеджер паролей)',
+        example: 'surge un problema con las contraseñas',
+      },
+      {
+        word: 'pegado a',
+        translation: 'приклеенный, прилепленный (un papel pegado al monitor; pegar — клеить)',
+        example: 'un papel pegado al monitor',
+      },
+      {
+        word: 'el gestor',
+        translation: 'менеджер (программа или человек-управляющий); un gestor de contraseñas; un gestor administrativo',
+        example: 'un gestor sencillo en el móvil',
+      },
+      {
+        word: 'protestar',
+        translation: 'возражать, протестовать (protestar por algo; la protesta — протест)',
+        example: 'Acepto, aunque protesto un poco.',
+      },
+      {
+        word: 'repasar',
+        translation: 'повторять, пересматривать (repasar una lección; el repaso — повторение)',
+        example: 'volveremos a repasarlo el sábado siguiente',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Por qué le pide la abuela ayuda a Iván?',
+        options: [
+          'Para aprender a usar el ordenador nuevo',
+          'Para mudarse a otro piso',
+          'Para enseñarle a Iván a cocinar tortilla',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Qué le aconseja Iván sobre las contraseñas?',
+        options: [
+          'Que las apunte en un papel pegado al monitor',
+          'Que no apunte la contraseña en un papel y use un gestor en el móvil',
+          'Que use la misma contraseña en todas partes',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué le pide la abuela al final, antes de que Iván se vaya?',
+        options: [
+          'Que la llame de vez en cuando sin esperar a que la tía organice nada',
+          'Que vuelva el domingo siguiente',
+          'Que le compre un ordenador nuevo',
+        ],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Глаголы просьбы и совета + que + Subjuntivo',
+        note:
+          'Pedir, rogar, aconsejar, recomendar, sugerir, advertir, prohibir, mandar, ordenar — все вводят придаточное в Subjuntivo, когда субъекты разные: «le pido que me ayude», «le ruego que venga», «me aconseja que use», «me recomienda que aprenda», «me sugiere que ponga», «me prohíbe que mire», «me pide que no apunte», «me ruega que use». ' +
+          'Если субъект тот же, после этих глаголов идёт инфинитив: «te pido venir», но в речи чаще всё равно «te pido que vengas».',
+      },
+      {
+        topic: 'Sin que / para que / antes de que (повторение)',
+        note:
+          '«Sin que el ordenador se enfade», «para que no se me olvide», «antes de que se vaya», «sin esperar a que su tía organice» — четыре стабильных триггера Subjuntivo. ' +
+          '«Esperar a que» по структуре совпадает с antes de que: оба указывают на ещё не случившееся действие → Subjuntivo.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-017',
+    level: 'B1',
+    day: 17,
+    title: 'En cuanto bajen los precios',
+    text:
+      'Cena de domingo en casa de mis padres. Pollo asado, ensalada de tomate del huerto y un vino tinto modesto. ' +
+      'El tema vuelve a ser el mismo: el piso. ' +
+      'Mi hermana lleva un año mirando anuncios y, sinceramente, ya cansa.\n\n' +
+      'Mi padre dice: «En cuanto bajen los precios, te buscaremos algo en condiciones». ' +
+      'Mi madre añade: «Y, antes de que firmes nada, lo vemos los tres juntos». ' +
+      'Mi hermana suspira y contesta que, a menos que algo cambie en el mercado, los precios no van a bajar.\n\n' +
+      'Yo, callada, observo. ' +
+      'Antes de que mi hermana se enfade del todo, intento mediar: ' +
+      '«Tan pronto como vuelva el frío, muchos propietarios van a aceptar bajar un poco; en septiembre la gente compra menos». ' +
+      'Pongo cifras, hablo de Idealista, de barrios concretos. ' +
+      'Mi padre asiente.\n\n' +
+      'Surge entonces una idea: alquiler con opción a compra. ' +
+      'Mi madre, con tal de que la decisión sea reversible, lo acepta. ' +
+      'Mi hermana se anima un poco. Acordamos que, en cuanto encontremos tres opciones interesantes en el norte de Madrid, vamos los cuatro a verlas un sábado. ' +
+      'Sin que nadie presione, sin compromiso de comprar.\n\n' +
+      'Después de los cafés, mi padre saca un cuaderno antiguo. ' +
+      'Ha apuntado fechas, números y nombres de inmobiliarias. ' +
+      'Lo hace para que la conversación no se quede en aire, como otras veces.\n\n' +
+      'Antes de irnos, mi hermana me dice bajito: «Hasta que no firme un contrato, no me voy a fiar». ' +
+      'Yo le contesto: «Hasta que no lo firmes, sigue mirando. Hay piso para ti, sin duda. Solo hay que tener paciencia».',
+    vocabulary: [
+      {
+        word: 'asado, -a',
+        translation: 'жареный, запечённый (pollo asado, patatas asadas; asar — запекать)',
+        example: 'Pollo asado, ensalada de tomate.',
+      },
+      {
+        word: 'el huerto',
+        translation: 'огород (домашний или сельский; el huerto urbano — городской огород)',
+        example: 'ensalada de tomate del huerto',
+      },
+      {
+        word: 'en condiciones',
+        translation: 'нормальный, как положено (un piso en condiciones — приличная квартира; trabajar en condiciones)',
+        example: 'algo en condiciones',
+      },
+      {
+        word: 'suspirar',
+        translation: 'вздыхать (el suspiro — вздох; suspirar por alguien — вздыхать по кому-то)',
+        example: 'Mi hermana suspira y contesta.',
+      },
+      {
+        word: 'a menos que',
+        translation: 'если только не, разве что (всегда + Subjuntivo; синоним salvo que)',
+        example: 'a menos que algo cambie en el mercado',
+      },
+      {
+        word: 'el mercado',
+        translation: 'рынок (как место и как экономическое понятие; el mercado inmobiliario — рынок недвижимости)',
+        example: 'a menos que algo cambie en el mercado',
+      },
+      {
+        word: 'mediar',
+        translation: 'посредничать, выступать арбитром (mediar en un conflicto; el mediador — посредник)',
+        example: 'intento mediar',
+      },
+      {
+        word: 'asentir',
+        translation: 'кивать, соглашаться (e→i: asiento, asientes, asiente…; sin decir nada, asentir)',
+        example: 'Mi padre asiente.',
+      },
+      {
+        word: 'el alquiler',
+        translation: 'аренда, съём; также арендная плата (alquiler con opción a compra — аренда с правом выкупа)',
+        example: 'alquiler con opción a compra',
+      },
+      {
+        word: 'reversible',
+        translation: 'обратимый, поправимый (una decisión reversible; антоним irreversible)',
+        example: 'con tal de que la decisión sea reversible',
+      },
+      {
+        word: 'con tal de que',
+        translation: 'при условии что, лишь бы (всегда + Subjuntivo; выражает условие говорящего)',
+        example: 'con tal de que la decisión sea reversible',
+      },
+      {
+        word: 'animarse',
+        translation: 'воодушевиться, оживиться (animarse a hacer algo; el ánimo — настрой)',
+        example: 'Mi hermana se anima un poco.',
+      },
+      {
+        word: 'presionar',
+        translation: 'давить, оказывать давление (presionar a alguien; la presión — давление)',
+        example: 'Sin que nadie presione.',
+      },
+      {
+        word: 'sin que',
+        translation: 'без того чтобы, не давая (всегда + Subjuntivo; ↔ субъект придаточного отличается от главного)',
+        example: 'sin que nadie presione',
+      },
+      {
+        word: 'la inmobiliaria',
+        translation: 'агентство недвижимости (un agente inmobiliario; tж. el sector inmobiliario)',
+        example: 'nombres de inmobiliarias',
+      },
+      {
+        word: 'quedarse en el aire',
+        translation: 'остаться в воздухе, не получить продолжения (una conversación que se queda en el aire)',
+        example: 'que la conversación no se quede en aire',
+      },
+      {
+        word: 'fiarse de',
+        translation: 'доверять (fiarse de alguien; no me fío — я не доверяю; la confianza — доверие)',
+        example: 'no me voy a fiar',
+      },
+      {
+        word: 'Idealista',
+        translation: 'Idealista.com — основная испанская платформа объявлений по аренде и продаже жилья',
+        example: 'hablo de Idealista',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuándo, según el padre, le buscarán algo en condiciones a la hermana?',
+        options: [
+          'En cuanto bajen los precios',
+          'Cuando la hermana cumpla treinta años',
+          'En cuanto el padre se jubile',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Qué fórmula proponen para el piso?',
+        options: [
+          'Comprar al contado sin pensarlo',
+          'Alquiler con opción a compra',
+          'Vivir todos juntos en casa de los padres',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Para qué saca el padre un cuaderno con fechas, números y nombres de inmobiliarias?',
+        options: [
+          'Para regalárselo a la hija',
+          'Para que la conversación no se quede en aire, como otras veces',
+          'Para venderlo en una tienda de segunda mano',
+        ],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Conjunciones de tiempo y condición + Subjuntivo',
+        note:
+          'Гипотеза в будущем с союзами времени и условия — Subjuntivo: «en cuanto bajen los precios», «antes de que firmes nada», «a menos que algo cambie», «tan pronto como vuelva el frío», «en cuanto encontremos tres opciones», «con tal de que la decisión sea reversible», «sin que nadie presione». ' +
+          'Все эти союзы держат Subjuntivo, потому что событие либо ещё не произошло, либо является условием.',
+      },
+      {
+        topic: 'Hasta que (no) + Subjuntivo для будущего',
+        note:
+          '«Hasta que no firme un contrato, no me voy a fiar» и «hasta que no lo firmes, sigue mirando» — типичный B1-рисунок. ' +
+          'Hasta que для будущего/гипотезы всегда берёт Subjuntivo, и испанцы часто добавляют избыточное «no» внутри придаточного без изменения смысла: «hasta que no firme» = «hasta que firme». Это разговорная норма.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-018',
+    level: 'B1',
+    day: 18,
+    title: 'Reunión del lunes',
+    text:
+      'Acta de la reunión del lunes, 9 h, sala azul. Asisten: Marta, Carlos, Sonia, Diego y, conectado por videollamada, Pablo desde la oficina de Valencia.\n\n' +
+      'Marta abre la reunión y pide que no nos demoremos: a las once tenemos al cliente de Bilbao en pantalla. ' +
+      'Sonia, recién llegada de vacaciones, repasa los plazos. ' +
+      'Resume la situación así: «En cuanto recibamos el feedback del cliente, el equipo de diseño se pone a corregir; tan pronto como ellos cierren las maquetas, los desarrolladores empiezan la integración».\n\n' +
+      'Diego propone que avancemos un paso. ' +
+      'Sugiere que, antes de que llegue el feedback, preparemos dos versiones del informe interno, para que el viernes podamos mostrar avances al director sin que él tenga que esperar. ' +
+      'Todos asienten.\n\n' +
+      'Carlos, que es el más cauto, pide la palabra. ' +
+      'Recomienda que no enviemos nada al cliente a menos que Marta lo apruebe personalmente. ' +
+      'Marta confirma: nada sale sin su firma. ' +
+      'Sonia añade que, con tal de que respetemos esa regla, podemos seguir trabajando en paralelo.\n\n' +
+      'Pablo interviene desde Valencia. ' +
+      'Pide que, en cuanto el cliente confirme la fecha de la siguiente reunión, le aviséis enseguida: tiene que reservar un AVE y prefiere no comprarlo a última hora. ' +
+      'Marta apunta el detalle.\n\n' +
+      'Cerramos con tareas concretas. ' +
+      'Carlos: maquetas para el miércoles. Sonia: borrador del informe. Diego: dos versiones para el viernes. Pablo: contacto con el equipo legal. ' +
+      'Yo, Marta, asumo el seguimiento general y la reunión con el cliente.\n\n' +
+      'Quedamos en revisar todo el jueves por la tarde, antes de que la semana se desordene del todo.\n\n' +
+      'Cierro acta. — Marta',
+    vocabulary: [
+      {
+        word: 'el acta',
+        translation: 'протокол собрания (la palabra es femenina, pero por fonética lleva el; las actas)',
+        example: 'Acta de la reunión del lunes.',
+      },
+      {
+        word: 'asistir',
+        translation: 'присутствовать (asistir a una reunión, a clase; la asistencia)',
+        example: 'Asisten: Marta, Carlos, Sonia.',
+      },
+      {
+        word: 'demorarse',
+        translation: 'затягиваться, задерживаться (demorarse en algo; la demora — задержка)',
+        example: 'pide que no nos demoremos',
+      },
+      {
+        word: 'el plazo',
+        translation: 'срок (el plazo de entrega; cumplir un plazo; vencer el plazo)',
+        example: 'repasa los plazos',
+      },
+      {
+        word: 'el feedback',
+        translation: 'обратная связь (англицизм, прижился в офисном испанском; recibir feedback)',
+        example: 'En cuanto recibamos el feedback.',
+      },
+      {
+        word: 'la maqueta',
+        translation: 'макет (дизайн-макет страницы или продукта; cerrar maquetas — закрыть макеты)',
+        example: 'ellos cierren las maquetas',
+      },
+      {
+        word: 'la integración',
+        translation: 'интеграция (например, фронтенда и бэкенда; integrar — объединять)',
+        example: 'los desarrolladores empiezan la integración',
+      },
+      {
+        word: 'avanzar un paso',
+        translation: 'продвинуться, сделать шаг вперёд (avanzar un paso; dar un paso adelante)',
+        example: 'propone que avancemos un paso',
+      },
+      {
+        word: 'el informe',
+        translation: 'отчёт, доклад (un informe interno; presentar un informe; informar — извещать)',
+        example: 'dos versiones del informe interno',
+      },
+      {
+        word: 'cauto, -a',
+        translation: 'осторожный, осмотрительный (синоним prudente; la cautela — осторожность)',
+        example: 'Carlos, que es el más cauto',
+      },
+      {
+        word: 'la palabra (pedir la palabra)',
+        translation: 'слово; pedir la palabra — попросить слова на собрании (формальная фраза)',
+        example: 'pide la palabra',
+      },
+      {
+        word: 'aprobar',
+        translation: 'утверждать, одобрять (o→ue: apruebo, apruebas…; la aprobación)',
+        example: 'a menos que Marta lo apruebe',
+      },
+      {
+        word: 'la firma',
+        translation: 'подпись; также фирма, компания (la firma del director; firmar — подписывать)',
+        example: 'nada sale sin su firma',
+      },
+      {
+        word: 'en paralelo',
+        translation: 'параллельно, одновременно (trabajar en paralelo; paralelo a — параллельно чему-то)',
+        example: 'podemos seguir trabajando en paralelo',
+      },
+      {
+        word: 'intervenir',
+        translation: 'вмешаться, взять слово (e→ie: intervengo, intervienes…; la intervención)',
+        example: 'Pablo interviene desde Valencia.',
+      },
+      {
+        word: 'el AVE',
+        translation: 'высокоскоростной поезд в Испании (Alta Velocidad Española; coger el AVE)',
+        example: 'tiene que reservar un AVE',
+      },
+      {
+        word: 'el borrador',
+        translation: 'черновик (de un informe, de un contrato; en borrador — в черновом виде)',
+        example: 'Sonia: borrador del informe.',
+      },
+      {
+        word: 'el seguimiento',
+        translation: 'отслеживание, контроль (hacer seguimiento de un proyecto; seguir — следить)',
+        example: 'asumo el seguimiento general',
+      },
+      {
+        word: 'desordenarse',
+        translation: 'путаться, выходить из-под контроля (la semana se desordena; el desorden — беспорядок)',
+        example: 'antes de que la semana se desordene',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué propone Diego en la reunión?',
+        options: [
+          'Que esperemos al feedback antes de hacer nada',
+          'Que, antes de que llegue el feedback, preparemos dos versiones del informe interno',
+          'Que cancelemos la reunión del viernes',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué condición pone Carlos para enviar algo al cliente?',
+        options: [
+          'Que se envíe solo en lunes',
+          'Que no se envíe nada a menos que Marta lo apruebe personalmente',
+          'Que el equipo legal lo revise primero',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Por qué Pablo pide que le avisen cuanto antes de la próxima reunión?',
+        options: [
+          'Porque quiere preparar la presentación',
+          'Porque tiene que reservar un AVE y prefiere no comprarlo a última hora',
+          'Porque está de vacaciones esa semana',
+        ],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Subjuntivo в офисном языке: цепочка союзов',
+        note:
+          'Деловой текст естественно цепляет несколько триггеров Subjuntivo подряд: «pide que no nos demoremos», «en cuanto recibamos», «tan pronto como ellos cierren», «propone que avancemos», «sugiere que preparemos», «antes de que llegue», «para que podamos mostrar», «sin que él tenga que esperar», «recomienda que no enviemos», «a menos que Marta lo apruebe», «con tal de que respetemos», «pide que le aviséis», «en cuanto el cliente confirme», «antes de que la semana se desordene». ' +
+          'На рабочих B1-собраниях это типовой пейзаж.',
+      },
+      {
+        topic: 'Vosotros в Subjuntivo (повторение)',
+        note:
+          'В разговоре с коллегами по Испании используется vosotros: «pide que le aviséis». Окончание -éis (II спряж.) и -áis (I) в Subjuntivo: aviséis, escribáis, comáis, habléis. ' +
+          'Не путать с ustedes: «pide que le avisen» — то же значение, но используется в Лат. Америке и в формальной речи.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-019',
+    level: 'B1',
+    day: 19,
+    title: 'Cadena de correos sobre un problema en la oficina',
+    text:
+      'De: Marta Ruiz <m.ruiz@empresa.es>\nPara: Carlos Soto\nAsunto: Servidor caído otra vez\n\n' +
+      'Carlos, buenos días. Te escribo a primera hora porque el servidor de Madrid lleva caído desde las siete. ' +
+      'Ya he avisado al técnico de turno, pero te pido que vengas en cuanto puedas: a las once tenemos al cliente de Bilbao y prefiero que estés tú en la sala. ' +
+      'Marta.\n\n\n' +
+      'De: Carlos Soto\nPara: Marta Ruiz\nAsunto: Re: Servidor caído otra vez\n\n' +
+      'Marta, recibido. Entro al metro ahora; en cuanto salga, te llamo. ' +
+      'Por favor, dile al técnico que no toque la copia de seguridad de anoche hasta que yo no la vea. ' +
+      'Aunque sea urgente, prefiero perder media hora a perder datos.\n\n\n' +
+      'De: Marta Ruiz\nPara: Carlos Soto, Sonia Pérez\nAsunto: Re: Servidor caído otra vez\n\n' +
+      'Añado a Sonia, nuestro contacto con el proveedor. Sonia, ¿puedes pedirles que abran ticket urgente? ' +
+      'A menos que confirmen que es un fallo de su lado, no podemos justificar el retraso.\n\n\n' +
+      'De: Sonia Pérez\nPara: Marta Ruiz, Carlos Soto\nAsunto: Re: Servidor caído otra vez\n\n' +
+      'Hablo con ellos ahora. Les voy a exigir que nos manden a alguien presencial; por teléfono no avanzamos. ' +
+      'Si insisten en que es problema nuestro, que lo demuestren con logs.\n\n' +
+      'Aprovecho para avisaros: mañana llega la auditoría externa. ' +
+      'Lo digo para que esta tarde dejemos los servidores limpios y documentados; sin que se note el caos del lunes.\n\n\n' +
+      'De: Carlos Soto\nPara: todos\nAsunto: Re: Servidor caído otra vez\n\n' +
+      'Ya estoy en la oficina. He restablecido el servicio. ' +
+      'La caída venía de una actualización mal aplicada anoche. ' +
+      'Lo cuento con detalle a las cinco, en cuanto pase la reunión. ' +
+      'Mientras tanto, tranquilos.',
+    vocabulary: [
+      {
+        word: 'el asunto',
+        translation: 'тема письма (asunto del correo); также вопрос, дело (es un asunto delicado)',
+        example: 'Asunto: Servidor caído otra vez.',
+      },
+      {
+        word: 'el servidor',
+        translation: 'сервер (компьютерный; el servidor de correo, el servidor caído — упавший сервер)',
+        example: 'el servidor de Madrid lleva caído desde las siete',
+      },
+      {
+        word: 'caído, -a',
+        translation: 'упавший (про сервер: не работающий; en general — упавший)',
+        example: 'el servidor de Madrid lleva caído',
+      },
+      {
+        word: 'el técnico de turno',
+        translation: 'дежурный техник (de turno — дежурный, тот, кто сейчас на смене)',
+        example: 'he avisado al técnico de turno',
+      },
+      {
+        word: 'la copia de seguridad',
+        translation: 'резервная копия, бэкап (hacer una copia de seguridad; el respaldo — синоним)',
+        example: 'la copia de seguridad de anoche',
+      },
+      {
+        word: 'el proveedor',
+        translation: 'поставщик услуг или товаров (el proveedor de internet, de software; proveer — поставлять)',
+        example: 'nuestro contacto con el proveedor',
+      },
+      {
+        word: 'abrir ticket',
+        translation: 'открыть заявку в системе поддержки (англицизм, прижившийся в IT-испанском)',
+        example: 'que abran ticket urgente',
+      },
+      {
+        word: 'el fallo',
+        translation: 'сбой, поломка (un fallo del sistema; fallar — давать сбой)',
+        example: 'un fallo de su lado',
+      },
+      {
+        word: 'justificar',
+        translation: 'оправдать, объяснить (justificar un retraso, una decisión; la justificación)',
+        example: 'justificar el retraso al cliente',
+      },
+      {
+        word: 'el retraso',
+        translation: 'задержка, опоздание (un retraso de dos horas; el tren va con retraso)',
+        example: 'justificar el retraso al cliente',
+      },
+      {
+        word: 'presencial',
+        translation: 'очно, лично присутствующий (una reunión presencial; un técnico presencial; ↔ telemático)',
+        example: 'que nos manden a alguien presencial',
+      },
+      {
+        word: 'los logs',
+        translation: 'логи, журналы событий (англицизм; los registros — испанский эквивалент)',
+        example: 'que lo demuestren con logs',
+      },
+      {
+        word: 'aprovechar para',
+        translation: 'воспользоваться случаем, чтобы (повторение из b1-011 в другом обороте)',
+        example: 'Aprovecho para avisaros.',
+      },
+      {
+        word: 'la auditoría',
+        translation: 'аудит, проверка (auditoría externa / interna; el auditor — аудитор)',
+        example: 'mañana llega la auditoría externa',
+      },
+      {
+        word: 'documentado, -a',
+        translation: 'задокументированный (un proceso documentado; documentar — фиксировать в документации)',
+        example: 'servidores limpios y documentados',
+      },
+      {
+        word: 'restablecer',
+        translation: 'восстановить, возобновить (e→ie: restablezco, restableces…; restablecer un servicio)',
+        example: 'He restablecido el servicio.',
+      },
+      {
+        word: 'la actualización',
+        translation: 'обновление (программного обеспечения; actualizar — обновлять)',
+        example: 'una actualización mal aplicada',
+      },
+      {
+        word: 'aplicar',
+        translation: 'применить, наложить (aplicar una actualización; aplicarse a algo — стараться)',
+        example: 'una actualización mal aplicada',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué le pide Marta a Carlos en el primer correo?',
+        options: [
+          'Que llame al cliente de Bilbao',
+          'Que venga en cuanto pueda, porque a las once hay reunión con el cliente',
+          'Que se quede en casa hasta que arregle el servidor desde allí',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Qué le pide Carlos al técnico sobre la copia de seguridad?',
+        options: [
+          'Que la borre cuanto antes',
+          'Que la suba al servidor enseguida',
+          'Que no la toque hasta que él la vea, aunque sea urgente',
+        ],
+        correct: 2,
+      },
+      {
+        q: '¿Por qué pide Sonia que dejen los servidores limpios y documentados esa tarde?',
+        options: [
+          'Porque al día siguiente llega la auditoría externa',
+          'Porque el cliente de Bilbao se va a quedar a dormir',
+          'Porque van a apagar el servidor todo el fin de semana',
+        ],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Subjuntivo в офисных просьбах и условиях (повторение в новом контексте)',
+        note:
+          'Цепочка типичных конструкций: «te pido que vengas», «prefiero que estés», «dile que no toque», «hasta que yo no la vea», «aunque sea urgente», «¿puedes pedirles que abran ticket?», «a menos que confirmen», «les voy a exigir que nos manden», «que lo demuestren con logs», «para que dejemos los servidores limpios», «sin que se note el caos», «en cuanto pase la reunión». ' +
+          'Ни одно из этих придаточных не возможно в Indicativo: глагол просьбы, цели, условия и времени-будущего фиксирует Subjuntivo.',
+      },
+      {
+        topic: 'Estilo indirecto в просьбе: dile que / pídeles que',
+        note:
+          '«Dile al técnico que no toque la copia» и «pídeles que abran ticket» — это прямые императивы, а во вложенной части — Subjuntivo, потому что передаётся просьба. ' +
+          'Сравни: «dile al técnico que el servidor está caído» (передача факта → Indicativo) vs «dile al técnico que no toque la copia» (передача распоряжения → Subjuntivo). На B1 важно различать эти два сценария.',
+      },
+    ],
+  },
+
+  {
+    id: 'b1-020',
+    level: 'B1',
+    day: 20,
+    title: 'El coche en el centro: ¿de quién es la ciudad?',
+    text:
+      'Madrid ha vuelto a abrir el debate de siempre: ¿coche o peatón en el centro? ' +
+      'Esta semana el ayuntamiento ha anunciado una zona de bajas emisiones más amplia. ' +
+      'Hay quienes aplauden y quienes se llevan las manos a la cabeza. ' +
+      'A mí, sinceramente, me parece urgente que tomemos partido.\n\n' +
+      'Es necesario que entendamos los datos. ' +
+      'Los estudios municipales son claros: cuando se reduce el tráfico, mejora la calidad del aire en pocas semanas. ' +
+      'A propósito de cifras: en la calle Alcalá, tras la peatonalización parcial, los niveles de óxidos de nitrógeno bajaron un veinte por ciento. ' +
+      'No creo que sea exageración hablar de salud pública.\n\n' +
+      'Sin embargo, también es justo que escuchemos a los comerciantes. ' +
+      'Muchos temen que las restricciones les hagan perder clientes, sobre todo a los pequeños. ' +
+      'A menos que el ayuntamiento ofrezca aparcamiento alternativo y transporte público frecuente, las protestas seguirán. ' +
+      'De hecho, en Atenas, una medida parecida fracasó por no acompañarla de buses cada cinco minutos.\n\n' +
+      'En lo personal, conduzco dos veces al mes. ' +
+      'Aunque me toque dejar el coche fuera, no me parece un drama. ' +
+      'Por cierto, mi vecino, que vive a media hora del centro, dice que el bus le sale más barato y rápido desde que cambió las rutinas.\n\n' +
+      'En resumen, esta ciudad no será un paraíso sin coches mañana, ni hace falta. ' +
+      'Pero antes de que los niños crezcan respirando aire sucio, antes de que sigamos discutiendo en redes sin movernos, conviene que el debate baje al barrio. ' +
+      'Pongamos sillas en la plaza. Hablemos cara a cara. ' +
+      'Y, sobre todo, escuchemos también a quienes piensan distinto a nosotros.',
+    vocabulary: [
+      {
+        word: 'el debate',
+        translation: 'дискуссия, дебаты (un debate público; debatir — обсуждать)',
+        example: 'ha vuelto a abrir el debate de siempre',
+      },
+      {
+        word: 'el ayuntamiento',
+        translation: 'мэрия, муниципалитет (gobierno local; la alcaldía — пост мэра)',
+        example: 'el ayuntamiento ha anunciado',
+      },
+      {
+        word: 'la zona de bajas emisiones',
+        translation: 'зона низких выбросов (ZBE — ограничение въезда автомобилей в центр испанских городов)',
+        example: 'una zona de bajas emisiones más amplia',
+      },
+      {
+        word: 'aplaudir',
+        translation: 'аплодировать; в переносном смысле — одобрять (aplaudir una medida)',
+        example: 'Hay quienes aplauden.',
+      },
+      {
+        word: 'llevarse las manos a la cabeza',
+        translation: 'идиома — хвататься за голову от ужаса или недоумения',
+        example: 'quienes se llevan las manos a la cabeza',
+      },
+      {
+        word: 'tomar partido',
+        translation: 'занять сторону, определиться (en un debate; синоним: posicionarse)',
+        example: 'me parece urgente que tomemos partido',
+      },
+      {
+        word: 'municipal',
+        translation: 'муниципальный, городской (estudios municipales; la policía municipal)',
+        example: 'Los estudios municipales son claros.',
+      },
+      {
+        word: 'la peatonalización',
+        translation: 'превращение улицы в пешеходную зону (peatonal — пешеходный; el peatón — пешеход)',
+        example: 'tras la peatonalización parcial',
+      },
+      {
+        word: 'los óxidos de nitrógeno',
+        translation: 'оксиды азота (NOx — основной показатель загрязнения воздуха от автотранспорта)',
+        example: 'los niveles de óxidos de nitrógeno',
+      },
+      {
+        word: 'la exageración',
+        translation: 'преувеличение (exagerar — преувеличивать; sin exageración — без преувеличения)',
+        example: 'No creo que sea exageración hablar de salud pública.',
+      },
+      {
+        word: 'el / la comerciante',
+        translation: 'торговец, владелец магазина (los pequeños comerciantes; el comercio — торговля)',
+        example: 'también es justo que escuchemos a los comerciantes',
+      },
+      {
+        word: 'temer',
+        translation: 'опасаться, бояться (temer + Subjuntivo: temen que les hagan perder; el temor — страх)',
+        example: 'Muchos temen que las restricciones les hagan perder clientes.',
+      },
+      {
+        word: 'la restricción',
+        translation: 'ограничение (restricciones de tráfico, restricciones sanitarias; restringir — ограничивать)',
+        example: 'que las restricciones les hagan perder clientes',
+      },
+      {
+        word: 'frecuente',
+        translation: 'частый, регулярный (transporte público frecuente; la frecuencia — частота)',
+        example: 'transporte público frecuente',
+      },
+      {
+        word: 'fracasar',
+        translation: 'провалиться, потерпеть неудачу (una medida fracasa; el fracaso — провал)',
+        example: 'una medida parecida fracasó',
+      },
+      {
+        word: 'conducir',
+        translation: 'водить машину (yo conduzco; el conductor; cm. также: вести себя)',
+        example: 'conduzco dos veces al mes',
+      },
+      {
+        word: 'salir más barato / caro',
+        translation: 'выходить дешевле / дороже (le sale más barato; te sale a cuenta — тебе выгодно)',
+        example: 'el bus le sale más barato',
+      },
+      {
+        word: 'convenir',
+        translation: 'быть уместным, целесообразным (conviene que + Subjuntivo — стоит, чтобы; e→ie/i)',
+        example: 'conviene que el debate baje al barrio',
+      },
+      {
+        word: 'cara a cara',
+        translation: 'лицом к лицу, очно (hablar cara a cara; синоним: en persona)',
+        example: 'Hablemos cara a cara.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué ha anunciado el ayuntamiento de Madrid esta semana?',
+        options: [
+          'Una zona de bajas emisiones más amplia',
+          'El cierre total del transporte público',
+          'La construcción de una autopista en el centro',
+        ],
+        correct: 0,
+      },
+      {
+        q: '¿Qué temen los comerciantes?',
+        options: [
+          'Que el ayuntamiento les suba los impuestos',
+          'Que las restricciones les hagan perder clientes, sobre todo a los pequeños',
+          'Que los autobuses pasen demasiado a menudo',
+        ],
+        correct: 1,
+      },
+      {
+        q: '¿Cuál es la propuesta final del autor?',
+        options: [
+          'Prohibir todos los coches en una semana',
+          'Cerrar el centro a los peatones',
+          'Que el debate baje al barrio, hablar cara a cara y escuchar también a quienes piensan distinto',
+        ],
+        correct: 2,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Galería B1-B: Subjuntivo después de uniones de tiempo, cesión, condición y opinión',
+        note:
+          'Эта итоговая статья-мнение собирает почти все темы блока: «me parece urgente que tomemos partido», «es necesario que entendamos», «no creo que sea exageración», «es justo que escuchemos», «temen que les hagan perder clientes», «a menos que el ayuntamiento ofrezca», «aunque me toque dejar el coche», «antes de que los niños crezcan», «antes de que sigamos discutiendo», «conviene que el debate baje». ' +
+          'Это и опорная карта тем дней 11–20: cuando/en cuanto/antes de que/para que/aunque/a menos que/sin que + Subjuntivo плюс обычные триггеры мнения и эмоции.',
+      },
+      {
+        topic: 'Pongamos / hablemos / escuchemos: 1-е лицо мн. ч. императива через Subjuntivo',
+        note:
+          '«Pongamos sillas en la plaza», «hablemos cara a cara», «escuchemos también a quienes piensan distinto» — призыв «давайте сделаем», 1-е лицо мн. ч. императива. ' +
+          'Образуется через формы Subjuntivo: pongamos, hablemos, escuchemos. Это тот же механизм, что в отрицательном императиве «no salgáis»: Subjuntivo заменяет «недостающие» лица императива.',
+      },
+    ],
+  },
 );
