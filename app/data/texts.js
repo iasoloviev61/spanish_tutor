@@ -5490,4 +5490,1363 @@ window.TEXTS.push(
       },
     ],
   },
+
+  {
+    id: 'a2-021',
+    level: 'A2',
+    day: 21,
+    title: 'Doce meses por delante',
+    text:
+      'El próximo año será especial para mí: cumpliré treinta años y quiero aprovecharlo bien. ' +
+      'Me he sentado con un cuaderno y he escrito una lista de planes mes a mes.\n\n' +
+      'En enero empezaré clases de italiano en una escuela cerca de Atocha. ' +
+      'En febrero iré a Tenerife con mi mujer; pasaremos diez días al sol y aprenderemos a bucear. ' +
+      'En marzo terminaré el curso de fotografía que dejé a medias el año pasado.\n\n' +
+      'En verano haremos algo grande: cruzaremos parte del Camino de Santiago desde León hasta Santiago de Compostela. ' +
+      'Caminaremos catorce días y dormiremos en albergues. ' +
+      'Tendré que comprarme unas botas nuevas y entrenar las piernas antes.\n\n' +
+      'En octubre saldré con mis amigos del instituto a los Picos de Europa. ' +
+      'Allí podremos ver el otoño desde los miradores. ' +
+      'En noviembre haré por fin el examen oficial de italiano. ' +
+      'Y en diciembre, si todo va bien, mi mujer y yo invitaremos a la familia a cenar Nochevieja en casa.\n\n' +
+      'No sé qué saldrá mal, pero este año diré sí a todo lo que pueda.',
+    vocabulary: [
+      {
+        word: 'aprovechar',
+        translation: 'пользоваться, использовать (момент, возможность); aprovechar el tiempo — использовать время',
+        example: 'Quiero aprovecharlo bien.',
+      },
+      {
+        word: 'mes a mes',
+        translation: 'месяц за месяцем (паттерн «X a X»: paso a paso, día a día — равномерно)',
+        example: 'una lista de planes mes a mes',
+      },
+      {
+        word: 'bucear',
+        translation: 'нырять, плавать с трубкой; погружаться с аквалангом (el buceo — дайвинг)',
+        example: 'Aprenderemos a bucear.',
+      },
+      {
+        word: 'dejar a medias',
+        translation: 'бросить недоделанным (a medias — наполовину; антоним terminar)',
+        example: 'el curso que dejé a medias',
+      },
+      {
+        word: 'las botas',
+        translation: 'ботинки, сапоги (las botas de montaña — походные; los zapatos — туфли)',
+        example: 'unas botas nuevas',
+      },
+      {
+        word: 'los Picos de Europa',
+        translation: 'горный массив на севере Испании (Астурия, Кантабрия, Леон)',
+        example: 'a los Picos de Europa',
+      },
+      {
+        word: 'la Nochevieja',
+        translation: 'ночь 31 декабря (буквально «старая ночь»; синоним fin de año; ср. la Nochebuena — сочельник)',
+        example: 'cenar Nochevieja en casa',
+      },
+      {
+        word: 'invitar a + inf',
+        translation: 'пригласить (что-то сделать); invitar a alguien a algo',
+        example: 'invitaremos a la familia a cenar',
+      },
+      {
+        word: 'Tenerife',
+        translation: 'самый большой Канарский остров; столица — Santa Cruz de Tenerife',
+        example: 'En febrero iré a Tenerife.',
+      },
+      {
+        word: 'especial',
+        translation: 'особенный (sin acentos: especial; mn. especiales; синоним particular)',
+        example: 'El próximo año será especial.',
+      },
+      {
+        word: 'caminar',
+        translation: 'идти пешком, шагать (синоним andar; el camino — путь)',
+        example: 'Caminaremos catorce días.',
+      },
+      {
+        word: 'el italiano',
+        translation: 'итальянский язык; итальянец (так же el inglés, el alemán, el francés)',
+        example: 'el examen oficial de italiano',
+      },
+      {
+        word: 'las piernas',
+        translation: 'ноги (la pierna — нога; el brazo — рука; los brazos — руки)',
+        example: 'entrenar las piernas antes',
+      },
+      {
+        word: 'la fotografía',
+        translation: 'фотография как искусство и как снимок; сокр. la foto',
+        example: 'el curso de fotografía',
+      },
+      {
+        word: 'Atocha',
+        translation: 'главный железнодорожный вокзал Мадрида; одноимённая площадь и район',
+        example: 'una escuela cerca de Atocha',
+      },
+      {
+        word: 'comprarse',
+        translation: 'купить себе (возвратная форма с дательным — для подчёркивания «для себя»)',
+        example: 'comprarme unas botas nuevas',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Por qué será especial el próximo año?',
+        options: ['Porque empezará en una empresa nueva', 'Porque cumplirá treinta años', 'Porque se casará'],
+        correct: 1,
+      },
+      {
+        q: '¿Adónde irá en febrero?',
+        options: ['A Tenerife', 'A Mallorca', 'A los Picos de Europa'],
+        correct: 0,
+      },
+      {
+        q: '¿Cuántos días caminarán por el Camino de Santiago?',
+        options: ['Diez días', 'Catorce días', 'Tres semanas'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Futuro simple: окончания регулярных глаголов',
+        note:
+          'Futuro simple строится одинаково для -ar, -er, -ir: к инфинитиву прибавляются -é, -ás, -á, -emos, -éis, -án. ' +
+          'В тексте: empezaré, terminaré, pasaremos, aprenderemos, caminaremos, dormiremos, podremos, invitaremos, diré. ' +
+          'Все окончания, кроме -emos, под ударением и с тильдой.',
+      },
+      {
+        topic: 'Futuro simple: ключевые неправильные основы',
+        note:
+          'У 12 частотных глаголов основа Futuro меняется, окончания остаются те же. ' +
+          'В тексте: tener → tendr- (tendré), hacer → har- (haré), salir → saldr- (saldré), poder → podr- (podremos), decir → dir- (diré). ' +
+          'Запомнить вместе: tendré, vendré, pondré, saldré, sabré, podré, querré, haré, diré, habrá, cabrá, valdrá.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-022',
+    level: 'A2',
+    day: 22,
+    title: 'Carta a un amigo',
+    text:
+      'Querido Marcos:\n\n' +
+      'Me escribes que estás muy cansado en el trabajo, que duermes mal y que tu jefe te grita por cualquier cosa. ' +
+      'Te entiendo perfectamente, porque a mí me pasó algo parecido el año pasado. ' +
+      'Por eso me atrevo a darte unos consejos de amigo.\n\n' +
+      'Primero, deberías hablar con tu jefe con calma. ' +
+      'Seguramente él no se da cuenta de cuánto te afecta su forma de tratarte. ' +
+      'Yo, en tu lugar, prepararía la conversación por escrito y la pediría sin gritar.\n\n' +
+      'También podrías cambiar algunos hábitos pequeños: salir media hora antes para no correr, comer fuera del despacho y apagar el móvil después de las ocho. ' +
+      'Sería mejor para tu cabeza y para tu sueño.\n\n' +
+      'Y si todo eso no funciona, yo empezaría a buscar otra empresa. ' +
+      'No es fácil, pero ahora hay muchas ofertas en tu sector y tu currículum es muy bueno. ' +
+      'Podrías ganar más y trabajar más cerca de casa.\n\n' +
+      'Sería estupendo vernos pronto y hablar de todo esto con calma. Llámame esta semana, ¿vale?\n\n' +
+      'Un abrazo,\nAndrés',
+    vocabulary: [
+      {
+        word: 'el consejo',
+        translation: 'совет (dar un consejo — дать совет; pedir consejo — попросить совета; aconsejar — советовать)',
+        example: 'unos consejos de amigo',
+      },
+      {
+        word: 'en tu lugar',
+        translation: 'на твоём месте (Yo, en tu lugar, + Condicional — типовая формула совета)',
+        example: 'Yo, en tu lugar, prepararía la conversación.',
+      },
+      {
+        word: 'por escrito',
+        translation: 'в письменном виде, письменно (антоним de palabra — устно)',
+        example: 'prepararía la conversación por escrito',
+      },
+      {
+        word: 'el hábito',
+        translation: 'привычка (синоним la costumbre; tener el hábito de + inf)',
+        example: 'cambiar algunos hábitos pequeños',
+      },
+      {
+        word: 'apagar',
+        translation: 'выключать (антоним encender; apagar la luz, el móvil, la tele)',
+        example: 'apagar el móvil después de las ocho',
+      },
+      {
+        word: 'funcionar',
+        translation: 'работать (о механизмах и ситуациях); no funciona — не работает / не выходит',
+        example: 'si todo eso no funciona',
+      },
+      {
+        word: 'la oferta',
+        translation: 'предложение (de trabajo — о работе; en oferta — со скидкой; ofrecer — предлагать)',
+        example: 'hay muchas ofertas en tu sector',
+      },
+      {
+        word: 'el sector',
+        translation: 'отрасль, сектор (el sector público / privado; el sector de la informática)',
+        example: 'hay muchas ofertas en tu sector',
+      },
+      {
+        word: 'el currículum',
+        translation: 'резюме (полная форма curriculum vitae; в Испании пишут с тильдой: currículum)',
+        example: 'tu currículum es muy bueno',
+      },
+      {
+        word: 'ganar',
+        translation: 'зарабатывать; выигрывать (ganar un sueldo / un partido / un premio)',
+        example: 'Podrías ganar más.',
+      },
+      {
+        word: 'estupendo, -a',
+        translation: 'замечательный, отличный (синонимы: genial, fantástico, magnífico)',
+        example: 'Sería estupendo vernos pronto.',
+      },
+      {
+        word: 'el abrazo',
+        translation: 'объятие; «Un abrazo» — стандартное окончание дружеского письма (формальнее: Un saludo)',
+        example: 'Un abrazo, Andrés',
+      },
+      {
+        word: 'cualquier (cosa)',
+        translation: 'любой (cualquier hora — в любой час; cualquier cosa — что угодно; перед существительным теряет -a)',
+        example: 'te grita por cualquier cosa',
+      },
+      {
+        word: 'parecido, -a',
+        translation: 'похожий, схожий (algo parecido — нечто похожее; parecerse a — быть похожим на)',
+        example: 'me pasó algo parecido',
+      },
+      {
+        word: 'darse cuenta de',
+        translation: 'осознавать, замечать (No me di cuenta — Я не заметил; me doy cuenta — я понимаю)',
+        example: 'él no se da cuenta de cuánto te afecta',
+      },
+      {
+        word: 'tratar (a alguien)',
+        translation: 'обращаться (с кем-то); tratar bien / mal — хорошо/плохо обращаться; la forma de tratar — манера обращения',
+        example: 'su forma de tratarte',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cómo aconseja hablar con el jefe?',
+        options: ['Con gritos', 'Con calma y por escrito', 'Por correo electrónico'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué hábito pequeño propone Andrés?',
+        options: ['Salir media hora antes', 'Trabajar más horas', 'Dormir en el despacho'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué sería el último recurso?',
+        options: ['Apagar el móvil', 'Buscar otra empresa', 'Cambiar de habitación'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Condicional simple: формы',
+        note:
+          'Condicional simple строится так же, как Futuro: основа (часто = инфинитив) + окончания -ía, -ías, -ía, -íamos, -íais, -ían. ' +
+          'Окончания одинаковы для -ar, -er, -ir и совпадают с Imperfecto -er/-ir. ' +
+          'В тексте: prepararía, pediría, podría, sería, empezaría, podrías. ' +
+          'Неправильные основы те же, что у Futuro: tener → tendría, hacer → haría, decir → diría, poder → podría.',
+      },
+      {
+        topic: 'Идиомы совета через Condicional',
+        note:
+          'Условное наклонение смягчает рекомендацию: «deberías + inf» (тебе следовало бы), «podrías + inf» (ты мог бы), ' +
+          '«sería mejor + inf» (было бы лучше), «yo en tu lugar + Condicional» (я бы на твоём месте). ' +
+          'Все четыре формулы вежливо предлагают, а не приказывают.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-023',
+    level: 'A2',
+    day: 23,
+    title: 'España en 2050',
+    text:
+      'En 2050 el mundo será muy diferente al de ahora. La ciudad donde vivo no se reconocerá. ' +
+      'Los coches privados casi desaparecerán del centro de Madrid; en su lugar tendremos taxis sin conductor y tranvías nuevos por toda la Gran Vía.\n\n' +
+      'Las casas serán más pequeñas pero más inteligentes. ' +
+      'Una pantalla central encenderá las luces, regulará la calefacción y nos avisará si la nevera está vacía. ' +
+      'Mucha gente trabajará desde casa o desde cafeterías; las oficinas de hoy serán museos del pasado.\n\n' +
+      'En España habrá problemas también. El verano durará cinco meses y hará un calor difícil de soportar en agosto. ' +
+      'Por eso construiremos parques con árboles altos y plazas con sombra grande, y aprenderemos a vivir como en los pueblos de Andalucía: siesta larga y vida nocturna.\n\n' +
+      'Algunas cosas no cambiarán. Seguiremos tomando café en la terraza, hablando con los vecinos en el portal y viendo el partido del Real Madrid con los amigos. ' +
+      '¿Quién querrá vivir sin esas pequeñas alegrías?',
+    vocabulary: [
+      {
+        word: 'desaparecer',
+        translation: 'исчезать (антоним aparecer; participio desaparecido)',
+        example: 'Los coches privados casi desaparecerán.',
+      },
+      {
+        word: 'el conductor / la conductora',
+        translation: 'водитель (de coche, de tren, de autobús); conducir — водить',
+        example: 'taxis sin conductor',
+      },
+      {
+        word: 'la Gran Vía',
+        translation: 'центральная улица Мадрида с театрами, отелями и магазинами',
+        example: 'tranvías nuevos por toda la Gran Vía',
+      },
+      {
+        word: 'inteligente',
+        translation: 'умный (о человеке) и интеллектуальный, «умный» (о вещах: casa inteligente, móvil inteligente)',
+        example: 'Las casas serán más inteligentes.',
+      },
+      {
+        word: 'la pantalla',
+        translation: 'экран (la pantalla del móvil / del ordenador / del cine)',
+        example: 'Una pantalla central encenderá las luces.',
+      },
+      {
+        word: 'regular',
+        translation: 'регулировать, настраивать (regular la temperatura, la calefacción)',
+        example: 'regulará la calefacción',
+      },
+      {
+        word: 'avisar',
+        translation: 'предупредить, уведомить (avisar a alguien de algo)',
+        example: 'nos avisará si la nevera está vacía',
+      },
+      {
+        word: 'vacío, -a',
+        translation: 'пустой (антоним lleno; una caja vacía)',
+        example: 'si la nevera está vacía',
+      },
+      {
+        word: 'durar',
+        translation: 'длиться, продолжаться (la película dura dos horas)',
+        example: 'El verano durará cinco meses.',
+      },
+      {
+        word: 'soportar',
+        translation: 'выносить, терпеть (un calor difícil de soportar; no soporto el ruido)',
+        example: 'un calor difícil de soportar',
+      },
+      {
+        word: 'la sombra',
+        translation: 'тень (sentarse a la sombra; антоним el sol)',
+        example: 'plazas con sombra grande',
+      },
+      {
+        word: 'nocturno, -a',
+        translation: 'ночной (vida nocturna — ночная жизнь; антоним diurno)',
+        example: 'siesta larga y vida nocturna',
+      },
+      {
+        word: 'seguir + gerundio',
+        translation: 'продолжать что-то делать (seguir trabajando — продолжать работать)',
+        example: 'Seguiremos tomando café en la terraza.',
+      },
+      {
+        word: 'el portal',
+        translation: 'подъезд, парадная (el portero — консьерж; el portal del edificio)',
+        example: 'hablando con los vecinos en el portal',
+      },
+      {
+        word: 'la alegría',
+        translation: 'радость (alegre — радостный; alegrarse — радоваться)',
+        example: 'esas pequeñas alegrías',
+      },
+      {
+        word: 'el árbol',
+        translation: 'дерево (los árboles, мн. ч. с тильдой; el bosque — лес)',
+        example: 'parques con árboles altos',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cómo serán las casas en 2050?',
+        options: ['Pequeñas e inteligentes', 'Enormes y vacías', 'Sin pantallas'],
+        correct: 0,
+      },
+      {
+        q: '¿Cuánto durará el verano según el texto?',
+        options: ['Tres meses', 'Cinco meses', 'Todo el año'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué seguirá igual en 2050?',
+        options: ['Tomar café en la terraza', 'Trabajar en oficinas grandes', 'Tener coches privados'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Futuro simple для прогнозов и гипотез',
+        note:
+          'Futuro используется не только для планов, но и для предсказаний, гипотез о будущем и общих утверждений «как будет». ' +
+          'В тексте таких форм очень много: desaparecerán, tendremos, serán, encenderá, regulará, avisará, trabajará, habrá, durará, hará, construiremos, aprenderemos, cambiarán, querrá. ' +
+          'Это базовый журналистский регистр для текстов «мир через 30 лет».',
+      },
+      {
+        topic: 'Futuro irregulares в одном тексте',
+        note:
+          'В тексте плотно собраны частотные неправильные основы: habrá (haber), hará (hacer), tendremos (tener), pondré… (poner, тут не было, но в паре), querrá (querer), podremos (poder). ' +
+          'Дополним общий список 12 «классиков»: haber → habrá, poder → podrá, querer → querrá, saber → sabrá, poner → pondrá, salir → saldrá, tener → tendrá, valer → valdrá, venir → vendrá, decir → dirá, hacer → hará, caber → cabrá.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-024',
+    level: 'A2',
+    day: 24,
+    title: 'Tortilla de patatas, paso a paso',
+    text:
+      'La tortilla de patatas es el plato más español del mundo. ' +
+      'Aquí tienes la receta de mi madre, paso a paso. ' +
+      'Para una tortilla grande necesitas cinco huevos, cuatro patatas medianas, una cebolla, aceite de oliva y un poco de sal.\n\n' +
+      'Primero pela las patatas y córtalas en láminas finas. Pica la cebolla en trozos pequeños. ' +
+      'Pon una sartén grande al fuego con bastante aceite de oliva. ' +
+      'Echa las patatas y la cebolla y fríelas a fuego medio durante veinte minutos. ' +
+      'Remueve de vez en cuando con una cuchara de madera; las patatas deben quedar tiernas, no doradas.\n\n' +
+      'Mientras tanto, casca los huevos en un bol grande y bátelos bien con un tenedor. ' +
+      'Añade una pizca de sal. ' +
+      'Después escúrrelas y échalas en el bol con los huevos. Mézclalo todo con calma.\n\n' +
+      'Pon de nuevo la sartén al fuego con un poco de aceite. ' +
+      'Vierte la mezcla y dale forma redonda. ' +
+      'Cocina dos minutos por un lado, dale la vuelta con un plato y dos minutos por el otro. ' +
+      'Sírvela templada, con pan y un buen vino tinto.',
+    vocabulary: [
+      {
+        word: 'la receta',
+        translation: 'рецепт (la receta de mi madre; в аптеке тоже la receta — рецепт врача)',
+        example: 'la receta de mi madre, paso a paso',
+      },
+      {
+        word: 'la cebolla',
+        translation: 'лук (la cebolla morada — красный лук; cebolleta — зелёный)',
+        example: 'Pica la cebolla en trozos pequeños.',
+      },
+      {
+        word: 'pelar',
+        translation: 'чистить (фрукт, овощ) от кожуры (pelar una manzana — почистить яблоко)',
+        example: 'pela las patatas',
+      },
+      {
+        word: 'picar',
+        translation: 'мелко резать, рубить; picar carne — рубить мясо',
+        example: 'Pica la cebolla en trozos pequeños.',
+      },
+      {
+        word: 'la sartén',
+        translation: 'сковорода (la sartén antiadherente — антипригарная)',
+        example: 'Pon una sartén grande al fuego.',
+      },
+      {
+        word: 'el fuego',
+        translation: 'огонь; конфорка (a fuego medio / lento / fuerte — на среднем / медленном / сильном огне)',
+        example: 'fríelas a fuego medio',
+      },
+      {
+        word: 'freír',
+        translation: 'жарить (на масле); irreg.: frío, fríes, fríe…; participio frito',
+        example: 'fríelas a fuego medio durante veinte minutos',
+      },
+      {
+        word: 'remover',
+        translation: 'перемешивать (o→ue: remuevo, remueves, remueve…)',
+        example: 'Remueve de vez en cuando.',
+      },
+      {
+        word: 'la cuchara',
+        translation: 'ложка (la cucharilla — чайная ложка; el cuchillo — нож; el tenedor — вилка)',
+        example: 'con una cuchara de madera',
+      },
+      {
+        word: 'tierno, -a',
+        translation: 'мягкий, нежный (об овощах, мясе); о чувствах — нежный, трогательный',
+        example: 'las patatas deben quedar tiernas',
+      },
+      {
+        word: 'cascar',
+        translation: 'разбить, расколоть (cascar un huevo — разбить яйцо; cascar nueces — колоть орехи)',
+        example: 'casca los huevos en un bol grande',
+      },
+      {
+        word: 'batir',
+        translation: 'взбивать (batir los huevos / la nata)',
+        example: 'bátelos bien con un tenedor',
+      },
+      {
+        word: 'la pizca',
+        translation: 'щепотка (una pizca de sal / de pimienta)',
+        example: 'una pizca de sal',
+      },
+      {
+        word: 'escurrir',
+        translation: 'сцеживать, давать стечь воде/маслу (escurrir la pasta / las patatas)',
+        example: 'escúrrelas y échalas en el bol',
+      },
+      {
+        word: 'verter',
+        translation: 'выливать, переливать (e→ie: vierto, viertes, vierte…)',
+        example: 'Vierte la mezcla.',
+      },
+      {
+        word: 'dar la vuelta',
+        translation: 'перевернуть (буквально «сделать оборот»); dar la vuelta a la tortilla — перевернуть тортилью',
+        example: 'dale la vuelta con un plato',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuántos huevos necesita la receta?',
+        options: ['Tres', 'Cinco', 'Diez'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo deben quedar las patatas después de freírlas?',
+        options: ['Tiernas, no doradas', 'Muy crujientes', 'Casi crudas'],
+        correct: 0,
+      },
+      {
+        q: '¿Cómo se sirve la tortilla?',
+        options: ['Muy caliente y con limón', 'Templada, con pan y vino tinto', 'Helada y con azúcar'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperativo afirmativo (tú): формы',
+        note:
+          'Утвердительная форма tú = 3 л. ед. ч. Presente без -s: hablar → habla, comer → come, vivir → vive. ' +
+          'В тексте: pela, corta, pica, echa, fríe, remueve, casca, bate, añade, escurre, mezcla, vierte, cocina, sirve. ' +
+          'Ключевые неправильные tú: pon (poner), ten (tener), ven (venir), haz (hacer), sal (salir), di (decir), ve (ir), sé (ser). ' +
+          'В тексте: pon, da.',
+      },
+      {
+        topic: 'Imperativo + местоимения: enclítico и тильда',
+        note:
+          'Местоимения OD/OI/возвратные приклеиваются к концу глагола: cortar + las → córtalas, freír + las → fríelas, ' +
+          'mezclar + lo → mézclalo, servir + la → sírvela, batir + los → bátelos, dar + le → dale. ' +
+          'Появляется новая антипенультимная гласная, поэтому в большинстве случаев нужна тильда (córtalas, sírvela). ' +
+          'Без тильды только короткие формы с естественным ударением: dale (2 слога).',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-025',
+    level: 'A2',
+    day: 25,
+    title: 'Yo, en su lugar',
+    text:
+      'Mi amiga Lucía está en una situación complicada. ' +
+      'Su novio quiere mudarse a Sevilla por su trabajo, pero ella tiene un buen empleo en Bilbao y no quiere dejarlo. ' +
+      'Ayer estuvimos hablando en una cafetería del Casco Viejo y me pidió mi opinión.\n\n' +
+      'Yo, en su lugar, no decidiría nada sin pensar mucho. ' +
+      'Primero hablaría con su jefe para saber si la empresa tiene oficina en Sevilla; muchas firmas grandes la tienen. ' +
+      'Si no, yo le propondría a su novio una solución intermedia: él iría a Sevilla durante un año y se verían los fines de semana. ' +
+      'No es ideal, pero un año pasa rápido.\n\n' +
+      'Tampoco vendería el piso enseguida. Lo alquilaría a una pareja seria por unos meses. ' +
+      'Así, si la cosa no funciona, podría volver a su casa sin problemas.\n\n' +
+      'Yo, además, le pediría a mi novio una promesa: si en doce meses no encuentra trabajo en Bilbao para los dos, le toca a él volver. ' +
+      'Una relación necesita esfuerzo, pero también justicia.\n\n' +
+      'Le dije todo esto. Lucía me sonrió y me respondió: «¡Qué fácil es dar consejos!»',
+    vocabulary: [
+      {
+        word: 'complicado, -a',
+        translation: 'сложный, запутанный (антоним sencillo; una situación complicada)',
+        example: 'Lucía está en una situación complicada.',
+      },
+      {
+        word: 'el empleo',
+        translation: 'работа, место (синоним el trabajo; el empleo fijo — постоянная работа)',
+        example: 'ella tiene un buen empleo en Bilbao',
+      },
+      {
+        word: 'dejar',
+        translation: 'оставить; бросить (dejar un trabajo — бросить работу; dejar a alguien — бросить кого-то)',
+        example: 'no quiere dejarlo',
+      },
+      {
+        word: 'el Casco Viejo',
+        translation: 'старый город, исторический квартал (в Бильбао — знаменитый туристический центр)',
+        example: 'una cafetería del Casco Viejo',
+      },
+      {
+        word: 'decidir',
+        translation: 'решать, принимать решение (decidir hacer algo)',
+        example: 'no decidiría nada sin pensar mucho',
+      },
+      {
+        word: 'intermedio, -a',
+        translation: 'промежуточный (una solución intermedia — компромисс)',
+        example: 'una solución intermedia',
+      },
+      {
+        word: 'la firma',
+        translation: 'фирма, компания (синоним empresa; не путать с firma — подпись)',
+        example: 'muchas firmas grandes la tienen',
+      },
+      {
+        word: 'la solución',
+        translation: 'решение (la solución a un problema; solucionar — решать)',
+        example: 'una solución intermedia',
+      },
+      {
+        word: 'ideal',
+        translation: 'идеальный (sin acentos: ideal; mn. ideales)',
+        example: 'No es ideal, pero un año pasa rápido.',
+      },
+      {
+        word: 'la promesa',
+        translation: 'обещание (hacer una promesa; cumplir una promesa — сдержать обещание)',
+        example: 'le pediría una promesa',
+      },
+      {
+        word: 'encontrar',
+        translation: 'находить (o→ue: encuentro, encuentras, encuentra…); encontrar trabajo — найти работу',
+        example: 'si en doce meses no encuentra trabajo',
+      },
+      {
+        word: 'le toca a + alguien',
+        translation: 'настала чья-то очередь (Me toca a mí — моя очередь; le toca a él — его очередь)',
+        example: 'le toca a él volver',
+      },
+      {
+        word: 'la relación',
+        translation: 'отношения (de pareja, de amistad); сокр. сленг la rela',
+        example: 'Una relación necesita esfuerzo.',
+      },
+      {
+        word: 'el esfuerzo',
+        translation: 'усилие (hacer un esfuerzo — приложить усилие; esforzarse — стараться)',
+        example: 'Una relación necesita esfuerzo.',
+      },
+      {
+        word: 'la justicia',
+        translation: 'справедливость; правосудие (justo, -a — справедливый)',
+        example: 'también justicia',
+      },
+      {
+        word: 'responder',
+        translation: 'отвечать (синоним contestar; responder a una pregunta)',
+        example: 'me respondió: «¡Qué fácil es dar consejos!»',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Dónde vive y trabaja Lucía?',
+        options: ['En Sevilla', 'En Bilbao', 'En Madrid'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué solución intermedia propone la narradora?',
+        options: ['Vender el piso enseguida', 'Que el novio vaya a Sevilla un año y se vean los fines de semana', 'Que Lucía deje su trabajo'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué reacción tiene Lucía al final?',
+        options: ['Se enfada mucho', 'Sonríe y dice que es fácil dar consejos', 'Llora y se va'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Condicional simple для гипотез о настоящем',
+        note:
+          '«Yo, en su lugar, no decidiría nada» = я не на её месте, поэтому это гипотеза, а не реальный план. ' +
+          'В тексте: hablaría, propondría, iría, vendería, alquilaría, podría, pediría — всё гипотезы. ' +
+          'Если бы говорящий планировал реально, было бы Futuro: «Hablaré con mi jefe».',
+      },
+      {
+        topic: 'Condicional vs «si + Presente, Futuro»',
+        note:
+          'В тексте сосуществуют две конструкции. «Si la cosa no funciona, podría volver» — реальное условие 1-го типа, ' +
+          'но в главной части Condicional как смягчение (вместо podrá → podría). ' +
+          'Это нормально и часто: основное правило «si + Presente, Futuro», но Condicional в главной части придаёт оттенок «возможно, теоретически».',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-026',
+    level: 'A2',
+    day: 26,
+    title: 'Entrevista con la alcaldesa',
+    text:
+      'Hoy hablamos con Lola Ramírez, alcaldesa de Aranda de Duero, sobre los planes del ayuntamiento para los próximos diez años.\n\n' +
+      '—Lola, ¿cómo será Aranda en 2035?\n\n' +
+      '—Será un pueblo más verde y más joven. Construiremos un nuevo barrio al norte, con doscientas viviendas para familias jóvenes y un parque grande con árboles autóctonos. ' +
+      'Plantaremos mil chopos junto al río Duero.\n\n' +
+      '—¿Y el centro histórico?\n\n' +
+      '—Lo cuidaremos especialmente. Renovaremos la plaza Mayor sin tocar los edificios antiguos. ' +
+      'También abriremos un museo del vino, porque la Ribera del Duero es nuestra gran marca. ' +
+      'Pondremos paneles en cuatro idiomas para los turistas.\n\n' +
+      '—¿Qué pasará con los jóvenes que se van a Madrid?\n\n' +
+      '—Volverán. Estamos hablando con dos empresas de tecnología que abrirán oficinas aquí. ' +
+      'Crearemos doscientos puestos en cinco años. Además, todas las casas del centro tendrán fibra óptica.\n\n' +
+      '—¿Y el campo?\n\n' +
+      '—El campo es la base. Daremos ayudas a los agricultores jóvenes y enseñaremos a sus hijos las profesiones del vino y de la trufa. ' +
+      'Aquí siempre habrá trabajo para los que aman el pueblo.\n\n' +
+      '—Muchas gracias, Lola. Esperamos volver a hablar dentro de cinco años.',
+    vocabulary: [
+      {
+        word: 'el ayuntamiento',
+        translation: 'мэрия, городская администрация (в маленьких городах — здание на площади Mayor)',
+        example: 'los planes del ayuntamiento',
+      },
+      {
+        word: 'el alcalde / la alcaldesa',
+        translation: 'мэр / мэрша (избирается на местных выборах; в больших городах — el alcalde de Madrid)',
+        example: 'Lola Ramírez, alcaldesa de Aranda de Duero',
+      },
+      {
+        word: 'la vivienda',
+        translation: 'жильё (официальный термин; sinónimos: el piso, la casa); el problema de la vivienda — жилищный вопрос',
+        example: 'doscientas viviendas para familias jóvenes',
+      },
+      {
+        word: 'autóctono, -a',
+        translation: 'местный, эндемичный (об организмах и культурах; árboles autóctonos — местные деревья)',
+        example: 'árboles autóctonos',
+      },
+      {
+        word: 'la Ribera del Duero',
+        translation: 'винодельческий регион вдоль реки Дуэро в Кастилии-и-Леоне (DOC, конкурент Риохи)',
+        example: 'la Ribera del Duero es nuestra gran marca',
+      },
+      {
+        word: 'la marca',
+        translation: 'бренд, марка (la marca registrada; одно из значений — отметина, след)',
+        example: 'nuestra gran marca',
+      },
+      {
+        word: 'el panel',
+        translation: 'информационный щит, табличка (тж. солнечная панель — el panel solar)',
+        example: 'Pondremos paneles en cuatro idiomas.',
+      },
+      {
+        word: 'el idioma',
+        translation: 'язык (синоним la lengua; el idioma — обычно официальный/иностранный язык)',
+        example: 'paneles en cuatro idiomas',
+      },
+      {
+        word: 'la tecnología',
+        translation: 'технология; высокотехнологичная отрасль (las empresas de tecnología — IT-компании)',
+        example: 'dos empresas de tecnología',
+      },
+      {
+        word: 'el puesto (de trabajo)',
+        translation: 'рабочее место, вакансия (crear puestos — создавать рабочие места)',
+        example: 'Crearemos doscientos puestos.',
+      },
+      {
+        word: 'la fibra óptica',
+        translation: 'оптоволокно (стандарт интернета в Испании: la fibra)',
+        example: 'todas las casas tendrán fibra óptica',
+      },
+      {
+        word: 'la ayuda',
+        translation: 'помощь; денежная субсидия от государства (las ayudas públicas)',
+        example: 'Daremos ayudas a los agricultores jóvenes.',
+      },
+      {
+        word: 'el agricultor / la agricultora',
+        translation: 'фермер, работник сельского хозяйства (la agricultura — сельское хозяйство)',
+        example: 'ayudas a los agricultores jóvenes',
+      },
+      {
+        word: 'la trufa',
+        translation: 'трюфель (гриб; чёрный трюфель — la trufa negra; в провинции Сория и Теруэль — национальный продукт)',
+        example: 'las profesiones del vino y de la trufa',
+      },
+      {
+        word: 'histórico, -a',
+        translation: 'исторический (el centro histórico — старый город; los edificios históricos)',
+        example: 'el centro histórico',
+      },
+      {
+        word: 'renovar',
+        translation: 'обновлять, реставрировать (o→ue: renuevo, renuevas…); renovar un piso — отремонтировать квартиру',
+        example: 'Renovaremos la plaza Mayor.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué van a plantar junto al río Duero?',
+        options: ['Mil chopos', 'Cien olivos', 'Trescientos pinos'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué marca destacará Aranda?',
+        options: ['El queso manchego', 'La Ribera del Duero', 'La paella'],
+        correct: 1,
+      },
+      {
+        q: '¿Cómo piensan ayudar al campo?',
+        options: ['Con ayudas a los agricultores jóvenes', 'Cerrando las granjas', 'Subiendo los impuestos'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Futuro simple в речи политика',
+        note:
+          'Futuro 1-го лица мн. ч. («construiremos», «pondremos», «daremos», «crearemos», «enseñaremos») — стандартный регистр политических обещаний и интервью с альчальде. ' +
+          'Звучит как «мы это сделаем» = обязательство перед избирателями. ' +
+          'В тексте 14 форм Futuro, и почти все — 1-е л. мн. ч. от лица администрации.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-027',
+    level: 'A2',
+    day: 27,
+    title: 'Normas del piso compartido',
+    text:
+      'Bienvenidos al piso, chicos. ' +
+      'Antes de instalaros, leed con calma estas pequeñas normas que los inquilinos hemos acordado entre todos. ' +
+      'No son muchas, pero son importantes.\n\n' +
+      'Primero, respetad el silencio después de las once de la noche. ' +
+      'Algunos tenemos turnos de mañana y madrugamos mucho. ' +
+      'Si queréis hablar largo por teléfono, hacedlo en el salón con la puerta cerrada.\n\n' +
+      'En la cocina, limpiad siempre vuestros platos enseguida. ' +
+      'Tirad la basura por la noche, no por la mañana, porque el camión pasa muy temprano. ' +
+      'Comprad vuestros alimentos básicos y poned el nombre en la nevera; los productos sin nombre se consideran comunes.\n\n' +
+      'Para el baño, dejadlo tal y como lo encontráis. ' +
+      'Sed prácticos: una ducha de diez minutos basta, sobre todo en invierno, cuando la caldera trabaja mucho. ' +
+      'Avisad al casero si hay alguna avería; tenéis su número en la nevera.\n\n' +
+      'Pagad el alquiler antes del día cinco de cada mes, por transferencia. ' +
+      'Y, por favor, venid al salón el primer domingo del mes a las nueve. ' +
+      'Tomamos un café juntos y hablamos de la convivencia. ' +
+      'Disfrutad del piso, es vuestra casa.',
+    vocabulary: [
+      {
+        word: 'la norma',
+        translation: 'правило, норма (синоним la regla; normas de convivencia — правила совместного проживания)',
+        example: 'estas pequeñas normas',
+      },
+      {
+        word: 'el inquilino / la inquilina',
+        translation: 'жилец, квартиросъёмщик (антоним el casero — владелец)',
+        example: 'los inquilinos hemos acordado',
+      },
+      {
+        word: 'acordar',
+        translation: 'договариваться, соглашаться (o→ue: acuerdo, acuerdas…); не путать с acordarse de — помнить',
+        example: 'normas que hemos acordado entre todos',
+      },
+      {
+        word: 'respetar',
+        translation: 'уважать; соблюдать (respetar las normas — соблюдать правила)',
+        example: 'respetad el silencio',
+      },
+      {
+        word: 'el turno',
+        translation: 'смена (de mañana, de tarde, de noche); очередь (esperar tu turno)',
+        example: 'turnos de mañana',
+      },
+      {
+        word: 'madrugar',
+        translation: 'рано вставать (la madrugada — раннее утро; el madrugador — жаворонок)',
+        example: 'madrugamos mucho',
+      },
+      {
+        word: 'la basura',
+        translation: 'мусор (tirar la basura — выносить мусор; el cubo de basura — мусорное ведро)',
+        example: 'Tirad la basura por la noche.',
+      },
+      {
+        word: 'el alimento',
+        translation: 'продукт питания (alimentos básicos — базовые продукты; sinónimos: la comida в общем смысле)',
+        example: 'vuestros alimentos básicos',
+      },
+      {
+        word: 'el alquiler',
+        translation: 'арендная плата; аренда (alquilar — снимать; el alquiler mensual — ежемесячная плата)',
+        example: 'Pagad el alquiler antes del día cinco.',
+      },
+      {
+        word: 'la transferencia',
+        translation: 'банковский перевод (hacer una transferencia; синоним el ingreso)',
+        example: 'por transferencia',
+      },
+      {
+        word: 'el producto',
+        translation: 'продукт, товар (los productos del supermercado; el producto interior bruto — ВВП)',
+        example: 'los productos sin nombre se consideran comunes',
+      },
+      {
+        word: 'la caldera',
+        translation: 'котёл (отопления, газа); даёт горячую воду и отопление в испанских квартирах',
+        example: 'la caldera trabaja mucho',
+      },
+      {
+        word: 'la avería',
+        translation: 'поломка (la avería del coche / de la caldera; estar averiado — быть сломанным)',
+        example: 'si hay alguna avería',
+      },
+      {
+        word: 'el casero / la casera',
+        translation: 'хозяин квартиры, владелец (el casero cobra el alquiler; антоним el inquilino)',
+        example: 'Avisad al casero.',
+      },
+      {
+        word: 'la convivencia',
+        translation: 'совместное проживание, сосуществование (las normas de convivencia)',
+        example: 'hablamos de la convivencia',
+      },
+      {
+        word: 'disfrutar (de algo)',
+        translation: 'наслаждаться, получать удовольствие от чего-то (disfrutar de la vida)',
+        example: 'Disfrutad del piso.',
+      },
+    ],
+    questions: [
+      {
+        q: '¿A qué hora empieza el silencio en el piso?',
+        options: ['A las nueve', 'A las once de la noche', 'A medianoche'],
+        correct: 1,
+      },
+      {
+        q: '¿Cuándo hay que tirar la basura?',
+        options: ['Por la mañana temprano', 'Por la noche', 'Solo los domingos'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué hacen el primer domingo del mes?',
+        options: ['Limpian el piso entero', 'Toman café juntos y hablan de la convivencia', 'Pagan al casero en mano'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperativo afirmativo (vosotros): -d',
+        note:
+          'Возьмите инфинитив и замените конечное -r на -d: hablar → hablad, comer → comed, vivir → vivid. ' +
+          'В тексте: leed, respetad, limpiad, tirad, comprad, poned, dejadlo, sed (irreg ser), avisad, pagad, venid (irreg venir), disfrutad. ' +
+          'У ir форма vosotros — id (но в речи Испании чаще «idos», «iros»).',
+      },
+      {
+        topic: 'Pronombres en imperativo vosotros',
+        note:
+          'Местоимения приклеиваются к концу глагола, как и в tú: hacedlo, dejadlo, poned el nombre, comprad vuestros alimentos. ' +
+          'У возвратных vosotros -d перед -os отпадает: instalaros (вместо *instaladlos), levantaros, sentaros. ' +
+          'Исключение: ir → idos сохраняет -d. На практике в разговорной речи Испании часто слышно «iros».',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-028',
+    level: 'A2',
+    day: 28,
+    title: 'Si hace sol el sábado',
+    text:
+      'Este fin de semana queremos ir a la sierra de Madrid, pero todo depende del tiempo. ' +
+      'Si mañana hace sol, saldremos a primera hora hacia Cercedilla. ' +
+      'Si llueve, nos quedaremos en casa y veremos una serie en el sofá.\n\n' +
+      'Si el día es bueno, subiremos hasta el puerto de Navacerrada y comeremos algo en el restaurante de arriba. ' +
+      'Si tenemos energía, haremos una pequeña ruta de una hora por el bosque de pinos. ' +
+      'Si encontramos un sitio bonito, sacaremos fotos para la abuela, que adora la montaña.\n\n' +
+      'Volveremos antes de las ocho de la tarde, porque mi mujer trabaja el lunes muy temprano. ' +
+      'Si llegamos a tiempo, cenaremos en el restaurante chino del barrio; si llegamos tarde, calentaremos algo del frigorífico.\n\n' +
+      'Hay un solo problema: el coche. Si la batería sigue débil, no podremos salir y tendremos que coger el tren. ' +
+      'Pasaré por el taller esta tarde. Si Roberto, el mecánico, está libre, me la mirará rápido. ' +
+      'Si no, llamaré a mi hermano: él siempre presta el suyo.\n\n' +
+      'Si todo sale bien, será un domingo perfecto.',
+    vocabulary: [
+      {
+        word: 'la sierra',
+        translation: 'горная цепь, горы (la sierra de Madrid; la sierra Nevada в Андалусии)',
+        example: 'ir a la sierra de Madrid',
+      },
+      {
+        word: 'depender de',
+        translation: 'зависеть от (todo depende de ti — всё зависит от тебя; la dependencia — зависимость)',
+        example: 'todo depende del tiempo',
+      },
+      {
+        word: 'la serie',
+        translation: 'сериал (ver una serie — смотреть сериал; синоним: la teleserie)',
+        example: 'veremos una serie en el sofá',
+      },
+      {
+        word: 'el puerto (de montaña)',
+        translation: 'горный перевал (el puerto de Navacerrada; в другом значении — морской порт)',
+        example: 'subiremos hasta el puerto de Navacerrada',
+      },
+      {
+        word: 'la energía',
+        translation: 'энергия, силы (no tener energía — нет сил; energético — энергичный)',
+        example: 'Si tenemos energía, haremos una ruta.',
+      },
+      {
+        word: 'la ruta',
+        translation: 'маршрут, поход (la ruta de senderismo — пешеходный маршрут)',
+        example: 'una pequeña ruta de una hora',
+      },
+      {
+        word: 'el bosque',
+        translation: 'лес (el bosque de pinos — сосновый лес; синоним la selva — джунгли)',
+        example: 'por el bosque de pinos',
+      },
+      {
+        word: 'el pino',
+        translation: 'сосна (el pino — самое распространённое дерево в Кастилии; antynim el roble — дуб)',
+        example: 'el bosque de pinos',
+      },
+      {
+        word: 'el sitio',
+        translation: 'место (синоним el lugar; в разговоре чаще el sitio)',
+        example: 'un sitio bonito',
+      },
+      {
+        word: 'adorar',
+        translation: 'обожать, очень любить (синоним: encantar, en 3-м лице; me adora la montaña — звучит странно, лучше adoro)',
+        example: 'la abuela adora la montaña',
+      },
+      {
+        word: 'calentar',
+        translation: 'разогреть (e→ie: caliento, calientas…); calentarse — греться (refl.)',
+        example: 'calentaremos algo del frigorífico',
+      },
+      {
+        word: 'el frigorífico',
+        translation: 'холодильник (синонимы: la nevera более разговорно; el frigorífico — нейтрально/официально)',
+        example: 'algo del frigorífico',
+      },
+      {
+        word: 'la batería',
+        translation: 'аккумулятор (de coche, de móvil); сидит в коробке передач у машины',
+        example: 'Si la batería sigue débil…',
+      },
+      {
+        word: 'débil',
+        translation: 'слабый (антоним fuerte; mn. débiles)',
+        example: 'la batería sigue débil',
+      },
+      {
+        word: 'prestar',
+        translation: 'одолжить (prestar algo a alguien; антоним pedir prestado — взять взаймы)',
+        example: 'él siempre presta el suyo',
+      },
+      {
+        word: 'perfecto, -a',
+        translation: 'идеальный, безупречный (синонимы: ideal, perfectísimo)',
+        example: 'será un domingo perfecto',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Qué harán si llueve?',
+        options: ['Saldrán a primera hora a la sierra', 'Se quedarán en casa y verán una serie', 'Cogerán el tren a Cercedilla'],
+        correct: 1,
+      },
+      {
+        q: '¿Adónde subirán si el día es bueno?',
+        options: ['Al puerto de Navacerrada', 'A Toledo', 'A Segovia'],
+        correct: 0,
+      },
+      {
+        q: '¿Cuál es el problema del coche?',
+        options: ['Las ruedas están viejas', 'La batería está débil', 'No tiene gasolina'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Условие 1-го типа: si + Presente, Futuro simple',
+        note:
+          'Реальное, выполнимое условие: si-часть в Presente de indicativo, главная — в Futuro. ' +
+          'В тексте таких пар целая россыпь: «Si hace sol, saldremos», «Si llueve, nos quedaremos», «Si tenemos energía, haremos», ' +
+          '«Si encontramos un sitio, sacaremos», «Si llegamos a tiempo, cenaremos», «Si la batería sigue débil, no podremos», ' +
+          '«Si Roberto está libre, mirará», «Si todo sale bien, será». ' +
+          '⚠️ После si никогда не ставится Futuro: говорим «si hace sol», не «si hará sol».',
+      },
+      {
+        topic: 'Coger в Испании vs Латинская Америка',
+        note:
+          'В Испании coger — нейтральный, частотный глагол: coger el tren / el autobús / el móvil / un libro. ' +
+          'В Мексике, Аргентине и других странах региона избегают из-за вульгарного значения, заменяют на tomar или agarrar. ' +
+          'В наших текстах кастильский испанский, поэтому coger используется свободно начиная с A2.',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-029',
+    level: 'A2',
+    day: 29,
+    title: 'Consejos para un turista en España',
+    text:
+      'Si vienes a España por primera vez, escucha estos consejos de quien ha vivido aquí toda su vida. ' +
+      'No son obligatorios, pero te ahorrarán problemas.\n\n' +
+      'Primero, cambia el ritmo de tu reloj. ' +
+      'Si llegas a un restaurante a las siete de la tarde, la cocina estará cerrada. ' +
+      'Yo, en tu lugar, comería a las dos y media y cenaría a las nueve, como los españoles. ' +
+      'Reserva con un día de antelación los sitios famosos; si no, esperarás una hora en la calle.\n\n' +
+      'Habla con la gente. Yo siempre les digo a mis amigos extranjeros: di «hola» y «gracias» al camarero, al portero, al señor del kiosco. ' +
+      'No hace falta saber mucho español; con una sonrisa se abren todas las puertas. ' +
+      'Pregunta al taxista: él te recomendará el mejor sitio para tomar el café.\n\n' +
+      'Yo no llevaría mucho dinero en efectivo. Casi todo se paga con tarjeta, incluso un café de un euro. ' +
+      'Lleva una pequeña mochila contra los carteristas en el metro; cuídala en lugares con mucha gente, como Sol o la Sagrada Familia.\n\n' +
+      'Y, sobre todo, sal del centro. ' +
+      'Si visitas Lavapiés, Malasaña o el Albaicín a pie, verás la España de verdad. ' +
+      '¡Disfruta del viaje!',
+    vocabulary: [
+      {
+        word: 'obligatorio, -a',
+        translation: 'обязательный (la educación obligatoria; антоним opcional)',
+        example: 'No son obligatorios.',
+      },
+      {
+        word: 'ahorrar',
+        translation: 'экономить (ahorrar dinero / tiempo / problemas); el ahorro — экономия, сбережения',
+        example: 'te ahorrarán problemas',
+      },
+      {
+        word: 'el ritmo',
+        translation: 'ритм, темп (a su ritmo — в своём темпе; el ritmo de vida — ритм жизни)',
+        example: 'cambia el ritmo de tu reloj',
+      },
+      {
+        word: 'el reloj',
+        translation: 'часы (наручные, настенные); el reloj de pulsera — наручные; conjunction el reloj de la torre',
+        example: 'el ritmo de tu reloj',
+      },
+      {
+        word: 'la antelación',
+        translation: 'заблаговременность (con un día / una semana de antelación — за день/неделю)',
+        example: 'Reserva con un día de antelación.',
+      },
+      {
+        word: 'famoso, -a',
+        translation: 'известный, знаменитый (un restaurante famoso; la fama — слава)',
+        example: 'los sitios famosos',
+      },
+      {
+        word: 'extranjero, -a',
+        translation: 'иностранный; иностранец (un amigo extranjero; viajar al extranjero — поехать за границу)',
+        example: 'mis amigos extranjeros',
+      },
+      {
+        word: 'hacer falta',
+        translation: 'требоваться (No hace falta — не нужно; sinónimo: ser necesario)',
+        example: 'No hace falta saber mucho español.',
+      },
+      {
+        word: 'el taxista',
+        translation: 'таксист (el taxi — такси; глагол не существует, говорят coger un taxi)',
+        example: 'Pregunta al taxista.',
+      },
+      {
+        word: 'recomendar',
+        translation: 'рекомендовать (e→ie: recomiendo, recomiendas…); recomendar a alguien hacer algo',
+        example: 'él te recomendará el mejor sitio',
+      },
+      {
+        word: 'el carterista',
+        translation: 'карманник (от la cartera — кошелёк); особая проблема в метро и на людных площадях',
+        example: 'contra los carteristas en el metro',
+      },
+      {
+        word: 'el lugar',
+        translation: 'место (синоним el sitio; el lugar — более формально, sitio — разговорно)',
+        example: 'en lugares con mucha gente',
+      },
+      {
+        word: 'Malasaña',
+        translation: 'модный молодёжный район Мадрида к северу от Gran Vía (антоним «туристический Sol»)',
+        example: 'Si visitas Lavapiés, Malasaña o el Albaicín',
+      },
+      {
+        word: 'de verdad',
+        translation: 'по-настоящему, действительно (la España de verdad — настоящая Испания; ¿De verdad? — Правда?)',
+        example: 'verás la España de verdad',
+      },
+      {
+        word: 'visitar',
+        translation: 'посещать, навещать (visitar un museo / a un amigo); la visita — посещение',
+        example: 'Si visitas Lavapiés…',
+      },
+      {
+        word: 'cuidar',
+        translation: 'заботиться о, охранять (cuidar a alguien / algo); cuidarse — беречь себя',
+        example: 'cuídala en lugares con mucha gente',
+      },
+    ],
+    questions: [
+      {
+        q: '¿A qué hora suelen comer los españoles, según el texto?',
+        options: ['A la una', 'A las dos y media', 'A las cuatro'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué se recomienda llevar contra los carteristas?',
+        options: ['Una mochila pequeña, bien cuidada', 'Una bolsa grande y abierta', 'Solo dinero en efectivo'],
+        correct: 0,
+      },
+      {
+        q: '¿Cómo conocer la «España de verdad»?',
+        options: ['Quedándose en hoteles del centro', 'Saliendo del centro a barrios como Malasaña o Lavapiés', 'Comiendo solo en cadenas internacionales'],
+        correct: 1,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Imperativo + Condicional: тон совета',
+        note:
+          'Imperativo звучит директивно: «cambia», «reserva», «habla», «di», «pregunta», «lleva», «cuídala», «sal», «disfruta». ' +
+          'Condicional смягчает: «Yo, en tu lugar, comería», «cenaría», «no llevaría». ' +
+          'Хороший совет балансирует оба регистра: команда там, где надо коротко («Sal del centro»), и гипотеза там, где надо такт («Yo no llevaría mucho efectivo»).',
+      },
+      {
+        topic: 'Imperativo tú: ключевые неправильные',
+        note:
+          'В тексте собраны главные неправильные tú: di (decir), sal (salir). ' +
+          'Полный список: pon (poner), ten (tener), ven (venir), haz (hacer), sal (salir), di (decir), ve (ir), sé (ser). ' +
+          'Восемь форм — короткие, односложные, часто без тильды (кроме sé — отличие от se-местоимения).',
+      },
+    ],
+  },
+
+  {
+    id: 'a2-030',
+    level: 'A2',
+    day: 30,
+    title: 'Final del nivel A2',
+    text:
+      'Hoy termino el último texto del nivel A2. ' +
+      'Ha sido un año entero leyendo, escribiendo y aprendiendo despacio. ' +
+      'Sesenta textos en total: treinta de A1, treinta de A2. ' +
+      'Cada uno me ha dado una pequeña porción de español: un sabor, un personaje, un rincón del país.\n\n' +
+      '¿Qué haré ahora? Empezaré el nivel B1 sin pausa. ' +
+      'Compraré el cuaderno azul que vi en la librería y leeré la primera novela ligera en español: probablemente algo de Sergio del Molino o Almudena Grandes. ' +
+      'No correré: dos páginas al día durante seis meses serán suficientes.\n\n' +
+      'Yo, en tu lugar, lector, no haría nada distinto. Sigue tu camino con calma. ' +
+      'Si lees veinte minutos al día, en un año hablarás con fluidez. ' +
+      'Si añades una conversación a la semana con un nativo, no te reconocerás dentro de doce meses.\n\n' +
+      'Algunos sueños para mi B1: ver una película española sin subtítulos, escribir una postal larga a un amigo de Salamanca, pedir un café en Madrid y entender al camarero al cien por cien.\n\n' +
+      'Gracias por leer hasta aquí. Cierra ahora este texto, abre el cuaderno y escribe tu primer plan para el próximo nivel. ' +
+      'El español no es difícil: solo pide tiempo y cariño. ¡Hasta pronto!',
+    vocabulary: [
+      {
+        word: 'el nivel',
+        translation: 'уровень (el nivel A2, B1; el nivel del mar — уровень моря)',
+        example: 'el último texto del nivel A2',
+      },
+      {
+        word: 'entero, -a',
+        translation: 'целый (un año entero — целый год; синоним completo)',
+        example: 'un año entero leyendo',
+      },
+      {
+        word: 'la porción',
+        translation: 'порция, часть (la porción de pizza; una pequeña porción — небольшая порция)',
+        example: 'una pequeña porción de español',
+      },
+      {
+        word: 'el sabor',
+        translation: 'вкус (el sabor a chocolate; sabroso — вкусный)',
+        example: 'un sabor, un personaje, un rincón',
+      },
+      {
+        word: 'el personaje',
+        translation: 'персонаж (de una novela, una película); тж. историческая личность',
+        example: 'un personaje',
+      },
+      {
+        word: 'el rincón',
+        translation: 'уголок (un rincón tranquilo — тихий уголок; антоним la esquina — внешний угол)',
+        example: 'un rincón del país',
+      },
+      {
+        word: 'la librería',
+        translation: 'книжный магазин (⚠️ ложный друг: библиотека — la biblioteca)',
+        example: 'el cuaderno azul que vi en la librería',
+      },
+      {
+        word: 'ligero, -a',
+        translation: 'лёгкий (антоним pesado; una novela ligera — лёгкое чтение; una comida ligera — лёгкая еда)',
+        example: 'la primera novela ligera en español',
+      },
+      {
+        word: 'suficiente',
+        translation: 'достаточный (синонимы: bastante; suficientemente — достаточно)',
+        example: 'dos páginas al día serán suficientes',
+      },
+      {
+        word: 'la fluidez',
+        translation: 'беглость (речи); hablar con fluidez — говорить бегло; fluido, -a — беглый',
+        example: 'en un año hablarás con fluidez',
+      },
+      {
+        word: 'añadir',
+        translation: 'добавить (sinónimos: agregar, sumar)',
+        example: 'Si añades una conversación a la semana',
+      },
+      {
+        word: 'el nativo / la nativa',
+        translation: 'носитель языка (un hablante nativo — формальнее; un nativo — короче)',
+        example: 'una conversación con un nativo',
+      },
+      {
+        word: 'el sueño',
+        translation: 'мечта; сон (двойное значение; los sueños — мечты или сны)',
+        example: 'algunos sueños para mi B1',
+      },
+      {
+        word: 'el subtítulo',
+        translation: 'субтитр (ver una película sin subtítulos — смотреть без субтитров)',
+        example: 'ver una película española sin subtítulos',
+      },
+      {
+        word: 'el cariño',
+        translation: 'нежность, любовь, привязанность (con cariño — с любовью; cariñoso — ласковый)',
+        example: 'tiempo y cariño',
+      },
+      {
+        word: 'al cien por cien',
+        translation: 'на сто процентов, полностью (синоним del todo; estoy de acuerdo al cien por cien)',
+        example: 'entender al camarero al cien por cien',
+      },
+    ],
+    questions: [
+      {
+        q: '¿Cuántos textos en total ha leído el narrador?',
+        options: ['Cincuenta', 'Sesenta', 'Cien'],
+        correct: 1,
+      },
+      {
+        q: '¿Qué consejo da para el nivel B1?',
+        options: ['Veinte minutos de lectura al día', 'Cuatro horas de gramática al día', 'No leer nada nuevo'],
+        correct: 0,
+      },
+      {
+        q: '¿Qué autores menciona el narrador?',
+        options: ['Sergio del Molino y Almudena Grandes', 'Cervantes y Pérez Galdós', 'García Márquez y Borges'],
+        correct: 0,
+      },
+    ],
+    grammar_notes: [
+      {
+        topic: 'Три кита A2-блока C в одном тексте',
+        note:
+          'Финальный текст собирает все три темы блока: Futuro simple для будущих планов (empezaré, compraré, leeré, correré, serán, hablarás, reconocerás), ' +
+          'Condicional simple для гипотезы (no haría nada distinto) и Imperativo afirmativo для прямого обращения к читателю (sigue, cierra, abre, escribe). ' +
+          'Это итог уровня — три времени, которые отличают A2 от A1.',
+      },
+      {
+        topic: 'Реальное условие как мост к B1',
+        note:
+          '«Si lees veinte minutos al día, hablarás con fluidez», «Si añades una conversación, no te reconocerás» — ' +
+          'стандартная формула «si + Presente, Futuro», уже отработанная в a2-028. ' +
+          'На уровне B1 эта схема расширится: появятся условия 2-го («si tuviera tiempo, viajaría») и 3-го («si hubiera tenido tiempo, habría viajado») типов с Subjuntivo. Но это уже другая история.',
+      },
+    ],
+  },
 );
