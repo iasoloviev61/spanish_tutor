@@ -62,6 +62,17 @@ window.TEXTBOOK.u01 = {
       ],
     },
     {
+      type: 'rule',
+      ru: '<strong>Общий род</strong> — окончания <strong>−i, −ía, −ista, −ante, −ense</strong>.',
+      examples: [
+        { es: 'el / la iraní', ru: 'иранец / иранка' },
+        { es: 'el / la guía', ru: 'гид' },
+        { es: 'el / la pianista', ru: 'пианист(ка)' },
+        { es: 'el / la estudiante', ru: 'студент(ка)' },
+        { es: 'el / la estadounidense', ru: 'американец / американка' },
+      ],
+    },
+    {
       type: 'atencion',
       es: 'Прилагательные и местоимения, стоящие при существительном, тоже меняются по роду: <em>aquel chico rubio</em> — <em>aquella chica rubia</em>; <em>un hombre alto</em> — <em>una mujer alta</em>.',
       ru: 'Связанные слова (артикль, прилагательное, указательное местоимение) обязательно согласуются по роду с существительным.',
@@ -269,6 +280,22 @@ window.TEXTBOOK.u01 = {
         { id: 'q6', prompt: 'Su hijo es pintor, su hija es ___.',         correct: 'pintora' },
         { id: 'q7', prompt: 'Aquel señor es bailarín, aquella señora es ___.', correct: 'bailarina' },
         { id: 'q8', prompt: 'Mi primo es estudiante, mi prima es ___.',   correct: 'estudiante', explanation: '<em>estudiante</em> — инвариантно.' },
+      ],
+    },
+
+    {
+      id: '1.13',
+      title: 'Общий род: какой артикль?',
+      type: 'choice',
+      instructions: 'Выберите верный артикль для слова общего рода — пол указан в скобках.',
+      questions: [
+        { id: 'q1', prompt: '___ iraní (мужчина)',          options: ['el', 'la'], correct: 'el' },
+        { id: 'q2', prompt: '___ guía (девушка)',           options: ['el', 'la'], correct: 'la' },
+        { id: 'q3', prompt: '___ pianista (мужчина)',       options: ['el', 'la'], correct: 'el' },
+        { id: 'q4', prompt: '___ estudiante (девушка)',     options: ['el', 'la'], correct: 'la' },
+        { id: 'q5', prompt: '___ estadounidense (мужчина)', options: ['el', 'la'], correct: 'el' },
+        { id: 'q6', prompt: '___ iraní (девушка)',          options: ['el', 'la'], correct: 'la' },
+        { id: 'q7', prompt: '___ estadounidense (девушка)', options: ['el', 'la'], correct: 'la' },
       ],
     },
   ],
